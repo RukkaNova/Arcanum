@@ -34,6 +34,7 @@ const stars=(r)=>r?'★'.repeat(Math.round(r))+'☆'.repeat(5-Math.round(r)):'';
     @media(min-width:640px){.row{grid-template-columns:240px 1fr;}}
     .row:hover{border-color:var(--ember);text-decoration:none;}
     .thumb{background:var(--ink);overflow:hidden;aspect-ratio:16/9;}
+    @media(min-width:640px){.thumb{aspect-ratio:unset;min-height:160px;}}
     .thumb img{width:100%;height:100%;object-fit:contain;display:block;}
     .info{padding:1.2rem 1.4rem;}
     .rowtop{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
