@@ -5,7 +5,7 @@ rating: 4.0
 pricing: "freemium"
 siteUrl: "https://play.google.com/store/apps/details?id=io.voyage&hl=en"
 bestFor: "Structured, consequence-heavy RPG on mobile with earned outcomes and co-op permadeath."
-cover: "/img/placeholder-client.svg"
+cover: "/img/voyage.webp"
 featured: true
 updated: 2026-06-17
 ---

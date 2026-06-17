@@ -5,7 +5,7 @@ rating: 4.0
 pricing: "freemium"
 siteUrl: "https://macer.ai/"
 bestFor: "Rapid zero-prep sessions and empowering human DMs with on-the-fly generative assets."
-cover: "/img/placeholder-client.svg"
+cover: "/img/macerai.webp"
 featured: false
 updated: 2026-06-17
 ---

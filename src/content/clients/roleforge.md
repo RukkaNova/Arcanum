@@ -5,7 +5,7 @@ rating: 4.5
 pricing: "free"
 siteUrl: "https://roleforge.ai"
 bestFor: "Long-term solo campaigns demanding strict rule adherence, earned victories, and perfect structural persistence."
-cover: "/img/placeholder-client.svg"
+cover: "/img/roleforge.webp"
 featured: true
 updated: 2026-06-17
 ---

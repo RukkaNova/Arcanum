@@ -5,7 +5,7 @@ rating: 4.0
 pricing: "free"
 siteUrl: "https://www.tavernadm.com/"
 bestFor: "Discord communities and friend groups who want a seamless AI DM in their existing server."
-cover: "/img/placeholder-client.svg"
+cover: "/img/taverna.webp"
 featured: false
 updated: 2026-06-17
 ---

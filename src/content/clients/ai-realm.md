@@ -5,7 +5,7 @@ rating: 3.5
 pricing: "freemium"
 siteUrl: "https://airealm.com/home"
 bestFor: "Solo or small-group D&D 5e campaigns without the burden of scheduling a human DM."
-cover: "/img/placeholder-client.svg"
+cover: "/img/ai-realm.webp"
 featured: false
 updated: 2026-06-17
 ---

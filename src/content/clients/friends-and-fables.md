@@ -5,7 +5,7 @@ rating: 4.5
 pricing: "freemium"
 siteUrl: "https://fables.gg"
 bestFor: "Rich, long-term tactical multiplayer campaigns and complex granular world-building for up to 6 players."
-cover: "/img/placeholder-client.svg"
+cover: "/img/friends-and-fables.webp"
 featured: true
 updated: 2026-06-17
 ---

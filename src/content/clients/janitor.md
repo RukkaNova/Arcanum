@@ -6,7 +6,7 @@ pricing: "freemium"
 siteUrl: "https://janitorai.com/"
 reviewSlug: "janitor-ai"
 bestFor: "Character-chat fans who want a big library and external model support."
-cover: "/img/placeholder-client.svg"
+cover: "/img/janitor-ai.webp"
 featured: true
 updated: 2026-06-08
 ---

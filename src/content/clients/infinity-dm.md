@@ -5,7 +5,7 @@ rating: 3.5
 pricing: "free"
 siteUrl: "https://www.infinitydm.world/"
 bestFor: "Asynchronous group campaigns for busy adults who cannot commit to a synchronous four-hour session."
-cover: "/img/placeholder-client.svg"
+cover: "/img/infinity-dm.webp"
 featured: false
 updated: 2026-06-17
 ---

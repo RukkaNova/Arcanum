@@ -5,7 +5,7 @@ rating: 4.0
 pricing: "freemium"
 siteUrl: "https://www.deeprealms.io"
 bestFor: "Unrestricted, deeply customized solo campaigns for tech-savvy writers and hardcore RPG enthusiasts."
-cover: "/img/placeholder-client.svg"
+cover: "/img/deep-realms.webp"
 featured: false
 updated: 2026-06-17
 ---

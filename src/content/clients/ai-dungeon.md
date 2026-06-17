@@ -5,7 +5,7 @@ rating: 3.5
 pricing: "freemium"
 siteUrl: "https://aidungeon.com"
 bestFor: "Emergent, unrestricted storytelling and dream-logic narratives where the constraints of reality don't apply."
-cover: "/img/placeholder-client.svg"
+cover: "/img/ai-dungeon.webp"
 featured: true
 updated: 2026-06-17
 ---
