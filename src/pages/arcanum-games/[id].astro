@@ -1,0 +1,76 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { modelLabel } from '../../platforms';
+export async function getStaticPaths(){
+  const r=await getCollection('releases');
+  return r.map(x=>({params:{id:x.id},props:{rel:x}}));
+}
+const { rel }=Astro.props; const { Content }=await render(rel); const d=rel.data;
+const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,author:{'@type':'Organization',name:d.author},gamePlatform:d.models.map(modelLabel)};
+---
+<Base title={`${d.title} — Download for ${d.models.map(modelLabel).join(', ')} | Arcanum`} description={d.tagline} type="article" jsonLd={jsonLd}>
+  <article class="wrap rel">
+    <a class="back mono" href="/arcanum-games">← Arcanum Originals</a>
+    {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}
+    <div class="badges">
+      {d.models.map(m=> <span class="token is-platform">{modelLabel(m)}</span>)}
+      <span class="token">v{d.version}</span>
+      {d.partner && <span class="token">partner</span>}
+      {d.nsfw && <span class="token">18+</span>}
+    </div>
+    <h1>{d.title}</h1>
+    <p class="tagline">{d.tagline}</p>
+    <p class="meta mono">{d.genres.join(' · ')} · by {d.author}</p>
+
+    {d.videoId && (
+      <a class="video" href={`https://youtube.com/watch?v=${d.videoId}`} target="_blank" rel="noopener">
+        <img src={`https://i.ytimg.com/vi/${d.videoId}/hqdefault.jpg`} alt={`${d.title} gameplay`} width="800" height="450"/>
+        <span class="play">▶ Watch gameplay</span>
+      </a>
+    )}
+
+    <div class="prose"><Content/></div>
+
+    <!-- THE DOWNLOAD PAYLOAD — files only, delivered not indexed -->
+    <section class="downloads">
+      <h2 class="mono">↓ Download the files</h2>
+      <p class="dlhint">Create a new Project (Claude), GPT (ChatGPT) or Gem (Gemini), then attach these files and paste the master prompt. Install steps above.</p>
+      <ul class="files">
+        {d.files.map(f=>(
+          <li>
+            <div class="finfo"><span class="fname mono">{f.name}</span>{f.label && <span class="flabel">{f.label}</span>}</div>
+            <a class="dl" href={f.path} download>Download</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </article>
+  <style>
+    .rel{padding:2rem 1.25rem 3rem;max-width:780px;}
+    .back{color:var(--parchment-dim);font-size:.8rem;}
+    .hero-img{margin:1.4rem 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;aspect-ratio:16/9;}
+    .hero-img img{width:100%;height:100%;object-fit:cover;display:block;}
+    .badges{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1rem;}
+    h1{font-size:clamp(2.3rem,5vw,3.4rem);font-weight:600;line-height:1.05;}
+    .tagline{font-size:1.25rem;color:var(--parchment-dim);font-style:italic;margin:.7rem 0 .5rem;}
+    .meta{font-size:.8rem;color:var(--rune);}
+    .video{display:block;position:relative;margin:1.6rem 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;aspect-ratio:16/9;}
+    .video img{width:100%;height:100%;object-fit:cover;display:block;opacity:.85;}
+    .video .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:1rem;color:#fff;background:rgba(20,17,15,.35);}
+    .video:hover .play{background:rgba(20,17,15,.15);}
+    .prose{margin-top:1.6rem;}
+    .prose :global(p){margin-bottom:1rem;}
+    .prose :global(strong){color:var(--parchment);}
+    .downloads{margin-top:2.4rem;border:1px solid var(--ember-soft);border-radius:12px;padding:1.5rem;background:var(--ink-2);}
+    .downloads h2{font-size:1.1rem;color:var(--ember);margin-bottom:.4rem;}
+    .dlhint{color:var(--parchment-dim);font-size:.9rem;margin-bottom:1.1rem;}
+    .files{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+    .files li{display:flex;justify-content:space-between;align-items:center;gap:1rem;border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem;}
+    .finfo{display:flex;flex-direction:column;gap:.15rem;}
+    .fname{font-size:.9rem;color:var(--parchment);}
+    .flabel{font-size:.75rem;color:var(--parchment-dim);}
+    .dl{font-family:var(--mono);font-size:.8rem;background:var(--ember);color:var(--ink);padding:.45rem .9rem;border-radius:6px;font-weight:600;white-space:nowrap;}
+    .dl:hover{text-decoration:none;filter:brightness(1.08);}
+  </style>
+</Base>

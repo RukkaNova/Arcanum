@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import GameCard from '../../components/GameCard.astro';
+import { MODELS } from '../../platforms';
+
+const games = (await getCollection('games')).sort((a,b)=>b.data.updated.valueOf()-a.data.updated.valueOf());
+const allGenres = [...new Set(games.flatMap(g=>g.data.genres))].sort();
+const modelKeys = Object.keys(MODELS);
+---
+<Base title="All AI RPG Games — ChatGPT, Claude & Gemini | Arcanum" description="Browse the best public AI text RPGs. Filter by model (ChatGPT, Claude, Gemini) and by genre — mystery, fantasy, sci-fi, romance and more.">
+  <div class="wrap browse">
+    <h1>Public Games</h1>
+    <p class="sub">{games.length} of the best AI RPGs you can play right now. Filter by model, or by genre.</p>
+    <div class="filters">
+      <div class="filter-group">
+        <span class="flabel mono">Model</span>
+        <button class="chip active" data-kind="model" data-val="all">All</button>
+        {modelKeys.map(k=> <button class="chip" data-kind="model" data-val={k}>{MODELS[k as keyof typeof MODELS].label}</button>)}
+      </div>
+      <div class="filter-group">
+        <span class="flabel mono">Genre</span>
+        <button class="chip active" data-kind="genre" data-val="all">All</button>
+        {allGenres.map(g=> <button class="chip" data-kind="genre" data-val={g}>{g}</button>)}
+      </div>
+    </div>
+    <div class="grid" id="grid">
+      {games.map(g=>(
+        <div class="cell" data-model={g.data.model} data-genres={g.data.genres.join('|')}>
+          <GameCard url={`/games/${g.id}`} title={g.data.title} tagline={g.data.tagline} model={g.data.model} genres={g.data.genres} rating={g.data.rating} cover={g.data.cover}/>
+        </div>
+      ))}
+    </div>
+    <p class="empty mono" id="empty" hidden>No games match that combination — yet.</p>
+  </div>
+  <style>
+    .browse{padding:3rem 1.25rem 2rem;}
+    h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;}
+    .sub{color:var(--parchment-dim);margin:.4rem 0 2rem;}
+    .filters{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.2rem;}
+    .filter-group{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;}
+    .flabel{color:var(--rune);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;margin-right:.4rem;min-width:3.5rem;}
+    .chip{font-family:var(--mono);font-size:.78rem;cursor:pointer;background:var(--ink-2);color:var(--parchment-dim);border:1px solid var(--line);border-radius:6px;padding:.35rem .7rem;transition:all .15s;}
+    .chip:hover{color:var(--parchment);border-color:var(--parchment-dim);}
+    .chip.active{background:var(--ember);color:var(--ink);border-color:var(--ember);font-weight:600;}
+    .grid{display:grid;grid-template-columns:1fr;gap:1.1rem;}
+    @media(min-width:640px){.grid{grid-template-columns:1fr 1fr;}}
+    @media(min-width:940px){.grid{grid-template-columns:1fr 1fr 1fr;}}
+    .cell[hidden]{display:none;}
+    .empty{color:var(--parchment-dim);padding:2rem 0;}
+  </style>
+  <script>
+    const state={model:'all',genre:'all'};
+    const grid=document.getElementById('grid'); const empty=document.getElementById('empty');
+    document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{
+      const k=btn.dataset.kind; state[k]=btn.dataset.val;
+      document.querySelectorAll(`.chip[data-kind="${k}"]`).forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active'); apply();
+    }));
+    function apply(){let n=0;grid.querySelectorAll('.cell').forEach(c=>{
+      const okM=state.model==='all'||c.dataset.model===state.model;
+      const okG=state.genre==='all'||(c.dataset.genres||'').split('|').includes(state.genre);
+      const show=okM&&okG; c.hidden=!show; if(show)n++;
+    }); empty.hidden=n!==0;}
+  </script>
+</Base>

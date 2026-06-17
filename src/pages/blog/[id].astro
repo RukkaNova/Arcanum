@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+export async function getStaticPaths(){
+  const posts=await getCollection('blog');
+  return posts.map(p=>({params:{id:p.id},props:{post:p}}));
+}
+const { post }=Astro.props; const { Content }=await render(post); const d=post.data;
+const jsonLd={'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString()};
+---
+<Base title={`${d.title} | Arcanum`} description={d.description} type="article" jsonLd={jsonLd}>
+  <article class="wrap post">
+    <a class="back mono" href="/blog">← Codex</a>
+    <h1>{d.title}</h1>
+    <time class="mono">{d.pubDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time>
+    <div class="prose"><Content/></div>
+  </article>
+  <style>
+    .post{padding:2.5rem 1.25rem 3rem;max-width:720px;}
+    .back{color:var(--parchment-dim);font-size:.8rem;}
+    h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;line-height:1.08;margin:1.2rem 0 .5rem;}
+    time{color:var(--rune);font-size:.8rem;}
+    .prose{margin-top:2rem;}
+    .prose :global(p){margin-bottom:1rem;}
+  </style>
+</Base>

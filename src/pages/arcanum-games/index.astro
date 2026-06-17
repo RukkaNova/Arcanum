@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { modelShort } from '../../platforms';
+const releases=(await getCollection('releases')).sort((a,b)=>b.data.updated.valueOf()-a.data.updated.valueOf());
+---
+<Base title="Arcanum Originals — Downloadable AI RPG Engines | Arcanum" description="Original game engines built by Arcanum. Download the files, load them into ChatGPT, Claude, or Gemini, and play deeply-crafted worlds you won't find anywhere else.">
+  <div class="wrap browse">
+    <h1>Arcanum Originals</h1>
+    <p class="sub">Our own packaged worlds. Download the files, load them into your AI, and play
+    systems built with an obsessive level of detail — not available anywhere else.</p>
+    <div class="grid">
+      {releases.map(r=>(
+        <a class="card" href={`/arcanum-games/${r.id}`}>
+          <div class="thumb">{r.data.cover && <img src={r.data.cover} alt={r.data.title} loading="lazy" width="800" height="450"/>}</div>
+          <div class="body">
+            <div class="models">{r.data.models.map(m=> <span class="token is-platform">{modelShort(m)}</span>)}</div>
+            <h2>{r.data.title}</h2>
+            <p class="tag">{r.data.tagline}</p>
+            <div class="foot mono"><span>{r.data.genres.slice(0,3).join(' · ')}</span><span class="dl">↓ {r.data.files.length} files</span></div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+  <style>
+    .browse{padding:3rem 1.25rem 2rem;}
+    h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;}
+    .sub{color:var(--parchment-dim);margin:.4rem 0 2rem;max-width:42rem;}
+    .grid{display:grid;grid-template-columns:1fr;gap:1.2rem;}
+    @media(min-width:700px){.grid{grid-template-columns:1fr 1fr;}}
+    .card{border:1px solid var(--ember-soft);border-radius:12px;overflow:hidden;background:var(--ink-2);color:var(--parchment);transition:border-color .18s,transform .18s;}
+    .card:hover{border-color:var(--ember);text-decoration:none;transform:translateY(-2px);}
+    .thumb{aspect-ratio:16/9;background:var(--ink);border-bottom:1px solid var(--line);}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+    .body{padding:1.2rem 1.4rem;}
+    .models{display:flex;gap:.4rem;margin-bottom:.7rem;}
+    .card h2{font-size:1.5rem;font-weight:600;margin-bottom:.4rem;}
+    .tag{color:var(--parchment-dim);font-size:.96rem;}
+    .foot{display:flex;justify-content:space-between;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--rune);margin-top:1rem;}
+    .dl{color:var(--ember);}
+  </style>
+</Base>

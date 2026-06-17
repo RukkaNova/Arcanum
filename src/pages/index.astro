@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const games = await getCollection('games');
+const clients = await getCollection('clients');
+const releases = await getCollection('releases');
+
+const jsonLd = {
+  '@context': 'https://schema.org', '@type': 'WebSite', name: 'Arcanum',
+  description: 'The home base for LLM roleplay: discover the best public AI RPGs, compare roleplay platforms, and download original Arcanum game engines for ChatGPT, Claude, and Gemini.',
+  url: 'https://arcanum.example',
+};
+---
+<Base
+  title="Arcanum — The home base for LLM roleplay games"
+  description="Discover the best AI text RPGs for ChatGPT, Claude & Gemini, compare roleplay platforms, and download original Arcanum game engines. The one-stop shop for LLM RPG players."
+  jsonLd={jsonLd}
+>
+  <section class="hero wrap">
+    <p class="eyebrow mono">// the home base for LLM roleplay</p>
+    <h1>Every world worth<br/>playing, in one place.</h1>
+    <p class="lede">
+      Arcanum is the dedicated home for LLM roleplay games. Find the best public RPGs for
+      your AI, see which roleplay platforms are actually worth it, and download our own
+      original game engines — built for players who want more than a chat box.
+    </p>
+    <div class="cta-row">
+      <a class="btn" href="/arcanum-games">Arcanum Originals</a>
+      <a class="btn ghost" href="/games">Browse all games</a>
+    </div>
+  </section>
+
+  <section class="wrap pillars">
+    <article class="pillar">
+      <span class="pnum mono">01</span>
+      <h2>Public Games</h2>
+      <p>The best AI RPGs you can play right now — published GPTs, Gems, and Claude
+      projects — rated and sorted by model and genre.</p>
+      <a href="/games" class="plink mono">{games.length} games →</a>
+    </article>
+    <article class="pillar">
+      <span class="pnum mono">02</span>
+      <h2>Clients</h2>
+      <p>Janitor, Friends &amp; Fables, AI Dungeon and the rest — honest reviews of every
+      roleplay platform, so you know what's worth your time.</p>
+      <a href="/clients" class="plink mono">{clients.length} clients →</a>
+    </article>
+    <article class="pillar accent">
+      <span class="pnum mono">03</span>
+      <h2>Arcanum Originals</h2>
+      <p>Our own packaged game engines — download the files, drop them into your AI, and
+      play worlds you won't find anywhere else.</p>
+      <a href="/arcanum-games" class="plink mono">{releases.length} originals →</a>
+    </article>
+  </section>
+
+  <style>
+    .hero { padding: 5rem 1.25rem 3rem; max-width: 860px; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.4rem; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.03; font-weight: 600; letter-spacing: -.015em; margin-bottom: 1.4rem; }
+    .lede { font-size: 1.2rem; color: var(--parchment-dim); max-width: 38rem; margin-bottom: 2rem; }
+    .cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn { font-family: var(--mono); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; background: var(--ember); color: var(--ink); padding: .75rem 1.4rem; border-radius: 7px; font-weight: 600; }
+    .btn:hover { text-decoration: none; filter: brightness(1.08); }
+    .btn.ghost { background: transparent; color: var(--parchment); border: 1px solid var(--line); }
+    .btn.ghost:hover { border-color: var(--ember); color: var(--ember); }
+    .pillars { display: grid; grid-template-columns: 1fr; gap: 1.1rem; padding-bottom: 2rem; }
+    @media (min-width: 800px){ .pillars { grid-template-columns: 1fr 1fr 1fr; } }
+    .pillar { border: 1px solid var(--line); border-radius: 12px; padding: 1.6rem; background: var(--ink-2); }
+    .pillar.accent { border-color: var(--ember-soft); }
+    .pnum { color: var(--gild); font-size: .8rem; }
+    .pillar h2 { font-size: 1.4rem; font-weight: 600; margin: .5rem 0 .6rem; }
+    .pillar p { color: var(--parchment-dim); font-size: .98rem; margin-bottom: 1.1rem; }
+    .plink { color: var(--ember); font-size: .8rem; }
+  </style>
+</Base>

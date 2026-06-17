@@ -1,0 +1,30 @@
+---
+import { modelShort } from '../platforms';
+interface Props { url:string; title:string; tagline:string; model:string; genres:string[]; rating?:number; cover?:string; }
+const { url, title, tagline, model, genres, rating, cover } = Astro.props;
+const stars = rating ? '★'.repeat(Math.round(rating)) + '☆'.repeat(5-Math.round(rating)) : '';
+---
+<a class="card" href={url}>
+  {cover && <div class="thumb"><img src={cover} alt={title} loading="lazy" width="800" height="450"/></div>}
+  <div class="body">
+    <div class="card-top">
+      <span class="token is-platform">{modelShort(model)}</span>
+      {rating && <span class="rating mono" title={`${rating} / 5`}>{stars}</span>}
+    </div>
+    <h3>{title}</h3>
+    <p class="tag">{tagline}</p>
+    <div class="genres mono">{genres.slice(0,3).join(' · ')}</div>
+  </div>
+  <style>
+    .card { display:block; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--ink-2); color:var(--parchment); transition:border-color .18s, transform .18s; height:100%; }
+    .card:hover { border-color:var(--ember); text-decoration:none; transform:translateY(-2px); }
+    .thumb { aspect-ratio:16/9; background:var(--ink); border-bottom:1px solid var(--line); }
+    .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+    .body { padding:1.1rem 1.2rem; }
+    .card-top { display:flex; gap:.5rem; justify-content:space-between; align-items:center; margin-bottom:.7rem; }
+    .rating { color:var(--gild); font-size:.8rem; letter-spacing:.05em; }
+    .card h3 { font-size:1.25rem; font-weight:600; line-height:1.15; margin-bottom:.35rem; }
+    .tag { color:var(--parchment-dim); font-size:.92rem; line-height:1.4; min-height:2.5em; }
+    .genres { font-size:.7rem; text-transform:uppercase; letter-spacing:.04em; color:var(--rune); margin-top:.9rem; }
+  </style>
+</a>
