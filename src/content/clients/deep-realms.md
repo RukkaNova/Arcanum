@@ -3,6 +3,7 @@ title: "Deep Realms"
 tagline: "A Python-powered, text-first AI RPG for power users — 80,000-word memory, unrestricted content, fully programmable mechanics."
 rating: 4.0
 pricing: "freemium"
+siteUrl: "https://www.deeprealms.io"
 bestFor: "Unrestricted, deeply customized solo campaigns for tech-savvy writers and hardcore RPG enthusiasts."
 cover: "/img/placeholder-client.svg"
 featured: false
