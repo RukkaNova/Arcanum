@@ -3,6 +3,7 @@ title: "MacerAI"
 tagline: "A zero-prep TTRPG hybrid — full AI Game Master for solo players, real-time co-pilot for human DMs."
 rating: 4.0
 pricing: "freemium"
+siteUrl: "https://macer.ai/"
 bestFor: "Rapid zero-prep sessions and empowering human DMs with on-the-fly generative assets."
 cover: "/img/placeholder-client.svg"
 featured: false

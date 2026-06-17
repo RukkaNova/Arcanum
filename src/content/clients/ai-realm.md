@@ -3,6 +3,7 @@ title: "AI Realm"
 tagline: "A D&D 5e AI RPG built for tabletop purists — full character creation, real rule enforcement, automated combat math."
 rating: 3.5
 pricing: "freemium"
+siteUrl: "https://airealm.com/home"
 bestFor: "Solo or small-group D&D 5e campaigns without the burden of scheduling a human DM."
 cover: "/img/placeholder-client.svg"
 featured: false

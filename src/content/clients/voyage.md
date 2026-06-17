@@ -3,6 +3,7 @@ title: "Voyage"
 tagline: "Latitude's structured successor to AI Dungeon — real dice, real consequences, real permadeath."
 rating: 4.0
 pricing: "freemium"
+siteUrl: "https://play.google.com/store/apps/details?id=io.voyage&hl=en"
 bestFor: "Structured, consequence-heavy RPG on mobile with earned outcomes and co-op permadeath."
 cover: "/img/placeholder-client.svg"
 featured: true
