@@ -91,6 +91,18 @@ const SITE = 'Arcanum';
     .nav-links a { color: var(--parchment-dim); }
     .nav-links a:hover { color: var(--ember); text-decoration: none; }
     footer.site { border-top: 1px solid var(--line); margin-top: 5rem; padding: 2.5rem 0; color: var(--parchment-dim); font-size: .85rem; }
+    /* prose tables — used in client/game/release/blog markdown content */
+    .prose table { width: 100%; border-collapse: collapse; margin: 1.6rem 0; font-size: .88rem; display: block; overflow-x: auto; }
+    .prose thead tr { background: var(--ink-2); border-bottom: 2px solid var(--ember-soft); }
+    .prose th { font-family: var(--mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--rune); padding: .65rem 1rem; text-align: left; white-space: nowrap; }
+    .prose td { padding: .65rem 1rem; border-bottom: 1px solid var(--line); color: var(--parchment-dim); vertical-align: top; line-height: 1.5; }
+    .prose tr:last-child td { border-bottom: none; }
+    .prose tbody tr:hover td { background: color-mix(in srgb, var(--ink-2) 60%, transparent); }
+    .prose h2 { font-size: 1.25rem; font-weight: 600; margin: 2rem 0 .7rem; color: var(--parchment); }
+    .prose h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 .5rem; color: var(--parchment-dim); }
+    .prose strong { color: var(--parchment); }
+    .prose ul, .prose ol { padding-left: 1.4rem; margin-bottom: 1rem; }
+    .prose li { margin-bottom: .35rem; color: var(--parchment-dim); }
   </style>
 </head>
 <body>
