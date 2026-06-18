@@ -6,6 +6,7 @@ genres: ["Fantasy", "Kingdom Builder", "Strategy", "Roleplay"]
 author: "Arcanum"
 partner: false
 cover: "/img/aevum.webp"
+reviewSlug: "aevum-realm-architect"
 version: "1.0"
 featured: true
 nsfw: false

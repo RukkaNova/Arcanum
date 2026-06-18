@@ -49,6 +49,7 @@ const releases = defineCollection({
     partner: z.boolean().default(false),
     cover: z.string().optional(),
     videoId: z.string().optional(),
+    reviewSlug: z.string().optional(),
     files: z.array(z.object({
       name: z.string(),
       path: z.string(),

@@ -6,6 +6,7 @@ genres: ["Fantasy", "Relationship", "Roleplay", "Slow-burn"]
 author: "Arcanum"
 partner: false
 cover: "/img/the-chronicler.webp"
+reviewSlug: "the-chronicler"
 version: "1.0"
 featured: true
 nsfw: false

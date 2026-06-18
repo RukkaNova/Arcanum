@@ -6,6 +6,7 @@ genres: ["Fantasy", "Exploration", "Mature", "Roleplay"]
 author: "Arcanum"
 partner: false
 cover: "/img/eirathis.webp"
+reviewSlug: "eirathis-strider"
 version: "1.0"
 featured: true
 nsfw: false

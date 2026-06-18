@@ -6,6 +6,7 @@ genres: ["Sci-Fi", "Trading", "Survival", "Roleplay"]
 author: "Arcanum"
 partner: false
 cover: "/img/star-freighter-drift.webp"
+reviewSlug: "star-freighter-drift"
 version: "1.0"
 featured: true
 nsfw: false
