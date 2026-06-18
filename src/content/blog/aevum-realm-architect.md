@@ -4,6 +4,7 @@ description: "Aevum Realm Architect is a deterministic, low-fantasy kingdom-buil
 section: "reviews"
 pubDate: 2026-06-17
 cover: "/img/aevum.webp"
+releaseSlug: "aevum"
 tags: ["AI RPG", "LLM RPG", "kingdom builder", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "text RPG"]
 ---
 
@@ -39,7 +40,7 @@ There is even a built-in defense against the classic AI failing of memory drift:
 
 If you want a casual chat, look elsewhere. Aevum Realm Architect is for players who want an LLM RPG with the depth of a strategy game — economic planning, political maneuvering, military command, and a world that treats your choices as permanent. It rewards thinking like a ruler. It is, simply, one of the most ambitious text RPGs you can load into an AI today, and it runs on whichever model you already use.
 
-The files are free to download on the [Aevum Realm Architect page](/arcanum-games/aevum). Pick your engine, follow the setup guide, and begin as a serf with one copper piece to your name.
+The files are free to download. Pick your engine, follow the setup guide below, and begin as a serf with one copper piece to your name.
 
 ---
 

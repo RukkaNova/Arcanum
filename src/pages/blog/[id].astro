@@ -14,6 +14,11 @@ const jsonLd={'@context':'https://schema.org','@type':'Article',headline:d.title
     <h1>{d.title}</h1>
     <time class="mono">{d.pubDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time>
     <div class="prose"><Content/></div>
+    {d.releaseSlug && (
+      <div class="dl-cta">
+        <a class="dl-btn" href={`/arcanum-games/${d.releaseSlug}`}>↓ Download free — get the files</a>
+      </div>
+    )}
   </article>
   <style>
     .post{padding:2.5rem 1.25rem 3rem;max-width:720px;}
@@ -22,5 +27,8 @@ const jsonLd={'@context':'https://schema.org','@type':'Article',headline:d.title
     time{color:var(--rune);font-size:.8rem;}
     .prose{margin-top:2rem;}
     .prose :global(p){margin-bottom:1rem;}
+    .dl-cta{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line);}
+    .dl-btn{font-family:var(--mono);font-size:.9rem;background:var(--ember);color:var(--ink);padding:.8rem 1.6rem;border-radius:7px;font-weight:600;display:inline-block;}
+    .dl-btn:hover{text-decoration:none;filter:brightness(1.08);}
   </style>
 </Base>

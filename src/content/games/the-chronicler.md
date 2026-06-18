@@ -5,6 +5,7 @@ model: "claude"
 genres: ["Fantasy", "Relationship", "Roleplay", "Slow-burn"]
 rating: 4.8
 reviewSlug: "the-chronicler"
+releaseSlug: "the-chronicler"
 author: "Arcanum"
 cover: "/img/the-chronicler.webp"
 featured: true

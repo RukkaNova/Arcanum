@@ -5,6 +5,7 @@ model: "gemini"
 genres: ["Fantasy", "Exploration", "Mature", "Roleplay"]
 rating: 4.8
 reviewSlug: "eirathis-strider"
+releaseSlug: "eirathis"
 author: "Arcanum"
 cover: "/img/eirathis.webp"
 featured: true

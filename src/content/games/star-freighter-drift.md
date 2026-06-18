@@ -5,6 +5,7 @@ model: "chatgpt"
 genres: ["Sci-Fi", "Trading", "Survival", "Roleplay"]
 rating: 4.8
 reviewSlug: "star-freighter-drift"
+releaseSlug: "star-freighter-drift"
 author: "Arcanum"
 cover: "/img/star-freighter-drift.webp"
 featured: true

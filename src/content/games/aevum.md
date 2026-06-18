@@ -5,6 +5,7 @@ model: "chatgpt"
 genres: ["Fantasy", "Kingdom Builder", "Strategy", "Roleplay"]
 rating: 4.8
 reviewSlug: "aevum-realm-architect"
+releaseSlug: "aevum"
 author: "Arcanum"
 cover: "/img/aevum.webp"
 featured: true

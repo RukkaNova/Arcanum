@@ -4,6 +4,7 @@ description: "The Chronicler is a relationship-driven, persistent LLM RPG built 
 section: "reviews"
 pubDate: 2026-06-17
 cover: "/img/the-chronicler.webp"
+releaseSlug: "the-chronicler"
 tags: ["AI RPG", "LLM RPG", "Claude RPG", "relationship RPG", "romance RPG", "text RPG", "companion RPG"]
 ---
 
@@ -37,7 +38,7 @@ The Chronicler enforces player sovereignty as an immutable law. It will never na
 
 The Chronicler is for players who care more about people than loot tables — who want an LLM RPG where a companion's trust is the real reward and a betrayal is the real cost. It rewards patience, consistency, and emotional attention. If you want slow-burn character drama with a cast that pursues its own life around you, this is one of the most carefully built relationship RPGs you can load into an AI today.
 
-The files are free to download on the [The Chronicler page](/arcanum-games/the-chronicler). Set up the project, tell the Chronicler what world you want to walk into, and begin your legend.
+The files are free to download. Set up the project, follow the install guide below, and begin your legend.
 
 ---
 

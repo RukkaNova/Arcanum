@@ -4,6 +4,7 @@ description: "Eirathis Strider is a mature, exploration-heavy LLM RPG built for 
 section: "reviews"
 pubDate: 2026-06-17
 cover: "/img/eirathis.webp"
+releaseSlug: "eirathis"
 tags: ["AI RPG", "LLM RPG", "Gemini RPG", "Witcher RPG", "mature RPG", "text RPG", "exploration RPG"]
 ---
 
@@ -41,7 +42,7 @@ Eirathis Strider enforces an uncompromising agency protocol. The GM never narrat
 
 Eirathis Strider is for adult players who want a mature, open-ended LLM RPG with real tactical combat, deep character relationships, and a vast cosmic world to explore on their own terms. If you want the freedom and grit of a Witcher or BG3 campaign in text form, this is one of the richest experiences you can load into an AI.
 
-The files are free to download on the [Eirathis Strider page](/arcanum-games/eirathis). Build your Gem, tell the Chronicler who your Strider is, and step into a wounded, layered world.
+The files are free to download. Build your Gem, follow the install guide below, and step into a wounded, layered world.
 
 ---
 

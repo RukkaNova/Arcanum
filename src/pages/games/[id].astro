@@ -24,6 +24,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
     <div class="meta mono"><span>{d.genres.join(' · ')}</span><span>·</span><span>by {d.author}</span></div>
     <div class="actions">
       {d.playUrl && <a class="launch" href={d.playUrl} target="_blank" rel="noopener">Play on {modelLabel(d.model)} ↗</a>}
+      {d.releaseSlug && <a class="download" href={`/arcanum-games/${d.releaseSlug}`}>↓ Download free</a>}
       {d.reviewSlug && <a class="review" href={`/blog/${d.reviewSlug}`}>Read our review →</a>}
     </div>
     <div class="prose"><Content/></div>
@@ -40,6 +41,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
     .meta{font-size:.8rem;color:var(--rune);display:flex;gap:.6rem;flex-wrap:wrap;}
     .actions{display:flex;gap:1rem;flex-wrap:wrap;margin:1.8rem 0;}
     .launch{font-family:var(--mono);font-size:.85rem;background:var(--ember);color:var(--ink);padding:.7rem 1.3rem;border-radius:7px;font-weight:600;}
+    .download{font-family:var(--mono);font-size:.85rem;background:var(--ember);color:var(--ink);padding:.7rem 1.3rem;border-radius:7px;font-weight:600;}
     .launch:hover{text-decoration:none;filter:brightness(1.08);}
     .review{font-family:var(--mono);font-size:.85rem;border:1px solid var(--line);color:var(--parchment);padding:.7rem 1.3rem;border-radius:7px;}
     .review:hover{border-color:var(--ember);color:var(--ember);text-decoration:none;}
