@@ -41,7 +41,7 @@ The game enforces strict player sovereignty. The GM never speaks or acts for you
 
 Star Freighter Drift is for players who want a sci-fi LLM RPG with real stakes — economic strategy, white-knuckle smuggling, and a ship that is always one bad jump from disaster. If you have wanted the grit and freedom of Firefly or The Expanse in a text RPG you can actually play, this is one of the most original experiences available.
 
-The files are free to download below. Pick your ship, name your captain, and find out how long you can keep flying before the reactor — or the law — catches up.
+The files are free to download on the [Star Freighter Drift page](/arcanum-games/star-freighter-drift). Pick your ship, name your captain, and find out how long you can keep flying before the reactor — or the law — catches up.
 
 ---
 
