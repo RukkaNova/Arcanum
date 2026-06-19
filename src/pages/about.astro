@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="About Arcanum — The Home Base for LLM Roleplay"
+  description="Arcanum is the home base for LLM roleplay — discover public AI RPGs, compare roleplay platforms, and download original game engines for ChatGPT, Claude, and Gemini."
+>
+  <article class="wrap about">
+    <p class="eyebrow mono">// about</p>
+    <h1>About Arcanum</h1>
+
+    <div class="body">
+      <p class="lede">Arcanum is the home base for LLM roleplay.</p>
+
+      <p>Somewhere along the way, a strange and wonderful thing became true: the most powerful storytelling engines ever built — ChatGPT, Claude, Gemini — were sitting on everyone's desk, and almost nobody was using them to play. The few who tried mostly found the same wall. The magic of the first hour gives way to a model that forgets your name, loses your gold, and quietly stops caring about the world it was building. Most "AI RPGs" are a clever prompt and a prayer.</p>
+
+      <p>Arcanum exists because it doesn't have to be that way.</p>
+
+      <p>We do three things. We find the <a href="/games">best public AI RPGs</a> worth your time and tell you honestly which model they run on and whether they're any good. We review the <a href="/clients">roleplay platforms</a> — Janitor, Friends &amp; Fables, AI Dungeon and the rest — so you don't have to gamble your evenings finding out which ones deliver. And we build <a href="/arcanum-games">Arcanum Originals</a>: our own packaged game engines, designed from the ground up to solve the problems that break every long AI campaign. Persistent memory that doesn't drift. Worlds that act on their own. Companions with their own lives. Combat that rewards thinking, not dice luck. You download the files, drop them into your AI, and play worlds you won't find anywhere else.</p>
+
+      <p>That last part is the heart of it. Our games — <a href="/arcanum-games">Aevum Realm Architect, Eirathis Strider, The Chronicler, Star Freighter Drift</a> — aren't character cards. They're full systems, obsessively engineered, the kind of thing that comes from caring more about how a world holds together over a hundred turns than about shipping something quick. If you've ever wanted an AI RPG with the depth of a real game instead of a chat that loses the plot, that's who we make these for.</p>
+
+      <p>Everything here is free to play. The games run on your own ChatGPT, Claude, or Gemini — nothing to install, no account to make, no world locked behind a paywall. If something we made gives you a good night at the table, you can support new releases on Ko-fi. That's the whole arrangement: we keep building worlds, you keep playing them.</p>
+
+      <p>Welcome to Arcanum. <a href="/arcanum-games">Pick a world.</a></p>
+    </div>
+  </article>
+
+  <style>
+    .about { padding: 4rem 1.25rem 5rem; max-width: 780px; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 2rem; }
+    .lede { font-size: 1.2rem; color: var(--parchment); margin-bottom: 1.5rem; }
+    .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+    .body p:last-child { margin-bottom: 0; }
+  </style>
+</Base>

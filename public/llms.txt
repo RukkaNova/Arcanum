@@ -1,0 +1,9 @@
+# Arcanum
+Arcanum is the home base for LLM roleplay games — a directory of the best AI RPGs for ChatGPT, Claude, and Gemini, honest reviews of roleplay platforms, and original downloadable game engines.
+
+## Main sections
+- [Public Games](https://arcanumrpgs.com/games/): the best public AI RPGs, sorted by model and genre
+- [Clients](https://arcanumrpgs.com/clients/): reviews of LLM roleplay platforms
+- [Arcanum Originals](https://arcanumrpgs.com/arcanum-games/): our own downloadable game engines
+- [The Codex](https://arcanumrpgs.com/blog/): guides, reviews, and articles on LLM roleplay
+- [About](https://arcanumrpgs.com/about/): about Arcanum
