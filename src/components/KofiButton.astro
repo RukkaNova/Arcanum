@@ -1,0 +1,31 @@
+---
+interface Props {
+  label?: string;
+}
+const { label = 'Buy me a coffee' } = Astro.props;
+---
+<a href="https://ko-fi.com/D3O621P17T" target="_blank" rel="noopener" class="kofi-btn">
+  ☕ {label}
+</a>
+<style>
+  .kofi-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-family: var(--mono);
+    font-size: .82rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--gild);
+    border: 1px solid var(--gild);
+    padding: .6rem 1.2rem;
+    border-radius: 7px;
+    transition: background .18s, color .18s;
+    white-space: nowrap;
+  }
+  .kofi-btn:hover {
+    background: var(--gild);
+    color: var(--ink);
+    text-decoration: none;
+  }
+</style>

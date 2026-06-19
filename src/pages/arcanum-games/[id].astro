@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { modelLabel } from '../../platforms';
+import KofiButton from '../../components/KofiButton.astro';
 export async function getStaticPaths(){
   const r=await getCollection('releases');
   return r.map(x=>({params:{id:x.id},props:{rel:x}}));
@@ -51,6 +52,11 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
         ))}
       </ul>
     </section>
+
+    <div class="support">
+      <p>This game is free. If it gave you a good night at the table, a coffee keeps the worlds coming.</p>
+      <KofiButton label="Support on Ko-fi" />
+    </div>
   </article>
   <style>
     .rel{padding:2rem 1.25rem 3rem;max-width:780px;}
@@ -81,5 +87,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
     .flabel{font-size:.75rem;color:var(--parchment-dim);}
     .dl{font-family:var(--mono);font-size:.8rem;background:var(--ember);color:var(--ink);padding:.45rem .9rem;border-radius:6px;font-weight:600;white-space:nowrap;}
     .dl:hover{text-decoration:none;filter:brightness(1.08);}
+    .support{margin-top:2rem;padding:1.4rem;border:1px solid var(--line);border-radius:12px;background:var(--ink-2);display:flex;flex-direction:column;gap:.8rem;}
+    .support p{color:var(--parchment-dim);font-size:.92rem;margin:0;}
   </style>
 </Base>

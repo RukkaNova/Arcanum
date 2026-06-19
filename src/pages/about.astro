@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import KofiButton from '../components/KofiButton.astro';
 ---
 <Base
   title="About Arcanum — The Home Base for LLM Roleplay"
@@ -20,9 +21,13 @@ import Base from '../layouts/Base.astro';
 
       <p>That last part is the heart of it. Our games — <a href="/arcanum-games">Aevum Realm Architect, Eirathis Strider, The Chronicler, Star Freighter Drift</a> — aren't character cards. They're full systems, obsessively engineered, the kind of thing that comes from caring more about how a world holds together over a hundred turns than about shipping something quick. If you've ever wanted an AI RPG with the depth of a real game instead of a chat that loses the plot, that's who we make these for.</p>
 
-      <p>Everything here is free to play. The games run on your own ChatGPT, Claude, or Gemini — nothing to install, no account to make, no world locked behind a paywall. If something we made gives you a good night at the table, you can support new releases on Ko-fi. That's the whole arrangement: we keep building worlds, you keep playing them.</p>
+      <p>Everything here is free to play. The games run on your own ChatGPT, Claude, or Gemini — nothing to install, no account to make, no world locked behind a paywall. If something we made gives you a good night at the table, you can support new releases on <a href="https://ko-fi.com/D3O621P17T" target="_blank" rel="noopener">Ko-fi</a>. That's the whole arrangement: we keep building worlds, you keep playing them.</p>
 
       <p>Welcome to Arcanum. <a href="/arcanum-games">Pick a world.</a></p>
+    </div>
+
+    <div class="support">
+      <KofiButton label="Support Arcanum on Ko-fi" />
     </div>
   </article>
 
@@ -33,5 +38,6 @@ import Base from '../layouts/Base.astro';
     .lede { font-size: 1.2rem; color: var(--parchment); margin-bottom: 1.5rem; }
     .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
     .body p:last-child { margin-bottom: 0; }
+    .support { margin-top: 2.4rem; }
   </style>
 </Base>

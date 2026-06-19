@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { modelShort } from '../../platforms';
+import KofiButton from '../../components/KofiButton.astro';
 const releases=(await getCollection('releases')).sort((a,b)=>b.data.updated.valueOf()-a.data.updated.valueOf());
 ---
 <Base title="Arcanum Originals — Downloadable AI RPG Engines | Arcanum" description="Original game engines built by Arcanum. Download the files, load them into ChatGPT, Claude, or Gemini, and play deeply-crafted worlds you won't find anywhere else.">
@@ -22,6 +23,10 @@ const releases=(await getCollection('releases')).sort((a,b)=>b.data.updated.valu
         </a>
       ))}
     </div>
+    <div class="support">
+      <p>All games are free to play on your own AI. If they gave you a good session:</p>
+      <KofiButton />
+    </div>
   </div>
   <style>
     .browse{padding:3rem 1.25rem 2rem;}
@@ -39,5 +44,7 @@ const releases=(await getCollection('releases')).sort((a,b)=>b.data.updated.valu
     .tag{color:var(--parchment-dim);font-size:.96rem;}
     .foot{display:flex;justify-content:space-between;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--rune);margin-top:1rem;}
     .dl{color:var(--ember);}
+    .support{margin-top:2.4rem;padding-top:2rem;border-top:1px solid var(--line);display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;}
+    .support p{color:var(--parchment-dim);font-size:.92rem;margin:0;}
   </style>
 </Base>

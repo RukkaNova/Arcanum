@@ -103,6 +103,11 @@ const SITE = 'Arcanum';
     .prose strong { color: var(--parchment); }
     .prose ul, .prose ol { padding-left: 1.4rem; margin-bottom: 1rem; }
     .prose li { margin-bottom: .35rem; color: var(--parchment-dim); }
+    .footer-inner { display: flex; flex-direction: column; gap: .9rem; }
+    .footer-kofi { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .footer-kofi span { color: var(--parchment-dim); font-size: .85rem; }
+    .kofi-link { font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--gild); border: 1px solid var(--gild); padding: .4rem 1rem; border-radius: 6px; transition: background .18s, color .18s; white-space: nowrap; }
+    .kofi-link:hover { background: var(--gild); color: var(--ink); text-decoration: none; }
   </style>
 </head>
 <body>
@@ -122,8 +127,12 @@ const SITE = 'Arcanum';
     <slot />
   </main>
   <footer class="site">
-    <div class="wrap">
+    <div class="wrap footer-inner">
       <p>Arcanum — the directory for AI-run text worlds. Games run on your own ChatGPT, Claude, or Gemini.</p>
+      <div class="footer-kofi">
+        <span>Everything here is free. If we earned it:</span>
+        <a href="https://ko-fi.com/D3O621P17T" target="_blank" rel="noopener" class="kofi-link">☕ Buy me a coffee</a>
+      </div>
     </div>
   </footer>
 </body>
