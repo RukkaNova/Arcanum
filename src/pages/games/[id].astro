@@ -8,7 +8,7 @@ export async function getStaticPaths(){
 }
 const { game }=Astro.props; const { Content }=await render(game); const d=game.data;
 const stars=d.rating?'★'.repeat(Math.round(d.rating))+'☆'.repeat(5-Math.round(d.rating)):'';
-const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,gamePlatform:modelLabel(d.model),...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,bestRating:5}})};
+const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,gamePlatform:modelLabel(d.model),...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
 ---
 <Base title={`${d.title} — ${modelLabel(d.model)} RPG | Arcanum`} description={d.tagline} type="article" jsonLd={jsonLd}>
   <article class="wrap game">

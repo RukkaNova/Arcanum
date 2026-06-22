@@ -7,7 +7,7 @@ export async function getStaticPaths(){
 }
 const { client }=Astro.props; const { Content }=await render(client); const d=client.data;
 const stars=d.rating?'★'.repeat(Math.round(d.rating))+'☆'.repeat(5-Math.round(d.rating)):'';
-const jsonLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,bestRating:5}})};
+const jsonLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
 ---
 <Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={d.tagline} type="article" jsonLd={jsonLd}>
   <article class="wrap game">
