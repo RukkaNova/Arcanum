@@ -46,7 +46,7 @@ The files are free to download. Pick your ship, follow the install guide below, 
 
 ---
 
-# How to Install Star Freighter Drift
+## How to Install Star Freighter Drift
 
 You need both files: the **master prompt** (the rules) and the **Star Chart & Systems Manual** (the world). The idea is the same on every platform — load the Star Chart as a knowledge file, paste the master prompt as the instructions. Star Freighter Drift runs well on ChatGPT, Claude, or Gemini; here is the exact path for each.
 

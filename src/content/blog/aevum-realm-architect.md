@@ -44,7 +44,7 @@ The files are free to download. Pick your engine, follow the setup guide below, 
 
 ---
 
-# How to Install Aevum Realm Architect
+## How to Install Aevum Realm Architect
 
 You need both files: the **master prompt** (the rules) and **The Aevum Realm Atlas** (the world). The process is the same idea on every platform — load the Atlas as a knowledge file, paste the master prompt as the instructions — but here is the exact path for each.
 

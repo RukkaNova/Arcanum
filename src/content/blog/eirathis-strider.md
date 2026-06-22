@@ -46,7 +46,7 @@ The files are free to download. Build your Gem, follow the install guide below, 
 
 ---
 
-# How to Install Eirathis Strider (Gemini Gem)
+## How to Install Eirathis Strider (Gemini Gem)
 
 Eirathis Strider is built for **Gemini Gems**. You will need both files: the **Eirathis Strider master prompt** (the instructions) and the **Eirathis Atlas** (the world canon, loaded as knowledge).
 

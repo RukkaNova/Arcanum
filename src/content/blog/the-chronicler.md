@@ -42,7 +42,7 @@ The files are free to download. Set up the project, follow the install guide bel
 
 ---
 
-# How to Install The Chronicler (Claude Project)
+## How to Install The Chronicler (Claude Project)
 
 The Chronicler is designed for **Claude Projects**, which keep its instructions and the RomanceCronos engine active across every conversation in the project. You will need both files: **The Chronicler master prompt** (the instructions) and **RomanceCronos** (the relationship engine, loaded as knowledge).
 
