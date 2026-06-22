@@ -1,6 +1,6 @@
----
+﻿---
 title: "Aevum Realm Architect Review — Kingdom-Builder AI RPG"
-description: "Aevum Realm Architect is a deterministic, low-fantasy kingdom-builder LLM RPG for ChatGPT, Claude, and Gemini. Rise from serf to monarch in a living world of economy, war, and political intrigue. Download the files and play."
+description: "Aevum Realm Architect: kingdom-builder LLM RPG for ChatGPT, Claude, and Gemini. Rise from serf to monarch through economy, war, and intrigue. Free to download."
 section: "reviews"
 pubDate: 2026-06-17
 cover: "/img/aevum.webp"

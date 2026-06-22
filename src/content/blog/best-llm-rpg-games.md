@@ -1,6 +1,6 @@
----
+﻿---
 title: "11 Best LLM RPG Games You Can Play Inside ChatGPT, Claude & Gemini Right Now"
-description: "The best LLM RPG games that run directly inside ChatGPT, Claude, and Gemini — no download, no account, no install. From kingdom-builders to space-smuggler sims, these are the deepest AI text RPGs available in 2026."
+description: "The best LLM RPG games inside ChatGPT, Claude, and Gemini — no install needed. From kingdom-builders to space-smuggler sims, these are the deepest in 2026."
 section: "lists"
 pubDate: 2026-06-20
 tags: ["LLM RPG", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "AI RPG", "best AI RPG 2026", "text RPG"]

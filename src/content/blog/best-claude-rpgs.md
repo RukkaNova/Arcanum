@@ -1,6 +1,6 @@
----
+﻿---
 title: "The 4 Best Claude RPGs You Can Play Right Now"
-description: "Looking for the best Claude RPGs? These four LLM roleplay games — from a kingdom-builder to a space-smuggler sim — turn Claude into a deep, persistent text RPG. Here's what each one does and why it's worth playing."
+description: "Looking for the best Claude RPGs? Four LLM games — kingdom-builder, relationship RPG, space-smuggler sim, and more — that turn Claude into a deep text RPG."
 section: "lists"
 pubDate: 2026-06-18
 tags: ["Claude RPG", "AI RPG", "LLM RPG", "best Claude RPGs", "text RPG", "Claude Projects"]

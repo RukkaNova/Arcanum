@@ -1,6 +1,6 @@
----
+﻿---
 title: "Best AI Dungeon Alternatives in 2026 (That Actually Work)"
-description: "AI Dungeon's best days are behind it. Here are the best alternatives in 2026 — from dedicated platforms with real memory to engineered LLM-native RPG systems that run inside ChatGPT, Claude, and Gemini."
+description: "AI Dungeon's best days are behind it. The best alternatives in 2026 — platforms with real memory and LLM-native RPG systems for ChatGPT, Claude, and Gemini."
 section: "guides"
 pubDate: 2026-06-22
 tags: ["AI Dungeon alternative", "AI Dungeon alternatives 2026", "best AI RPG", "AI roleplay", "LLM RPG", "text RPG 2026"]

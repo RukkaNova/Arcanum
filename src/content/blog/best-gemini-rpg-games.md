@@ -1,6 +1,6 @@
----
+﻿---
 title: "The Best Gemini RPG Games You Can Play Right Now"
-description: "Looking for the best Gemini RPG experiences? From custom Gems to the deepest AI text RPG built specifically for Gemini — here's what's actually worth your time, and why Gemini is more capable than most players realise."
+description: "Best Gemini RPG games and Gem experiences in 2026. From custom Gems to the deepest LLM text RPG built for Gemini — what's actually worth your time."
 section: "lists"
 pubDate: 2026-06-21
 tags: ["Gemini RPG", "Gemini Gems RPG", "AI RPG", "LLM RPG", "Google Gemini roleplay", "best Gemini games 2026"]

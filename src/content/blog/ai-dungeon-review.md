@@ -1,6 +1,6 @@
----
+﻿---
 title: "AI Dungeon Review (2026): Is It Still Worth Playing?"
-description: "AI Dungeon pioneered AI storytelling, but is it still worth it in 2026? We examine the platform's creative freedom, pricing, writing quality, and how it compares to newer competitors."
+description: "AI Dungeon pioneered AI storytelling, but is it still worth it in 2026? Honest look at creative freedom, pricing, writing quality, and how it compares today."
 section: "platform-reviews"
 pubDate: 2026-06-20
 tags: ["AI Dungeon", "AI Dungeon review", "AI RPG", "AI storytelling", "text adventure", "LLM RPG", "AI roleplay"]

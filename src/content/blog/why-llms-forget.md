@@ -1,6 +1,6 @@
----
+﻿---
 title: "Why Your AI Campaign Falls Apart at Turn 50 (and How to Fix It)"
-description: "Your AI RPG starts great, then forgets your gold, ignores past events, and goes passive. Here's exactly why LLM campaigns break down over a long game — and the practical fixes that keep ChatGPT, Claude, or Gemini coherent for hundreds of turns."
+description: "Your AI RPG starts great, then loses the thread. Why LLM campaigns break down after turn 50 — and the fixes that keep ChatGPT, Claude, or Gemini coherent."
 section: "guides"
 pubDate: 2026-06-18
 tags: ["AI RPG", "LLM RPG", "AI roleplay tips", "AI memory", "ChatGPT RPG", "Claude RPG", "prompt engineering"]

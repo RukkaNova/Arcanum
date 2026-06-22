@@ -1,6 +1,6 @@
----
+﻿---
 title: "Star Freighter Drift: A Space-Smuggler Trading AI RPG for ChatGPT, Claude & Gemini"
-description: "Star Freighter Drift is a gritty, deterministic space-trading LLM RPG. Run cargo, dodge customs, and keep your reactor from melting as an independent freighter captain. Download the files and play on ChatGPT, Claude, or Gemini."
+description: "Star Freighter Drift: space-trading LLM RPG for ChatGPT, Claude, and Gemini. Run cargo, dodge customs, keep the reactor from melting. Free to download."
 section: "reviews"
 pubDate: 2026-06-18
 cover: "/img/star-freighter-drift.webp"

@@ -1,6 +1,6 @@
----
+﻿---
 title: "The Best ChatGPT RPG Games You Can Play Right Now"
-description: "The best ChatGPT RPG games in 2026 — from engineered kingdom-builders to space-smuggler sims to the Custom GPT store's most playable experiences. No padding, no fluff. Just what's actually worth your time."
+description: "The best ChatGPT RPG games in 2026 — kingdom-builders, space-smuggler sims, and the Custom GPT store's most playable experiences. Just what's worth your time."
 section: "lists"
 pubDate: 2026-06-21
 tags: ["ChatGPT RPG", "Custom GPT RPG", "ChatGPT roleplay", "AI RPG", "LLM RPG", "best ChatGPT games 2026"]
