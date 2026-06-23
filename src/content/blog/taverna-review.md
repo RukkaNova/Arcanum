@@ -2,6 +2,7 @@
 title: "Taverna Review (2026): A D&D Bot That Lives Inside Your Discord Server"
 description: "Taverna brings a full D&D 5e AI Game Master into Discord via bot — no new apps, no new accounts. Our review covers whether the zero-friction promise holds up in practice."
 section: "platform-reviews"
+rating: 4
 pubDate: 2026-06-23
 tags: ["Taverna review", "Taverna DM review", "Taverna AI DM", "AI DM Discord bot", "tavernadm review", "AI D&D Discord", "AI RPG Discord 2026"]
 ---

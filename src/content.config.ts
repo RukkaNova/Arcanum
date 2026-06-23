@@ -74,6 +74,7 @@ const blog = defineCollection({
     updatedDate: z.coerce.date().optional(),
     cover: z.string().optional(),
     releaseSlug: z.string().optional(),
+    rating: z.number().min(0).max(5).optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

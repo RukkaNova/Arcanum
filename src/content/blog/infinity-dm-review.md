@@ -2,6 +2,7 @@
 title: "Infinity DM Review (2026): The AI RPG That Solved the Scheduling Problem"
 description: "Infinity DM is built for async group play — take your turn today, let your party take theirs tomorrow. Our review covers whether the asynchronous format actually preserves what makes tabletop worth playing."
 section: "platform-reviews"
+rating: 3.5
 pubDate: 2026-06-23
 tags: ["Infinity DM review", "infinitydm review", "async AI RPG", "AI RPG for busy adults", "Infinity DM platform review", "asynchronous tabletop", "AI DM review 2026"]
 ---

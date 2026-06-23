@@ -6,7 +6,12 @@ export async function getStaticPaths(){
   return posts.map(p=>({params:{id:p.id},props:{post:p}}));
 }
 const { post }=Astro.props; const { Content }=await render(post); const d=post.data;
-const jsonLd={'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString()};
+const dateModified=(d.updatedDate??d.pubDate).toISOString();
+const isPlatformReview=d.section==='platform-reviews';
+const reviewSubject=isPlatformReview?d.title.split(' Review')[0].trim():null;
+const jsonLd=(isPlatformReview&&d.rating)
+  ?{'@context':'https://schema.org','@type':'Review',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString(),dateModified,author:{'@type':'Organization',name:'Arcanum'},reviewRating:{'@type':'Rating',ratingValue:d.rating,bestRating:5,worstRating:1},itemReviewed:{'@type':'SoftwareApplication',name:reviewSubject,applicationCategory:'GameApplication'}}
+  :{'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString(),dateModified};
 ---
 <Base title={`${d.title} | Arcanum`} description={d.description} type="article" jsonLd={jsonLd}>
   <article class="wrap post">

@@ -8,6 +8,7 @@ const stars=(r)=>r?'★'.repeat(Math.round(r))+'☆'.repeat(5-Math.round(r)):'';
   <div class="wrap browse">
     <h1>Clients</h1>
     <p class="sub">Every roleplay platform, reviewed. Find the one worth your time — or skip them all and play on your own AI.</p>
+    <p class="guide mono"><a href="/blog/best-ai-roleplay-platforms">→ Not sure where to start? See our Best AI Roleplay Platforms guide.</a></p>
     <div class="list">
       {clients.map(c=>(
         <a class="row" href={`/clients/${c.id}`}>
@@ -28,7 +29,8 @@ const stars=(r)=>r?'★'.repeat(Math.round(r))+'☆'.repeat(5-Math.round(r)):'';
   <style>
     .browse{padding:3rem 1.25rem 2rem;}
     h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;}
-    .sub{color:var(--parchment-dim);margin:.4rem 0 2rem;max-width:40rem;}
+    .sub{color:var(--parchment-dim);margin:.4rem 0 .8rem;max-width:40rem;}
+    .guide{font-size:.8rem;margin-bottom:2rem;}
     .list{display:flex;flex-direction:column;gap:1rem;}
     .row{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--ink-2);color:var(--parchment);transition:border-color .18s;}
     @media(min-width:640px){.row{grid-template-columns:240px 1fr;}}

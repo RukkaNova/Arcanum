@@ -2,6 +2,7 @@
 title: "Friends & Fables Review (2026): The AI DM That Takes the Job Seriously"
 description: "Friends & Fables (fables.gg) goes further than any competitor in replicating a real tabletop session. Our review covers what Franz actually gets right — and the complexity cost that comes with it."
 section: "platform-reviews"
+rating: 4.5
 pubDate: 2026-06-23
 tags: ["Friends and Fables review", "fables.gg review", "Friends Fables AI RPG", "AI VTT review", "AI Game Master review", "Franz AI DM", "AI tabletop 2026"]
 ---

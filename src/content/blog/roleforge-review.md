@@ -2,6 +2,7 @@
 title: "RoleForge Review (2026): The AI RPG That Won't Let the DM Cheat"
 description: "RoleForge uses a SQL database to run the world and the AI to narrate it — a fundamental rethink of how AI RPGs handle memory and rules. Here's what that actually feels like."
 section: "platform-reviews"
+rating: 4.5
 pubDate: 2026-06-23
 tags: ["RoleForge review", "roleforge.ai review", "AI RPG no hallucination", "AI DM review", "deterministic AI RPG", "best AI RPG 2026", "AI tabletop review"]
 ---

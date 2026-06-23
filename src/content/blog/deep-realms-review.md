@@ -2,6 +2,7 @@
 title: "Deep Realms Review (2026): The AI RPG Built for People Who Think Differently"
 description: "Deep Realms gives power users a Python-programmable world engine, 80,000-word memory, and unrestricted content. Our review covers who this is genuinely for — and who it will overwhelm."
 section: "platform-reviews"
+rating: 4
 pubDate: 2026-06-23
 tags: ["Deep Realms review", "deeprealms.io review", "AI RPG power user", "AI DM uncensored", "custom AI RPG", "Deep Realms platform review", "AI world building 2026"]
 ---

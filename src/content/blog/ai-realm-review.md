@@ -2,6 +2,7 @@
 title: "AI Realm Review (2026): Can an AI Actually Run a Real D&D Campaign?"
 description: "AI Realm promises a rules-faithful D&D 5e experience without a human DM. Our review tests whether it delivers on that promise — and where it quietly breaks down."
 section: "platform-reviews"
+rating: 3.5
 pubDate: 2026-06-23
 tags: ["AI Realm review", "AI Realm", "AI DM 5e", "D&D AI", "AI RPG review", "tabletop AI", "AI dungeon master"]
 ---

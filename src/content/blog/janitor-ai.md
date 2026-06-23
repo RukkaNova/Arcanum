@@ -2,6 +2,7 @@
 title: "Janitor AI Review (2026): A Million Characters and One Question You Should Ask First"
 description: "Janitor AI has the largest AI character library on the internet — but is it good for roleplay? Honest look at card quality, BYOM, and who should use it."
 section: "platform-reviews"
+rating: 4
 pubDate: 2026-06-22
 tags: ["Janitor AI", "Janitor AI review", "AI roleplay", "AI character chat", "BYOM AI", "AI roleplay platform 2026"]
 ---

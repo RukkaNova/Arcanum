@@ -2,6 +2,7 @@
 title: "MacerAI Review (2026): The AI That Supports Your DM Instead of Replacing Them"
 description: "MacerAI is a hybrid AI DM and human DM co-pilot — the only platform designed for groups that aren't ready to hand the table to an AI. Our review covers both modes."
 section: "platform-reviews"
+rating: 4
 pubDate: 2026-06-23
 tags: ["MacerAI review", "macer.ai review", "AI DM co-pilot", "AI tabletop assistant review", "AI dungeon master assistant", "TTRPG AI tool 2026", "MacerAI 2026"]
 ---
