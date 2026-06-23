@@ -4,6 +4,7 @@ tagline: "A zero-prep TTRPG hybrid — full AI Game Master for solo players, rea
 rating: 4.0
 pricing: "freemium"
 siteUrl: "https://macer.ai/"
+reviewSlug: "macerai-review"
 bestFor: "Rapid zero-prep sessions and empowering human DMs with on-the-fly generative assets."
 cover: "/img/macerai.webp"
 featured: false

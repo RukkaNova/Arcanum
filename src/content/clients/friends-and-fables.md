@@ -4,6 +4,7 @@ tagline: "The highest-feature-density AI RPG — hex battlemaps, multi-LLM orche
 rating: 4.5
 pricing: "freemium"
 siteUrl: "https://fables.gg"
+reviewSlug: "friends-and-fables-review"
 bestFor: "Rich, long-term tactical multiplayer campaigns and complex granular world-building for up to 6 players."
 cover: "/img/friends-and-fables.webp"
 featured: true

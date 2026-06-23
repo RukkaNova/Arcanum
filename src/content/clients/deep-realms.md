@@ -4,6 +4,7 @@ tagline: "A Python-powered, text-first AI RPG for power users — 80,000-word me
 rating: 4.0
 pricing: "freemium"
 siteUrl: "https://www.deeprealms.io"
+reviewSlug: "deep-realms-review"
 bestFor: "Unrestricted, deeply customized solo campaigns for tech-savvy writers and hardcore RPG enthusiasts."
 cover: "/img/deep-realms.webp"
 featured: false

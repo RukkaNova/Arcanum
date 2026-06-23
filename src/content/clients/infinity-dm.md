@@ -4,6 +4,7 @@ tagline: "An asynchronous AI RPG built for adults — take your turn today, let 
 rating: 3.5
 pricing: "free"
 siteUrl: "https://www.infinitydm.world/"
+reviewSlug: "infinity-dm-review"
 bestFor: "Asynchronous group campaigns for busy adults who cannot commit to a synchronous four-hour session."
 cover: "/img/infinity-dm.webp"
 featured: false

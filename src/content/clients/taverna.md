@@ -4,6 +4,7 @@ tagline: "A fully automated D&D 5e Game Master that lives inside your Discord se
 rating: 4.0
 pricing: "free"
 siteUrl: "https://www.tavernadm.com/"
+reviewSlug: "taverna-review"
 bestFor: "Discord communities and friend groups who want a seamless AI DM in their existing server."
 cover: "/img/taverna.webp"
 featured: false

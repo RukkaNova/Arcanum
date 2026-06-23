@@ -4,6 +4,7 @@ tagline: "The AI RPG that solved hallucination — a SQL database runs the world
 rating: 4.5
 pricing: "free"
 siteUrl: "https://roleforge.ai"
+reviewSlug: "roleforge-review"
 bestFor: "Long-term solo campaigns demanding strict rule adherence, earned victories, and perfect structural persistence."
 cover: "/img/roleforge.webp"
 featured: true

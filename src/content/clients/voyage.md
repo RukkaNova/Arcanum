@@ -4,6 +4,7 @@ tagline: "Latitude's structured successor to AI Dungeon — real dice, real cons
 rating: 4.0
 pricing: "freemium"
 siteUrl: "https://play.google.com/store/apps/details?id=io.voyage&hl=en"
+reviewSlug: "voyage-review"
 bestFor: "Structured, consequence-heavy RPG on mobile with earned outcomes and co-op permadeath."
 cover: "/img/voyage.webp"
 featured: true
