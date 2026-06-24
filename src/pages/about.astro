@@ -22,8 +22,24 @@ import KofiButton from '../components/KofiButton.astro';
       <p>That last part is the heart of it. Our games — <a href="/arcanum-games">Aevum Realm Architect, Eirathis Strider, The Chronicler, Star Freighter Drift</a> — aren't character cards. They're full systems, obsessively engineered, the kind of thing that comes from caring more about how a world holds together over a hundred turns than about shipping something quick. If you've ever wanted an AI RPG with the depth of a real game instead of a chat that loses the plot, that's who we make these for.</p>
 
       <p>Everything here is free to play. The games run on your own ChatGPT, Claude, or Gemini — nothing to install, no account to make, no world locked behind a paywall. If something we made gives you a good night at the table, you can support new releases on <a href="https://ko-fi.com/D3O621P17T" target="_blank" rel="noopener">Ko-fi</a>. That's the whole arrangement: we keep building worlds, you keep playing them.</p>
+    </div>
 
-      <p>Welcome to Arcanum. <a href="/arcanum-games">Pick a world.</a></p>
+    <div class="founder">
+      <p class="eyebrow mono">// the founder</p>
+      <h2>Who Builds This</h2>
+      <div class="founder-body">
+        <p>Arcanum was built by <strong>Rukka</strong> — a lifelong gamer whose experience with roleplaying systems spans every medium the genre has ever taken.</p>
+
+        <p>It started with a Nintendo Entertainment System and a library card. The NES brought <em>Dragon Warrior</em>, <em>Final Fantasy</em>, <em>The Legend of Zelda</em>, and <em>Ultima III</em>. The library brought <em>Choose Your Own Adventure</em>, <em>Fighting Fantasy</em>, <em>Lone Wolf</em>, <em>Sorcery!</em>, and <em>The Way of the Tiger</em>. Both arrived at roughly the same time, and the obsession never stopped.</p>
+
+        <p>What followed was four decades of systematic immersion in tabletop roleplaying. The systems: <em>Dungeons &amp; Dragons</em>, <em>Advanced D&amp;D</em>, <em>Pathfinder</em>, <em>Call of Cthulhu</em>, <em>Warhammer Fantasy Roleplay</em>, <em>RuneQuest</em>, <em>Traveller</em>, <em>GURPS</em>, <em>Vampire: The Masquerade</em>, <em>Shadowrun</em>, <em>Pendragon</em>, and <em>Rolemaster</em>. The settings studied as carefully as the rules: <em>Forgotten Realms</em>, <em>Greyhawk</em>, <em>Dragonlance</em>, <em>Dark Sun</em>, <em>Ravenloft</em>, <em>Planescape</em>, <em>Glorantha</em>, <em>The Third Imperium</em>.</p>
+
+        <p>His computer RPG experience runs from the genre's earliest foundations through every major era: <em>Wizardry</em>, <em>Ultima VII</em>, <em>Baldur's Gate</em>, <em>Planescape: Torment</em>, <em>Neverwinter Nights</em>, <em>Morrowind</em>, <em>Dragon Age: Origins</em>, <em>Mass Effect</em>, <em>The Witcher 3</em>, <em>Kingdom Come: Deliverance</em>, and into the current generation with <em>Baldur's Gate 3</em>, <em>Disco Elysium</em>, <em>Cyberpunk 2077</em>, <em>Pathfinder: Wrath of the Righteous</em>, <em>Warhammer 40,000: Rogue Trader</em>, and <em>Pillars of Eternity I &amp; II</em>. He has spent equal time in persistent online worlds — <em>Ultima Online</em>, <em>EverQuest</em>, <em>Dark Age of Camelot</em>, <em>World of Warcraft</em>, and the text-based MUDs that bridged classical roleplaying and the virtual — and in emergent simulation games where stories grow from systems rather than scripts: <em>RimWorld</em>, <em>Dwarf Fortress</em>, <em>Crusader Kings III</em>, <em>Kenshi</em>, <em>Mount &amp; Blade II</em>.</p>
+
+        <p>Long before AI became a storytelling tool, he was studying branching narrative design, procedural adventure generation, and emergent gameplay. When large language models arrived, he recognized immediately both what they could do as game masters and what would break them. The Arcanum Originals are the product of that understanding applied directly: decades of knowing what makes roleplaying systems hold together, brought to a medium that most people are still treating as a chat interface.</p>
+
+        <p>The reviews and guides on this site come from the same place. When Arcanum says a game is well-engineered or a platform falls short, that judgment is coming from someone who has spent a lifetime studying how these systems work — and fail.</p>
+      </div>
     </div>
 
     <div class="support">
@@ -38,6 +54,11 @@ import KofiButton from '../components/KofiButton.astro';
     .lede { font-size: 1.2rem; color: var(--parchment); margin-bottom: 1.5rem; }
     .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
     .body p:last-child { margin-bottom: 0; }
+    .founder { margin-top: 3.5rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+    .founder h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 600; margin-bottom: 1.6rem; }
+    .founder-body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+    .founder-body p:last-child { margin-bottom: 0; }
+    .founder-body em { font-style: italic; color: var(--parchment); }
     .support { margin-top: 2.4rem; }
   </style>
 </Base>
