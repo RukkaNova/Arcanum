@@ -6,6 +6,8 @@ pricing: "freemium"
 siteUrl: "https://fables.gg"
 reviewSlug: "friends-and-fables-review"
 bestFor: "Rich, long-term tactical multiplayer campaigns and complex granular world-building for up to 6 players."
+models: "Multi-LLM orchestration"
+memoryApproach: "Multi-model state sync"
 cover: "/img/friends-and-fables.webp"
 featured: true
 updated: 2026-06-17

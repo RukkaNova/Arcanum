@@ -6,6 +6,8 @@ pricing: "free"
 siteUrl: "https://roleforge.ai"
 reviewSlug: "roleforge-review"
 bestFor: "Long-term solo campaigns demanding strict rule adherence, earned victories, and perfect structural persistence."
+models: "SQL engine + LLM narrator"
+memoryApproach: "SQL database, persistent"
 cover: "/img/roleforge.webp"
 featured: true
 updated: 2026-06-17

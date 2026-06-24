@@ -6,6 +6,8 @@ pricing: "free"
 siteUrl: "https://www.tavernadm.com/"
 reviewSlug: "taverna-review"
 bestFor: "Discord communities and friend groups who want a seamless AI DM in their existing server."
+models: "Own (D&D 5e-trained)"
+memoryApproach: "In-context (Discord)"
 cover: "/img/taverna.webp"
 featured: false
 updated: 2026-06-17

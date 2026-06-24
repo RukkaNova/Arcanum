@@ -1,0 +1,336 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const allClients = await getCollection('clients');
+const sorted = allClients.sort((a, b) => (b.data.rating ?? 0) - (a.data.rating ?? 0));
+
+const rows = sorted.map(c => ({
+  id: c.id,
+  title: c.data.title,
+  rating: c.data.rating ?? null,
+  pricing: c.data.pricing,
+  models: c.data.models ?? '—',
+  memory: c.data.memoryApproach ?? '—',
+  bestFor: c.data.bestFor ?? '—',
+  reviewSlug: c.data.reviewSlug ?? null,
+}));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'AI Roleplay Platform Comparison 2026',
+  description: 'Side-by-side comparison of 10 reviewed AI roleplay and text RPG platforms — rating, pricing, model support, memory approach, and best use case.',
+  url: 'https://arcanumrpgs.com/clients/compare',
+  numberOfItems: rows.length,
+  itemListElement: sorted.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'SoftwareApplication',
+      name: c.data.title,
+      applicationCategory: 'GameApplication',
+      url: c.data.siteUrl ?? `https://arcanumrpgs.com/clients/${c.id}`,
+      ...(c.data.rating && {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: c.data.rating,
+          bestRating: 5,
+          ratingCount: 1,
+        }
+      }),
+    }
+  }))
+};
+---
+<Base
+  title="AI Roleplay Platforms Compared — Side-by-Side 2026 | Arcanum"
+  description="Compare all 10 reviewed AI text RPG platforms side by side — rating, pricing, models, memory approach, and best use case. Filter by free or freemium. Sort by rating or name."
+  type="website"
+  jsonLd={jsonLd}
+>
+  <div class="wrap compare-page">
+
+    <p class="eyebrow mono">// clients / compare</p>
+    <h1>AI Roleplay Platforms — Side-by-Side</h1>
+
+    <div class="intro prose">
+      <p>Ten platforms. One table. Everything you need to decide which AI roleplay client is worth your time — without opening ten tabs.</p>
+      <p>Every entry below comes from a full hands-on review by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems. Ratings reflect mechanical depth, long-campaign stability, and value for your time, scored out of 5. Pricing reflects the free-tier reality, not the marketing headline. The <strong>Models</strong> column names what AI actually runs under the hood. <strong>Memory</strong> describes how — or whether — the platform keeps your world coherent across sessions.</p>
+      <p>Use the filters to narrow by pricing tier. Click any column header to sort. The <strong>Review</strong> link opens the full write-up for each platform.</p>
+      <p class="method mono">Not sure which to pick? The <a href="/blog/best-ai-roleplay-platforms">Best AI Roleplay Platforms guide</a> gives ranked recommendations by player type. For a no-subscription alternative, the <a href="/arcanum-games">Arcanum Originals</a> are free games that run inside models you already pay for.</p>
+    </div>
+
+    <div class="controls">
+      <div class="filter-group">
+        <span class="filter-label mono">Filter:</span>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="free">Free only</button>
+        <button class="filter-btn" data-filter="freemium">Freemium</button>
+      </div>
+      <p class="sort-hint mono">Click column headers to sort</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="compare-table" id="compare-table">
+        <thead>
+          <tr>
+            <th data-sort="title" class="sortable">Platform</th>
+            <th data-sort="rating" class="sortable sort-desc">Rating</th>
+            <th>Pricing</th>
+            <th>Models</th>
+            <th>Memory</th>
+            <th>Best for</th>
+            <th>Review</th>
+          </tr>
+        </thead>
+        <tbody id="compare-body">
+          <!-- populated by JS -->
+        </tbody>
+      </table>
+      <p class="no-results hidden" id="no-results">No platforms match this filter.</p>
+    </div>
+
+    <div class="closing prose">
+      <h2>Reading the Data</h2>
+      <p>A few patterns worth naming before you click through to any review.</p>
+      <p><strong>Free doesn't mean limited.</strong> RoleForge and Taverna are both completely free and both rated 4.5 and 4.0 respectively. The free tier genuinely works for the use cases they're built for — solo long-campaign persistence (RoleForge) and Discord-native group play (Taverna). Freemium platforms, by contrast, vary enormously in what the free tier actually provides before the upsell appears.</p>
+      <p><strong>Memory architecture determines campaign length.</strong> Platforms running on standard in-context windows — AI Dungeon, AI Realm, Taverna — all share the same ceiling: the model forgets what happened before the context fills. RoleForge solves this with a SQL database. Deep Realms extends it with an 80,000-word external store. Friends & Fables handles it through multi-model state synchronisation. The Memory column is the fastest way to identify which platforms can actually run a six-month campaign versus which ones degrade by session four.</p>
+      <p><strong>Model flexibility matters if you pay elsewhere.</strong> Janitor AI's bring-your-own-API approach means you're not paying twice — if you already subscribe to Claude or GPT-4, you bring that subscription to a large character library. Deep Realms does the same. On every other platform on this list, you're paying for their model access specifically.</p>
+      <p>Full write-ups for every platform are linked in the Review column. The <a href="/clients">client directory</a> has all ten cards in one view. If you are still working out which genre of AI roleplay suits you — pure narrative freedom, structured D&D mechanics, character-chat, or multiplayer tactical — the <a href="/blog/best-ai-roleplay-platforms">Best AI Roleplay Platforms guide</a> makes that distinction explicit.</p>
+    </div>
+
+  </div>
+
+  <script define:vars={{ rows }}>
+    const data = rows;
+    let activeFilter = 'all';
+    let sortKey = 'rating';
+    let sortDir = -1;
+
+    function stars(r) {
+      if (r === null || r === undefined) return '—';
+      const full = Math.round(r);
+      return '★'.repeat(full) + '☆'.repeat(5 - full) + ' ' + r + '/5';
+    }
+
+    function escHtml(s) {
+      return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function render() {
+      const tbody = document.getElementById('compare-body');
+      const noResults = document.getElementById('no-results');
+      if (!tbody) return;
+
+      let visible = data.filter(r => {
+        if (activeFilter === 'all') return true;
+        return r.pricing === activeFilter;
+      });
+
+      visible = visible.slice().sort((a, b) => {
+        if (sortKey === 'rating') {
+          const av = a.rating ?? -1;
+          const bv = b.rating ?? -1;
+          return (av - bv) * sortDir;
+        }
+        return String(a[sortKey] ?? '').localeCompare(String(b[sortKey] ?? '')) * sortDir;
+      });
+
+      if (visible.length === 0) {
+        tbody.innerHTML = '';
+        noResults.classList.remove('hidden');
+        return;
+      }
+      noResults.classList.add('hidden');
+
+      tbody.innerHTML = visible.map(r => `
+        <tr>
+          <td class="col-platform"><a href="/clients/${escHtml(r.id)}">${escHtml(r.title)}</a></td>
+          <td class="col-rating mono">${stars(r.rating)}</td>
+          <td class="col-pricing"><span class="token pricing-chip">${escHtml(r.pricing)}</span></td>
+          <td class="col-models">${escHtml(r.models)}</td>
+          <td class="col-memory">${escHtml(r.memory)}</td>
+          <td class="col-bestfor dim">${escHtml(r.bestFor)}</td>
+          <td class="col-review">${r.reviewSlug ? `<a href="/blog/${escHtml(r.reviewSlug)}" class="rev-link mono">→ Review</a>` : '—'}</td>
+        </tr>
+      `).join('');
+    }
+
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeFilter = btn.dataset.filter;
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render();
+      });
+    });
+
+    document.querySelectorAll('[data-sort]').forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.sort;
+        if (sortKey === key) {
+          sortDir *= -1;
+        } else {
+          sortKey = key;
+          sortDir = key === 'rating' ? -1 : 1;
+        }
+        document.querySelectorAll('[data-sort]').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+        render();
+      });
+    });
+
+    render();
+  </script>
+
+  <style>
+    .compare-page { padding: 3rem 1.25rem 5rem; }
+
+    .eyebrow { color: var(--rune); font-size: .78rem; letter-spacing: .06em; margin-bottom: 1rem; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: 1.6rem; }
+
+    .intro { max-width: 780px; margin-bottom: 2rem; }
+    .intro p { color: var(--parchment-dim); line-height: 1.8; font-size: 1.05rem; margin-bottom: 1.2rem; }
+    .intro p:last-child { margin-bottom: 0; }
+    .intro .method { font-size: .82rem; color: var(--rune); border-left: 2px solid var(--line); padding-left: .9rem; }
+
+    /* Controls */
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+    .filter-group { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+    .filter-label { font-size: .78rem; color: var(--rune); }
+    .filter-btn {
+      font-family: var(--mono);
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: .35rem .8rem;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--parchment-dim);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color .15s, color .15s;
+    }
+    .filter-btn:hover { border-color: var(--ember); color: var(--parchment); }
+    .filter-btn.active { border-color: var(--ember); color: var(--ember); background: color-mix(in srgb, var(--ember) 10%, transparent); }
+    .sort-hint { font-size: .72rem; color: var(--rune); }
+
+    /* Table wrapper — horizontal scroll on mobile */
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: 8px; }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .9rem;
+      min-width: 760px;
+    }
+
+    .compare-table thead {
+      background: var(--ink-2);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .compare-table th {
+      padding: .75rem 1rem;
+      text-align: left;
+      font-family: var(--mono);
+      font-size: .74rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--rune);
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    .compare-table th.sortable {
+      cursor: pointer;
+      user-select: none;
+    }
+    .compare-table th.sortable:hover { color: var(--parchment); }
+    .compare-table th.sort-asc::after { content: ' ↑'; color: var(--ember); }
+    .compare-table th.sort-desc::after { content: ' ↓'; color: var(--ember); }
+
+    .compare-table tbody tr {
+      border-bottom: 1px solid var(--line);
+      transition: background .12s;
+    }
+    .compare-table tbody tr:last-child { border-bottom: none; }
+    .compare-table tbody tr:hover { background: var(--ink-2); }
+
+    .compare-table td {
+      padding: .8rem 1rem;
+      vertical-align: middle;
+      color: var(--parchment-dim);
+      line-height: 1.5;
+    }
+
+    .col-platform a {
+      color: var(--parchment);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .col-platform a:hover { color: var(--ember); }
+
+    .col-rating { color: var(--gild) !important; white-space: nowrap; }
+
+    .pricing-chip {
+      font-family: var(--mono);
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      padding: .15rem .45rem;
+      white-space: nowrap;
+    }
+
+    .col-models { font-size: .85rem; }
+    .col-memory { font-size: .85rem; }
+
+    .col-bestfor {
+      font-size: .82rem;
+      max-width: 220px;
+      color: var(--rune) !important;
+    }
+
+    .rev-link {
+      font-size: .78rem;
+      color: var(--ember);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .rev-link:hover { text-decoration: underline; }
+
+    .no-results {
+      text-align: center;
+      color: var(--rune);
+      font-family: var(--mono);
+      font-size: .85rem;
+      padding: 2rem;
+    }
+    .hidden { display: none; }
+
+    /* Closing editorial */
+    .closing {
+      max-width: 780px;
+      margin-top: 3.5rem;
+      border-top: 1px solid var(--line);
+      padding-top: 2.5rem;
+    }
+    .closing h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1.2rem; }
+    .closing p { color: var(--parchment-dim); line-height: 1.8; font-size: 1rem; margin-bottom: 1.2rem; }
+    .closing p:last-child { margin-bottom: 0; }
+  </style>
+</Base>

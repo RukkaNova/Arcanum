@@ -5,6 +5,8 @@ rating: 3.5
 pricing: "freemium"
 siteUrl: "https://aidungeon.com"
 bestFor: "Emergent, unrestricted storytelling and dream-logic narratives where the constraints of reality don't apply."
+models: "Griffin / Dragon (premium)"
+memoryApproach: "In-context, limited"
 cover: "/img/ai-dungeon.webp"
 reviewSlug: "ai-dungeon-review"
 featured: true

@@ -6,6 +6,8 @@ pricing: "freemium"
 siteUrl: "https://airealm.com/home"
 reviewSlug: "ai-realm-review"
 bestFor: "Solo or small-group D&D 5e campaigns without the burden of scheduling a human DM."
+models: "Own (D&D 5e-trained)"
+memoryApproach: "In-context, degrades"
 cover: "/img/ai-realm.webp"
 featured: false
 updated: 2026-06-17

@@ -6,6 +6,8 @@ pricing: "freemium"
 siteUrl: "https://macer.ai/"
 reviewSlug: "macerai-review"
 bestFor: "Rapid zero-prep sessions and empowering human DMs with on-the-fly generative assets."
+models: "Own + integrations"
+memoryApproach: "In-context + assets"
 cover: "/img/macerai.webp"
 featured: false
 updated: 2026-06-17

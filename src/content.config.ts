@@ -32,6 +32,8 @@ const clients = defineCollection({
     siteUrl: z.string().url().optional(),
     reviewSlug: z.string().optional(),
     bestFor: z.string().optional(),
+    models: z.string().optional(),
+    memoryApproach: z.string().optional(),
     cover: z.string().optional(),
     featured: z.boolean().default(false),
     updated: z.coerce.date(),

@@ -9,6 +9,7 @@ const stars=(r)=>r?'★'.repeat(Math.round(r))+'☆'.repeat(5-Math.round(r)):'';
     <h1>Clients</h1>
     <p class="sub">Every roleplay platform, reviewed. Find the one worth your time — or skip them all and play on your own AI.</p>
     <p class="guide mono"><a href="/blog/best-ai-roleplay-platforms">→ Not sure where to start? See our Best AI Roleplay Platforms guide.</a></p>
+    <p class="guide mono"><a href="/clients/compare">→ Compare all platforms side by side — rating, pricing, models, memory.</a></p>
     <div class="list">
       {clients.map(c=>(
         <a class="row" href={`/clients/${c.id}`}>

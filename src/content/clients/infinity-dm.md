@@ -6,6 +6,8 @@ pricing: "free"
 siteUrl: "https://www.infinitydm.world/"
 reviewSlug: "infinity-dm-review"
 bestFor: "Asynchronous group campaigns for busy adults who cannot commit to a synchronous four-hour session."
+models: "Own model"
+memoryApproach: "Async persistent"
 cover: "/img/infinity-dm.webp"
 featured: false
 updated: 2026-06-17
