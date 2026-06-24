@@ -1,0 +1,770 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Campaign Memory Tool',
+  description: 'Free structured tracker for AI roleplay campaigns. Log characters, plot threads, and world facts, then generate a compression prompt to restore full context in ChatGPT, Claude, or Gemini.',
+  url: 'https://arcanumrpgs.com/tools/campaign-memory',
+  applicationCategory: 'GameApplication',
+  operatingSystem: 'Any',
+  browserRequirements: 'Requires JavaScript',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
+  creator: { '@type': 'Organization', name: 'Arcanum', url: 'https://arcanumrpgs.com' },
+};
+---
+<Base
+  title="Campaign Memory Tool — Fix AI RPG Amnesia Past Turn 50 | Arcanum"
+  description="Free structured tracker for AI roleplay campaigns. Log characters, plot threads, and world facts, then generate a compression prompt to restore full context in ChatGPT, Claude, or Gemini."
+  type="website"
+  jsonLd={jsonLd}
+>
+<div class="wrap cmt-page">
+
+  <p class="eyebrow mono">// tools</p>
+  <h1>Campaign Memory Tool</h1>
+
+  <div class="intro prose">
+    <p>Every long AI roleplay campaign hits the same wall. Around turn 40 or 50, the model starts losing the thread — a character who died reappears, the gold you spent comes back, NPCs forget what they know. This isn't a bug and it isn't your fault. It is the <a href="/blog/why-llms-forget">context window problem</a>: the conversation has grown too long for the model to see all of it at once, and older details have scrolled out of view.</p>
+    <p>This tool solves it manually. Track your campaign state in structured fields — characters, plot threads, locations, world facts, last scene — then hit <strong>Generate Compression Prompt</strong>. That button outputs a copy-paste-ready briefing you paste into ChatGPT, Claude, or Gemini. The AI reads your full state and returns a compact memory block — under 500 words — that you paste at the start of every new session as your context anchor. Clean, dense, and coherent no matter what turn you're on.</p>
+    <p>No account. No server. No browser storage. Your campaign data lives only in this page until you save it. Use <strong>Save Scroll</strong> to download a <code>.arcanum</code> file you can reload any time with <strong>Load Scroll</strong>. Treat it like a save file.</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ TOOL SHELL -->
+  <div class="tool-shell" id="tool">
+
+    <!-- HEADER BAR -->
+    <div class="tool-header">
+      <div class="fg">
+        <label class="flabel mono" for="c-name">Campaign name</label>
+        <input id="c-name" class="ti" type="text" placeholder="The Shattered Crown…" autocomplete="off" spellcheck="false" />
+      </div>
+      <div class="fg">
+        <label class="flabel mono" for="c-platform">Platform</label>
+        <select id="c-platform" class="ti sel">
+          <option value="">Choose…</option>
+          <option>ChatGPT</option>
+          <option>Claude</option>
+          <option>Gemini</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fg narrow">
+        <label class="flabel mono" for="c-turn">Turn #</label>
+        <input id="c-turn" class="ti" type="number" min="1" placeholder="52" />
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="characters" role="tab" aria-selected="true">Characters</button>
+      <button class="tab" data-tab="threads" role="tab" aria-selected="false">Threads &amp; Locations</button>
+      <button class="tab" data-tab="world" role="tab" aria-selected="false">World &amp; Inventory</button>
+      <button class="tab" data-tab="scene" role="tab" aria-selected="false">Last Scene</button>
+    </div>
+
+    <!-- PANEL: CHARACTERS -->
+    <div class="panel active" id="panel-characters" role="tabpanel">
+      <div class="chars-grid" id="chars-list"></div>
+      <button class="add-btn" id="add-char">+ Add character</button>
+    </div>
+
+    <!-- PANEL: THREADS & LOCATIONS -->
+    <div class="panel" id="panel-threads" role="tabpanel">
+      <p class="section-lbl mono">Plot Threads</p>
+      <div class="threads-list" id="threads-list"></div>
+      <button class="add-btn" id="add-thread">+ Add thread</button>
+
+      <p class="section-lbl mono" style="margin-top:1.8rem">Locations</p>
+      <div class="fg" style="margin-bottom:.8rem">
+        <label class="flabel mono" for="loc-now">Current location</label>
+        <input id="loc-now" class="ti" type="text" placeholder="The Ember Quarter, Dusk City…" />
+      </div>
+      <div class="fg">
+        <label class="flabel mono" for="loc-known">Known locations &amp; notes</label>
+        <textarea id="loc-known" class="ta" rows="4" placeholder="The Sunken Library — safe house&#10;The Vellum Gate — avoid (guards hostile)&#10;…"></textarea>
+      </div>
+    </div>
+
+    <!-- PANEL: WORLD & INVENTORY -->
+    <div class="panel" id="panel-world" role="tabpanel">
+      <div class="fg">
+        <label class="flabel mono" for="relationships">Relationships &amp; dynamics</label>
+        <textarea id="relationships" class="ta" rows="5" placeholder="Kael mistrusts the player since the Brightwater incident&#10;Mira and Eleron have history — don't mention it in front of her&#10;The Merchant's Guild owes us a favour (Lord Daven knows)&#10;…"></textarea>
+      </div>
+      <div class="fg" style="margin-top:.8rem">
+        <label class="flabel mono" for="inventory">Inventory &amp; resources</label>
+        <textarea id="inventory" class="ta" rows="4" placeholder="Gold: 340 gp&#10;Seal of House Varek (stolen)&#10;Mira's ledger (unread)&#10;Ration × 6&#10;…"></textarea>
+      </div>
+      <div class="fg" style="margin-top:.8rem">
+        <label class="flabel mono" for="world-facts">Key world facts</label>
+        <textarea id="world-facts" class="ta" rows="5" placeholder="The Ember Quarter is under martial law since the fire&#10;Lord Varek's heir is secretly an impostor&#10;The Conclave disbanded three years ago — do not refer to it as active&#10;…"></textarea>
+      </div>
+    </div>
+
+    <!-- PANEL: LAST SCENE -->
+    <div class="panel" id="panel-scene" role="tabpanel">
+      <p class="panel-hint mono">Write a concise summary of where your last session ended. Be specific — names, locations, unresolved actions. This is the first thing the compression prompt reads. Two to four sentences is enough; more is fine.</p>
+      <div class="fg">
+        <label class="flabel mono" for="last-scene">Last scene</label>
+        <textarea id="last-scene" class="ta large" rows="9" placeholder="We fled the burning archives with Mira's ledger. Kael was shot crossing the rooftop — alive but wounded, needs a physician by morning. Eleron disappeared during the chaos; we don't know which side she's on. We're hiding in the Silvergate Inn, room 7. The city guard is searching for us. We need to decode the ledger before dawn."></textarea>
+      </div>
+    </div>
+
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+      <button class="tbtn primary" id="gen-btn">⟳ Generate Compression Prompt</button>
+      <div class="toolbar-r">
+        <span class="unsaved mono hidden" id="unsaved">● Unsaved</span>
+        <button class="tbtn" id="save-btn">↓ Save Scroll</button>
+        <label class="tbtn load-lbl" for="load-input">↑ Load Scroll</label>
+        <input type="file" id="load-input" accept=".arcanum,.json" style="display:none" />
+      </div>
+    </div>
+
+  </div><!-- /tool-shell -->
+
+  <!-- COMPRESSION PROMPT OUTPUT -->
+  <div class="prompt-box hidden" id="prompt-box">
+    <div class="prompt-top">
+      <div class="prompt-meta">
+        <p class="prompt-title mono">Compression Prompt</p>
+        <p class="prompt-hint">Paste this into ChatGPT, Claude, or Gemini. The AI returns a compact memory block — paste <em>that</em> at the start of every new session as your context anchor.</p>
+      </div>
+      <button class="tbtn" id="copy-btn">Copy</button>
+    </div>
+    <textarea id="prompt-out" class="prompt-ta" readonly></textarea>
+    <p class="copy-ok hidden mono" id="copy-ok">✓ Copied to clipboard</p>
+  </div>
+
+  <!-- CLOSING EDITORIAL -->
+  <div class="closing prose">
+    <h2>How the Compression Prompt Works</h2>
+    <p>The tool builds a structured briefing from everything you have entered — campaign name, platform, turn number, characters, relationships, inventory, locations, plot threads, world facts, last scene — and wraps it in a precise task instruction. The AI's job is to read the full state and compress it into a clean, dense memory block of under 500 words, formatted so it can be pasted directly into a new session.</p>
+    <p>What you get back is not a chat reply. It is a state anchor. Paste it as the first message of your next session — or into your system prompt, or into a Claude Project's custom instructions — before you start playing. The model picks up from it exactly as it would from your previous conversation, but from a tight, accurate summary rather than a sprawling raw transcript.</p>
+    <p>Run the compression every 20 to 30 turns, not every turn. The goal is to catch the facts that still matter before the context window scrolls them away. If your campaign is at turn 120, run it around turn 60 to build your first anchor, and again around turn 90. Each cycle the tracker stays live; the compressed block replaces the previous anchor in your session preamble.</p>
+    <p>The <a href="/blog/why-llms-forget">full explanation of why campaigns break down</a> covers the architecture behind this problem in depth — context windows, memory drift, and the engineering choices that separate a campaign that holds together from one that degrades by midgame. If you want all of that solved automatically without any manual maintenance, the <a href="/arcanum-games">Arcanum Originals</a> are free downloadable RPG systems with persistent state tracking, memory compression, and proactivity engines built in from turn one.</p>
+  </div>
+
+</div>
+
+<script is:inline>
+// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+var S = {
+  name: '', platform: '', turn: '',
+  characters: [],
+  relationships: '', inventory: '',
+  locationNow: '', locationKnown: '',
+  threads: [],
+  worldFacts: '', lastScene: ''
+};
+var dirty = false;
+
+// ─────────────────────────────────────────────
+// UTILS
+// ─────────────────────────────────────────────
+function esc(v) {
+  return String(v == null ? '' : v)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function uid() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+}
+function markDirty() {
+  dirty = true;
+  document.getElementById('unsaved').classList.remove('hidden');
+}
+
+// ─────────────────────────────────────────────
+// RENDER: CHARACTERS
+// ─────────────────────────────────────────────
+function renderChars() {
+  var el = document.getElementById('chars-list');
+  if (!S.characters.length) {
+    el.innerHTML = '<p class="empty-hint mono">No characters yet — add one below.</p>';
+    return;
+  }
+  el.innerHTML = S.characters.map(function(c) {
+    return '<div class="char-card" data-cid="' + esc(c.id) + '">' +
+      '<div class="char-r1">' +
+        '<input class="ti char-name" value="' + esc(c.name) + '" placeholder="Name" />' +
+        '<input class="ti char-role" value="' + esc(c.role) + '" placeholder="Role" />' +
+        '<button class="del-btn" data-del-char="' + esc(c.id) + '" title="Remove character">✕</button>' +
+      '</div>' +
+      '<div class="char-r2">' +
+        '<div class="tog-group">' +
+          '<button class="tog' + (c.alive ? ' tog-on' : '') + '" data-alive="' + esc(c.id) + '" data-v="true">Alive</button>' +
+          '<button class="tog' + (!c.alive ? ' tog-on' : '') + '" data-alive="' + esc(c.id) + '" data-v="false">Dead</button>' +
+        '</div>' +
+        '<input class="ti char-traits" value="' + esc(c.traits) + '" placeholder="Key traits (brief)" />' +
+      '</div>' +
+      '<input class="ti char-status" value="' + esc(c.status) + '" placeholder="Current status / location / goal" />' +
+    '</div>';
+  }).join('');
+}
+
+// ─────────────────────────────────────────────
+// RENDER: THREADS
+// ─────────────────────────────────────────────
+function renderThreads() {
+  var el = document.getElementById('threads-list');
+  if (!S.threads.length) {
+    el.innerHTML = '<p class="empty-hint mono">No threads yet — add one below.</p>';
+    return;
+  }
+  el.innerHTML = S.threads.map(function(t) {
+    return '<div class="thread-card" data-tid="' + esc(t.id) + '">' +
+      '<input class="ti thread-text" value="' + esc(t.text) + '" placeholder="Plot thread or open question…" />' +
+      '<div class="thread-ctrl">' +
+        '<div class="tog-group">' +
+          '<button class="tog' + (t.open ? ' tog-on' : '') + '" data-topen="' + esc(t.id) + '" data-v="true">Open</button>' +
+          '<button class="tog' + (!t.open ? ' tog-on' : '') + '" data-topen="' + esc(t.id) + '" data-v="false">Resolved</button>' +
+        '</div>' +
+        '<button class="del-btn" data-del-thread="' + esc(t.id) + '" title="Remove thread">✕</button>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+// ─────────────────────────────────────────────
+// RESTORE ALL FIELDS FROM STATE
+// ─────────────────────────────────────────────
+function restoreAll() {
+  document.getElementById('c-name').value     = S.name;
+  document.getElementById('c-platform').value = S.platform;
+  document.getElementById('c-turn').value     = S.turn;
+  document.getElementById('relationships').value = S.relationships;
+  document.getElementById('inventory').value     = S.inventory;
+  document.getElementById('loc-now').value       = S.locationNow;
+  document.getElementById('loc-known').value     = S.locationKnown;
+  document.getElementById('world-facts').value   = S.worldFacts;
+  document.getElementById('last-scene').value    = S.lastScene;
+  renderChars();
+  renderThreads();
+  document.getElementById('unsaved').classList.add('hidden');
+  dirty = false;
+}
+
+// ─────────────────────────────────────────────
+// TAB SWITCHING
+// ─────────────────────────────────────────────
+document.querySelectorAll('.tab').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.tab').forEach(function(b) {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.panel').forEach(function(p) {
+      p.classList.remove('active');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ─────────────────────────────────────────────
+// STATIC FIELD LISTENERS
+// ─────────────────────────────────────────────
+var staticMap = {
+  'c-name': 'name', 'c-platform': 'platform', 'c-turn': 'turn',
+  'relationships': 'relationships', 'inventory': 'inventory',
+  'loc-now': 'locationNow', 'loc-known': 'locationKnown',
+  'world-facts': 'worldFacts', 'last-scene': 'lastScene'
+};
+Object.keys(staticMap).forEach(function(id) {
+  document.getElementById(id).addEventListener('input', function(e) {
+    S[staticMap[id]] = e.target.value;
+    markDirty();
+  });
+});
+
+// ─────────────────────────────────────────────
+// CHARACTER DELEGATION
+// ─────────────────────────────────────────────
+document.getElementById('chars-list').addEventListener('input', function(e) {
+  var card = e.target.closest('[data-cid]');
+  if (!card) return;
+  var c = S.characters.find(function(x) { return x.id === card.dataset.cid; });
+  if (!c) return;
+  var cls = e.target.className;
+  if (cls.indexOf('char-name') > -1)   c.name   = e.target.value;
+  if (cls.indexOf('char-role') > -1)   c.role   = e.target.value;
+  if (cls.indexOf('char-traits') > -1) c.traits = e.target.value;
+  if (cls.indexOf('char-status') > -1) c.status = e.target.value;
+  markDirty();
+});
+
+document.getElementById('chars-list').addEventListener('click', function(e) {
+  var aliveBtn = e.target.closest('[data-alive]');
+  if (aliveBtn) {
+    var c = S.characters.find(function(x) { return x.id === aliveBtn.dataset.alive; });
+    if (c) { c.alive = aliveBtn.dataset.v === 'true'; renderChars(); markDirty(); }
+    return;
+  }
+  var delBtn = e.target.closest('[data-del-char]');
+  if (delBtn) {
+    S.characters = S.characters.filter(function(x) { return x.id !== delBtn.dataset.delChar; });
+    renderChars(); markDirty();
+  }
+});
+
+document.getElementById('add-char').addEventListener('click', function() {
+  S.characters.push({ id: uid(), name: '', role: '', alive: true, traits: '', status: '' });
+  renderChars(); markDirty();
+  // Focus the new card's name input
+  var cards = document.querySelectorAll('.char-card');
+  if (cards.length) cards[cards.length - 1].querySelector('.char-name').focus();
+});
+
+// ─────────────────────────────────────────────
+// THREAD DELEGATION
+// ─────────────────────────────────────────────
+document.getElementById('threads-list').addEventListener('input', function(e) {
+  var card = e.target.closest('[data-tid]');
+  if (!card) return;
+  var t = S.threads.find(function(x) { return x.id === card.dataset.tid; });
+  if (!t) return;
+  if (e.target.className.indexOf('thread-text') > -1) t.text = e.target.value;
+  markDirty();
+});
+
+document.getElementById('threads-list').addEventListener('click', function(e) {
+  var openBtn = e.target.closest('[data-topen]');
+  if (openBtn) {
+    var t = S.threads.find(function(x) { return x.id === openBtn.dataset.topen; });
+    if (t) { t.open = openBtn.dataset.v === 'true'; renderThreads(); markDirty(); }
+    return;
+  }
+  var delBtn = e.target.closest('[data-del-thread]');
+  if (delBtn) {
+    S.threads = S.threads.filter(function(x) { return x.id !== delBtn.dataset.delThread; });
+    renderThreads(); markDirty();
+  }
+});
+
+document.getElementById('add-thread').addEventListener('click', function() {
+  S.threads.push({ id: uid(), text: '', open: true });
+  renderThreads(); markDirty();
+  var cards = document.querySelectorAll('.thread-card');
+  if (cards.length) cards[cards.length - 1].querySelector('.thread-text').focus();
+});
+
+// ─────────────────────────────────────────────
+// SAVE / LOAD
+// ─────────────────────────────────────────────
+document.getElementById('save-btn').addEventListener('click', function() {
+  var json = JSON.stringify(S, null, 2);
+  var blob = new Blob([json], { type: 'application/json' });
+  var url  = URL.createObjectURL(blob);
+  var a    = document.createElement('a');
+  var name = (S.name.trim() || 'campaign').replace(/[^a-z0-9_\-]/gi, '_');
+  a.href = url;
+  a.download = name + '.arcanum';
+  a.click();
+  URL.revokeObjectURL(url);
+  dirty = false;
+  document.getElementById('unsaved').classList.add('hidden');
+});
+
+document.getElementById('load-input').addEventListener('change', function(e) {
+  var file = e.target.files[0];
+  if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(ev) {
+    try {
+      var d = JSON.parse(ev.target.result);
+      S = {
+        name:          typeof d.name === 'string'          ? d.name          : '',
+        platform:      typeof d.platform === 'string'      ? d.platform      : '',
+        turn:          typeof d.turn === 'string' || typeof d.turn === 'number' ? String(d.turn) : '',
+        characters:    Array.isArray(d.characters)         ? d.characters    : [],
+        relationships: typeof d.relationships === 'string' ? d.relationships : '',
+        inventory:     typeof d.inventory === 'string'     ? d.inventory     : '',
+        locationNow:   typeof d.locationNow === 'string'   ? d.locationNow   : '',
+        locationKnown: typeof d.locationKnown === 'string' ? d.locationKnown : '',
+        threads:       Array.isArray(d.threads)            ? d.threads       : [],
+        worldFacts:    typeof d.worldFacts === 'string'    ? d.worldFacts    : '',
+        lastScene:     typeof d.lastScene === 'string'     ? d.lastScene     : ''
+      };
+      restoreAll();
+    } catch(err) {
+      alert('Could not load that file. Make sure it is a valid .arcanum save.');
+    }
+    e.target.value = '';
+  };
+  reader.readAsText(file);
+});
+
+// ─────────────────────────────────────────────
+// GENERATE COMPRESSION PROMPT
+// ─────────────────────────────────────────────
+document.getElementById('gen-btn').addEventListener('click', function() {
+  var chars = S.characters.length
+    ? S.characters.map(function(c) {
+        var line = '• ' + (c.name || '(unnamed)');
+        if (c.role) line += ' (' + c.role + ')';
+        line += ' — ' + (c.alive ? 'Alive' : 'Dead');
+        if (c.traits) line += '. Traits: ' + c.traits;
+        if (c.status) line += '. Status: ' + c.status;
+        return line;
+      }).join('\n')
+    : '(none recorded)';
+
+  var openT    = S.threads.filter(function(t) { return t.open; })
+                          .map(function(t) { return '• [OPEN] ' + (t.text || '(empty)'); }).join('\n');
+  var resolvedT = S.threads.filter(function(t) { return !t.open; })
+                           .map(function(t) { return '• [RESOLVED] ' + (t.text || '(empty)'); }).join('\n');
+  var threads  = [openT, resolvedT].filter(Boolean).join('\n') || '(none recorded)';
+
+  var locBlock = 'Current: ' + (S.locationNow.trim() || '(unset)');
+  if (S.locationKnown.trim()) locBlock += '\n' + S.locationKnown.trim();
+
+  var lines = [
+    'You are the game master of my campaign "' + (S.name || 'unnamed') + '", running on ' + (S.platform || 'an AI model') + '.',
+    'I am at approximately turn ' + (S.turn || '?') + ' and need you to compress the campaign state below into a compact memory block I can paste at the start of every new session.',
+    '',
+    'Read everything below, then output a COMPRESSED SESSION MEMORY that:',
+    '• Keeps all load-bearing facts — who matters, what they want, what has happened that still affects the story',
+    '• Prunes anything already resolved, irrelevant, or superseded',
+    '• Fits under 500 words',
+    '• Uses the same section headings so I can update the tracker easily after each compression',
+    '• Can be pasted at the start of a fresh session to instantly restore full context',
+    '',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    'CAMPAIGN STATE — Turn ' + (S.turn || '?'),
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    'Campaign: ' + (S.name || '(unnamed)'),
+    'Platform: ' + (S.platform || '(unset)'),
+    '',
+    '── CHARACTERS ──',
+    chars,
+    '',
+    '── RELATIONSHIPS & DYNAMICS ──',
+    S.relationships.trim() || '(none recorded)',
+    '',
+    '── INVENTORY & RESOURCES ──',
+    S.inventory.trim() || '(none recorded)',
+    '',
+    '── LOCATIONS ──',
+    locBlock,
+    '',
+    '── PLOT THREADS ──',
+    threads,
+    '',
+    '── KEY WORLD FACTS ──',
+    S.worldFacts.trim() || '(none recorded)',
+    '',
+    '── LAST SCENE ──',
+    S.lastScene.trim() || '(not recorded)',
+    '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━',
+    '',
+    'Now output the compressed memory block.'
+  ];
+
+  document.getElementById('prompt-out').value = lines.join('\n');
+  var box = document.getElementById('prompt-box');
+  box.classList.remove('hidden');
+  setTimeout(function() { box.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60);
+});
+
+// ─────────────────────────────────────────────
+// COPY
+// ─────────────────────────────────────────────
+document.getElementById('copy-btn').addEventListener('click', function() {
+  var text = document.getElementById('prompt-out').value;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(fallbackCopy);
+  } else {
+    fallbackCopy();
+  }
+});
+function fallbackCopy() {
+  var ta = document.getElementById('prompt-out');
+  ta.select();
+  try { document.execCommand('copy'); showCopied(); } catch(e) {}
+}
+function showCopied() {
+  var el = document.getElementById('copy-ok');
+  el.classList.remove('hidden');
+  setTimeout(function() { el.classList.add('hidden'); }, 2800);
+}
+
+// ─────────────────────────────────────────────
+// UNSAVED WARNING
+// ─────────────────────────────────────────────
+window.addEventListener('beforeunload', function(e) {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+renderChars();
+renderThreads();
+</script>
+
+<style>
+  /* ── PAGE ── */
+  .cmt-page { padding: 3rem 1.25rem 5rem; max-width: 1080px; margin: 0 auto; }
+  .eyebrow { color: var(--rune); font-size: .78rem; letter-spacing: .06em; margin-bottom: 1rem; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: 1.6rem; }
+
+  /* ── INTRO / CLOSING ── */
+  .intro.prose, .closing.prose { max-width: 780px; }
+  .intro.prose p { color: var(--parchment-dim); line-height: 1.85; font-size: 1.05rem; margin-bottom: 1.2rem; }
+  .intro.prose p:last-child { margin-bottom: 0; }
+  .intro code { font-family: var(--mono); font-size: .85em; color: var(--rune); background: var(--ink-2); padding: .1em .4em; border-radius: 3px; }
+  .closing { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 2.5rem; }
+  .closing h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1.2rem; }
+  .closing p { color: var(--parchment-dim); line-height: 1.85; font-size: 1rem; margin-bottom: 1.2rem; }
+  .closing p:last-child { margin-bottom: 0; }
+
+  /* ── TOOL SHELL ── */
+  .tool-shell {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2.5rem 0 2rem;
+  }
+
+  /* ── HEADER BAR ── */
+  .tool-header {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 1.2rem 1.4rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink);
+  }
+  .fg { display: flex; flex-direction: column; gap: .3rem; flex: 1; min-width: 140px; }
+  .fg.narrow { max-width: 88px; flex: 0 0 88px; }
+  .flabel { font-size: .72rem; color: var(--rune); text-transform: uppercase; letter-spacing: .06em; }
+
+  /* ── INPUTS ── */
+  .ti {
+    font-family: var(--mono);
+    font-size: .85rem;
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: .45rem .75rem;
+    color: var(--parchment);
+    width: 100%;
+    transition: border-color .15s;
+  }
+  .ti:focus { outline: none; border-color: var(--ember-soft, var(--ember)); }
+  .ti::placeholder { color: var(--rune); opacity: .7; }
+  .sel {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23aaa'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right .7rem center;
+    background-color: var(--ink-2);
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  .sel option { background: var(--ink); color: var(--parchment); }
+  .ta {
+    font-family: var(--mono);
+    font-size: .82rem;
+    line-height: 1.65;
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: .6rem .8rem;
+    color: var(--parchment-dim);
+    width: 100%;
+    resize: vertical;
+    transition: border-color .15s;
+  }
+  .ta:focus { outline: none; border-color: var(--ember-soft, var(--ember)); color: var(--parchment); }
+  .ta::placeholder { color: var(--rune); opacity: .6; font-size: .78rem; }
+  .ta.large { min-height: 190px; }
+
+  /* ── TABS ── */
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab {
+    font-family: var(--mono);
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    padding: .75rem 1.2rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: var(--rune);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color .15s, border-color .15s;
+  }
+  .tab:hover { color: var(--parchment); }
+  .tab.active { color: var(--ember); border-bottom-color: var(--ember); }
+
+  /* ── PANELS ── */
+  .panel { display: none; padding: 1.4rem; }
+  .panel.active { display: block; }
+  .section-lbl { font-size: .72rem; color: var(--rune); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 .8rem; }
+  .empty-hint { font-size: .82rem; color: var(--rune); margin: 0 0 .8rem; }
+  .panel-hint { font-size: .82rem; color: var(--rune); line-height: 1.65; margin: 0 0 1rem; max-width: 68ch; }
+
+  /* ── CHARACTER CARDS ── */
+  .chars-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .9rem;
+    margin-bottom: .9rem;
+  }
+  @media (min-width: 640px) { .chars-grid { grid-template-columns: 1fr 1fr; } }
+  .char-card {
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    padding: .9rem;
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+  .char-r1 { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+  .char-r1 .char-name { flex: 2; min-width: 100px; font-weight: 600; }
+  .char-r1 .char-role { flex: 1; min-width: 80px; }
+  .char-r2 { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+  .char-r2 .char-traits { flex: 1; min-width: 120px; }
+
+  /* ── THREAD CARDS ── */
+  .threads-list { display: flex; flex-direction: column; gap: .6rem; margin-bottom: .8rem; }
+  .thread-card { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
+  .thread-card .thread-text { flex: 1; min-width: 160px; }
+  .thread-ctrl { display: flex; gap: .4rem; align-items: center; flex-shrink: 0; }
+
+  /* ── TOGGLES ── */
+  .tog-group { display: flex; gap: .2rem; flex-shrink: 0; }
+  .tog {
+    font-family: var(--mono);
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: .22rem .55rem;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--rune);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color .12s, color .12s, background .12s;
+  }
+  .tog:hover { border-color: var(--parchment-dim); color: var(--parchment); }
+  .tog.tog-on { border-color: var(--ember); color: var(--ember); background: color-mix(in srgb, var(--ember) 10%, transparent); }
+
+  /* ── DEL / ADD BUTTONS ── */
+  .del-btn {
+    font-family: var(--mono);
+    font-size: .72rem;
+    color: var(--rune);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: .22rem .5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color .12s, color .12s;
+  }
+  .del-btn:hover { border-color: #c55; color: #c55; }
+  .add-btn {
+    font-family: var(--mono);
+    font-size: .78rem;
+    color: var(--rune);
+    border: 1px dashed var(--line);
+    background: transparent;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color .15s, color .15s;
+  }
+  .add-btn:hover { border-color: var(--ember); color: var(--parchment); }
+
+  /* ── TOOLBAR ── */
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 1.4rem;
+    border-top: 1px solid var(--line);
+    background: var(--ink);
+  }
+  .toolbar-r { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+  .tbtn {
+    font-family: var(--mono);
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: .45rem 1rem;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--parchment-dim);
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color .15s, color .15s;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+  }
+  .tbtn:hover { border-color: var(--parchment); color: var(--parchment); }
+  .tbtn.primary { border-color: var(--ember); color: var(--ember); background: color-mix(in srgb, var(--ember) 8%, transparent); }
+  .tbtn.primary:hover { background: color-mix(in srgb, var(--ember) 16%, transparent); }
+  .load-lbl { cursor: pointer; }
+  .unsaved { font-size: .72rem; color: var(--gild, #c9a227); }
+
+  /* ── PROMPT BOX ── */
+  .prompt-box {
+    border: 1px solid var(--ember-soft, var(--ember));
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem 0;
+    opacity: .92;
+  }
+  .prompt-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.1rem 1.4rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink-2);
+    flex-wrap: wrap;
+  }
+  .prompt-meta { flex: 1; }
+  .prompt-title { font-size: .74rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ember); margin: 0 0 .35rem; }
+  .prompt-hint { font-size: .82rem; color: var(--rune); line-height: 1.6; max-width: 60ch; margin: 0; }
+  .prompt-ta {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    font-family: var(--mono);
+    font-size: .78rem;
+    line-height: 1.75;
+    background: var(--ink);
+    border: none;
+    padding: 1.2rem 1.4rem;
+    color: var(--parchment-dim);
+    resize: vertical;
+  }
+  .copy-ok { font-size: .75rem; color: var(--ember); padding: .4rem 1.4rem .8rem; margin: 0; }
+
+  .hidden { display: none !important; }
+</style>
+</Base>

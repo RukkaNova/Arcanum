@@ -3,6 +3,7 @@ title: "Why Your AI Campaign Falls Apart at Turn 50 (and How to Fix It)"
 description: "Your AI RPG starts great, then loses the thread. Why LLM campaigns break down after turn 50 — and the fixes that keep ChatGPT, Claude, or Gemini coherent."
 section: "guides"
 pubDate: 2026-06-18
+updatedDate: 2026-06-25
 tags: ["AI RPG", "LLM RPG", "AI roleplay tips", "AI memory", "ChatGPT RPG", "Claude RPG", "prompt engineering"]
 ---
 
@@ -51,5 +52,7 @@ Beyond those three, a few engineering choices keep long campaigns stable:
 You can patch a lot of this by hand: ask for status summaries, remind the model of key facts, tell it to keep NPCs active. That works, and it's worth knowing. But the reason these problems are so universal is that solving them *properly* requires building these systems into the game from the start — external logs, memory compression, proactivity engines, agency rules — rather than bolting them on mid-session.
 
 That's exactly what a well-engineered AI RPG does for you. [The games we build at Arcanum](/arcanum-games) are designed around these fixes from the ground up — persistent hidden logs that track every detail, memory pruning that keeps long campaigns stable, proactivity engines that keep the world alive, and agency protocols that keep you in the driver's seat. If you've been frustrated by campaigns that crumble at turn 50, that's the difference: not a better model, but a better engine running on it.
+
+If you want a structured tool for maintaining campaign state manually across any AI, the [Campaign Memory Tool](/tools/campaign-memory) is free, runs entirely in your browser, and includes a compression prompt generator you paste into ChatGPT, Claude, or Gemini to get a compact session memory block back. No account, no data stored, works with any platform.
 
 Whether you build your own systems or download one that already solves these problems, the takeaway is the same — a great long-form AI campaign isn't luck. It's architecture.
