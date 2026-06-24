@@ -5,5 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // Swap to your real domain when you have it.
 export default defineConfig({
   site: 'https://arcanumrpgs.com',
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    filter: (page) => !page.includes('/privacy') && !page.includes('/terms'),
+  })],
 });
