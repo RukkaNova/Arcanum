@@ -2,21 +2,40 @@
 import Base from '../layouts/Base.astro';
 ---
 <Base
-  title="Contact — Arcanum"
-  description="Get in touch with Arcanum. Questions, collaboration, privacy requests, or anything else."
+  title="Contact Arcanum — Questions, Collaboration & Support"
+  description="Get in touch with Arcanum. Questions about the games, setup help, collaboration enquiries, or anything else — one inbox, we read everything."
 >
   <article class="wrap contact">
     <p class="eyebrow mono">// contact</p>
-    <h1>Get in Touch</h1>
+    <h1>Contact Arcanum</h1>
 
     <div class="body">
-      <p class="lede">One inbox. No forms.</p>
+      <p class="lede">One inbox. No forms. We read everything.</p>
 
-      <p>For anything — questions about the games, setup help, collaboration, press, privacy requests, or just to say a campaign went well — write to:</p>
+      <p>Write to us at <a href="mailto:rukkagamer@gmail.com">rukkagamer@gmail.com</a> — for anything. Response time is usually within a few days.</p>
 
       <p class="email mono"><a href="mailto:rukkagamer@gmail.com">rukkagamer@gmail.com</a></p>
 
-      <p>We read everything. Response time is usually within a few days.</p>
+      <h2>What We Can Help With</h2>
+
+      <ul>
+        <li><strong>Setup questions</strong> — if you're having trouble loading a game into ChatGPT, Claude, or Gemini, describe what you're seeing and we'll walk you through it.</li>
+        <li><strong>Game questions</strong> — anything about how a specific mechanic works, what a command does, or how a system is designed.</li>
+        <li><strong>Collaboration and press</strong> — if you write about AI RPGs, run a community, or want to cover what we're building, get in touch.</li>
+        <li><strong>Privacy and data requests</strong> — access, deletion, or any other request under GDPR. See our <a href="/privacy">privacy policy</a> for what we collect and how.</li>
+        <li><strong>Anything else</strong> — if a campaign went well, that's worth hearing too.</li>
+      </ul>
+
+      <h2>Looking for Something Specific?</h2>
+
+      <p>If you're not sure where to start, here are the most useful places on the site:</p>
+
+      <ul>
+        <li><a href="/arcanum-games">Arcanum Originals</a> — download the game files and read setup instructions for each engine.</li>
+        <li><a href="/blog/why-llms-forget">Why AI campaigns fall apart at turn 50</a> — the guide to keeping a long AI RPG coherent.</li>
+        <li><a href="/clients">Client directory</a> — honest comparisons of every major AI roleplay platform.</li>
+        <li><a href="/blog">The Codex</a> — all our guides, reviews, and articles in one place.</li>
+      </ul>
     </div>
   </article>
 
@@ -26,7 +45,11 @@ import Base from '../layouts/Base.astro';
     h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 2rem; }
     .lede { font-size: 1.2rem; color: var(--parchment); margin-bottom: 1.5rem; }
     .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
-    .email { font-size: 1.15rem; margin: 2rem 0; }
-    .email a { color: var(--ember); font-size: 1.1rem; letter-spacing: .02em; }
+    .email { font-size: 1.1rem; margin: .4rem 0 2.4rem; }
+    .email a { color: var(--ember); letter-spacing: .02em; }
+    .body h2 { font-size: 1.25rem; font-weight: 600; margin: 2.2rem 0 .8rem; color: var(--parchment); }
+    .body ul { padding-left: 1.4rem; margin-bottom: 1.4rem; }
+    .body li { color: var(--parchment-dim); margin-bottom: .6rem; line-height: 1.7; font-size: 1.05rem; }
+    .body li strong { color: var(--parchment); }
   </style>
 </Base>

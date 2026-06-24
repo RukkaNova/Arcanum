@@ -7,8 +7,9 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   jsonLd?: object; // optional structured data for rich/AI-citation eligibility
+  noindex?: boolean;
 }
-const { title, description, image, type = 'website', jsonLd } = Astro.props;
+const { title, description, image, type = 'website', jsonLd, noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image ? new URL(image, Astro.site) : undefined;
 const SITE = 'Arcanum';
@@ -21,6 +22,7 @@ const SITE = 'Arcanum';
   <title>{title}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
 
   <!-- Open Graph -->
   <meta property="og:type" content={type} />
