@@ -104,6 +104,10 @@ const SITE = 'Arcanum';
     .prose ul, .prose ol { padding-left: 1.4rem; margin-bottom: 1rem; }
     .prose li { margin-bottom: .35rem; color: var(--parchment-dim); }
     .footer-inner { display: flex; flex-direction: column; gap: .9rem; }
+    .footer-legal { font-family: var(--mono); font-size: .75rem; color: var(--parchment-dim); }
+    .footer-legal a { color: var(--parchment-dim); }
+    .footer-legal a:hover { color: var(--ember); text-decoration: none; }
+    .footer-legal .sep { margin: 0 .5rem; opacity: .4; }
     .footer-kofi { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .footer-kofi span { color: var(--parchment-dim); font-size: .85rem; }
     .kofi-link { font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--gild); border: 1px solid var(--gild); padding: .4rem 1rem; border-radius: 6px; transition: background .18s, color .18s; white-space: nowrap; }
@@ -132,6 +136,11 @@ const SITE = 'Arcanum';
       <div class="footer-kofi">
         <span>Everything here is free. If we earned it:</span>
         <a href="https://ko-fi.com/D3O621P17T" target="_blank" rel="noopener" class="kofi-link">☕ Buy me a coffee</a>
+      </div>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <span class="sep">·</span>
+        <a href="/terms">Terms of Use</a>
       </div>
     </div>
   </footer>

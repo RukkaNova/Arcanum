@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Privacy Policy — Arcanum"
+  description="How Arcanum handles your data. We collect as little as possible and sell none of it."
+>
+  <article class="wrap policy">
+    <p class="eyebrow mono">// legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta mono">Last updated: 24 June 2026</p>
+
+    <div class="body prose">
+      <p>Arcanum is a content site. We are not in the business of collecting your data — we are in the business of helping you find good AI RPGs. This policy explains the small amount of data that passes through this site and what happens to it.</p>
+
+      <h2>Who We Are</h2>
+      <p>Arcanum (<strong>arcanumrpgs.com</strong>) is operated by Rift, based in Portugal. You can reach us at <a href="mailto:hello@arcanumrpgs.com">hello@arcanumrpgs.com</a> for any privacy-related requests.</p>
+
+      <h2>What Data We Collect</h2>
+      <p>We do not run advertising, we have no user accounts, and there are no forms on this site that collect personal information.</p>
+      <p>The only data collected is what passes through our infrastructure provider, <strong>Cloudflare</strong>, which hosts and delivers this site. Cloudflare logs standard server-level information when you load any page: your IP address, the page requested, your browser type, and the date and time of the request. This happens automatically at the network level — it is the same data any web server receives — and it is used solely to deliver the site and protect against malicious traffic.</p>
+      <p>Cloudflare may also set a strictly necessary cookie (<code>__cf_bm</code>) for bot detection. This cookie contains no personal identifiers and expires at the end of your browser session. It is classified as strictly necessary and does not require consent under the ePrivacy Directive.</p>
+      <p>We do not use Google Analytics, Meta Pixel, or any third-party tracking scripts.</p>
+
+      <h2>Downloadable Files</h2>
+      <p>The game files on this site (master prompts, world documents) are served directly from Cloudflare's network. Downloading a file generates a server log entry in the same way as loading a page. No account, email, or personal information is required or collected to download anything.</p>
+
+      <h2>External Links</h2>
+      <p>This site links to third-party platforms — ChatGPT, Claude, Gemini, AI Dungeon, Janitor AI, and others. Once you follow a link to an external site, their privacy policy governs what happens to your data. We have no visibility into or control over their data practices.</p>
+
+      <h2>Legal Basis for Processing (GDPR)</h2>
+      <p>We process the minimal server-log data described above under <strong>legitimate interests</strong> (Article 6(1)(f) GDPR): specifically, the interest in delivering a functioning, secure website to visitors. No processing requires your consent beyond what is described here.</p>
+
+      <h2>Data Retention</h2>
+      <p>Cloudflare retains standard server logs for up to 30 days as part of its default infrastructure operation. We do not independently store, copy, or archive any personal data.</p>
+
+      <h2>Your Rights (GDPR)</h2>
+      <p>If you are in the EU or EEA, you have the right to access any personal data we hold about you, request its correction or deletion, object to its processing, and request a copy in portable form. Because the only data that exists is server-log data held by Cloudflare, most of these rights are best exercised directly with Cloudflare via their privacy process at <strong>cloudflare.com/privacypolicy</strong>. For any request directed at us, contact <a href="mailto:hello@arcanumrpgs.com">hello@arcanumrpgs.com</a> and we will respond within 30 days.</p>
+      <p>You also have the right to lodge a complaint with your national data protection authority. In Portugal, that is the CNPD (<strong>cnpd.pt</strong>).</p>
+
+      <h2>Children</h2>
+      <p>This site is not directed at children under 16. We do not knowingly collect data from children. Some content on this site is marked NSFW and intended for adult audiences only.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>If we make material changes to this policy, we will update the date at the top of this page. Continued use of the site after any change constitutes acceptance of the revised policy.</p>
+    </div>
+  </article>
+
+  <style>
+    .policy { padding: 4rem 1.25rem 5rem; max-width: 780px; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: .6rem; }
+    .meta { font-size: .78rem; color: var(--rune); margin-bottom: 2.2rem; }
+    .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+    .body p:last-child { margin-bottom: 0; }
+    code { font-family: var(--mono); font-size: .85em; color: var(--rune); background: var(--ink-2); padding: .1em .4em; border-radius: 3px; }
+  </style>
+</Base>
