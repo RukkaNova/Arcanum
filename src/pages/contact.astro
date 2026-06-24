@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Contact — Arcanum"
+  description="Get in touch with Arcanum. Questions, collaboration, privacy requests, or anything else."
+>
+  <article class="wrap contact">
+    <p class="eyebrow mono">// contact</p>
+    <h1>Get in Touch</h1>
+
+    <div class="body">
+      <p class="lede">One inbox. No forms.</p>
+
+      <p>For anything — questions about the games, setup help, collaboration, press, privacy requests, or just to say a campaign went well — write to:</p>
+
+      <p class="email mono"><a href="mailto:rukkagamer@gmail.com">rukkagamer@gmail.com</a></p>
+
+      <p>We read everything. Response time is usually within a few days.</p>
+    </div>
+  </article>
+
+  <style>
+    .contact { padding: 4rem 1.25rem 5rem; max-width: 780px; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 2rem; }
+    .lede { font-size: 1.2rem; color: var(--parchment); margin-bottom: 1.5rem; }
+    .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+    .email { font-size: 1.15rem; margin: 2rem 0; }
+    .email a { color: var(--ember); font-size: 1.1rem; letter-spacing: .02em; }
+  </style>
+</Base>
