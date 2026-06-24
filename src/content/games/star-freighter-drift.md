@@ -3,7 +3,7 @@ title: "Star Freighter Drift"
 tagline: "Run cargo, dodge customs, and keep the reactor from melting in a gritty space-trading AI RPG."
 model: "chatgpt"
 genres: ["Sci-Fi", "Trading", "Survival", "Roleplay"]
-rating: 4.8
+rating: 4.7
 reviewSlug: "star-freighter-drift"
 releaseSlug: "star-freighter-drift"
 author: "Arcanum"

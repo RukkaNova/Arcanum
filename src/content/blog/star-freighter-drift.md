@@ -2,7 +2,7 @@
 title: "Star Freighter Drift: A Space-Smuggler Trading AI RPG for ChatGPT, Claude & Gemini"
 description: "Star Freighter Drift: space-trading LLM RPG for ChatGPT, Claude, and Gemini. Run cargo, dodge customs, keep the reactor from melting. Free to download."
 section: "reviews"
-rating: 4.8
+rating: 4.7
 pubDate: 2026-06-18
 cover: "/img/star-freighter-drift.webp"
 releaseSlug: "star-freighter-drift"

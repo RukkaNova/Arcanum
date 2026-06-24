@@ -8,7 +8,8 @@ export async function getStaticPaths(){
   return r.map(x=>({params:{id:x.id},props:{rel:x}}));
 }
 const { rel }=Astro.props; const { Content }=await render(rel); const d=rel.data;
-const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,author:{'@type':'Organization',name:d.author},gamePlatform:d.models.map(modelLabel)};
+const stars=d.rating?'★'.repeat(Math.round(d.rating))+'☆'.repeat(5-Math.round(d.rating)):'';
+const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,author:{'@type':'Organization',name:d.author},gamePlatform:d.models.map(modelLabel),...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
 ---
 <Base title={`${d.title} — Download for ${d.models.map(modelLabel).join(', ')} | Arcanum`} description={d.tagline} type="article" jsonLd={jsonLd}>
   <article class="wrap rel">
@@ -19,6 +20,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
       <span class="token">v{d.version}</span>
       {d.partner && <span class="token">partner</span>}
       {d.nsfw && <span class="token">18+</span>}
+      {d.rating && <span class="rating mono">{stars} {d.rating}/5</span>}
     </div>
     <h1>{d.title}</h1>
     <p class="tagline">{d.tagline}</p>
@@ -64,6 +66,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
     .hero-img{margin:1.4rem 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;aspect-ratio:16/9;}
     .hero-img img{width:100%;height:100%;object-fit:cover;display:block;}
     .badges{display:flex;gap:.5rem;flex-wrap:wrap;margin:.6rem 0 1rem;}
+    .rating{color:var(--gild);font-size:.85rem;}
     h1{font-size:clamp(2.3rem,5vw,3.4rem);font-weight:600;line-height:1.05;}
     .tagline{font-size:1.25rem;color:var(--parchment-dim);font-style:italic;margin:.7rem 0 .5rem;}
     .meta{font-size:.8rem;color:var(--rune);}

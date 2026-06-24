@@ -3,7 +3,7 @@ title: "Aevum Realm Architect"
 tagline: "Rise from serf to sovereign in a deterministic low-fantasy kingdom-builder. Download the files, load them into your AI, and play."
 model: "chatgpt"
 genres: ["Fantasy", "Kingdom Builder", "Strategy", "Roleplay"]
-rating: 4.8
+rating: 4.9
 reviewSlug: "aevum-realm-architect"
 releaseSlug: "aevum"
 author: "Arcanum"

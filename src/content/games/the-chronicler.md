@@ -3,7 +3,7 @@ title: "The Chronicler"
 tagline: "A slow-burn, relationship-driven AI RPG for Claude where companions have their own goals, memories, and feelings — and trust is never guaranteed."
 model: "claude"
 genres: ["Fantasy", "Relationship", "Roleplay", "Slow-burn"]
-rating: 4.8
+rating: 4.6
 reviewSlug: "the-chronicler"
 releaseSlug: "the-chronicler"
 author: "Arcanum"
