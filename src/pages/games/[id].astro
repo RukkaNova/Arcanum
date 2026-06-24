@@ -21,7 +21,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
     </div>
     <h1>{d.title}</h1>
     <p class="tagline">{d.tagline}</p>
-    <div class="meta mono"><span>{d.genres.join(' · ')}</span><span>·</span><span>by {d.author}</span></div>
+    <div class="meta mono"><span>{d.genres.join(' · ')}</span><span>·</span><span>by {d.author}</span><span>·</span><span>Last reviewed: {d.updated.toLocaleDateString('en-US',{year:'numeric',month:'long'})}</span></div>
     <div class="actions">
       {d.playUrl && <a class="launch" href={d.playUrl} target="_blank" rel="noopener">Play on {modelLabel(d.model)} ↗</a>}
       {d.releaseSlug && <a class="download" href={`/arcanum-games/${d.releaseSlug}`}>↓ Download free</a>}

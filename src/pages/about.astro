@@ -1,10 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
 import KofiButton from '../components/KofiButton.astro';
+const jsonLd={
+  '@context':'https://schema.org',
+  '@type':'Person',
+  name:'Rukka',
+  url:'https://arcanumrpgs.com/about',
+  description:'Founder of Arcanum. Four decades of experience across tabletop RPGs, CRPGs, MMOs, gamebooks, and AI-driven roleplay systems.',
+  knowsAbout:['Roleplaying Games','AI RPG','LLM Roleplay','Text Adventures','Interactive Fiction','Tabletop RPGs','Computer RPGs','Emergent Storytelling','Campaign Design','AI Dungeon Masters'],
+  founder:{
+    '@type':'Organization',
+    name:'Arcanum',
+    url:'https://arcanumrpgs.com'
+  }
+};
 ---
 <Base
   title="About Arcanum — The Home Base for LLM Roleplay"
   description="Arcanum is the home base for LLM roleplay — discover public AI RPGs, compare roleplay platforms, and download original game engines for ChatGPT, Claude, and Gemini."
+  jsonLd={jsonLd}
 >
   <article class="wrap about">
     <p class="eyebrow mono">// about</p>

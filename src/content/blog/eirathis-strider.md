@@ -2,6 +2,7 @@
 title: "Eirathis Strider: A Mature, Witcher-Style AI RPG for Gemini"
 description: "Eirathis Strider: mature LLM RPG for Gemini Gems. Three-layered world, dice-less tactical combat, skill mastery, and companion romance. Download the files free."
 section: "reviews"
+rating: 4.8
 pubDate: 2026-06-17
 cover: "/img/eirathis.webp"
 releaseSlug: "eirathis"

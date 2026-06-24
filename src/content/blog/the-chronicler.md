@@ -2,6 +2,7 @@
 title: "The Chronicler: A Slow-Burn, Relationship-Driven AI RPG for Claude"
 description: "The Chronicler: relationship-driven LLM RPG for Claude Projects. Companions have goals, trust is earned through behavior alone — never unlocked. Free download."
 section: "reviews"
+rating: 4.8
 pubDate: 2026-06-17
 cover: "/img/the-chronicler.webp"
 releaseSlug: "the-chronicler"

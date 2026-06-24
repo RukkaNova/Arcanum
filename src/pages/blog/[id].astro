@@ -8,16 +8,27 @@ export async function getStaticPaths(){
 const { post }=Astro.props; const { Content }=await render(post); const d=post.data;
 const dateModified=(d.updatedDate??d.pubDate).toISOString();
 const isPlatformReview=d.section==='platform-reviews';
-const reviewSubject=isPlatformReview?d.title.split(' Review')[0].trim():null;
-const jsonLd=(isPlatformReview&&d.rating)
-  ?{'@context':'https://schema.org','@type':'Review',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString(),dateModified,author:{'@type':'Organization',name:'Arcanum'},reviewRating:{'@type':'Rating',ratingValue:d.rating,bestRating:5,worstRating:1},itemReviewed:{'@type':'SoftwareApplication',name:reviewSubject,applicationCategory:'GameApplication'}}
-  :{'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString(),dateModified};
+const isGameReview=d.section==='reviews';
+const isReview=(isPlatformReview||isGameReview)&&d.rating;
+const extractSubject=(t)=>t.includes(' Review')?t.split(' Review')[0].trim():t.includes(':')?t.split(':')[0].trim():t;
+const reviewSubject=isReview?extractSubject(d.title):null;
+const author={'@type':'Person',name:'Rukka',url:'https://arcanumrpgs.com/about'};
+const jsonLd=isReview
+  ?{'@context':'https://schema.org','@type':'Review',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString(),dateModified,author,reviewRating:{'@type':'Rating',ratingValue:d.rating,bestRating:5,worstRating:1},itemReviewed:{'@type':isPlatformReview?'SoftwareApplication':'VideoGame',name:reviewSubject,...(isPlatformReview&&{applicationCategory:'GameApplication'})}}
+  :{'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.description,datePublished:d.pubDate.toISOString(),dateModified,author};
+const displayDate=d.pubDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}):null;
 ---
 <Base title={`${d.title} | Arcanum`} description={d.description} type="article" jsonLd={jsonLd}>
   <article class="wrap post">
     <a class="back mono" href="/blog">← Codex</a>
     <h1>{d.title}</h1>
-    <time class="mono">{d.pubDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</time>
+    <div class="byline">
+      <time class="mono" datetime={d.pubDate.toISOString()}>{displayDate}</time>
+      <span class="sep">·</span>
+      <span class="author mono">by <a href="/about">Rukka</a></span>
+      {updatedDisplay && <><span class="sep">·</span><span class="updated mono">Updated {updatedDisplay}</span></>}
+    </div>
     <div class="prose"><Content/></div>
     {d.releaseSlug && (
       <div class="dl-cta">
@@ -29,7 +40,11 @@ const jsonLd=(isPlatformReview&&d.rating)
     .post{padding:2.5rem 1.25rem 3rem;max-width:720px;}
     .back{color:var(--parchment-dim);font-size:.8rem;}
     h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;line-height:1.08;margin:1.2rem 0 .5rem;}
-    time{color:var(--rune);font-size:.8rem;}
+    .byline{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.2rem;}
+    .byline time,.byline .author,.byline .updated{color:var(--rune);font-size:.8rem;}
+    .byline .sep{color:var(--line);font-size:.8rem;}
+    .byline .author a{color:var(--rune);}
+    .byline .author a:hover{color:var(--ember);text-decoration:none;}
     .prose{margin-top:2rem;}
     .prose :global(p){margin-bottom:1rem;}
     .dl-cta{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line);}
