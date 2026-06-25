@@ -1,41 +1,93 @@
 ---
 import Base from '../../layouts/Base.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'AI RPG Tools',
+  description: 'Free browser-based tools for AI roleplay campaigns — campaign memory trackers, compression prompt generators, and utilities for running coherent long-form AI RPG campaigns in ChatGPT, Claude, and Gemini.',
+  url: 'https://arcanumrpgs.com/tools',
+  author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
+};
 ---
 <Base
-  title="Tools — Free Utilities for AI Roleplayers | Arcanum"
-  description="Free browser-based tools for AI RPG campaigns. No accounts, no data stored. Built for players running ChatGPT, Claude, and Gemini campaigns."
+  title="AI RPG Tools — Free Utilities for Campaigns in ChatGPT, Claude & Gemini | Arcanum"
+  description="Free browser-based AI RPG tools: campaign memory trackers, compression prompt generators, and utilities for keeping your ChatGPT, Claude, or Gemini roleplay campaign coherent across long sessions."
+  type="website"
+  jsonLd={jsonLd}
 >
   <div class="wrap tools-page">
+
     <p class="eyebrow mono">// tools</p>
-    <h1>Tools</h1>
-    <p class="sub">Free browser utilities for AI roleplayers. No accounts. No data stored anywhere.</p>
-    <div class="cards">
-      <a class="tool-card" href="/tools/campaign-memory">
-        <h2>Campaign Memory Tool</h2>
-        <p>Track characters, plot threads, locations, and world facts across long campaigns. Hit Generate and paste the compression prompt into ChatGPT, Claude, or Gemini — get back a compact session memory block that keeps context coherent past turn 50.</p>
-        <span class="badge mono">Free · Client-side only</span>
-      </a>
+    <h1>AI RPG Tools</h1>
+
+    <div class="intro prose">
+      <p>Running a serious AI roleplay campaign in ChatGPT, Claude, or Gemini requires more than a good prompt. Context windows fill. Models drift. Characters forget what they know, worlds lose internal consistency, and campaigns that were vivid at turn 10 turn grey by turn 60. These tools exist to solve that class of problem — practical, browser-based utilities you can use alongside any AI, with no account and no data sent anywhere.</p>
+      <p>Everything here is free and runs entirely in your browser. Built by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems — these tools come out of the same thinking behind the <a href="/arcanum-games">Arcanum Originals</a>: that a long AI campaign isn't luck, it's architecture, and the right structure makes the difference between a story that holds together and one that quietly falls apart.</p>
     </div>
+
+    <div class="tools-grid">
+
+      <a class="tool-card" href="/tools/campaign-memory">
+        <div class="tool-card-inner">
+          <div class="tool-tag mono">Memory &amp; Context</div>
+          <h2>Campaign Memory Tool</h2>
+          <p class="tool-desc">The <a href="/blog/why-llms-forget">turn-50 amnesia problem</a> — where AI campaigns lose coherence as older messages scroll out of context — is one of the most common failures in AI roleplay. This tool gives you a structured place to log everything that matters: characters with their traits and current status, plot threads marked open or resolved, locations, relationships, inventory, world facts, and a last-scene anchor.</p>
+          <p class="tool-desc">When the context gets heavy, hit <strong>Generate Compression Prompt</strong>. The tool outputs a briefing you paste into ChatGPT, Claude, or Gemini. The AI reads your full campaign state and returns a compact memory block — under 500 words — that you paste at the start of every new session to restore full context. Your data saves to a <code>.arcanum</code> file on your device; nothing is sent to any server.</p>
+          <div class="tool-meta mono">
+            <span class="badge">Free</span>
+            <span class="badge">Client-side only</span>
+            <span class="badge">Works with any AI</span>
+          </div>
+          <span class="tool-cta mono">Open tool →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="closing prose">
+      <h2>Why These Tools Exist Separately from the Games</h2>
+      <p>The <a href="/arcanum-games">Arcanum Originals</a> — Aevum, Eirathis, The Chronicler, Star Freighter Drift — solve the memory and coherence problem from the inside. They come with persistent state logs, memory compression, and proactivity engines built directly into the system prompt. If you download one of those games, you don't need external tools: the architecture handles it automatically.</p>
+      <p>But not everyone wants a pre-built game. A lot of players are running their own homebrew campaigns — a custom world, a system they invented, a scenario they've been building for months. For them, the Originals aren't the answer. These tools are. They bring the same structural discipline — state tracking, compression, context management — to whatever campaign you're already running, without requiring you to change how you play.</p>
+      <p>If you haven't read <a href="/blog/why-llms-forget">why AI campaigns fall apart at turn 50</a>, that article is the technical foundation behind both this toolset and the Originals. Understanding the context window problem — and the specific fixes that work — makes every tool here more effective.</p>
+    </div>
+
   </div>
+
   <style>
     .tools-page { padding: 3rem 1.25rem 5rem; }
     .eyebrow { color: var(--rune); font-size: .78rem; letter-spacing: .06em; margin-bottom: 1rem; }
-    h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: .5rem; }
-    .sub { color: var(--parchment-dim); margin: 0 0 2.5rem; font-size: 1rem; }
-    .cards { display: flex; flex-direction: column; gap: 1rem; max-width: 620px; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: 1.6rem; }
+
+    .intro.prose { max-width: 780px; margin-bottom: 2.5rem; }
+    .intro.prose p { color: var(--parchment-dim); line-height: 1.85; font-size: 1.05rem; margin-bottom: 1.2rem; }
+    .intro.prose p:last-child { margin-bottom: 0; }
+
+    .tools-grid { display: flex; flex-direction: column; gap: 1.2rem; max-width: 780px; margin-bottom: 3.5rem; }
+
     .tool-card {
       display: block;
       border: 1px solid var(--line);
       border-radius: 10px;
-      padding: 1.6rem;
       background: var(--ink-2);
       color: var(--parchment);
       text-decoration: none;
-      transition: border-color .15s;
+      transition: border-color .18s;
     }
     .tool-card:hover { border-color: var(--ember); text-decoration: none; }
-    .tool-card h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: .5rem; }
-    .tool-card p { color: var(--parchment-dim); font-size: .95rem; line-height: 1.75; margin-bottom: .9rem; }
-    .badge { font-size: .72rem; color: var(--rune); }
+    .tool-card-inner { padding: 1.8rem 2rem; }
+    .tool-tag { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--rune); margin-bottom: .7rem; }
+    .tool-card h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: .8rem; color: var(--parchment); }
+    .tool-desc { color: var(--parchment-dim); font-size: .97rem; line-height: 1.8; margin-bottom: .9rem; }
+    .tool-desc a { color: var(--ember); }
+    .tool-desc code { font-family: var(--mono); font-size: .84em; color: var(--rune); background: var(--ink); padding: .1em .4em; border-radius: 3px; }
+    .tool-meta { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    .badge { font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; border: 1px solid var(--line); border-radius: 3px; padding: .15rem .5rem; color: var(--rune); }
+    .tool-cta { font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ember); }
+
+    .closing { max-width: 780px; border-top: 1px solid var(--line); padding-top: 2.5rem; }
+    .closing h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1.2rem; }
+    .closing p { color: var(--parchment-dim); line-height: 1.85; font-size: 1rem; margin-bottom: 1.2rem; }
+    .closing p:last-child { margin-bottom: 0; }
   </style>
 </Base>
