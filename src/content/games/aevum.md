@@ -16,4 +16,6 @@ Aevum Realm Architect is a deterministic, low-fantasy kingdom-builder LLM RPG th
 
 The engine is two downloadable files: a master prompt (the rules and GM brain) and a nearly 30,000-word Realm Atlas (the world). The Atlas is the single source of truth — geography, economics, law, factions — and the GM is forbidden from improvising around it. That constraint is what makes Aevum feel like a real game rather than a story that quietly forgets itself.
 
-An Arcanum original. Free to download.
+The social architecture runs deep. In Al'thoria, rigid feudal hierarchy is the operating reality of your character's life — a peasant who speaks above their station risks a flogging, not a stern look. In Njordheim, the same starting position plays completely differently: standing can be earned through deed and strength rather than birth. The friction changes faction to faction, and so does the game.
+
+An Arcanum original. Free to download. [Rukka's design essay on the Deference Engine](/blog/aevum-design-essay/) explains the philosophy behind the climb.

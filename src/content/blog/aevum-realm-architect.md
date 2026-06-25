@@ -31,6 +31,8 @@ The standout feature is what the game calls the **Deference Engine**, and it is 
 
 This single rule transforms the experience. Your rise from serf to monarch *means* something because the game never lets you forget how far down you started. Every rung of the ladder has to be climbed, and the social simulation makes each promotion feel like a genuine shift in how the entire world treats you.
 
+Rukka — the designer of Aevum — has written a full [design essay on the Deference Engine](/blog/aevum-design-essay/): why the early-game friction is intentional, how faction-specific social logic creates genuinely different playthroughs, and the deeper effect the system has on players over long campaigns.
+
 ## Romance, War, Spycraft, and Lost Magic
 
 Aevum is not only ledgers and law. A full **Romance & Relationship Engine** treats relationships as a slow-burn source of both strength and complication, with real mechanical effects — allies grant bonuses, enemies impose penalties, and intimacy is handled with passion and emotional weight while fading to black on the explicit. Combat resolves through a tag-based "Art of Command" system where your battle plan matters. A **statecraft and espionage** layer lets you spy, sabotage, and scheme through diplomacy and the dagger. And threaded through it all are the ruins of a fallen progenitor empire, holding lost magic, alchemy, and ancient knowledge for those who go looking.

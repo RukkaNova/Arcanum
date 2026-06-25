@@ -30,6 +30,10 @@ Social hierarchy is not flavour text in Aevum — it is the engine. Before the G
 
 Superiors give commands. They do not offer jobs, negotiate wages, or explain their reasoning to people below them. The reward for obedience is survival — not being punished. This single rule transforms the early game into something that no other AI RPG delivers: a world that genuinely does not care about you, in which your rank determines the entire shape of every interaction. Every promotion is therefore felt, not just noted on a HUD.
 
+The effect runs deeper than most players expect. After enough sessions in Al'thoria's rigid hierarchy, you may find yourself thinking that if someone disrespects you, they should be flogged. The system creates the conditions for that — it doesn't instruct you. That is the Deference Engine working exactly as intended.
+
+For the full design rationale — the faction-specific textures of social weight, the emotional architecture of the early game, and the philosophy behind why discomfort precedes power — read [Rukka's design essay on the Deference Engine](/blog/aevum-design-essay/).
+
 ## The Tag-Based Economy
 
 Your domain is defined by Domain Tags — assets like farms, watchtowers, a scribe's office, an alchemist's lab — each with concrete effects on your treasury, food supply, loyalty, and security per turn. Your forces are defined by Retinue Tags. You grow by funding Projects that add positive tags or remove negative ones, with costs and effects laid out in the Atlas.
