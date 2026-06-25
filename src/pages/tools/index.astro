@@ -5,14 +5,14 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'AI RPG Tools',
-  description: 'Free browser-based tools for AI roleplay campaigns — campaign memory trackers, compression prompt generators, and utilities for running coherent long-form AI RPG campaigns in ChatGPT, Claude, and Gemini.',
+  description: 'Free browser-based tools for AI roleplay — platform comparison matrix, campaign memory trackers, and utilities for running coherent long-form AI RPG campaigns in ChatGPT, Claude, and Gemini.',
   url: 'https://arcanumrpgs.com/tools',
   author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
 };
 ---
 <Base
-  title="AI RPG Tools — Free Utilities for Campaigns in ChatGPT, Claude & Gemini | Arcanum"
-  description="Free browser-based AI RPG tools: campaign memory trackers, compression prompt generators, and utilities for keeping your ChatGPT, Claude, or Gemini roleplay campaign coherent across long sessions."
+  title="AI RPG Tools — Platform Comparison, Campaign Memory & More | Arcanum"
+  description="Free browser-based AI RPG tools: compare all 10 reviewed roleplay platforms side by side, track campaign memory, generate compression prompts, and keep your ChatGPT, Claude, or Gemini campaign coherent."
   type="website"
   jsonLd={jsonLd}
 >
@@ -22,8 +22,8 @@ const jsonLd = {
     <h1>AI RPG Tools</h1>
 
     <div class="intro prose">
-      <p>Running a serious AI roleplay campaign in ChatGPT, Claude, or Gemini requires more than a good prompt. Context windows fill. Models drift. Characters forget what they know, worlds lose internal consistency, and campaigns that were vivid at turn 10 turn grey by turn 60. These tools exist to solve that class of problem — practical, browser-based utilities you can use alongside any AI, with no account and no data sent anywhere.</p>
-      <p>Everything here is free and runs entirely in your browser. Built by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems — these tools come out of the same thinking behind the <a href="/arcanum-games">Arcanum Originals</a>: that a long AI campaign isn't luck, it's architecture, and the right structure makes the difference between a story that holds together and one that quietly falls apart.</p>
+      <p>Two problems define AI roleplay: choosing the right platform to begin with, and keeping your campaign coherent once you're running. These tools address both — one at the start of the journey, one deep inside it. No accounts. No data sent anywhere. Everything runs in your browser.</p>
+      <p>Built by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems — these tools come out of the same thinking behind the <a href="/arcanum-games">Arcanum Originals</a>: that a long AI campaign isn't luck, it's architecture. The right structure makes the difference between a story that holds together and one that quietly falls apart by session four.</p>
     </div>
 
     <div class="tools-grid">
@@ -43,13 +43,29 @@ const jsonLd = {
         </div>
       </div>
 
+      <div class="tool-card">
+        <div class="tool-card-inner">
+          <div class="tool-tag mono">Research &amp; Discovery</div>
+          <h2>Platform Comparison Matrix</h2>
+          <p class="tool-desc">Ten reviewed AI roleplay platforms — <a href="/clients/friends-and-fables">Friends & Fables</a>, <a href="/clients/roleforge">RoleForge</a>, <a href="/clients/janitor-ai">Janitor AI</a>, and seven more — in a single sortable table. The columns that matter most: rating, pricing tier, which AI models run under the hood, and how each platform handles memory across sessions.</p>
+          <p class="tool-desc">Filter by free or freemium. Sort by rating or platform name. Click through to the full review for any entry. The <strong>Memory</strong> column alone tells you which platforms can sustain a six-month campaign and which ones degrade by session four — that distinction is harder to find anywhere else.</p>
+          <div class="tool-meta mono">
+            <span class="badge">Free</span>
+            <span class="badge">10 platforms</span>
+            <span class="badge">Sortable &amp; filterable</span>
+          </div>
+          <a class="tool-cta mono" href="/clients/compare">Open tool →</a>
+        </div>
+      </div>
+
     </div>
 
     <div class="closing prose">
       <h2>Why These Tools Exist Separately from the Games</h2>
-      <p>The <a href="/arcanum-games">Arcanum Originals</a> — Aevum, Eirathis, The Chronicler, Star Freighter Drift — solve the memory and coherence problem from the inside. They come with persistent state logs, memory compression, and proactivity engines built directly into the system prompt. If you download one of those games, you don't need external tools: the architecture handles it automatically.</p>
-      <p>But not everyone wants a pre-built game. A lot of players are running their own homebrew campaigns — a custom world, a system they invented, a scenario they've been building for months. For them, the Originals aren't the answer. These tools are. They bring the same structural discipline — state tracking, compression, context management — to whatever campaign you're already running, without requiring you to change how you play.</p>
-      <p>If you haven't read <a href="/blog/why-llms-forget">why AI campaigns fall apart at turn 50</a>, that article is the technical foundation behind both this toolset and the Originals. Understanding the context window problem — and the specific fixes that work — makes every tool here more effective.</p>
+      <p>The comparison matrix is for the question before the campaign starts: which platform is actually worth your time? It pulls every reviewed client into one place so you can make that call without opening ten tabs — and points directly into the full write-up when you need the reasoning behind a rating.</p>
+      <p>The Campaign Memory Tool is for the question that arrives around session four: why does the AI keep losing the thread? Context windows fill. Models drift. Characters forget what happened ten scenes ago. The tool gives you a structured place to fight that — state logging, a compression prompt, a <code>.arcanum</code> file that saves to your device.</p>
+      <p>The <a href="/arcanum-games">Arcanum Originals</a> — Aevum, Eirathis, The Chronicler, Star Freighter Drift — solve the memory problem from the inside, with compression and state management built into the system prompt itself. If you download one of those games, you don't need the Campaign Memory Tool. But for homebrew campaigns running in any model, on any platform — these tools bring the same structural discipline without requiring you to change how you play.</p>
+      <p>If you haven't read <a href="/blog/why-llms-forget">why AI campaigns fall apart at turn 50</a>, that article is the technical foundation behind both the memory tool and the Originals. Understanding the context window problem — and the specific fixes that work — makes everything here more effective.</p>
     </div>
 
   </div>
@@ -89,5 +105,7 @@ const jsonLd = {
     .closing h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1.2rem; }
     .closing p { color: var(--parchment-dim); line-height: 1.85; font-size: 1rem; margin-bottom: 1.2rem; }
     .closing p:last-child { margin-bottom: 0; }
+    .closing a { color: var(--ember); }
+    .closing code { font-family: var(--mono); font-size: .84em; color: var(--rune); background: var(--ink); padding: .1em .4em; border-radius: 3px; }
   </style>
 </Base>
