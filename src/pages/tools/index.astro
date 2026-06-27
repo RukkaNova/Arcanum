@@ -45,6 +45,21 @@ const jsonLd = {
 
       <div class="tool-card">
         <div class="tool-card-inner">
+          <div class="tool-tag mono">Session Setup</div>
+          <h2>AI RPG Prompt Builder</h2>
+          <p class="tool-desc">The gap between "I want to run an RPG in ChatGPT" and a session that actually holds together is almost always the system prompt. This tool builds one in under a minute: select your model, genre, tone, focus, and campaign length, and it assembles a structured, copy-paste-ready system prompt — no AI called, no account needed, runs entirely in your browser.</p>
+          <p class="tool-desc">Drop the result into ChatGPT as Custom GPT instructions, a Claude Project's custom instructions, or a Gemini Gem. The prompt establishes genre, tone, agency rules, and memory continuity from turn one. Use the <strong>Long Campaign</strong> option to append save-state and compression instructions that pair directly with the Campaign Memory Tool.</p>
+          <div class="tool-meta mono">
+            <span class="badge">Free</span>
+            <span class="badge">Client-side only</span>
+            <span class="badge">ChatGPT · Claude · Gemini</span>
+          </div>
+          <a class="tool-cta mono" href="/tools/prompt-builder">Open tool →</a>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="tool-card-inner">
           <div class="tool-tag mono">Research &amp; Discovery</div>
           <h2>Platform Comparison Matrix</h2>
           <p class="tool-desc">Ten reviewed AI roleplay platforms — <a href="/clients/friends-and-fables">Friends & Fables</a>, <a href="/clients/roleforge">RoleForge</a>, <a href="/clients/janitor-ai">Janitor AI</a>, and seven more — in a single sortable table. The columns that matter most: rating, pricing tier, which AI models run under the hood, and how each platform handles memory across sessions.</p>
@@ -62,6 +77,7 @@ const jsonLd = {
 
     <div class="closing prose">
       <h2>Why These Tools Exist Separately from the Games</h2>
+      <p>The <a href="/tools/prompt-builder">AI RPG Prompt Builder</a> is for the question before the first turn: how do I give the AI the instructions it needs to actually run a game? A well-structured system prompt defines genre, tone, agency rules, and memory continuity before the player types a single word — it is the difference between a session that holds together and one that quietly improvises its way off the rails by turn ten.</p>
       <p>The comparison matrix is for the question before the campaign starts: which platform is actually worth your time? It pulls every reviewed client into one place so you can make that call without opening ten tabs — and points directly into the full write-up when you need the reasoning behind a rating.</p>
       <p>The Campaign Memory Tool is for the question that arrives around session four: why does the AI keep losing the thread? Context windows fill. Models drift. Characters forget what happened ten scenes ago. The tool gives you a structured place to fight that — state logging, a compression prompt, a <code>.arcanum</code> file that saves to your device.</p>
       <p>The <a href="/arcanum-games">Arcanum Originals</a> — Aevum, Eirathis, The Chronicler, Star Freighter Drift — solve the memory problem from the inside, with compression and state management built into the system prompt itself. If you download one of those games, you don't need the Campaign Memory Tool. But for homebrew campaigns running in any model, on any platform — these tools bring the same structural discipline without requiring you to change how you play.</p>

@@ -1,0 +1,435 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'AI RPG Prompt Builder',
+  description: 'Free browser-based tool that assembles a ready-to-paste system prompt for ChatGPT, Claude, or Gemini RPG sessions. Select genre, tone, focus, and memory approach — the tool builds the prompt instantly, client-side, no AI required.',
+  url: 'https://arcanumrpgs.com/tools/prompt-builder',
+  applicationCategory: 'GameApplication',
+  operatingSystem: 'Any',
+  browserRequirements: 'Requires JavaScript',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
+  creator: { '@type': 'Organization', name: 'Arcanum', url: 'https://arcanumrpgs.com' },
+};
+---
+<Base
+  title="AI RPG Prompt Builder — Generate a System Prompt for ChatGPT, Claude, or Gemini | Arcanum"
+  description="Select your model, genre, tone, focus, and memory approach. The AI RPG Prompt Builder assembles a ready-to-paste system prompt in seconds — pure client-side, no account, no API calls."
+  image="/img/arcanum-og.webp"
+  type="website"
+  jsonLd={jsonLd}
+>
+<div class="wrap pb-page">
+
+  <p class="eyebrow mono">// tools</p>
+  <h1>AI RPG Prompt Builder</h1>
+
+  <div class="intro prose">
+    <p>The gap between "I want to run an RPG inside ChatGPT" and "I have a session that actually works" is almost always the system prompt. Most players skip it entirely, paste a two-sentence placeholder, and then wonder why the AI invents things it shouldn't, loses track of what happened, or never quite feels like a <em>game</em>. A well-structured system prompt is the difference between an AI that thinks it's writing a story and one that knows it's running a campaign for you.</p>
+    <p>This tool builds that prompt in under a minute. Select your model, genre, tone, focus, and campaign length — the tool assembles a structured, copy-paste-ready system prompt you drop straight into <strong>ChatGPT</strong> as Custom GPT instructions, a <strong>Claude Project's</strong> custom instructions, or a <strong>Gemini Gem</strong>. No AI is called. Nothing is sent anywhere. The intelligence is in the template, not in a generation step.</p>
+    <p>For the best results on Claude, read the <a href="/blog/claude-rpg-guide">Claude RPG guide</a> to learn exactly where to paste these instructions inside a Project. For Gemini, the <a href="/blog/gemini-rpg-guide">Gemini RPG guide</a> covers Gem setup — where the 2M-token context window makes this kind of prompt particularly powerful over long campaigns.</p>
+  </div>
+
+  <!-- ═══════════════════════════════ TOOL SHELL -->
+  <div class="tool-shell" id="tool">
+
+    <div class="tool-header">
+      <p class="tool-header-label mono">Configure your prompt</p>
+    </div>
+
+    <div class="fields-grid">
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-model">AI Model</label>
+        <select id="f-model" class="ti sel">
+          <option value="">Choose…</option>
+          <option value="chatgpt">ChatGPT</option>
+          <option value="claude">Claude</option>
+          <option value="gemini">Gemini</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-genre">Genre</label>
+        <select id="f-genre" class="ti sel">
+          <option value="">Choose…</option>
+          <option value="medieval-fantasy">Medieval Fantasy</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="crime">Crime &amp; Underworld</option>
+          <option value="horror">Horror</option>
+          <option value="pirate">Pirate</option>
+          <option value="cyberpunk">Cyberpunk</option>
+          <option value="post-apocalyptic">Post-Apocalyptic</option>
+          <option value="open-world">Open World Adventure</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-tone">Tone</label>
+        <select id="f-tone" class="ti sel">
+          <option value="">Choose…</option>
+          <option value="dark-gritty">Dark &amp; Gritty</option>
+          <option value="heroic-epic">Heroic &amp; Epic</option>
+          <option value="slow-burn">Slow-Burn &amp; Relationship-Driven</option>
+          <option value="survival-tense">Survival &amp; Tense</option>
+          <option value="lighthearted">Lighthearted &amp; Adventurous</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-focus">Primary Focus</label>
+        <select id="f-focus" class="ti sel">
+          <option value="">Choose…</option>
+          <option value="combat">Combat &amp; Tactics</option>
+          <option value="relationships">Relationships &amp; Romance</option>
+          <option value="exploration">Exploration &amp; Discovery</option>
+          <option value="politics">Politics &amp; Intrigue</option>
+          <option value="survival-resource">Survival &amp; Resource Management</option>
+        </select>
+      </div>
+
+      <div class="field-group field-group--full">
+        <label class="flabel mono" for="f-memory">Memory Approach</label>
+        <select id="f-memory" class="ti sel">
+          <option value="">Choose…</option>
+          <option value="standard">Standard — single session or short campaign</option>
+          <option value="long">Long Campaign — includes compression &amp; save-state instructions</option>
+        </select>
+        <p class="field-hint mono">Long Campaign appends instructions for the AI to produce a periodic memory block you can paste at the start of new sessions. Pairs with the <a href="/tools/campaign-memory">Campaign Memory Tool</a>.</p>
+      </div>
+
+    </div><!-- /fields-grid -->
+
+    <div class="gen-bar">
+      <button class="gen-btn" id="gen-btn">Generate Prompt</button>
+      <p class="gen-note mono" id="gen-note" aria-live="polite"></p>
+    </div>
+
+  </div><!-- /tool-shell -->
+
+  <!-- OUTPUT -->
+  <div class="prompt-box hidden" id="prompt-box">
+    <div class="prompt-top">
+      <div class="prompt-meta">
+        <p class="prompt-title mono">Generated System Prompt</p>
+        <p class="prompt-hint">Paste this into your AI's system instructions. On ChatGPT: Custom GPT → Configure → Instructions. On Claude: Project → Set custom instructions. On Gemini: Gem → Instructions field.</p>
+      </div>
+      <button class="tbtn" id="copy-btn">Copy</button>
+    </div>
+    <textarea id="prompt-out" class="prompt-ta" readonly></textarea>
+    <p class="copy-ok hidden mono" id="copy-ok">✓ Copied to clipboard</p>
+    <p class="prompt-cta">Want a deeper game? Browse the <a href="/arcanum-games">Arcanum Originals</a> — fully engineered engines built for long campaigns.</p>
+  </div>
+
+  <!-- CLOSING EDITORIAL -->
+  <div class="closing prose">
+    <h2>How to Use a Generated Prompt</h2>
+    <p>A generated prompt is a strong starting point, not a ceiling. Paste it into your model of choice and start editing immediately: add your character's name, a specific world premise you've invented, factions, mechanics you want emphasised, or any house rules that matter to you. The prompt gives the AI its operating instructions; everything that makes the campaign yours gets layered on top.</p>
+    <p>The <a href="/blog/claude-rpg-guide">Claude RPG guide</a> walks through exactly how to set up a Claude Project for a long campaign — including where these instructions go, how to load world documents into Project Knowledge, and what makes Claude particularly well-suited to slow-burn relationship campaigns. The <a href="/blog/gemini-rpg-guide">Gemini RPG guide</a> covers the same for Gemini Gems, where the 2M-token context window is a genuine structural advantage for exploration-heavy and long-form play.</p>
+    <p>If your campaign runs long, the <a href="/tools/campaign-memory">Campaign Memory Tool</a> handles the other side of the problem: tracking characters, plot threads, world facts, and relationships in a structured form, then generating a compression prompt that lets the AI read your full state and return a compact memory block. Between a solid starting prompt and a structured memory approach, coherent AI campaigns past turn 100 are achievable on any platform.</p>
+    <p>The <a href="/arcanum-games">Arcanum Originals</a> — Aevum Realm Architect, Eirathis Strider, The Chronicler, Star Freighter Drift — solve the system prompt problem from a different angle: they are fully-engineered RPG engines where the prompt, the world bible, and the memory management are all built in from the start. If you want to drop into a complete system rather than build from a template, they are free to download.</p>
+  </div>
+
+</div>
+
+<script is:inline>
+// ─────────────────────────────────────────────
+// CONTENT BLOCKS
+// ─────────────────────────────────────────────
+
+var GENRE = {
+  'medieval-fantasy': 'The setting is a medieval fantasy world with genuine weight and internal logic. Magic exists but has limits and costs — practitioners are rare, and the ability to reshape reality comes with prices the powerful try not to advertise. Social hierarchy is the operating system of this world: birth, title, and reputation determine what doors open and which refuse you. The land has history — ruins, fallen empires, old wounds that have not closed — and that history bleeds into the present. Monsters are real. So are lords who are worse than monsters.',
+  'sci-fi': 'The setting is a science-fiction universe where humanity has expanded beyond its origin world without outrunning its contradictions. Technology advanced enough to feel miraculous coexists with poverty, political violence, and entropy. Space travel is possible but costly — in time, resources, or risk. Alien life may exist; if it does, it is genuinely alien, not humans in different bodies. Corporate entities, colonial powers, and independent factions compete for resources and territory. What survives from Earth — if Earth still exists — is fragments and mythology.',
+  'crime': 'The setting is a criminal underworld nested inside a larger society — city, megacity, or otherwise. Law enforcement exists and has real power; working around it is part of the game. The underworld has its own hierarchy: bosses, fixers, enforcers, street runners, and everyone working their own angle. Loyalty is conditional, information is currency, and violence is a last resort for the competent and a first resort for the dangerous. The player character operates in grey spaces — not entirely criminal, not entirely clean — and the line between those categories keeps moving.',
+  'horror': 'The setting generates dread. What threatens the player character may be supernatural, cosmic, psychological, or simply human — but it is real, and it does not follow the rules of a safe world. Knowledge is both weapon and wound: understanding what is happening often makes it worse. The world may feel wrong before anything visible goes wrong. Isolation, vulnerability, and the unreliability of the senses are tools at your disposal. Not every horror can be defeated — some can only be survived, endured, or fled. Let weight sit; do not rush toward resolution.',
+  'pirate': 'The setting is the open sea, and everything the sea touches is contested. Naval powers claim sovereignty but cannot enforce it everywhere — not on open water, not in certain ports, not where the law arrives weeks after events. The player character operates in those gaps: between jurisdictions, between loyalties, on water that belongs to whoever can hold it. Ships are communities under sustained pressure — small, closed, every member necessary, and capable of turning on themselves. Ports are brief civilisations of commerce, drink, and violence. Treasure is real, but so is everything it costs to reach it.',
+  'cyberpunk': 'The setting is a near-future urban dystopia where megacorporations have displaced nation-states as the primary centre of power. The city is layered: gleaming arcologies and augmented elites above, crowded neon-lit streets and desperate improvisation below. Technology is intimate — implanted, worn, carried — and everywhere compromised. Data is as valuable as any physical commodity, and the infrastructure is owned by people who can afford to weaponise it. The player character exists outside corporate legitimacy: a runner, a fixer, a freelancer, or someone who used to be something else and is not going back.',
+  'post-apocalyptic': 'The setting is a civilisation that ended — whatever the cause, the infrastructure is gone, the institutions are gone, and what replaced them is smaller, harder, and held together by need rather than law. Scarcity is the permanent condition. Every settlement, faction, and survivor community has found a different answer to the question of how to keep going, and not all answers are equal or compatible. The player character moves through this landscape: not a builder of what was, but someone navigating what is, making choices that will matter to people who never asked to matter.',
+  'open-world': 'The setting is a wide world with no fixed destination. Regions differ genuinely — different cultures, climates, dangers, and opportunities — and the player character moves through them on their own terms. There is no prescribed quest and no scripted endpoint. Ancient ruins hold what old civilisations left behind, which is rarely what people expect. Roads connect places that would rather remain separate. Secrets are distributed across the map, not concentrated at any marked location. The world was here before the player character arrived and will persist after — and it has opinions about being disturbed.'
+};
+
+var TONE = {
+  'dark-gritty': 'TONE: DARK & GRITTY\nMoral choices rarely have clean outcomes — doing the right thing often has a cost, and doing the wrong thing does too. NPCs have interests, fears, and histories that may conflict with the player\'s goals. Consequences persist: an enemy made stays an enemy, a burned bridge stays burned, a reputation follows. Do not soften difficult moments or reach for resolution before it has been earned. Let weight sit.',
+  'heroic-epic': 'TONE: HEROIC & EPIC\nThe campaign operates at mythic scale. The player character is capable of extraordinary things, but those things must be earned — the obstacles are real, and victories only feel like victories because they are genuinely hard. The world is large enough that legendary deeds matter, and NPCs take notice when something extraordinary happens. The emotional register is heightened: love is deep, loss is profound, triumph is real.',
+  'slow-burn': 'TONE: SLOW-BURN & RELATIONSHIP-DRIVEN\nThe campaign prioritises depth over pace. Characters — the player\'s and the people around them — develop through accumulated small moments as much as through dramatic events. Trust is earned through sustained behaviour over time, not through declarations. Emotional shifts are gradual and legible: a companion who starts guarded does not open overnight. The most important things that happen in this campaign will often feel small at the time they occur.',
+  'survival-tense': 'TONE: SURVIVAL & TENSE\nThe environment is hostile, and the tension is constant. Resources are finite, every decision carries cost, and there is no moment of absolute safety — stability is always provisional. Threats are real and capable of ending things. Under this pressure, small choices matter: what to prioritise, what to risk, who to trust with what. The player character is not invincible. Do not let them forget this.',
+  'lighthearted': 'TONE: LIGHTHEARTED & ADVENTUROUS\nThe campaign is warm and adventure-forward. The world is full of wonders, colourful characters, and problems that yield to ingenuity, luck, and determination. Setbacks exist but do not spiral into despair. NPCs are vivid and occasionally absurd. Humour belongs here. The player character is broadly capable, and the world — while providing genuine challenge — is not trying to destroy them.'
+};
+
+var FOCUS = {
+  'combat': 'PRIMARY FOCUS: COMBAT & TACTICS\nCombat is a primary mode of this campaign and deserves full attention. When fighting occurs: establish the environment clearly (terrain, obstacles, distances, sight lines), track enemy condition and behaviour, and reward tactical thinking. A player who prepares — sets an ambush, exploits a weakness, identifies the right approach — should find that preparation reflected in outcomes. Combat is a problem with solutions, not a random event, and the best solution is rarely the most direct one. Injuries persist beyond the immediate scene.',
+  'relationships': 'PRIMARY FOCUS: RELATIONSHIPS & ROMANCE\nCompanions and significant NPCs are this campaign\'s emotional core. Each significant character has their own goals, history, and emotional state — track these internally and never surface them as visible meters or scores. Trust and affection shift based on what the player actually does over time, not what they declare. Characters remember. Relationships can deepen, fracture, or end permanently. Romance emerges where it would emerge organically from accumulated trust and genuine connection — never rushed, never forced, always emotionally coherent with who the character is.',
+  'exploration': 'PRIMARY FOCUS: EXPLORATION & DISCOVERY\nThe world rewards curiosity. Unknown regions, sealed chambers, ruined structures, and forgotten histories are genuinely waiting to be found — carrying real content: lore, objects, danger, opportunity. The sensation of genuine discovery matters: give the player information they could not have predicted, and secrets that recontextualise what they thought they understood. Travel is not a loading screen — it has its own texture, encounters, and atmosphere. The best finds rarely announce themselves.',
+  'politics': 'PRIMARY FOCUS: POLITICS & INTRIGUE\nFactions have agendas, and those agendas conflict. The player character moves through a landscape of competing interests: who controls what, who wants what someone else has, who owes a debt. Information is currency — knowing something others do not is power, and being known to know something can be dangerous. Allegiances shift; allies have conditions. Every significant NPC is working toward something, and their cooperation comes with a cost the player may not see until later. Betrayal is possible. So is loyalty, for the right price.',
+  'survival-resource': 'PRIMARY FOCUS: SURVIVAL & RESOURCE MANAGEMENT\nResources matter and must be tracked explicitly: food, water, ammunition, fuel, medicine, currency — whatever is scarce in this world. The player character\'s decisions about what to spend, save, and sacrifice shape the campaign\'s texture and outcomes. Scarcity is not a punishment — it is the design. Track inventory concisely and accurately, and when resources run low, make the player feel it in how the world responds to them.'
+};
+
+var MODEL_SUFFIX = {
+  'chatgpt': 'PLATFORM NOTE\nYou are running as a Custom GPT in ChatGPT. Maintain a hidden internal notepad tracking campaign state — active characters, key relationships, significant events, world facts, and the last scene. Consult it before each response. If the player types /fix_state, surface your current understanding of the campaign state and invite corrections.',
+  'claude': 'PLATFORM NOTE\nYou are running as a Claude Project. Use your persistent memory within this Project across all conversations in it. Maintain detailed internal tracking of campaign state: characters, relationships, events, world facts. If the player types /fix_state, summarise your current understanding of the campaign state clearly and invite the player to correct anything that has drifted.',
+  'gemini': 'PLATFORM NOTE\nYou are running as a Gemini Gem. Your extended context allows deep campaign awareness across long sessions. Maintain a running internal log of world state, character development, and plot threads throughout the campaign. If the player types /fix_state, provide a clear readout of your current understanding and adjust based on the player\'s corrections.'
+};
+
+var AGENCY = 'AGENCY RULES\nNever narrate the player character\'s thoughts, words, or actions — describe the world and wait for the player to act. If an NPC makes a proposal or initiates something, present it and stop; the player decides the response. Never fast-forward time, skip scenes, or summarise travel unless the player explicitly asks to. If the player attempts something unlikely or impossible, describe the consequence honestly — do not silently succeed it on their behalf.';
+
+var MEMORY_STANDARD = 'CONTINUITY\nTrack all established facts — character names, world details, promises made, events that occurred — and never contradict them. If you are uncertain whether something was established, say so and ask rather than invent. Consistency is more important than narrative momentum.';
+
+var MEMORY_LONG = 'CONTINUITY & MEMORY COMPRESSION\nTrack all established facts and never contradict them. Every 20 to 30 turns — when the player requests it or when context is growing heavy — produce a CAMPAIGN MEMORY BLOCK: a structured summary of all load-bearing facts in under 500 words, formatted for pasting at the start of a new session as a context anchor. Use these section labels: CHARACTERS / RELATIONSHIPS / INVENTORY & RESOURCES / LOCATIONS / PLOT THREADS / WORLD FACTS / LAST SCENE. When the player pastes a memory block at the start of a session, treat it as the authoritative record of campaign state.';
+
+var GENRE_LABELS = {
+  'medieval-fantasy': 'medieval fantasy',
+  'sci-fi': 'science-fiction',
+  'crime': 'crime & underworld',
+  'horror': 'horror',
+  'pirate': 'pirate adventure',
+  'cyberpunk': 'cyberpunk',
+  'post-apocalyptic': 'post-apocalyptic',
+  'open-world': 'open world adventure'
+};
+
+// ─────────────────────────────────────────────
+// BUILD
+// ─────────────────────────────────────────────
+function buildPrompt(model, genre, tone, focus, memory) {
+  var genreLabel = GENRE_LABELS[genre] || genre;
+  var opening = 'You are the game master of a solo ' + genreLabel + ' roleplaying campaign. Run a consistent, immersive, and fully responsive RPG for one player. You control the world, the NPCs, and every voice in it — everything except the player\'s own character and their choices.\n\n' + GENRE[genre];
+
+  var memoryBlock = memory === 'long' ? MEMORY_LONG : MEMORY_STANDARD;
+
+  var closing = 'Begin when the player is ready. Ask for the details you need to open the session — character name, background, starting situation, or whatever the genre calls for — then begin.';
+
+  return [opening, TONE[tone], FOCUS[focus], AGENCY, memoryBlock, MODEL_SUFFIX[model], closing].join('\n\n');
+}
+
+// ─────────────────────────────────────────────
+// UI
+// ─────────────────────────────────────────────
+var noteEl = document.getElementById('gen-note');
+
+document.getElementById('gen-btn').addEventListener('click', function () {
+  var model  = document.getElementById('f-model').value;
+  var genre  = document.getElementById('f-genre').value;
+  var tone   = document.getElementById('f-tone').value;
+  var focus  = document.getElementById('f-focus').value;
+  var memory = document.getElementById('f-memory').value;
+
+  var missing = [];
+  if (!model)  missing.push('AI Model');
+  if (!genre)  missing.push('Genre');
+  if (!tone)   missing.push('Tone');
+  if (!focus)  missing.push('Primary Focus');
+  if (!memory) missing.push('Memory Approach');
+
+  if (missing.length) {
+    noteEl.textContent = 'Please select: ' + missing.join(', ') + '.';
+    noteEl.classList.add('note-error');
+    return;
+  }
+
+  noteEl.textContent = '';
+  noteEl.classList.remove('note-error');
+
+  var prompt = buildPrompt(model, genre, tone, focus, memory);
+  document.getElementById('prompt-out').value = prompt;
+
+  var box = document.getElementById('prompt-box');
+  box.classList.remove('hidden');
+  setTimeout(function () { box.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60);
+});
+
+// ─────────────────────────────────────────────
+// COPY
+// ─────────────────────────────────────────────
+document.getElementById('copy-btn').addEventListener('click', function () {
+  var text = document.getElementById('prompt-out').value;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(fallbackCopy);
+  } else {
+    fallbackCopy();
+  }
+});
+function fallbackCopy() {
+  var ta = document.getElementById('prompt-out');
+  ta.select();
+  try { document.execCommand('copy'); showCopied(); } catch (e) {}
+}
+function showCopied() {
+  var el = document.getElementById('copy-ok');
+  el.classList.remove('hidden');
+  setTimeout(function () { el.classList.add('hidden'); }, 2800);
+}
+
+// ─────────────────────────────────────────────
+// CLEAR NOTE ON ANY CHANGE
+// ─────────────────────────────────────────────
+['f-model', 'f-genre', 'f-tone', 'f-focus', 'f-memory'].forEach(function (id) {
+  document.getElementById(id).addEventListener('change', function () {
+    noteEl.textContent = '';
+    noteEl.classList.remove('note-error');
+  });
+});
+</script>
+
+<style>
+  /* ── PAGE ── */
+  .pb-page { padding: 3rem 1.25rem 5rem; max-width: 1080px; margin: 0 auto; }
+  .eyebrow { color: var(--rune); font-size: .78rem; letter-spacing: .06em; margin-bottom: 1rem; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: 1.6rem; }
+
+  /* ── INTRO / CLOSING ── */
+  .intro.prose, .closing.prose { max-width: 780px; }
+  .intro.prose p { color: var(--parchment-dim); line-height: 1.85; font-size: 1.05rem; margin-bottom: 1.2rem; }
+  .intro.prose p:last-child { margin-bottom: 0; }
+  .closing { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 2.5rem; }
+  .closing h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1.2rem; }
+  .closing p { color: var(--parchment-dim); line-height: 1.85; font-size: 1rem; margin-bottom: 1.2rem; }
+  .closing p:last-child { margin-bottom: 0; }
+  .closing a { color: var(--ember); }
+
+  /* ── TOOL SHELL ── */
+  .tool-shell {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2.5rem 0 2rem;
+  }
+  .tool-header {
+    padding: 1rem 1.4rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink);
+  }
+  .tool-header-label { font-size: .72rem; color: var(--rune); text-transform: uppercase; letter-spacing: .06em; margin: 0; }
+
+  /* ── FIELDS GRID ── */
+  .fields-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    padding: 1.4rem;
+  }
+  @media (max-width: 560px) { .fields-grid { grid-template-columns: 1fr; } }
+  .field-group { display: flex; flex-direction: column; gap: .35rem; }
+  .field-group--full { grid-column: 1 / -1; }
+  .flabel { font-size: .72rem; color: var(--rune); text-transform: uppercase; letter-spacing: .06em; }
+  .field-hint { font-size: .76rem; color: var(--rune); line-height: 1.6; margin-top: .4rem; }
+  .field-hint a { color: var(--ember); }
+
+  /* ── INPUTS ── */
+  .ti {
+    font-family: var(--mono);
+    font-size: .85rem;
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: .45rem .75rem;
+    color: var(--parchment);
+    width: 100%;
+    transition: border-color .15s;
+  }
+  .ti:focus { outline: none; border-color: var(--ember-soft, var(--ember)); }
+  .sel {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23aaa'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right .7rem center;
+    background-color: var(--ink-2);
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  .sel option { background: var(--ink); color: var(--parchment); }
+
+  /* ── GENERATE BAR ── */
+  .gen-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 1.4rem;
+    border-top: 1px solid var(--line);
+    background: var(--ink);
+  }
+  .gen-btn {
+    font-family: var(--mono);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    padding: .6rem 1.6rem;
+    border: 1px solid var(--ember);
+    background: color-mix(in srgb, var(--ember) 10%, transparent);
+    color: var(--ember);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+    white-space: nowrap;
+  }
+  .gen-btn:hover { background: color-mix(in srgb, var(--ember) 20%, transparent); }
+  .gen-note { font-size: .76rem; color: var(--rune); margin: 0; }
+  .gen-note.note-error { color: #c55; }
+
+  /* ── PROMPT BOX ── */
+  .prompt-box {
+    border: 1px solid var(--ember-soft, var(--ember));
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem 0;
+  }
+  .prompt-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.1rem 1.4rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--ink-2);
+    flex-wrap: wrap;
+  }
+  .prompt-meta { flex: 1; }
+  .prompt-title { font-size: .74rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ember); margin: 0 0 .35rem; }
+  .prompt-hint { font-size: .82rem; color: var(--rune); line-height: 1.6; max-width: 60ch; margin: 0; }
+  .tbtn {
+    font-family: var(--mono);
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: .45rem 1rem;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--parchment-dim);
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color .15s, color .15s;
+    flex-shrink: 0;
+  }
+  .tbtn:hover { border-color: var(--parchment); color: var(--parchment); }
+  .prompt-ta {
+    display: block;
+    width: 100%;
+    min-height: 340px;
+    font-family: var(--mono);
+    font-size: .78rem;
+    line-height: 1.8;
+    background: var(--ink);
+    border: none;
+    padding: 1.2rem 1.4rem;
+    color: var(--parchment-dim);
+    resize: vertical;
+  }
+  .copy-ok { font-size: .75rem; color: var(--ember); padding: .3rem 1.4rem; margin: 0; }
+  .prompt-cta {
+    font-size: .88rem;
+    color: var(--parchment-dim);
+    padding: .9rem 1.4rem 1rem;
+    border-top: 1px solid var(--line);
+    background: var(--ink-2);
+    margin: 0;
+    line-height: 1.6;
+  }
+  .prompt-cta a { color: var(--ember); }
+
+  .hidden { display: none !important; }
+</style>
+</Base>

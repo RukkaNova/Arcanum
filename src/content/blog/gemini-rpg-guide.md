@@ -40,7 +40,7 @@ The practical architecture for an RPG Gem is two components:
 
 Once the Gem is saved, every session you open inside it starts from the same foundation. No re-pasting instructions. No re-establishing the world. You open the Gem and play, and the GM remembers who it is.
 
-The setup takes under five minutes: open Gemini Advanced, find Gems in the sidebar, create a new Gem, paste your master prompt into Instructions, upload your world file, save. The [full step-by-step guide is on the Eirathis Strider page](/arcanum-games/eirathis) if you want a concrete reference alongside a working game.
+The setup takes under five minutes: open Gemini Advanced, find Gems in the sidebar, create a new Gem, paste your master prompt into Instructions, upload your world file, save. The [full step-by-step guide is on the Eirathis Strider page](/arcanum-games/eirathis) if you want a concrete reference alongside a working game. If you want to build a custom Gem from scratch, the [AI RPG Prompt Builder](/tools/prompt-builder) generates a Gemini-ready system prompt from your genre, tone, and focus selections in under a minute.
 
 ## What Genres Gemini Handles Best
 
