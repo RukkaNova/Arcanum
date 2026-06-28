@@ -60,7 +60,7 @@ It is the wrong tool for persistent, mechanical campaigns — it has no world st
 
 ## The Fully Uncensored Route: Local LLMs via SillyTavern
 
-If you want zero restrictions and complete privacy, the answer is to stop using someone else's server. Running an open-weight model locally through **[SillyTavern](/blog/best-llm-for-roleplay)** is the only setup with no alignment layer you didn't choose, and nothing you write ever leaves your machine.
+If you want zero restrictions and complete privacy, the answer is to stop using someone else's server. Running an open-weight model locally through **[SillyTavern](/blog/sillytavern-guide)** is the only setup with no alignment layer you didn't choose, and nothing you write ever leaves your machine.
 
 In 2026 the quality gap has narrowed sharply. A well-configured **Llama 3.3 70B** or **Qwen3 32B** produces roleplay the SillyTavern community rates competitive with paid cloud tiers for typical sessions, and the community fine-tune ecosystem — **MythoMax**, **Psyfighter**, and dozens of roleplay-tuned variants — gives you models specifically trained to stay in character and never break for a content reason.
 
@@ -107,7 +107,7 @@ A quick filter:
 
 **You want to talk to a specific character with minimal setup** → [Janitor AI](/clients/janitor) with BYOM.
 
-**You want genuinely zero restrictions and full privacy, and have a GPU** → a local model (Llama 3.3 70B / Qwen3 32B) via [SillyTavern](/blog/best-llm-for-roleplay).
+**You want genuinely zero restrictions and full privacy, and have a GPU** → a local model (Llama 3.3 70B / Qwen3 32B) via [SillyTavern](/blog/sillytavern-guide).
 
 **You want cheap, unrestricted, no local hardware** → DeepSeek V4 through OpenRouter as a SillyTavern backend.
 
@@ -134,7 +134,7 @@ Yes. Running an open-weight model locally via SillyTavern is free after hardware
 Not really — all three apply model-level guardrails that no prompt reliably removes. They're excellent for dark, serious storytelling that stops short of explicit content (Claude especially), but if you need genuinely unrestricted output, use a permissive platform or a local model instead.
 
 **What is SillyTavern and why does it come up for uncensored roleplay?**
-SillyTavern is a front-end that connects to a model of your choice — local or via API. It's the standard tool for uncensored play because it lets you run open-weight models with no alignment layer (full freedom, full privacy) or point at permissive API models like DeepSeek. It needs a bit of setup and, for local models, a capable GPU.
+[SillyTavern](/blog/sillytavern-guide) is a front-end that connects to a model of your choice — local or via API. It's the standard tool for uncensored play because it lets you run open-weight models with no alignment layer (full freedom, full privacy) or point at permissive API models like DeepSeek. It needs a bit of setup and, for local models, a capable GPU.
 
 **Does uncensored mean anything goes?**
 No. The AI being willing to write something doesn't change platform terms, API usage policies, age-verification requirements, or the law. Uncensored AI roleplay is for fiction and consenting adult themes — keep real people out of it and stay within what's legal where you are.
