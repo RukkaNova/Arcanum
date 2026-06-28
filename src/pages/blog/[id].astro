@@ -5,7 +5,9 @@ export async function getStaticPaths(){
   const posts=await getCollection('blog');
   return posts.map(p=>({params:{id:p.id},props:{post:p}}));
 }
-const { post }=Astro.props; const { Content }=await render(post); const d=post.data;
+const { post }=Astro.props; const { Content, headings }=await render(post); const d=post.data;
+const toc=headings.filter(h=>h.depth===2);
+const showToc=toc.length>=4;
 const dateModified=(d.updatedDate??d.pubDate).toISOString();
 const isPlatformReview=d.section==='platform-reviews';
 // Own products (Arcanum Originals carry a releaseSlug) must NOT emit self-serving
@@ -32,6 +34,14 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
       <span class="author mono">by <a href="/about">Rukka</a></span>
       {updatedDisplay && <><span class="sep">·</span><span class="updated mono">Updated {updatedDisplay}</span></>}
     </div>
+    {showToc && (
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-label mono">On this page</p>
+        <ol>
+          {toc.map(h => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+        </ol>
+      </nav>
+    )}
     <div class="prose"><Content/></div>
     {d.releaseSlug && (
       <div class="dl-cta">
@@ -48,6 +58,13 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
     .byline .sep{color:var(--line);font-size:.8rem;}
     .byline .author a{color:var(--rune);}
     .byline .author a:hover{color:var(--ember);text-decoration:none;}
+    .toc{margin-top:2rem;border:1px solid var(--line);border-radius:10px;background:var(--ink-2);padding:1.1rem 1.3rem;}
+    .toc-label{color:var(--rune);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.7rem;}
+    .toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.45rem;counter-reset:toc;}
+    .toc li{counter-increment:toc;}
+    .toc a{color:var(--parchment-dim);font-size:.92rem;}
+    .toc a::before{content:counter(toc,decimal-leading-zero);color:var(--rune);font-family:var(--mono);font-size:.72rem;margin-right:.6rem;}
+    .toc a:hover{color:var(--ember);text-decoration:none;}
     .prose{margin-top:2rem;}
     .prose :global(p){margin-bottom:1rem;}
     .dl-cta{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line);}

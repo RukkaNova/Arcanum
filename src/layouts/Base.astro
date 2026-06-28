@@ -13,6 +13,16 @@ const { title, description, image, type = 'website', jsonLd, noindex = false } =
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image ? new URL(image, Astro.site) : undefined;
 const SITE = 'Arcanum';
+const path = Astro.url.pathname;
+const navItems = [
+  { href: '/games', label: 'Games' },
+  { href: '/clients', label: 'Clients' },
+  { href: '/arcanum-games', label: 'Arcanum Originals' },
+  { href: '/blog', label: 'Codex' },
+  { href: '/tools', label: 'AI RPG Tools' },
+  { href: '/about', label: 'About' },
+];
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
 ---
 <!doctype html>
 <html lang="en">
@@ -99,6 +109,7 @@ const SITE = 'Arcanum';
     .nav-toggle:checked ~ .nav-links { display: flex; }
     .nav-links a { color: var(--parchment-dim); padding: .75rem .2rem; border-top: 1px solid var(--line); }
     .nav-links a:hover { color: var(--ember); text-decoration: none; }
+    .nav-links a[aria-current="page"] { color: var(--ember); }
     @media (min-width: 760px) {
       .nav { flex-wrap: nowrap; }
       .nav-toggle, .nav-burger { display: none; }
@@ -117,6 +128,9 @@ const SITE = 'Arcanum';
     .prose h3 { font-size: 1.25rem; font-weight: 600; margin: 1.9rem 0 .5rem; color: var(--parchment); }
     .prose hr { border: none; height: 1px; background: var(--line); margin: 2.5rem 0; }
     .prose strong { color: var(--parchment); }
+    /* persistent (subtle) underline on in-content links — affordance + WCAG, brightens on hover */
+    .prose a { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--ember) 45%, transparent); text-underline-offset: 2px; }
+    .prose a:hover { text-decoration-color: var(--ember); }
     .prose ul, .prose ol { padding-left: 1.4rem; margin-bottom: 1rem; }
     .prose li { margin-bottom: .35rem; color: var(--parchment-dim); }
     .footer-inner { display: flex; flex-direction: column; gap: .9rem; }
@@ -137,12 +151,9 @@ const SITE = 'Arcanum';
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
       <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
       <nav class="nav-links" aria-label="Primary">
-        <a href="/games">Games</a>
-        <a href="/clients">Clients</a>
-        <a href="/arcanum-games">Arcanum Originals</a>
-        <a href="/blog">Codex</a>
-        <a href="/tools">AI RPG Tools</a>
-        <a href="/about">About</a>
+        {navItems.map(item => (
+          <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+        ))}
       </nav>
     </div>
   </header>
