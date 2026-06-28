@@ -25,7 +25,7 @@ Before the directory, a necessary distinction that most content in this space bl
 
 Both are valid. They serve different needs. This directory covers the first category exclusively: games you can download for free today and play inside ChatGPT, Claude, or Gemini without paying anything extra.
 
-For the platform category, Arcanum maintains separate, honest reviews at [/clients/](/clients/).
+For the platform category, Arcanum maintains separate, honest reviews at [/clients/](/clients).
 
 ---
 
@@ -66,7 +66,7 @@ Every playthrough generates different opportunities. One run leads through a dis
 
 The companion of Aevum is The Aevum Realm Atlas — approximately 30,000 words of world canon covering every faction, the Deference Engine's rules, the economy tags, and the diplomatic map.
 
-[Download Aevum Realm Architect →](/arcanum-games/aevum/) | [Full Review →](/blog/aevum-realm-architect/)
+[Download Aevum Realm Architect →](/arcanum-games/aevum) | [Full Review →](/blog/aevum-realm-architect)
 
 ---
 
@@ -83,7 +83,7 @@ Relationships here can be ruined and stay ruined. That is not a bug; it is the m
 
 Companion knowledge file: RomanceCronos, which governs the relationship engine's rules and companion memory compression.
 
-[Download The Chronicler →](/arcanum-games/the-chronicler/) | [Full Review →](/blog/the-chronicler/)
+[Download The Chronicler →](/arcanum-games/the-chronicler) | [Full Review →](/blog/the-chronicler)
 
 ---
 
@@ -102,7 +102,7 @@ The companion system includes a jealousy engine, a proactivity loop where compan
 
 Companion knowledge file: Atlas Eirathis, the world canon covering geography, factions, the three layers, creature types, and resolution mechanics.
 
-[Download Eirathis Strider →](/arcanum-games/eirathis/) | [Full Review →](/blog/eirathis-strider/)
+[Download Eirathis Strider →](/arcanum-games/eirathis) | [Full Review →](/blog/eirathis-strider)
 
 ---
 
@@ -117,7 +117,7 @@ The tone is Firefly meets The Expanse: a working-class spacefaring sim where the
 
 Companion knowledge file: Star Chart & Systems Manual, the world canon covering the route network, faction territories, cargo tables, and the three-pillar resolution mechanics.
 
-[Download Star Freighter Drift →](/arcanum-games/star-freighter-drift/) | [Full Review →](/blog/star-freighter-drift/)
+[Download Star Freighter Drift →](/arcanum-games/star-freighter-drift) | [Full Review →](/blog/star-freighter-drift)
 
 ---
 
@@ -132,7 +132,7 @@ The flagship mechanic is The Ledger: a hidden two-axis system tracking your Shap
 
 The Ledger cannot be reset. You can outrun a reputation; you cannot erase it. The city's memory persists.
 
-Watch for the full release at [/arcanum-games/](/arcanum-games/).
+Watch for the full release at [/arcanum-games/](/arcanum-games).
 
 ---
 
@@ -142,7 +142,7 @@ The following games are available in the ChatGPT Custom GPT store. These are com
 
 *This section is regularly updated as new games are reviewed. Submit a game for consideration via [arcanumrpgs.com](https://arcanumrpgs.com).*
 
-For the full, filterable directory of public AI RPG games, visit the [Games Directory →](/games/)
+For the full, filterable directory of public AI RPG games, visit the [Games Directory →](/games)
 
 ---
 
@@ -163,7 +163,7 @@ LLM-native games are one half of the AI RPG ecosystem. For players who want a de
 | Infinity DM | ★★★½ | Freemium | DM assistant tools, tabletop prep |
 | AI Dungeon | ★★★½ | Freemium | Maximum creative freedom, the original AI RPG |
 
-All platform reviews are independent. Arcanum has no commercial relationship with any platform listed here. Full reviews at [/clients/](/clients/).
+All platform reviews are independent. Arcanum has no commercial relationship with any platform listed here. Full reviews at [/clients/](/clients).
 
 ---
 
@@ -172,15 +172,15 @@ All platform reviews are independent. Arcanum has no commercial relationship wit
 The model you play on matters. Each of the three major consumer LLMs has genuine strengths and real limitations for roleplay specifically.
 
 **ChatGPT (GPT-4o / Custom GPTs)**
-The most feature-rich environment for LLM gaming. Custom GPTs allow a dedicated game container — separate from your regular ChatGPT history, with a persistent system prompt and optional knowledge files. Excellent at complex world-building, logical consistency, and rule interpretation. The Custom GPT store also has the largest library of community-built RPG games of any platform. Best suited to games with explicit mechanical systems (Aevum, Star Freighter Drift) where logical consistency under rules pressure matters. For curated picks in this category, see [the best ChatGPT RPG games →](/blog/best-chatgpt-rpg-games/).
+The most feature-rich environment for LLM gaming. Custom GPTs allow a dedicated game container — separate from your regular ChatGPT history, with a persistent system prompt and optional knowledge files. Excellent at complex world-building, logical consistency, and rule interpretation. The Custom GPT store also has the largest library of community-built RPG games of any platform. Best suited to games with explicit mechanical systems (Aevum, Star Freighter Drift) where logical consistency under rules pressure matters. For curated picks in this category, see [the best ChatGPT RPG games →](/blog/best-chatgpt-rpg-games).
 
 **Claude (Projects)**
-The strongest prose writer of the three and the most reliable at maintaining character voice and emotional nuance across a long conversation. Claude Projects work similarly to Custom GPTs — a persistent system prompt, uploaded knowledge files, and a contained game environment. The most natural fit for relationship-heavy games (The Chronicler) where the quality of NPC dialogue and psychological depth matter more than mechanical precision. Claude also enforces player agency more naturally than the other models, making it a stronger host for games with strict agency protocols. For the standouts, see [the best Claude RPGs →](/blog/best-claude-rpgs/).
+The strongest prose writer of the three and the most reliable at maintaining character voice and emotional nuance across a long conversation. Claude Projects work similarly to Custom GPTs — a persistent system prompt, uploaded knowledge files, and a contained game environment. The most natural fit for relationship-heavy games (The Chronicler) where the quality of NPC dialogue and psychological depth matter more than mechanical precision. Claude also enforces player agency more naturally than the other models, making it a stronger host for games with strict agency protocols. For the standouts, see [the best Claude RPGs →](/blog/best-claude-rpgs).
 
 **Gemini (Gems)**
-The practical advantage Gemini has over the other two is context window: Gemini's 2M token window is the largest available to consumer users, which means longer campaigns before memory compression becomes critical. Gemini Gems function like Custom GPTs and Claude Projects — a dedicated game container with a persistent prompt and knowledge files. Well-suited to games with large world bibles (Eirathis Strider's Atlas is substantial) where the model needs to hold a lot of lore in working memory simultaneously. The Gem library is currently the thinnest of the three, which is both a limitation and an opportunity for early content. See the current standouts in [the best Gemini RPG games →](/blog/best-gemini-rpg-games/).
+The practical advantage Gemini has over the other two is context window: Gemini's 2M token window is the largest available to consumer users, which means longer campaigns before memory compression becomes critical. Gemini Gems function like Custom GPTs and Claude Projects — a dedicated game container with a persistent prompt and knowledge files. Well-suited to games with large world bibles (Eirathis Strider's Atlas is substantial) where the model needs to hold a lot of lore in working memory simultaneously. The Gem library is currently the thinnest of the three, which is both a limitation and an opportunity for early content. See the current standouts in [the best Gemini RPG games →](/blog/best-gemini-rpg-games).
 
-For a full comparison including DeepSeek, MiniMax M2, and local models, see [Best LLM for Roleplay →](/blog/best-llm-for-roleplay/).
+For a full comparison including DeepSeek, MiniMax M2, and local models, see [Best LLM for Roleplay →](/blog/best-llm-for-roleplay).
 
 ---
 
@@ -188,7 +188,7 @@ For a full comparison including DeepSeek, MiniMax M2, and local models, see [Bes
 
 Most LLM RPGs fail not because of bad writing but because they don't solve the structural problems of the medium. Understanding these failures helps you evaluate any game you encounter.
 
-**The turn-50 amnesia problem.** Every LLM has a context window — a limit to how much conversation it holds in active memory. When a campaign exceeds that window, the oldest information begins dropping. The NPC who swore a blood oath in session three greets you like a stranger in session ten. Character names drift. Established world rules get forgotten. Well-engineered games build explicit memory compression systems into their prompt architecture — structured save-states, campaign memory protocols, or player-maintained logs that reinstate context at the start of each session. Games without this are not long-campaign games. [See our Campaign Memory Tool →](/tools/campaign-memory/)
+**The turn-50 amnesia problem.** Every LLM has a context window — a limit to how much conversation it holds in active memory. When a campaign exceeds that window, the oldest information begins dropping. The NPC who swore a blood oath in session three greets you like a stranger in session ten. Character names drift. Established world rules get forgotten. Well-engineered games build explicit memory compression systems into their prompt architecture — structured save-states, campaign memory protocols, or player-maintained logs that reinstate context at the start of each session. Games without this are not long-campaign games. [See our Campaign Memory Tool →](/tools/campaign-memory)
 
 **Narration drift.** The most common agency failure in LLM games: the AI begins making decisions for the player. It narrates their thoughts. It invents their dialogue. It fast-forwards through scenes the player should be playing. This typically starts small and compounds over a session. Well-engineered games include explicit, hard-walled agency protection in their prompt — the equivalent of a constitutional rule that the player controls all thoughts, words, and actions, with a specific command to invoke when the model drifts. Games without this will consistently override the player's choices.
 
@@ -201,7 +201,7 @@ Most LLM RPGs fail not because of bad writing but because they don't solve the s
 ## Frequently Asked Questions
 
 **What is the difference between an LLM RPG game and an AI RPG platform?**
-An LLM RPG game runs inside an AI you already use — a Custom GPT inside ChatGPT, a Project inside Claude, a Gem inside Gemini. No separate account, no new subscription. An AI RPG platform is a standalone product with its own interface, account, and usually its own pricing. Both have value; they serve different preferences. This directory covers the first. Arcanum's [clients section](/clients/) covers the second.
+An LLM RPG game runs inside an AI you already use — a Custom GPT inside ChatGPT, a Project inside Claude, a Gem inside Gemini. No separate account, no new subscription. An AI RPG platform is a standalone product with its own interface, account, and usually its own pricing. Both have value; they serve different preferences. This directory covers the first. Arcanum's [clients section](/clients) covers the second.
 
 **Do I need a paid subscription to play these games?**
 Most of the games in this directory run on the free tiers of ChatGPT, Claude, and Gemini, though free tiers have usage limits. Games with large knowledge files (Aevum's Atlas, Eirathis's world bible) may benefit from paid tiers that allow larger file uploads. All Arcanum Originals are free to download regardless of which model tier you use.
@@ -236,4 +236,4 @@ The Arcanum Originals were built to solve the problems this directory documents.
 
 The directory grows as the category grows. If you have built an LLM RPG game that belongs here, or found one that does, Arcanum wants to know about it.
 
-[Visit Arcanum →](https://arcanumrpgs.com) | [Games Directory →](/games/) | [Platform Reviews →](/clients/) | [Download the Originals →](/arcanum-games/)
+[Visit Arcanum →](https://arcanumrpgs.com) | [Games Directory →](/games) | [Platform Reviews →](/clients) | [Download the Originals →](/arcanum-games)

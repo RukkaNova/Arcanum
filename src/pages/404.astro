@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Page Not Found (404) | Arcanum"
+  description="That page has drifted out of the context window. Find your way back to the LLM RPG games, platform reviews, and Arcanum Originals."
+  noindex={true}
+>
+  <section class="wrap nf">
+    <p class="code mono">// 404</p>
+    <h1>This page drifted out<br/>of the context window.</h1>
+    <p class="lede">The link is broken, the page was moved, or it never existed. No save-state to restore — but everything worth playing is one click away.</p>
+    <div class="cols">
+      <a href="/games"><span class="mono">→</span> Public Games</a>
+      <a href="/clients"><span class="mono">→</span> Platform Reviews</a>
+      <a href="/arcanum-games"><span class="mono">→</span> Arcanum Originals</a>
+      <a href="/blog/llm-rpg-games"><span class="mono">→</span> The LLM RPG Directory</a>
+      <a href="/blog"><span class="mono">→</span> The Codex</a>
+      <a href="/tools"><span class="mono">→</span> AI RPG Tools</a>
+    </div>
+    <a class="home mono" href="/">← Back to Arcanum</a>
+  </section>
+  <style>
+    .nf { padding: 5rem 1.25rem 6rem; max-width: 720px; }
+    .code { color: var(--ember); font-size: .85rem; letter-spacing: .08em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 600; line-height: 1.08; letter-spacing: -.015em; }
+    .lede { color: var(--parchment-dim); font-size: 1.1rem; line-height: 1.6; margin: 1.4rem 0 2.4rem; max-width: 36rem; }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem 1.4rem; margin-bottom: 2.6rem; }
+    @media (max-width: 560px) { .cols { grid-template-columns: 1fr; } }
+    .cols a { display: flex; align-items: baseline; gap: .55rem; color: var(--parchment); font-size: 1.02rem; border-bottom: 1px solid var(--line); padding-bottom: .7rem; }
+    .cols a:hover { color: var(--ember); text-decoration: none; }
+    .cols a .mono { color: var(--rune); font-size: .8rem; }
+    .home { color: var(--parchment-dim); font-size: .85rem; }
+    .home:hover { color: var(--ember); }
+  </style>
+</Base>

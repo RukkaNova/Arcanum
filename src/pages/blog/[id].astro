@@ -8,7 +8,10 @@ export async function getStaticPaths(){
 const { post }=Astro.props; const { Content }=await render(post); const d=post.data;
 const dateModified=(d.updatedDate??d.pubDate).toISOString();
 const isPlatformReview=d.section==='platform-reviews';
-const isGameReview=d.section==='reviews';
+// Own products (Arcanum Originals carry a releaseSlug) must NOT emit self-serving
+// Review/rating structured data — against Google review-snippet guidelines.
+const isOwnProduct=!!d.releaseSlug;
+const isGameReview=d.section==='reviews'&&!isOwnProduct;
 const isReview=(isPlatformReview||isGameReview)&&d.rating;
 const extractSubject=(t)=>t.includes(' Review')?t.split(' Review')[0].trim():t.includes(':')?t.split(':')[0].trim():t;
 const reviewSubject=isReview?extractSubject(d.title):null;
