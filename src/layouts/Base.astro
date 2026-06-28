@@ -34,6 +34,9 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
   <link rel="canonical" href={canonical} />
   {noindex && <meta name="robots" content="noindex, follow" />}
 
+  <!-- Display font: self-hosted latin subset, font-display:optional (no CLS, never swaps after first paint) -->
+  <link rel="preload" href="/fonts/cormorant-garamond-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+
   <!-- Open Graph -->
   <meta property="og:type" content={type} />
   <meta property="og:title" content={title} />
@@ -53,6 +56,14 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 
   <style is:global>
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      font-weight: 600;
+      font-display: optional;
+      src: url("/fonts/cormorant-garamond-600-latin.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
     :root {
       --ink: #14110f;          /* deep near-black brown — the void you summon into */
       --ink-2: #1d1916;
@@ -65,6 +76,7 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
       --rune: #6f8f86;         /* cool counter-accent for "machine" elements */
       --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
       --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, monospace;
+      --display: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
@@ -77,6 +89,8 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
       font-size: 18px;
       -webkit-font-smoothing: antialiased;
     }
+    /* Display face for headings + brand only — body stays on the system serif */
+    h1, h2, h3 { font-family: var(--display); }
     a { color: var(--ember); text-decoration: none; }
     a:hover { text-decoration: underline; text-underline-offset: 3px; }
     .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
@@ -97,7 +111,7 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
       backdrop-filter: blur(8px); z-index: 50;
     }
     .nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; padding: .9rem 0; }
-    .brand { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--parchment); letter-spacing: .01em; }
+    .brand { font-family: var(--display); font-size: 1.5rem; font-weight: 600; color: var(--parchment); letter-spacing: .01em; }
     .brand b { color: var(--ember); font-weight: 600; }
     /* mobile-first nav — JS-free disclosure via the checkbox hack (no layout shift, no script) */
     .nav-toggle { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
