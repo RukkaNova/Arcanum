@@ -57,7 +57,7 @@ const SITE = 'Arcanum';
       --mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, monospace;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     body {
       background: var(--ink);
@@ -86,12 +86,25 @@ const SITE = 'Arcanum';
       background: color-mix(in srgb, var(--ink) 88%, transparent);
       backdrop-filter: blur(8px); z-index: 50;
     }
-    .nav { display: flex; align-items: center; justify-content: space-between; padding: .9rem 0; }
+    .nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; padding: .9rem 0; }
     .brand { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--parchment); letter-spacing: .01em; }
     .brand b { color: var(--ember); font-weight: 600; }
-    .nav-links { display: flex; gap: 1.4rem; font-family: var(--mono); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; }
-    .nav-links a { color: var(--parchment-dim); }
+    /* mobile-first nav — JS-free disclosure via the checkbox hack (no layout shift, no script) */
+    .nav-toggle { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+    .nav-burger { display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 38px; padding: 0 9px; margin-left: auto; cursor: pointer; border: 1px solid var(--line); border-radius: 7px; }
+    .nav-burger span { display: block; height: 2px; width: 100%; background: var(--parchment-dim); transition: background .18s; }
+    .nav-burger:hover span { background: var(--ember); }
+    .nav-toggle:focus-visible + .nav-burger { outline: 2px solid var(--ember); outline-offset: 2px; }
+    .nav-links { display: none; flex-basis: 100%; flex-direction: column; font-family: var(--mono); font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; }
+    .nav-toggle:checked ~ .nav-links { display: flex; }
+    .nav-links a { color: var(--parchment-dim); padding: .75rem .2rem; border-top: 1px solid var(--line); }
     .nav-links a:hover { color: var(--ember); text-decoration: none; }
+    @media (min-width: 760px) {
+      .nav { flex-wrap: nowrap; }
+      .nav-toggle, .nav-burger { display: none; }
+      .nav-links { display: flex !important; flex-basis: auto; flex-direction: row; gap: 1.4rem; font-size: .8rem; }
+      .nav-links a { padding: 0; border-top: none; }
+    }
     footer.site { border-top: 1px solid var(--line); margin-top: 5rem; padding: 2.5rem 0; color: var(--parchment-dim); font-size: .85rem; }
     /* prose tables — used in client/game/release/blog markdown content */
     .prose table { width: 100%; border-collapse: collapse; margin: 1.6rem 0; font-size: .88rem; display: block; overflow-x: auto; }
@@ -100,8 +113,9 @@ const SITE = 'Arcanum';
     .prose td { padding: .65rem 1rem; border-bottom: 1px solid var(--line); color: var(--parchment-dim); vertical-align: top; line-height: 1.5; }
     .prose tr:last-child td { border-bottom: none; }
     .prose tbody tr:hover td { background: color-mix(in srgb, var(--ink-2) 60%, transparent); }
-    .prose h2 { font-size: 1.25rem; font-weight: 600; margin: 2rem 0 .7rem; color: var(--parchment); }
-    .prose h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 .5rem; color: var(--parchment-dim); }
+    .prose h2 { font-size: 1.6rem; font-weight: 600; letter-spacing: -.01em; margin: 2.6rem 0 .8rem; color: var(--parchment); }
+    .prose h3 { font-size: 1.25rem; font-weight: 600; margin: 1.9rem 0 .5rem; color: var(--parchment); }
+    .prose hr { border: none; height: 1px; background: var(--line); margin: 2.5rem 0; }
     .prose strong { color: var(--parchment); }
     .prose ul, .prose ol { padding-left: 1.4rem; margin-bottom: 1rem; }
     .prose li { margin-bottom: .35rem; color: var(--parchment-dim); }
@@ -120,7 +134,9 @@ const SITE = 'Arcanum';
   <header class="site">
     <div class="wrap nav">
       <a href="/" class="brand" style="text-decoration:none">Arc<b>a</b>num</a>
-      <nav class="nav-links">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="nav-links" aria-label="Primary">
         <a href="/games">Games</a>
         <a href="/clients">Clients</a>
         <a href="/arcanum-games">Arcanum Originals</a>
