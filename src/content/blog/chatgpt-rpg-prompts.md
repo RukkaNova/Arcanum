@@ -87,6 +87,8 @@ A prompt only behaves like a real game if it goes in the right place. For a pers
 
 That's what a "ChatGPT RPG Custom GPT prompt" is in practice: the instructions live in the GPT, the lore lives in Knowledge, and every session opens from that foundation. Without a paid plan you can still paste either prompt at the top of a normal chat — you just lose the saved, shareable container.
 
+For the full picture of what ChatGPT does well as a game master, how Custom GPTs work, and where it falls short of Claude and Gemini, see the [ChatGPT RPG guide](/blog/chatgpt-rpg-guide).
+
 ## Generate Your Own
 
 These two prompts are a starting point, not a ceiling. Both came out of the same place with two different sets of choices: the [AI RPG Prompt Builder](/tools/prompt-builder). Pick ChatGPT as your model, choose a genre, a tone, a primary focus, and whether you want a standard or long-campaign memory approach, and it assembles a complete Custom-GPT-ready prompt like the ones above — instantly, client-side, with no account and no AI call.
