@@ -55,7 +55,7 @@ What doesn't work: anything that requires the platform to remember something fro
 
 Janitor AI is explicitly more permissive than the native interfaces of the models it connects to. The character card layer mediates prompts in ways that can expand what a model will engage with, and the platform's own content policy is lighter than Claude's or OpenAI's direct product surfaces.
 
-For players who left Claude or ChatGPT because dramatic scenes — conflict, moral complexity, dark themes — were being sanitised mid-session, this matters. The difference is real enough that it is a primary reason some users choose the platform over running their preferred model directly.
+For players who left Claude or ChatGPT because dramatic scenes — conflict, moral complexity, dark themes — were being sanitised mid-session, this matters. The difference is real enough that it is a primary reason some users choose the platform over running their preferred model directly. For the full set of no-filter options — permissive platforms, bring-your-own-model, and local models — see our [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay).
 
 The explicit content question is more nuanced. The platform has NSFW-flagged content and age verification requirements for it. Whether the platform's handling of this is adequate is a separate debate; what's true is that the presence of this content affects the catalogue's overall character and is worth knowing going in if you're not looking for it.
 
@@ -67,7 +67,7 @@ The honest answer is that most players won't write as good a card as the best cr
 
 The counterargument: if you know what you want and can articulate it, a Claude Project gives you persistent memory across sessions, tighter instruction adherence, and the ability to attach knowledge files — things Janitor AI cannot replicate. The right choice depends on whether the library is solving your problem or whether you have a specific vision that needs a blank canvas.
 
-Against SillyTavern: the character card format is compatible, and many cards move between platforms. SillyTavern gives you deeper control over model parameters and runs locally; Janitor AI gives you a browser interface and a built-in community. They serve similar use cases with different trade-offs around setup complexity and privacy.
+Against [SillyTavern](/blog/sillytavern-guide): the character card format is compatible, and many cards move between platforms. SillyTavern gives you deeper control over model parameters and runs locally; Janitor AI gives you a browser interface and a built-in community. They serve similar use cases with different trade-offs around setup complexity and privacy.
 
 ## The Verdict
 

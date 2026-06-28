@@ -47,7 +47,7 @@ Chat logs are retained for approximately 90 days for debugging purposes before d
 
 The clearest use case: a gaming group that already uses Discord, has lost their DM to schedule pressure or life circumstances, and wants to keep playing without migrating to a new platform. The bot slots into the existing social infrastructure and gives the group a DM back.
 
-The secondary use case: Discord gaming communities or guilds that want to offer their members an ongoing campaign option. A single bot installation covers the whole server; members can jump into campaigns without individual account setup.
+The secondary use case: Discord gaming communities or guilds that want to offer their members an ongoing campaign option. A single bot installation covers the whole server; members can jump into campaigns without individual account setup. For the broader landscape of playing D&D with AI — solo, group, and self-run — see our [AI D&D guide](/blog/ai-dnd).
 
 For solo players who want a solo AI RPG experience, Taverna's group-oriented design is a poor fit. Solo campaigns benefit more from platforms like [RoleForge](/clients/roleforge) that are explicitly built around single-player sessions with persistent world state.
 

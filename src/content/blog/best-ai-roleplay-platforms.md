@@ -10,7 +10,7 @@ The AI roleplay platform market has matured faster than most people expected. Tw
 
 The problem is not a lack of options. It's that every platform was built for a specific type of player — and the wrong platform for your use case will feel broken even if it's excellent at what it actually does.
 
-This guide covers the best AI roleplay platforms in 2026, organized by what they're best for. Read the whole list or skip to your use case.
+This guide covers the best AI roleplay platforms in 2026, organized by what they're best for. Read the whole list or skip to your use case. New to the idea? Start with [what an AI Dungeon Master is and how it works](/blog/ai-dungeon-master) for the concept, then use this list for the rankings.
 
 ---
 
@@ -46,7 +46,7 @@ If the specific texture of D&D 5e — official classes, point-buy ability scores
 
 The platform handles combat math algorithmically (so the AI can't quietly cheat the numbers) and lets you pick from eight narrative AI models calibrated to different tones. Character creation mirrors the tabletop onboarding experience closely enough that anyone who already knows 5e can start playing immediately.
 
-The limitation is long campaigns — context degradation sets in over extended sessions in a way the database-backed RoleForge avoids. But for one-shots, short arcs, and players who want the 5e experience without scheduling a human DM, AI Realm delivers cleanly.
+The limitation is long campaigns — context degradation sets in over extended sessions in a way the database-backed RoleForge avoids. But for one-shots, short arcs, and players who want the 5e experience without scheduling a human DM, AI Realm delivers cleanly. For the full picture of playing D&D with AI — what works, what doesn't, and the trademark side — see our [AI D&D guide](/blog/ai-dnd).
 
 **Full review:** [AI Realm Review](/blog/ai-realm-review)
 

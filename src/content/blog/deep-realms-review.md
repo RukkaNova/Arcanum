@@ -35,7 +35,7 @@ Long-form collaborative fiction, multi-session campaigns with dense lore, world-
 
 Deep Realms explicitly permits mature and NSFW content when players select the appropriate models (Astral and Magni, specifically). This is a functional differentiator for players who left other platforms because legitimate dramatic content — violence, moral complexity, dark themes — was being interrupted by safety filters.
 
-This is worth addressing directly rather than dancing around it: Deep Realms is, for a portion of its audience, the platform they moved to after another platform failed them on content grounds. That's a real user need, the platform addresses it explicitly, and players for whom this matters will find it works.
+This is worth addressing directly rather than dancing around it: Deep Realms is, for a portion of its audience, the platform they moved to after another platform failed them on content grounds. That's a real user need, the platform addresses it explicitly, and players for whom this matters will find it works. Deep Realms is one of several routes here — our [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay) maps the full set, from permissive platforms to local models you run yourself.
 
 For players who don't care about this either way, it's a non-factor. The content permissions affect specific model selections; the platform isn't organized around NSFW content as a primary feature.
 

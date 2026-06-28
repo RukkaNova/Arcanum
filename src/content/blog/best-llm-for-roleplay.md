@@ -106,7 +106,7 @@ The tradeoff: it does not match the prose ceiling of Claude or the instruction-f
 
 **Worth knowing about:** Llama 3.3 70B, Qwen3 32B, MythoMax L2, Psyfighter variants
 
-The local option exists for two reasons: no content restrictions and complete privacy. For players who left Claude or ChatGPT because the filter interrupted non-explicit dramatic scenes — conflict, dark themes, morally complex characters — a local model via SillyTavern, LM Studio, or KoboldCpp gives you full creative latitude.
+The local option exists for two reasons: no content restrictions and complete privacy. For players who left Claude or ChatGPT because the filter interrupted non-explicit dramatic scenes — conflict, dark themes, morally complex characters — a local model via [SillyTavern](/blog/sillytavern-guide), LM Studio, or KoboldCpp gives you full creative latitude — our [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay) maps the full set of no-filter options.
 
 In 2026, the quality gap between local and cloud has narrowed significantly. A well-configured Llama 3.3 70B or Qwen3 32B on appropriate hardware produces roleplay quality that the SillyTavern community consistently rates competitive with paid cloud tiers for typical sessions. The community fine-tune ecosystem — MythoMax, Psyfighter, and dozens of SillyTavern-optimised variants — provides models specifically tuned to stay in character.
 

@@ -7,7 +7,7 @@ pubDate: 2026-06-23
 tags: ["Friends and Fables review", "fables.gg review", "Friends Fables AI RPG", "AI VTT review", "AI Game Master review", "Franz AI DM", "AI tabletop 2026"]
 ---
 
-Most AI RPG platforms describe themselves as replacements for a Dungeon Master. Friends & Fables is one of the few that actually means it.
+Most AI RPG platforms describe themselves as replacements for a Dungeon Master. Friends & Fables is one of the few that actually means it. (New to the category? Our [AI Dungeon Master guide](/blog/ai-dungeon-master) covers how AI DMs work and where they fit.)
 
 The difference shows up in the architecture before it shows up in the experience. While competitors route a player's turn to a single large language model and hope for the best, Friends & Fables sends that same action to up to a dozen specialized models running in parallel. One handles lore retrieval. One updates the character sheet. One manages map coordinates. One generates the final narrative. The AI Game Master it calls Franz is not a chatbot wearing a DM costume — it is an orchestration layer.
 
@@ -41,7 +41,7 @@ Pricing is premium. The Starter tier at $19.95/month is the minimum that unlocks
 
 ## Compared to the Competition
 
-[AI Realm](/clients/ai-realm) is the most direct comparison for 5e rule-faithful play. Friends & Fables is more feature-rich, more visually sophisticated, and handles longer campaigns better — but it also costs more and asks more from the player to configure properly.
+[AI Realm](/clients/ai-realm) is the most direct comparison for 5e rule-faithful play. Friends & Fables is more feature-rich, more visually sophisticated, and handles longer campaigns better — but it also costs more and asks more from the player to configure properly. For how it stacks up specifically as a way to play D&D with AI, see our [AI D&D guide](/blog/ai-dnd).
 
 For groups that want to play together without a human DM and are willing to invest in setup, Friends & Fables has no real rival at the current state of the AI RPG market. For solo players prioritizing long-term consistency above everything else, the database architecture of RoleForge is the more principled answer, though Friends & Fables' Working Context approach closes that gap more than most comparisons acknowledge.
 
