@@ -76,7 +76,7 @@ Worth naming explicitly: if none of the above fit your specific genre or tone, b
 
 The Custom GPT builder lets you package a system prompt and knowledge files into a persistent AI that loads the same way every session. Your world, tone, rules, and GM persona are always consistent without re-pasting anything. Our [guide on why AI campaigns fall apart](/blog/why-llms-forget) covers the engineering decisions that separate a campaign that holds together from one that collapses at turn 50 — it's the practical starting point for anyone building their own.
 
-If you want a reference implementation to learn from, [Aevum's](/arcanum-games/aevum) master prompt is readable, well-structured, and shows exactly how a complex RPG system is packaged for ChatGPT.
+If you want a reference implementation to learn from, [Aevum's](/arcanum-games/aevum) master prompt is readable, well-structured, and shows exactly how a complex RPG system is packaged for ChatGPT. And if you just want a solid prompt to start from, [two ready-to-paste ChatGPT RPG prompts](/blog/chatgpt-rpg-prompts) — a gritty cyberpunk Custom GPT and a breezy pirate one-shot — show exactly what a complete prompt contains and where it goes; both come straight from the free [AI RPG Prompt Builder](/tools/prompt-builder).
 
 *Runs on: ChatGPT Plus (Custom GPTs)*
 
