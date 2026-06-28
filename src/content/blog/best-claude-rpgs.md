@@ -31,3 +31,5 @@ All four run beautifully as **Claude Projects**, which keep each game's rules an
 Download links, files, and full step-by-step setup guides are on each game's page: [Aevum Realm Architect](/arcanum-games/aevum), [The Chronicler](/arcanum-games/the-chronicler), [Eirathis Strider](/arcanum-games/eirathis), and [Star Freighter Drift](/arcanum-games/star-freighter-drift).
 
 These four cover the full range of what Claude can do as a game master — strategy, romance, mature adventure, and sci-fi survival. Download whichever calls to you, and find out how good a Claude RPG can actually be.
+
+Want the wider view across every model, not just Claude? Arcanum's [complete directory of LLM RPG games](/blog/llm-rpg-games) covers ChatGPT and Gemini games too, plus the platform landscape and how each game is evaluated.

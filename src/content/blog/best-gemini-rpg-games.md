@@ -88,6 +88,6 @@ The Gem persists across all your conversations. Every new session inside it star
 
 The honest conclusion: **Gemini RPG** is a thin but genuinely promising space. The model is capable. The Gems feature is well-designed for serious roleplay. What's missing is the community of builders who have done for Gemini what the ChatGPT GPT Store and Claude's Projects ecosystem have done for those models.
 
-Arcanum is building that — starting with [Eirathis Strider](/arcanum-games/eirathis) as the flagship **Gemini-native RPG** experience and expanding from there. If you're a Gemini player looking for something worth your time, Eirathis Strider is the best place to start. If you want to see everything available across all three models, browse the [full games directory](/arcanum-games) or compare every platform in the [clients directory](/clients).
+Arcanum is building that — starting with [Eirathis Strider](/arcanum-games/eirathis) as the flagship **Gemini-native RPG** experience and expanding from there. If you're a Gemini player looking for something worth your time, Eirathis Strider is the best place to start. If you want to see everything available across all three models, read Arcanum's [complete directory of LLM RPG games](/blog/llm-rpg-games), browse the [full games directory](/arcanum-games), or compare every platform in the [clients directory](/clients).
 
 The **Gemini RPG** scene is early enough that the players who show up now will be the ones who define what it becomes.

@@ -106,3 +106,5 @@ The most important question is what you actually want from a campaign:
 - **Want a platform for long campaigns** → Browse our [full clients directory](/clients) for an honest comparison of every major LLM roleplay platform.
 
 All four Arcanum Originals are free to download. Load the files into your AI of choice, follow the setup guide on each game's page, and start with a world built to last more than fifty turns.
+
+This list is the *best of* the category. For the complete, continuously updated directory of every LLM RPG game across ChatGPT, Claude, and Gemini — with how Arcanum evaluates them, the full platform landscape, and a model-by-model breakdown — see [The Complete Directory of LLM RPG Games](/blog/llm-rpg-games).

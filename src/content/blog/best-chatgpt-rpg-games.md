@@ -8,6 +8,8 @@ tags: ["ChatGPT RPG", "Custom GPT RPG", "ChatGPT roleplay", "AI RPG", "LLM RPG",
 
 ChatGPT is the most popular AI in the world, which means the **ChatGPT RPG** space is simultaneously the largest and the noisiest. The Custom GPT store has hundreds of RPG entries — most of them thin wrappers around a basic prompt that falls apart by turn ten. Finding the ones that actually hold together across a long campaign takes real effort. This is the honest, curated guide: what's genuinely worth loading into ChatGPT for a serious roleplay session in 2026, why each one earns its place, and what its limits are. No padding.
 
+For the full cross-model picture — Claude and Gemini games too — see Arcanum's [complete directory of LLM RPG games](/blog/llm-rpg-games). This page stays focused on ChatGPT.
+
 ## What Makes a Good ChatGPT RPG?
 
 Before the list — the distinction that matters. A good **Custom GPT RPG** isn't just a fantasy theme and a prompt that says "you are a wizard." It's a system that has thought seriously about the problems that kill long AI campaigns: memory drift, passive NPCs, vague outcome resolution, and the model losing coherence around turn 50. Every entry on this list has done that thinking, to varying degrees. Our [guide on why AI campaigns fall apart](/blog/why-llms-forget) covers the engineering behind these problems in depth.
