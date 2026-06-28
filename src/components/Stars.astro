@@ -1,0 +1,16 @@
+---
+// Fractional star rating. Renders a gold fill clipped to the exact rating so
+// 4.9, 4.6 and 3.0 look different — Math.round() made every 4.6–4.9 read as 5/5.
+interface Props { rating: number; }
+const { rating } = Astro.props;
+const pct = Math.round(Math.max(0, Math.min(100, (rating / 5) * 100)) * 100) / 100;
+---
+<span class="stars" role="img" aria-label={`${rating} out of 5 stars`}>
+  <span class="track" aria-hidden="true">★★★★★</span>
+  <span class="fill" aria-hidden="true" style={`width:${pct}%`}>★★★★★</span>
+</span>
+<style>
+  .stars{position:relative;display:inline-block;vertical-align:middle;line-height:1;}
+  .track{color:var(--line);letter-spacing:.08em;}
+  .fill{position:absolute;left:0;top:0;height:100%;overflow:hidden;white-space:nowrap;color:var(--gild);letter-spacing:.08em;}
+</style>

@@ -2,12 +2,12 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { modelLabel } from '../../platforms';
+import Stars from '../../components/Stars.astro';
 export async function getStaticPaths(){
   const games=await getCollection('games');
   return games.map(g=>({params:{id:g.id},props:{game:g}}));
 }
 const { game }=Astro.props; const { Content }=await render(game); const d=game.data;
-const stars=d.rating?'★'.repeat(Math.round(d.rating))+'☆'.repeat(5-Math.round(d.rating)):'';
 // Don't emit self-serving rating structured data for Arcanum's own games (Originals
 // have author 'Arcanum' / a releaseSlug). Third-party games may still carry it.
 const isOwnProduct=d.author==='Arcanum'||!!d.releaseSlug;
@@ -19,7 +19,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}
     <div class="badges">
       <span class="token is-platform">{modelLabel(d.model)}</span>
-      {d.rating && <span class="rating mono">{stars} {d.rating}/5</span>}
+      {d.rating && <span class="rating mono"><Stars rating={d.rating}/> {d.rating}/5</span>}
       {d.nsfw && <span class="token">18+</span>}
     </div>
     <h1>{d.title}</h1>

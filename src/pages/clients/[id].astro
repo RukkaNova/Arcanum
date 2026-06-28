@@ -5,16 +5,16 @@ export async function getStaticPaths(){
   const c=await getCollection('clients');
   return c.map(x=>({params:{id:x.id},props:{client:x}}));
 }
+import Stars from '../../components/Stars.astro';
 const { client }=Astro.props; const { Content }=await render(client); const d=client.data;
 const metaDesc=(()=>{if(!d.bestFor)return d.tagline;const full=`${d.tagline} Best for: ${d.bestFor}`;return full.length<=160?full:d.tagline;})();
-const stars=d.rating?'★'.repeat(Math.round(d.rating))+'☆'.repeat(5-Math.round(d.rating)):'';
 const jsonLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
 ---
 <Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={metaDesc} type="article" jsonLd={jsonLd}>
   <article class="wrap game">
     <a class="back mono" href="/clients">← all clients</a>
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}
-    <div class="badges"><span class="token">{d.pricing}</span>{d.rating && <span class="rating mono">{stars} {d.rating}/5</span>}</div>
+    <div class="badges"><span class="token">{d.pricing}</span>{d.rating && <span class="rating mono"><Stars rating={d.rating}/> {d.rating}/5</span>}</div>
     <h1>{d.title}</h1>
     <p class="tagline">{d.tagline}</p>
     <div class="meta-row mono">

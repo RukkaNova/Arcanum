@@ -3,12 +3,12 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { modelLabel } from '../../platforms';
 import KofiButton from '../../components/KofiButton.astro';
+import Stars from '../../components/Stars.astro';
 export async function getStaticPaths(){
   const r=await getCollection('releases');
   return r.map(x=>({params:{id:x.id},props:{rel:x}}));
 }
 const { rel }=Astro.props; const { Content }=await render(rel); const d=rel.data;
-const stars=d.rating?'★'.repeat(Math.round(d.rating))+'☆'.repeat(5-Math.round(d.rating)):'';
 // Releases are always Arcanum's own products — no self-serving rating structured data
 // (the visible {d.rating}/5 below stays; only the JSON-LD aggregateRating is dropped).
 const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,author:{'@type':'Organization',name:d.author},gamePlatform:d.models.map(modelLabel)};
@@ -22,7 +22,7 @@ const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,descri
       <span class="token">v{d.version}</span>
       {d.partner && <span class="token">partner</span>}
       {d.nsfw && <span class="token">18+</span>}
-      {d.rating && <span class="rating mono">{stars} {d.rating}/5</span>}
+      {d.rating && <span class="rating mono"><Stars rating={d.rating}/> {d.rating}/5</span>}
     </div>
     <h1>{d.title}</h1>
     <p class="tagline">{d.tagline}</p>
