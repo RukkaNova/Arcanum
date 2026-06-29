@@ -98,7 +98,7 @@ The most useful framing I've found: an AI Dungeon Master is not a replacement fo
 
 "AI Dungeon Master" covers several genuinely different products. Picking the right *type* matters more than picking the right brand:
 
-- **Solo campaign engines** — built for one player and a persistent world. Best memory and consequence design lives here. See [RoleForge](/clients/roleforge) (database-backed persistence) and the freeform pioneer [AI Dungeon](/clients/ai-dungeon).
+- **Solo campaign engines** — built for one player and a persistent world. Best memory and consequence design lives here. See [RoleForge](/clients/roleforge) (database-backed persistence) and the freeform pioneer [AI Dungeon](/clients/ai-dungeon). For a full walkthrough of playing alone, see [solo RPG with AI](/blog/solo-rpg-with-ai).
 - **Group VTT platforms** — full multiplayer with maps and tactical combat, closest to a real tabletop. [Friends & Fables](/clients/friends-and-fables) leads this category.
 - **Discord-native bots** — an AI DM that lives in the server you already use, no new app. [Taverna](/clients/taverna) runs full 5e via slash commands.
 - **Asynchronous group engines** — for groups that can't sync schedules; everyone takes their turn whenever. [Infinity DM](/clients/infinity-dm) is built entirely around this.
