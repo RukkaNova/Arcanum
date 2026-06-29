@@ -4,6 +4,19 @@ description: "A plain-English guide to SillyTavern — what it actually is, what
 section: "guides"
 pubDate: 2026-06-29
 tags: ["SillyTavern", "what is SillyTavern", "SillyTavern guide", "how to set up SillyTavern", "SillyTavern setup", "SillyTavern beginner guide", "SillyTavern uncensored", "best AI roleplay front-end"]
+faq:
+  - q: "What is SillyTavern?"
+    a: "SillyTavern is a free, open-source front-end for AI roleplay that you install on your own computer. It provides a powerful interface — character cards, lorebooks, prompt control, group chats, extensions — but it doesn't generate text itself; you connect it to a language model that does."
+  - q: "Is SillyTavern free?"
+    a: "Yes. SillyTavern itself is free and open-source. Your only costs are whatever model you connect it to — free if you run a local open-weight model on your own hardware, or per-token API fees if you connect a cloud model like Claude, GPT, or a model via OpenRouter."
+  - q: "Do I need a powerful computer for SillyTavern?"
+    a: "Not for SillyTavern itself — it's just an interface. You only need powerful hardware (a GPU with ~12GB+ VRAM) if you want to run a local model. If you connect a cloud API instead, a basic computer is fine."
+  - q: "Is SillyTavern uncensored?"
+    a: "SillyTavern has no content filter of its own because it isn't a model. Whether your sessions are filtered depends entirely on the model you connect: a frontier API still applies its guardrails, while a local open-weight model is unrestricted. See the uncensored AI roleplay guide."
+  - q: "Does SillyTavern come with an AI?"
+    a: "No — and this is the most common beginner confusion. SillyTavern generates nothing on its own. You must connect it to a model, either running locally on your hardware or through an API, before you can chat."
+  - q: "Is SillyTavern good for D&D-style RPGs?"
+    a: "It can run game-like sessions with the right system prompt and lorebooks, but it's character-chat-first rather than a mechanical RPG engine. For structured campaigns, pair it with an engineered prompt or use a dedicated system — see AI D&D and the Arcanum Originals."
 ---
 
 **SillyTavern is a free, open-source interface for AI roleplay** — a polished front-end you install on your own computer and point at the language model of your choice. It doesn't replace ChatGPT or Claude so much as wrap a far more powerful roleplay cockpit around whatever model is doing the actual writing: character cards, persistent lorebooks, fine-grained control over the prompt, group chats, and a plugin system for things like text-to-speech and image generation.

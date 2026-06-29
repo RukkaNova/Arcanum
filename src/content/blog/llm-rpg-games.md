@@ -5,6 +5,23 @@ section: "lists"
 pubDate: 2026-06-28
 updatedDate: 2026-06-28
 tags: ["LLM RPG", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "AI RPG directory", "best free AI RPG", "Custom GPT RPG", "Claude Project RPG"]
+faq:
+  - q: "What is the difference between an LLM RPG game and an AI RPG platform?"
+    a: "An LLM RPG game runs inside an AI you already use — a Custom GPT inside ChatGPT, a Project inside Claude, a Gem inside Gemini. No separate account, no new subscription. An AI RPG platform is a standalone product with its own interface, account, and usually its own pricing. Both have value; they serve different preferences. This directory covers the first. Arcanum's clients section covers the second."
+  - q: "Do I need a paid subscription to play these games?"
+    a: "Most of the games in this directory run on the free tiers of ChatGPT, Claude, and Gemini, though free tiers have usage limits. Games with large knowledge files (Aevum's Atlas, Eirathis's world bible) may benefit from paid tiers that allow larger file uploads. All Arcanum Originals are free to download regardless of which model tier you use."
+  - q: "How is this different from just prompting ChatGPT to run a fantasy RPG?"
+    a: "A bare prompt produces a generic session that collapses within twenty turns. Engineered LLM RPG games have explicit memory architectures, player agency protocols, deterministic resolution systems, world canons, faction simulators, relationship engines, and signature mechanical identities. The craft gap between a thoughtful bare prompt and a well-engineered game engine is enormous — approximately equivalent to the gap between a rough sketch and a finished design."
+  - q: "How often is this directory updated?"
+    a: "The Arcanum Originals section reflects the current release state of each game. The public games section is updated as new reviews are completed. If you've built or found an LLM RPG game that should be in this directory, contact Arcanum at arcanumrpgs.com."
+  - q: "What's the best LLM RPG for a complete beginner?"
+    a: "Star Freighter Drift has the most immediately legible premise and the clearest mechanical frame. Aevum Realm Architect is the deepest but also the most demanding. The Chronicler is the right choice if relationships are your primary interest and you're willing to bring your own world. Eirathis Strider rewards players who invest in the lore. Start with Star Freighter or Aevum for your first session."
+  - q: "What's the best free AI RPG game overall?"
+    a: "Every Arcanum Original is free. Of the four currently available, Aevum Realm Architect is the most complete long-campaign engine. The Chronicler is unmatched for relationship depth. Pick based on what matters most to you in a campaign."
+  - q: "Can I play these on mobile?"
+    a: "Yes. ChatGPT, Claude, and Gemini all have mobile apps. Custom GPTs, Projects, and Gems are accessible on mobile. The games in this directory are fully playable on phone or tablet."
+  - q: 'What does "LLM-native" mean?'
+    a: "A game designed from the ground up for a large language model interface, rather than adapted from a traditional tabletop or video game framework. LLM-native design accounts for the specific strengths and failure modes of language models — context windows, character drift, agency erosion, resolution without dice — in a way that traditional game design frameworks do not."
 ---
 
 If you search "AI RPG" in 2026, you find the same thing on every page: a platform selling you its own product while pretending to give you a guide. Jenova wants you to subscribe to Roleplay Game Master. HowWorks wants your click. Wanderfolk put themselves first on their own list. AI Dungeon reviewed AI Dungeon.

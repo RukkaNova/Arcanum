@@ -4,6 +4,19 @@ description: "An AI Dungeon Master runs a tabletop campaign without a human GM. 
 section: "guides"
 pubDate: 2026-06-28
 tags: ["AI dungeon master", "AI DM", "AI game master", "best AI dungeon master", "AI dungeon master free", "play D&D with AI", "AI DM 2026", "can AI be a dungeon master"]
+faq:
+  - q: "What is an AI Dungeon Master?"
+    a: "An AI Dungeon Master is a language model configured to run a tabletop RPG campaign without a human Game Master — it narrates the world, plays every NPC, adjudicates the rules, and remembers the campaign as you play, generating each scene live in response to your choices."
+  - q: "Is there a free AI Dungeon Master?"
+    a: "Yes. Several platforms have free tiers — AI Dungeon, Infinity DM, and RoleForge among them — and if you already have free access to ChatGPT, Claude, or Gemini, you can run one yourself for nothing using the free prompt builder or a free Arcanum Original."
+  - q: "Can an AI Dungeon Master run real D&D 5e?"
+    a: "Yes, several do. AI Realm, Friends & Fables, and Taverna all run rules-faithful 5e, resolving combat math algorithmically so the AI can't cheat the numbers. The main weakness is long-campaign memory rather than the rules themselves."
+  - q: "Can an AI Dungeon Master replace a human DM?"
+    a: "For solo play and for groups that struggle to schedule, it's a genuine replacement and often the only campaign that would ever happen. For reading a live table, long-game plotting, and the social side of tabletop, a human DM still wins. Think of an AI DM as filling the games that otherwise never start."
+  - q: "What's the best AI Dungeon Master?"
+    a: "There's no single best — it depends on what you want. Friends & Fables is the strongest all-round platform, RoleForge has the best memory, AI Realm is the easiest way into 5e, and a downloadable engine is best if you'd rather not pay for another subscription. The full ranked guide breaks it down by use case."
+  - q: "Do AI Dungeon Masters remember long campaigns?"
+    a: "Imperfectly, and this is their defining limitation. The best platforms mitigate it with database-backed state or multi-model orchestration; a self-built AI DM needs deliberate memory management. See why AI campaigns break down and the Campaign Memory Tool."
 ---
 
 An **AI Dungeon Master** is a large language model configured to run a tabletop roleplaying campaign in the role a human Game Master would normally fill: it describes the world, voices every non-player character, adjudicates the rules, and responds to whatever you decide to do — turn by turn, in natural language, with no script written in advance.

@@ -79,6 +79,9 @@ const blog = defineCollection({
     releaseSlug: z.string().optional(),
     rating: z.number().min(0).max(5).optional(),
     tags: z.array(z.string()).default([]),
+    // Optional FAQ — renders a second FAQPage JSON-LD block. Each answer must
+    // mirror the visible FAQ text on the page (plain text, no markdown links).
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     draft: z.boolean().default(false),
   }),
 });

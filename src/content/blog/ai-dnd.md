@@ -4,6 +4,19 @@ description: "Can AI run a real D&D 5e campaign? How AI Dungeons & Dragons works
 section: "guides"
 pubDate: 2026-06-29
 tags: ["AI D&D", "AI Dungeons and Dragons", "play D&D with AI", "AI D&D 5e", "AI dungeon master D&D", "can AI run D&D", "AI D&D campaign", "AI 5e"]
+faq:
+  - q: "Can AI run a D&D campaign?"
+    a: "Yes. An AI Dungeon Master can run a 5e-style campaign — tracking characters, rolling checks, running combat, and narrating the world turn by turn. It excels at one-shots and short arcs; its main limitation is memory in long, continuous campaigns, where details gradually drift."
+  - q: "What's the best AI for D&D 5e?"
+    a: "It depends on the format. AI Realm is the easiest solo entry, Taverna is best for Discord groups, and Friends & Fables gets closest to a full tabletop with battlemaps. You can also run your own game on ChatGPT, Claude, or Gemini."
+  - q: "Is there a free way to play AI D&D?"
+    a: "Yes. Several platforms have free tiers, and if you already have free access to ChatGPT, Claude, or Gemini you can run a 5e-style game yourself using the free prompt builder or a free Arcanum Original."
+  - q: "Can an AI replace my human Dungeon Master?"
+    a: "For solo play and groups that can't schedule, it's a genuine replacement — often the only campaign that would happen at all. For reading a live table, long-game plotting, and the social side of tabletop, a human DM still wins. Many players use AI to support a human DM instead, via tools like MacerAI."
+  - q: "Does an AI DM know the official rulebooks and adventures?"
+    a: "It can run the open 5e rules framework available through the System Reference Document, but it should not — and the responsible tools do not — reproduce proprietary settings, the full monster roster, or published adventure text. AI D&D works best with the open ruleset plus a homebrew or AI-generated world."
+  - q: "Why do AI D&D campaigns get worse over time?"
+    a: "Because the AI's memory (its context window) is finite, and a long campaign eventually holds more lore and state than fits. Details start to drift. See why AI campaigns fall apart at turn 50 and the Campaign Memory Tool for the fix."
 ---
 
 **AI D&D** means playing a Dungeons & Dragons–style campaign — character sheets, ability checks, initiative, combat, the whole loop — with a language model in the Dungeon Master's chair instead of a human. In 2026 this genuinely works: you can roll up a character tonight, with no group and no scheduling, and have an AI run a 5e-style session that tracks your hit points and rolls your saving throws.
