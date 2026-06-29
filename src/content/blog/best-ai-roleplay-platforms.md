@@ -150,7 +150,7 @@ Each release is a master prompt plus a world knowledge file, designed together t
 
 - **[Star Freighter Drift](/arcanum-games/star-freighter-drift)** — A space-trading survival sim where cargo manifest, customs heat, and reactor temperature create genuine moment-to-moment tension. [Full guide](/blog/star-freighter-drift)
 
-All four are free to download and play on any major AI. Browse the full collection at [Arcanum Originals](/arcanum-games).
+All four are free to download and play on any major AI. Browse the full collection at [Arcanum Originals](/arcanum-games). Want only the no-cost options across the whole field? See [best free AI roleplay](/blog/best-free-ai-roleplay).
 
 ---
 
