@@ -87,7 +87,7 @@ The honest barrier is hardware: you want a GPU with at least 12GB of VRAM for a 
 
 You don't need local hardware to escape the frontier filters — you can point SillyTavern (or another front-end) at a permissive model through an API aggregator like OpenRouter:
 
-- **DeepSeek V4** is the budget workhorse. It's strong at tracking world state, consequences, and branching logic — genuinely good for campaign-style play — at a fraction of the cost of Claude Opus or GPT-5.5. As a SillyTavern backend, it's the cheapest way to run long, unrestricted sessions.
+- **DeepSeek V4** is the budget workhorse. It's strong at tracking world state, consequences, and branching logic — genuinely good for campaign-style play — at a fraction of the cost of Claude Opus or GPT-5.5. As a SillyTavern backend, it's the cheapest way to run long, unrestricted sessions. See our full [DeepSeek for roleplay guide](/blog/deepseek-roleplay) for setup and the privacy caveat.
 - **MiniMax M2 (Her)** is the specialist. It's a purpose-built roleplay model fine-tuned for character-driven conversation, leading Role-Play Bench rankings with demonstrated 100+ turn character consistency and a 200K context window. If companion roleplay is your primary use case, it's the strongest dedicated pick.
 
 Both are accessed via API rather than a consumer app, which is precisely why they sidestep the consumer-app guardrails. More detail on both in the [best LLM for roleplay guide](/blog/best-llm-for-roleplay).
