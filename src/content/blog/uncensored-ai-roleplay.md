@@ -8,7 +8,7 @@ tags: ["uncensored AI roleplay", "no filter AI roleplay", "unfiltered AI chat", 
 
 **Uncensored AI roleplay** means running a roleplay or RPG session on an AI that won't interrupt the story when it turns dark, violent, romantic, or morally complicated. It's not necessarily about explicit content — most players who go looking for an "uncensored" setup are doing it because a mainstream filter killed a perfectly legitimate scene: an interrogation, a battlefield, a villain's monologue, a relationship that the model decided was too much.
 
-We don't judge what you play or gate it behind warnings — that's not Arcanum's job. What this guide does is answer the practical question honestly: in 2026, which AI roleplay options actually run without those interruptions, what "uncensored" really means at a technical level, and how to set each one up. Some routes are turnkey platforms; the most unrestricted ones take a little setup. Here's the real landscape.
+We don't judge what you play or gate it behind warnings — that's not Arcanum's job. What this guide does is answer the practical question honestly: in 2026, which AI roleplay options actually run without those interruptions, what "uncensored" really means at a technical level, and how to set each one up. Some routes are turnkey platforms; the most unrestricted ones take a little setup. Here's the real landscape. (If you're here specifically because Character.AI's filter drove you off, our [Character.AI alternatives guide](/blog/character-ai-alternatives) maps the same ground from that angle.)
 
 ---
 

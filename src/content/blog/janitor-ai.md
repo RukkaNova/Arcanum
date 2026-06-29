@@ -61,7 +61,7 @@ The explicit content question is more nuanced. The platform has NSFW-flagged con
 
 ## Janitor AI Versus the Alternatives
 
-The comparison that comes up most often: why use Janitor AI instead of just opening a Claude Project or a Custom GPT and writing your own character setup?
+For most people arriving here, the real comparison is against Character.AI — Janitor AI is the platform players migrate to when Character.AI's filter or memory limits wear them down, and it's the headline pick in our [Character.AI alternatives guide](/blog/character-ai-alternatives). But the comparison that comes up most often once you're here: why use Janitor AI instead of just opening a Claude Project or a Custom GPT and writing your own character setup?
 
 The honest answer is that most players won't write as good a card as the best creators in the Janitor AI library. The platform has authors who have spent hundreds of hours refining specific characters — testing how instructions interact with model behaviour, iterating on dialogue examples, stress-testing edge cases. For niche characters or specific archetypes, the best available card on Janitor AI is probably better than what a typical user would write from scratch in twenty minutes.
 
