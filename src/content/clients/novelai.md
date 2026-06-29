@@ -7,6 +7,7 @@ siteUrl: "https://novelai.net"
 bestFor: "Writers building long-form stories and worlds who value prose quality and persistent lore over game mechanics or reasoning."
 models: "Own, fiction-tuned (Erato / Kayra)"
 memoryApproach: "Lorebook (manual, persistent)"
+cover: "/img/novelai.webp"
 reviewSlug: "novelai-review"
 featured: false
 updated: 2026-06-29
