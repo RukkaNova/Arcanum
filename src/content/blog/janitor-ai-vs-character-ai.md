@@ -84,7 +84,7 @@ A quick filter:
 
 **Choose Janitor AI if** the filter is what frustrated you, you want frontier-model writing quality, and you're willing to spend ten minutes on BYOM setup to get it. It's the better pick for serious roleplayers who want freedom and control. **[Full Janitor AI review](/blog/janitor-ai)** (rated 4/5).
 
-**Choose neither if** what you actually want is a *game* — persistent memory, mechanics, stakes that carry across sessions — rather than a conversation. Both of these are chat platforms by design. The [Character.AI alternatives guide](/blog/character-ai-alternatives) covers the options that go further: database-backed RPGs, local setups via [SillyTavern](/blog/sillytavern-guide), and engineered games you run on a model you already pay for.
+**Choose neither if** what you actually want is a *game* — persistent memory, mechanics, stakes that carry across sessions — rather than a conversation. Both of these are chat platforms by design. The [Character.AI alternatives](/blog/character-ai-alternatives) and [Janitor AI alternatives](/blog/janitor-ai-alternatives) guides cover the options that go further: database-backed RPGs, local setups via [SillyTavern](/blog/sillytavern-guide), and engineered games you run on a model you already pay for.
 
 ## The Option Neither One Offers
 

@@ -67,6 +67,8 @@ The honest answer is that most players won't write as good a card as the best cr
 
 The counterargument: if you know what you want and can articulate it, a Claude Project gives you persistent memory across sessions, tighter instruction adherence, and the ability to attach knowledge files — things Janitor AI cannot replicate. The right choice depends on whether the library is solving your problem or whether you have a specific vision that needs a blank canvas.
 
+If Janitor AI isn't quite landing for you, our [Janitor AI alternatives guide](/blog/janitor-ai-alternatives) maps the off-ramps by exactly what's frustrating you — weak in-house model, setup friction, or wanting a real game instead of a chat.
+
 Against [SillyTavern](/blog/sillytavern-guide): the character card format is compatible, and many cards move between platforms. SillyTavern gives you deeper control over model parameters and runs locally; Janitor AI gives you a browser interface and a built-in community. They serve similar use cases with different trade-offs around setup complexity and privacy.
 
 ## The Verdict
