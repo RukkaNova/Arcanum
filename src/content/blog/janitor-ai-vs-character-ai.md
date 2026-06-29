@@ -19,7 +19,7 @@ faq:
     a: "Use Character.AI for casual, mobile-first, safe-by-default character chat. Use Janitor AI if you want a lighter filter and frontier-model writing quality and don't mind a steeper learning curve. If you want a real game with persistent memory and stakes rather than a conversation, neither fits — see the Character.AI alternatives guide."
 ---
 
-If you're choosing between **Janitor AI and Character.AI**, you're really choosing between two answers to the same question — "where do I go to talk to an AI character?" — that made very different trade-offs. Character.AI is the polished, safe, mass-market option that introduced most people to character chat in the first place. Janitor AI is the looser, more powerful option that a lot of those people migrated to when Character.AI's limits started to chafe.
+If you're choosing between **Janitor AI and Character.AI**, you're really choosing between two answers to the same question — "where do I go to talk to an AI character?" — that made very different trade-offs. [Character.AI](/clients/characterai) is the polished, safe, mass-market option that introduced most people to character chat in the first place. Janitor AI is the looser, more powerful option that a lot of those people migrated to when Character.AI's limits started to chafe.
 
 Neither is simply "better." They're built for different priorities, and the right pick depends on what you actually want out of a session. This is a head-to-head on the things that decide it: the content filter, the writing quality, memory, the character library, and price.
 
@@ -36,6 +36,7 @@ Neither is simply "better." They're built for different priorities, and the righ
 | **Memory** | Context-window bound; better with a big-context model | Context-window bound; well-known limits |
 | **Price** | Free on in-house model; BYOM adds token cost | Free, with an optional paid tier |
 | **Ease of use** | Steeper; BYOM needs setup | Very polished, beginner-friendly, strong app |
+| **Arcanum rating** | [4/5](/blog/janitor-ai) | [2/5](/blog/characterai-review) |
 
 The one-line summary: **Character.AI is easier and safer; Janitor AI is freer and more powerful.** Everything below is the detail behind that sentence.
 
