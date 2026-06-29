@@ -32,7 +32,9 @@ This is a head-to-head on the things that actually decide it — writing quality
 | **What it is** | Freeform AI text-adventure game | AI writing & storytelling studio |
 | **Feel** | "What do you do?" — jump in and play | An editor you co-write fiction in |
 | **Writing quality** | Adequate; repetitive on lower tiers | Stronger; models tuned on fiction |
-| **Memory** | Inconsistent; best memory behind top tiers | Lorebook — best-in-class persistence |
+| **Memory** | Inconsistent; best memory behind top tiers | Lorebook stores lore well; play still drifts |
+| **Reasoning & consistency** | Fragile on long campaigns | Weaker reasoning; recurring plot holes |
+| **Live knowledge** | No live browsing | No live browsing |
 | **Content filter** | History of filtering | No filter |
 | **Privacy** | Past moderation controversy | Privacy-first; encrypted stories |
 | **Free tier** | Yes, genuinely usable (Griffin) | Trial only; subscription for real use |
@@ -44,7 +46,7 @@ The one-line summary: **AI Dungeon is the better free game; NovelAI is the bette
 
 AI Dungeon, built by Latitude, is the platform that popularised AI text adventures. Its whole identity is freedom: rather than picking from a menu, you type anything and the AI continues the story. Dragon-riding space pirate, kingdom run by sentient vegetables, Tolkien-meets-cyberpunk crossover — it generally rolls with it. That improvisational, jump-in-and-go quality is why it's still one of the easiest ways into AI storytelling. We cover it in full in our [AI Dungeon review](/blog/ai-dungeon-review) (rated 3.5/5).
 
-NovelAI, built by Anlatan, comes at the same raw capability from the opposite direction. It's framed as a writing tool — an editor where you're authoring a story with the AI as a co-writer, not "playing" so much as composing. You get more direct control over the text, the ability to steer and rewrite, and tooling built for sustained fiction rather than quick adventures. The cost of that control is that it asks more of you: there's no "press start," just a blank document and a powerful set of levers.
+NovelAI, built by Anlatan, comes at the same raw capability from the opposite direction. It's framed as a writing tool — an editor where you're authoring a story with the AI as a co-writer, not "playing" so much as composing. You get more direct control over the text, the ability to steer and rewrite, and tooling built for sustained fiction rather than quick adventures. The cost of that control is that it asks more of you: there's no "press start," just a blank document and a powerful set of levers. It's superb at the writing job and has slipped as a game engine — the full breakdown is in our [NovelAI review](/blog/novelai-review) (rated 3.0, just below AI Dungeon's 3.5).
 
 That difference — game you play vs. studio you write in — is the lens for everything that follows.
 
@@ -61,6 +63,16 @@ If long stories losing the thread is your frustration, this is the most importan
 NovelAI's **Lorebook** lets you pin down characters, factions, locations, and world rules so the AI keeps recalling them across thousands of words. It's the most direct, deliberate memory system in this comparison — you're explicitly telling the tool what must persist, rather than hoping the context window holds it. For sustained, consistent fiction, nothing about AI Dungeon matches it.
 
 AI Dungeon, by contrast, performs fine in short adventures but suffers in extended campaigns: forgotten plot points, drifting characters, continuity errors. Premium tiers improve memory handling, but the best performance is locked behind the highest-priced plans. So AI Dungeon's answer to memory is "pay more," while NovelAI's is "use the Lorebook" — a tooling answer rather than a pricing one. Either way, both are still bounded by the underlying model; the reason that ceiling exists is worth understanding in [why AI campaigns fall apart](/blog/why-llms-forget).
+
+One important caveat on NovelAI here: the Lorebook is a brilliant place to *store* lore, but it doesn't fix the model's *handling* of it. In practice NovelAI still drifts into inconsistency on long stories, which is the bridge to its weaker side below.
+
+## Reasoning, Knowledge, and Consistency
+
+This is where NovelAI's score lands below AI Dungeon's despite the prose, and it's the section that matters most if you want the AI to *run a game* rather than help you write one.
+
+NovelAI's models are tuned to write, not to think, and it shows: its reasoning is weaker than the current alternatives, so complex situations and cause-and-effect logic expose cracks that a reasoning-strong model wouldn't have. It also doesn't browse the internet as it answers, so it simply misses knowledge a connected model could pull in. And in extended play it produces plot holes with some regularity and drifts into inconsistency — manageable when you're steering every beat as an author, a real problem when you want the AI to hold the world together on its own.
+
+AI Dungeon has its own consistency failures, but as a *game* it's not asking you to be the author keeping everything straight — and on Arcanum's scoring that balance is why it edges ahead overall ([3.5](/blog/ai-dungeon-review) vs NovelAI's [3.0](/blog/novelai-review)). The takeaway isn't that NovelAI is worse — it's that its strengths and weaknesses are pointed at *writing*, not *playing*.
 
 ## The Filter and Creative Freedom
 
@@ -84,7 +96,7 @@ A quick filter:
 
 **Choose AI Dungeon if** you want a freeform adventure game you can start free tonight, you value zero setup and instant improvisation, and you don't mind some narrative inconsistency. It's the better casual, free, jump-in option.
 
-**Choose NovelAI if** you care most about writing quality, persistent memory via the Lorebook, an unfiltered creative runway, and privacy — and you're happy to pay a flat subscription and work in an editor rather than a game. It's the better tool for an author.
+**Choose NovelAI if** you care most about writing quality, lore-keeping via the Lorebook, an unfiltered creative runway, and privacy — and you're happy to pay a flat subscription and work in an editor rather than a game. It's the better tool for an author, as long as you're steering and not relying on it to reason or stay consistent on its own. See the [full NovelAI review](/blog/novelai-review).
 
 **Choose neither if** what you actually want is a *structured game* — mechanics, dice, consequences, stakes that carry across sessions — rather than open-ended prose. Both of these are freeform storytelling tools by design. The [AI Dungeon alternatives guide](/blog/ai-dungeon-alternatives) and the [best AI roleplay platforms](/blog/best-ai-roleplay-platforms) roster cover the options that go further: database-backed RPGs like [RoleForge](/clients/roleforge), high-memory power-user platforms like [Deep Realms](/clients/deep-realms), and engineered games you run on a model you already pay for.
 

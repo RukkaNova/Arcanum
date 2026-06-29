@@ -36,7 +36,7 @@ This is not AI Dungeon's "do anything" freeform. It is a structured, demanding, 
 
 ## 2. NovelAI — Best for Writing Quality & Memory
 
-The gold standard for AI-assisted creative writing and interactive fiction. NovelAI uses models fine-tuned specifically on published fiction — the prose quality is noticeably richer than AI Dungeon's generic LLM output. Its Lorebook system lets you pin down characters, factions, locations, and world rules so the AI actually remembers them across thousands of words. If memory failure was your primary frustration with AI Dungeon, NovelAI's Lorebook is the most direct solution available. We put the two side by side in [AI Dungeon vs NovelAI](/blog/ai-dungeon-vs-novelai).
+The gold standard for AI-assisted creative writing and interactive fiction. **[NovelAI](/clients/novelai)** uses models fine-tuned specifically on published fiction — the prose quality is noticeably richer than AI Dungeon's generic LLM output. Its Lorebook system lets you pin down characters, factions, locations, and world rules so the AI actually remembers them across thousands of words. If memory failure was your primary frustration with AI Dungeon, NovelAI's Lorebook is the most direct solution available. We put the two side by side in [AI Dungeon vs NovelAI](/blog/ai-dungeon-vs-novelai).
 
 The tradeoff: it feels more like a writing studio than a game. The interface is closer to a word processor than an adventure. There is no free tier for the good models.
 
