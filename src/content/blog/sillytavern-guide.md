@@ -31,7 +31,7 @@ SillyTavern is a **front-end**: a user interface for chatting with large languag
 
 Think of it as the difference between a steering wheel and an engine. The model — Claude, a local Llama fine-tune, [DeepSeek](/blog/deepseek-roleplay), whatever you connect — is the engine that generates the words. SillyTavern is the cockpit that decides exactly what gets sent to that engine and how the conversation is managed: which character is active, what the system prompt says, which lore is injected, how long the memory is, what sampling settings shape the output. The same model produces dramatically better roleplay through SillyTavern than through a bare chat box, because the cockpit gives you control the consumer apps hide.
 
-That control is the whole reason the enthusiast roleplay community standardised on it. It's the natural next step for players who've outgrown the limits of ChatGPT, [Janitor AI](/blog/janitor-ai), or a plain Claude Project.
+That control is the whole reason the enthusiast roleplay community standardised on it. It's the natural next step for players who've outgrown the limits of ChatGPT, [Janitor AI](/blog/janitor-ai), [Character.AI](/blog/character-ai-vs-sillytavern), or a plain Claude Project.
 
 ---
 

@@ -47,7 +47,7 @@ Character.AI is free to use, with an optional paid tier (c.ai+) for faster respo
 
 Character.AI is for **beginners**: someone who has never touched an AI character tool and wants the smoothest, no-setup way to chat with a persona tonight. As a first experience of the category, it does the job, and the library guarantees you'll find something to talk to.
 
-It's the wrong pick for anyone who wants an uninterrupted story, reliable memory, a structured game, or frontier-model writing quality. For all of those, the alternatives have pulled ahead — see [Character.AI alternatives](/blog/character-ai-alternatives) for the full map, with [Janitor AI](/blog/janitor-ai) as the most direct upgrade.
+It's the wrong pick for anyone who wants an uninterrupted story, reliable memory, a structured game, or frontier-model writing quality. For all of those, the alternatives have pulled ahead — see [Character.AI alternatives](/blog/character-ai-alternatives) for the full map, with [Janitor AI](/blog/janitor-ai) as the most direct upgrade and [SillyTavern](/blog/character-ai-vs-sillytavern) as the power-user destination.
 
 ## Verdict
 
