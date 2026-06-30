@@ -5,6 +5,13 @@ section: "platform-reviews"
 rating: 4.5
 pubDate: 2026-06-23
 tags: ["Friends and Fables review", "fables.gg review", "Friends Fables AI RPG", "AI VTT review", "AI Game Master review", "Franz AI DM", "AI tabletop 2026"]
+video:
+  id: "43R28dZLUMs"
+  title: "Friends & Fables Review — AI Tabletop RPG Gameplay & Verdict (2026)"
+  poster: "/img/facadeffreview.webp"
+  duration: "PT6M29S"
+  uploadDate: 2026-06-30
+  description: "A hands-on video review of Friends & Fables: gameplay footage of Franz, the orchestrated AI Game Master, with hex-map combat and multi-LLM memory — plus the verdict on where it wins and where its complexity strains."
 ---
 
 Most AI RPG platforms describe themselves as replacements for a Dungeon Master. Friends & Fables is one of the few that actually means it. (New to the category? Our [AI Dungeon Master guide](/blog/ai-dungeon-master) covers how AI DMs work and where they fit.)

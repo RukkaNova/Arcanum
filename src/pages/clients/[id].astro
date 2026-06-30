@@ -6,9 +6,17 @@ export async function getStaticPaths(){
   return c.map(x=>({params:{id:x.id},props:{client:x}}));
 }
 import Stars from '../../components/Stars.astro';
+import VideoFacade from '../../components/VideoFacade.astro';
 const { client }=Astro.props; const { Content }=await render(client); const d=client.data;
 const metaDesc=(()=>{if(!d.bestFor)return d.tagline;const full=`${d.tagline} Best for: ${d.bestFor}`;return full.length<=160?full:d.tagline;})();
-const jsonLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
+const appLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
+const ORIGIN='https://arcanumrpgs.com';
+const videoLd=d.video
+  ?{'@context':'https://schema.org','@type':'VideoObject',name:d.video.title,description:d.video.description??d.tagline,thumbnailUrl:[ORIGIN+d.video.poster],uploadDate:(d.video.uploadDate??d.updated).toISOString(),...(d.video.duration&&{duration:d.video.duration}),embedUrl:`https://www.youtube.com/embed/${d.video.id}`,contentUrl:`https://youtu.be/${d.video.id}`}
+  :null;
+const jsonLd=videoLd?[appLd,videoLd]:appLd;
+const fmtDur=(iso)=>{const m=iso?.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);if(!m)return null;return `${+(m[1]||0)}:${String(+(m[2]||0)).padStart(2,'0')}`;};
+const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.duration)}`:'Video review'):null;
 ---
 <Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={metaDesc} type="article" jsonLd={jsonLd}>
   <article class="wrap game">
@@ -25,6 +33,7 @@ const jsonLd={'@context':'https://schema.org','@type':'SoftwareApplication',name
       {d.siteUrl && <a class="launch" href={d.siteUrl} target="_blank" rel="noopener">Visit {d.title} ↗</a>}
       {d.reviewSlug && <a class="review" href={`/blog/${d.reviewSlug}`}>Full review →</a>}
     </div>
+    {d.video && <VideoFacade id={d.video.id} poster={d.video.poster} title={d.video.title} caption={videoCaption} />}
     <div class="prose"><Content/></div>
   </article>
   <style>

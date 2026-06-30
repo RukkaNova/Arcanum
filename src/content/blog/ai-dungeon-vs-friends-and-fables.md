@@ -4,6 +4,13 @@ description: "AI Dungeon vs Friends & Fables compared on structure, memory, mult
 section: "guides"
 pubDate: 2026-06-29
 tags: ["AI Dungeon vs Friends and Fables", "AI Dungeon", "Friends and Fables", "fables.gg", "AI RPG", "AI tabletop", "best AI roleplay platform 2026"]
+video:
+  id: "43R28dZLUMs"
+  title: "Friends & Fables Review — AI Tabletop RPG Gameplay & Verdict (2026)"
+  poster: "/img/facadeffreview.webp"
+  duration: "PT6M29S"
+  uploadDate: 2026-06-30
+  description: "A hands-on video review of Friends & Fables: gameplay footage of Franz, the orchestrated AI Game Master, with hex-map combat and multi-LLM memory — plus the verdict on where it wins and where its complexity strains."
 faq:
   - q: "Is Friends & Fables better than AI Dungeon?"
     a: "As a structured game, yes — Friends & Fables scores higher (4.5 vs 3.5) thanks to real mechanics, hex-map combat, genuine multiplayer, and far better long-term memory. But AI Dungeon is the better freeform sandbox: instant, free, and unrestricted. Better depends on whether you want to play a game or improvise a story."

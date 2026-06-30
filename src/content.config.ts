@@ -37,6 +37,15 @@ const clients = defineCollection({
     cover: z.string().optional(),
     featured: z.boolean().default(false),
     updated: z.coerce.date(),
+    // Optional lite-facade YouTube review (no iframe on load — see VideoFacade.astro).
+    video: z.object({
+      id: z.string(),
+      title: z.string(),
+      poster: z.string(),
+      duration: z.string().optional(),       // ISO 8601, e.g. PT6M29S
+      uploadDate: z.coerce.date().optional(),
+      description: z.string().optional(),
+    }).optional(),
   }),
 });
 
@@ -82,6 +91,15 @@ const blog = defineCollection({
     // Optional FAQ — renders a second FAQPage JSON-LD block. Each answer must
     // mirror the visible FAQ text on the page (plain text, no markdown links).
     faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+    // Optional lite-facade YouTube review (no iframe on load — see VideoFacade.astro).
+    video: z.object({
+      id: z.string(),
+      title: z.string(),
+      poster: z.string(),
+      duration: z.string().optional(),       // ISO 8601, e.g. PT6M29S
+      uploadDate: z.coerce.date().optional(),
+      description: z.string().optional(),
+    }).optional(),
     draft: z.boolean().default(false),
   }),
 });

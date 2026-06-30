@@ -11,6 +11,13 @@ memoryApproach: "Multi-model state sync"
 cover: "/img/friends-and-fables.webp"
 featured: true
 updated: 2026-06-17
+video:
+  id: "43R28dZLUMs"
+  title: "Friends & Fables Review — AI Tabletop RPG Gameplay & Verdict (2026)"
+  poster: "/img/facadeffreview.webp"
+  duration: "PT6M29S"
+  uploadDate: 2026-06-30
+  description: "A hands-on video review of Friends & Fables: gameplay footage of Franz, the orchestrated AI Game Master, with hex-map combat and multi-LLM memory — plus the verdict on where it wins and where its complexity strains."
 ---
 
 Friends & Fables represents the current high-water mark for feature density in the AI tabletop space. It effectively merges an advanced, visually impressive Virtual Tabletop with deeply complex AI orchestration — and unlike most platforms that pick one or the other, it does not obviously compromise on either. If you are serious about AI-powered tabletop gaming, this is the platform that demands the most and delivers the most.

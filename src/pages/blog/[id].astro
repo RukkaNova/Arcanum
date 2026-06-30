@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import VideoFacade from '../../components/VideoFacade.astro';
 export async function getStaticPaths(){
   const posts=await getCollection('blog');
   return posts.map(p=>({params:{id:p.id},props:{post:p}}));
@@ -25,7 +26,15 @@ const baseLd=isReview
 const faqLd=d.faq?.length
   ?{'@context':'https://schema.org','@type':'FAQPage',mainEntity:d.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}
   :null;
-const jsonLd=faqLd?[baseLd,faqLd]:baseLd;
+// Optional VideoObject (frontmatter `video`) — emits rich-result-eligible structured data.
+const ORIGIN='https://arcanumrpgs.com';
+const videoLd=d.video
+  ?{'@context':'https://schema.org','@type':'VideoObject',name:d.video.title,description:d.video.description??d.description,thumbnailUrl:[ORIGIN+d.video.poster],uploadDate:(d.video.uploadDate??d.pubDate).toISOString(),...(d.video.duration&&{duration:d.video.duration}),embedUrl:`https://www.youtube.com/embed/${d.video.id}`,contentUrl:`https://youtu.be/${d.video.id}`}
+  :null;
+const ldBlocks=[baseLd,faqLd,videoLd].filter(Boolean);
+const jsonLd=ldBlocks.length>1?ldBlocks:ldBlocks[0];
+const fmtDur=(iso)=>{const m=iso?.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);if(!m)return null;return `${+(m[1]||0)}:${String(+(m[2]||0)).padStart(2,'0')}`;};
+const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.duration)}`:'Video review'):null;
 const displayDate=d.pubDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
 const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}):null;
 ---
@@ -39,6 +48,7 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
       <span class="author mono">by <a href="/about">Rukka</a></span>
       {updatedDisplay && <><span class="sep">·</span><span class="updated mono">Updated {updatedDisplay}</span></>}
     </div>
+    {d.video && <VideoFacade id={d.video.id} poster={d.video.poster} title={d.video.title} caption={videoCaption} />}
     {showToc && (
       <nav class="toc" aria-label="Table of contents">
         <p class="toc-label mono">On this page</p>
