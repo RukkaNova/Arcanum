@@ -11,7 +11,7 @@ Artificial intelligence has transformed text-based gaming, and few platforms hav
 
 In this AI Dungeon review, we'll examine the platform's strengths, weaknesses, pricing, and overall value to determine whether it still deserves a place among the best AI roleplaying games available today.
 
-You can also find AI Dungeon in our [client directory](/clients/ai-dungeon), where we track pricing, ratings, and platform comparisons — or see it weighed head-to-head in [AI Dungeon vs NovelAI](/blog/ai-dungeon-vs-novelai) and [AI Dungeon vs Friends & Fables](/blog/ai-dungeon-vs-friends-and-fables).
+You can also find AI Dungeon in our [client directory](/clients/ai-dungeon), where we track pricing, ratings, and platform comparisons — or see it weighed head-to-head in [AI Dungeon vs NovelAI](/blog/ai-dungeon-vs-novelai), [AI Dungeon vs Friends & Fables](/blog/ai-dungeon-vs-friends-and-fables), and [AI Dungeon vs Character.AI](/blog/ai-dungeon-vs-character-ai).
 
 ## What Is AI Dungeon?
 
