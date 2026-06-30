@@ -122,7 +122,7 @@ NovelAI, by design. Its Lorebook lets you pin characters, factions, locations, a
 Yes. NovelAI applies no content filter and is built around privacy — stories are encrypted and not monitored. AI Dungeon has a history of filtering and a past privacy controversy over story moderation. For the full range of no-filter options, see the [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay).
 
 **Should I use AI Dungeon, NovelAI, or something else?**
-Use AI Dungeon for a freeform adventure you can start free tonight with no setup. Use NovelAI if writing quality, persistent memory, no filter, and privacy matter more than price and you're happy working in an editor. If you want a structured game with mechanics and stakes rather than open-ended fiction, neither fits — see the [AI Dungeon alternatives guide](/blog/ai-dungeon-alternatives).
+Use AI Dungeon for a freeform adventure you can start free tonight with no setup. Use NovelAI if writing quality, persistent memory, no filter, and privacy matter more than price and you're happy working in an editor. If you want a structured game with mechanics and stakes rather than open-ended fiction, neither fits — see the [AI Dungeon alternatives guide](/blog/ai-dungeon-alternatives), or if you've landed on NovelAI being the weak link, the [NovelAI alternatives guide](/blog/novelai-alternatives).
 
 ---
 

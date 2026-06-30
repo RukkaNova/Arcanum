@@ -47,7 +47,7 @@ There's no genuinely usable free tier — only a limited trial — so meaningful
 
 NovelAI is for **writers**: people building long-form stories and worlds who value prose quality and persistent lore above mechanics, reasoning, or current knowledge. If that's you, it's close to ideal and the subscription is easy to justify.
 
-It's the wrong tool if you want a *game* — something that reasons about your choices, enforces consistency, and runs a world that holds together across sessions. For that, a database-backed platform like [RoleForge](/clients/roleforge) or the wider field in [best AI roleplay platforms](/blog/best-ai-roleplay-platforms) will serve you better, and an [Arcanum Original](/arcanum-games) lets you bring a stronger, reasoning-capable frontier model to the table.
+It's the wrong tool if you want a *game* — something that reasons about your choices, enforces consistency, and runs a world that holds together across sessions. For that, a database-backed platform like [RoleForge](/clients/roleforge) or the wider field in [best AI roleplay platforms](/blog/best-ai-roleplay-platforms) will serve you better, and an [Arcanum Original](/arcanum-games) lets you bring a stronger, reasoning-capable frontier model to the table. If you've decided NovelAI isn't it, our [NovelAI alternatives guide](/blog/novelai-alternatives) sorts the options by exactly what you want instead.
 
 ## Verdict
 
