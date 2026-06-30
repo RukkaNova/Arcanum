@@ -14,7 +14,7 @@ faq:
   - q: "Are these Character.AI alternatives free?"
     a: "Several are. SillyTavern and RoleForge are free, Janitor AI and DreamGen have free tiers, and if you already have access to ChatGPT, Claude, or Gemini you can run your own character or game for free with the prompt builder or a free Arcanum Original."
   - q: "Can I move my Character.AI characters to another platform?"
-    a: "Not directly, but the character-card format used by Janitor AI and SillyTavern is the open standard most of this space converged on. You can recreate a persona by writing its personality, voice, and example dialogue into a new card — and on a less restrictive platform, that card often performs better than it did originally."
+    a: "Not directly, but the character-card format used by Janitor AI and SillyTavern is the open standard most of this space converged on. You can recreate a persona by writing its personality, voice, and example dialogue into a new card — and on a less restrictive platform, that card often performs better than it did originally. A free character card generator can roll a starting card for you to adapt."
   - q: "Why does Character.AI feel so restrictive compared to these?"
     a: "Character.AI runs its own model with a strict, centralised content policy and a memory system bounded by the model's context window. The alternatives either let you bring your own model (Janitor AI, SillyTavern), store state outside the context window (RoleForge), or are built around a more permissive stance (DreamGen, Kindroid) — which is why they sidestep the two complaints Character.AI users raise most."
 ---
@@ -105,7 +105,7 @@ There's one option conspicuously missing from most "Character.AI alternatives" l
 
 Character.AI was always a closed platform running its own model, with its own filter and its own memory limits. What it never let you do was bring the best model available and a properly engineered game engine to match. That's exactly what the [Arcanum Originals](/arcanum-games) are. You bring the model — ChatGPT, Claude, or Gemini, whichever you already use — and the game is a couple of files you download and load in. The character writing is as good as the frontier model behind it, the content stance is whatever that model allows, and there's no platform between you and it.
 
-If you'd rather build your own character or scenario from scratch, the free [AI RPG Prompt Builder](/tools/prompt-builder) assembles a structured system prompt — pick genre, tone, and memory approach and paste the result into your model of choice.
+If you'd rather build your own character from scratch, the free [AI Character Card Generator](/tools/character-card-generator) rolls a complete, paste-ready persona in a click — name, personality, scenario, and example dialogue — that drops straight into Janitor AI or SillyTavern; [how to write a character card](/blog/how-to-write-a-character-card) covers doing it by hand for full control, and [roleplay character ideas](/blog/roleplay-character-ideas) helps if you're stuck on who to play. For a whole *game* rather than a single character, the free [AI RPG Prompt Builder](/tools/prompt-builder) assembles a structured system prompt — pick genre, tone, and memory approach and paste the result into your model of choice.
 
 ## Quick Reference: Which Alternative for Which Problem
 
@@ -150,7 +150,7 @@ Architecturally, [RoleForge](/clients/roleforge) — it stores world and charact
 Several are. SillyTavern and RoleForge are free, Janitor AI and DreamGen have free tiers, and if you already have access to ChatGPT, Claude, or Gemini you can run your own character or game for free with the [prompt builder](/tools/prompt-builder) or a free [Arcanum Original](/arcanum-games).
 
 **Can I move my Character.AI characters to another platform?**
-Not directly, but the character-card format used by Janitor AI and SillyTavern is the open standard most of this space converged on. You can recreate a persona by writing its personality, voice, and example dialogue into a new card — and on a less restrictive platform, that card often performs better than it did originally.
+Not directly, but the character-card format used by Janitor AI and SillyTavern is the open standard most of this space converged on. You can recreate a persona by writing its personality, voice, and example dialogue into a new card — and on a less restrictive platform, that card often performs better than it did originally. The free [AI Character Card Generator](/tools/character-card-generator) can roll a starting card for you to adapt.
 
 **Why does Character.AI feel so restrictive compared to these?**
 Character.AI runs its own model with a strict, centralised content policy and a memory system bounded by the model's context window. The alternatives either let you bring your own model (Janitor AI, SillyTavern), store state outside the context window (RoleForge), or are built around a more permissive stance (DreamGen, Kindroid) — which is why they sidestep the two complaints Character.AI users raise most.
