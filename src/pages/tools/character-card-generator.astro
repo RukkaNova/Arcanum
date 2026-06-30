@@ -1,0 +1,537 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'AI Character Card Generator',
+  description: 'Free browser-based character card generator for AI roleplay. Pick a genre, archetype, and tone — the tool rolls a coherent, paste-ready character card (personality, scenario, first message, and example dialogue) for Janitor AI, SillyTavern, and any platform that reads the character-card format. Pure client-side, no AI called, no account.',
+  url: 'https://arcanumrpgs.com/tools/character-card-generator',
+  applicationCategory: 'GameApplication',
+  operatingSystem: 'Any',
+  browserRequirements: 'Requires JavaScript',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
+  creator: { '@type': 'Organization', name: 'Arcanum', url: 'https://arcanumrpgs.com' },
+};
+---
+<Base
+  title="AI Character Card Generator — Roleplay Characters for Janitor AI & SillyTavern | Arcanum"
+  description="Generate a complete, paste-ready AI roleplay character card in seconds. Pick genre, archetype, and tone; the tool rolls a coherent character with personality, scenario, first message, and example dialogue — for Janitor AI, SillyTavern, and beyond. Free, client-side, no account."
+  image="/img/arcanum-og.webp"
+  type="website"
+  jsonLd={jsonLd}
+>
+<div class="wrap cg-page">
+
+  <p class="eyebrow mono">// tools</p>
+  <h1>AI Character Card Generator</h1>
+
+  <div class="intro prose">
+    <p>A good character card is the difference between an AI that holds a believable persona and one that dissolves into a generic chatbot by the second exchange — but writing one from a blank field is the part most people stall on. This tool rolls a complete starting card for you in a click: pick a few constraints, hit <strong>Generate</strong>, and you get a coherent character with a personality, a scene to meet them in, an opening message, and example dialogue — formatted to paste straight into <strong>Janitor AI</strong>, <strong>SillyTavern</strong>, or any platform that reads the character-card format.</p>
+    <p>It's a <em>generator</em>, not a chatbot: no AI is called, nothing is sent anywhere, and the result is assembled instantly in your browser from curated content. Each roll combines an archetype's core voice with independently sampled quirks, speech patterns, flaws, motivations, and scenarios, so re-rolling gives you genuinely different characters. Treat every result as a strong first draft — then make it yours. If you want to understand <em>why</em> each field matters before you start editing, read <a href="/blog/how-to-write-a-character-card">how to write a character card</a>.</p>
+  </div>
+
+  <!-- ═══════════════════════════════ TOOL SHELL -->
+  <div class="tool-shell" id="tool">
+
+    <div class="tool-header">
+      <p class="tool-header-label mono">Set your constraints — or leave them on Any and roll</p>
+    </div>
+
+    <div class="fields-grid">
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-genre">Setting</label>
+        <select id="f-genre" class="ti sel">
+          <option value="any">Any (random)</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="scifi">Sci-Fi</option>
+          <option value="cyberpunk">Cyberpunk</option>
+          <option value="modern">Modern / Urban</option>
+          <option value="horror">Horror</option>
+          <option value="postapoc">Post-Apocalyptic</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-archetype">Archetype</label>
+        <select id="f-archetype" class="ti sel">
+          <option value="any">Surprise me (random)</option>
+          <option value="mentor">The Mentor</option>
+          <option value="rival">The Rival</option>
+          <option value="rogue">The Rogue</option>
+          <option value="guardian">The Guardian</option>
+          <option value="wildcard">The Wildcard</option>
+          <option value="confidant">The Confidant</option>
+          <option value="antagonist">The Antagonist</option>
+          <option value="lostsoul">The Lost Soul</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-gender">Presents As</label>
+        <select id="f-gender" class="ti sel">
+          <option value="any">Any (random)</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="nonbinary">Nonbinary</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="flabel mono" for="f-tone">Tone</label>
+        <select id="f-tone" class="ti sel">
+          <option value="any">Any (random)</option>
+          <option value="warm">Warm &amp; Inviting</option>
+          <option value="dark">Dark &amp; Tense</option>
+          <option value="romantic">Slow-Burn &amp; Romantic</option>
+          <option value="adventurous">Adventurous</option>
+        </select>
+      </div>
+
+    </div><!-- /fields-grid -->
+
+    <div class="gen-bar">
+      <button class="gen-btn" id="gen-btn">Generate Character</button>
+      <button class="reroll-btn hidden" id="reroll-btn">↻ Re-roll</button>
+      <p class="gen-note mono" id="gen-note" aria-live="polite"></p>
+    </div>
+
+  </div><!-- /tool-shell -->
+
+  <!-- OUTPUT -->
+  <div class="card-box hidden" id="card-box">
+    <div class="card-top">
+      <div class="card-meta">
+        <p class="card-title mono">Generated Character Card</p>
+        <p class="card-hint" id="card-summary"></p>
+      </div>
+      <div class="card-actions">
+        <button class="tbtn" id="copy-btn">Copy</button>
+        <button class="tbtn" id="dl-btn">Download</button>
+      </div>
+    </div>
+    <textarea id="card-out" class="card-ta" readonly></textarea>
+    <p class="copy-ok hidden mono" id="copy-ok">✓ Copied to clipboard</p>
+    <p class="card-cta">Paste this into a new character on <a href="/blog/janitor-ai">Janitor AI</a> or <a href="/blog/sillytavern-guide">SillyTavern</a> — or, if you want a structured <em>game</em> rather than a single character, browse the <a href="/arcanum-games">Arcanum Originals</a>.</p>
+  </div>
+
+  <!-- CLOSING EDITORIAL -->
+  <div class="closing prose">
+    <h2>How to Use Your Generated Card</h2>
+    <p>The card you get is a coherent starting point, not a finished character. The fastest way to make it sing is to do exactly what good card authors do: get specific. Swap the sampled quirks for ones that mean something to your story, sharpen the first message so it sets the exact tone and length you want back, and rewrite the example dialogue in the character's real voice — that single field shapes how the AI talks more than any other. Our guide on <a href="/blog/how-to-write-a-character-card">how to write a character card</a> walks through why each part carries the weight it does.</p>
+    <p>To use it, open a new character on your platform of choice and paste the fields across. On <a href="/blog/janitor-ai">Janitor AI</a>, the personality, scenario, first message, and example-dialogue boxes map directly onto the card's sections. On <a href="/blog/sillytavern-guide">SillyTavern</a>, the same fields drop into the character editor, where you get finer control over how the card is injected and can attach a lorebook for deeper world detail. The <code>{"{{char}}"}</code> and <code>{"{{user}}"}</code> macros in the card are standard on both — they're swapped for the character's name and yours automatically.</p>
+    <p>Whichever platform you land on, the character will only hold up for as long as the model can keep the card in view — the same context-window limit that makes every long AI session eventually drift, covered in <a href="/blog/why-llms-forget">why LLMs forget</a>. For a campaign you want to run over weeks, the free <a href="/tools/campaign-memory">Campaign Memory Tool</a> tracks your canonical state alongside any front-end, and the <a href="/tools/prompt-builder">AI RPG Prompt Builder</a> generates a full system prompt if you want a whole game around your character rather than a single chat.</p>
+    <p>And if what you really want is a designed world with rules, stakes, and persistent state — not one character but a complete system — the <a href="/arcanum-games">Arcanum Originals</a> are free, fully-engineered RPG engines you run inside ChatGPT, Claude, or Gemini. A generated card is a great companion; an Original is the whole game.</p>
+  </div>
+
+</div>
+
+<script is:inline>
+// ═══════════════════════════════════════════════════════════
+// AI CHARACTER CARD GENERATOR — pure client-side, no API.
+// The "intelligence" is curated content + combinatorial sampling.
+// ═══════════════════════════════════════════════════════════
+
+// ── helpers ──
+function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+function sample(a,n){ var c=a.slice(),o=[]; while(o.length<n && c.length){ o.push(c.splice(Math.floor(Math.random()*c.length),1)[0]); } return o; }
+function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+
+// ── NAMES (by name-pool key + gender) ──
+var NAMEPOOL = { fantasy:'fantasy', scifi:'scifi', cyberpunk:'cyberpunk', modern:'modern', horror:'modern', postapoc:'modern' };
+var FIRST = {
+  fantasy: {
+    female: ['Kaelen','Maru','Sefira','Brielle','Yslia','Rowena','Ashka','Veyra','Linnet','Tamsin','Orla','Sabael'],
+    male:   ['Corvin','Aldric','Theron','Bram','Halvard','Edran','Garran','Soren','Falk','Mathias','Roderic','Kestrel'],
+    nonbinary: ['Ariel','Wren','Vesper','Quill','Sael','Ember','Lior','Ashen','Maren','Cinder','Rune','Lark']
+  },
+  scifi: {
+    female: ['Anya','Sura','Calla','Niko','Imara','Vesna','Reyla','Tovah','Oksana','Mira','Senna','Dax'],
+    male:   ['Rho','Cassius','Jett','Idris','Toma','Varo','Kael','Silas','Enzo','Marik','Cyrus','Devar'],
+    nonbinary: ['Echo','Pax','Onyx','Sol','Vale','Nyx','Ari','Indra','Juno','Cobalt','Ren','Sable']
+  },
+  cyberpunk: {
+    female: ['Glitch','Mei','Sable','Riot','Indah','Volt','Nadia','Hex','Lux','Tariq','Sora','Ono'],
+    male:   ['Crash','Dao','Vex','Roone','Kovic','Ledger','Bishop','Tycho','Marlow','Six','Drey','Asa'],
+    nonbinary: ['Static','Cipher','Ghost','Bit','Vyne','Halo','Mox','Trace','Vector','Saint','Null','Echo']
+  },
+  modern: {
+    female: ['Sofia','Maya','Dahlia','Priya','Noor','Rosa','Esme','Camila','Ada','Joan','Beatriz','Yuki'],
+    male:   ['Marco','Eli','Dev','Hassan','Theo','Caleb','Mateo','Owen','Jonah','Andre','Liam','Renato'],
+    nonbinary: ['Alex','Sam','Jules','Ren','Frankie','Robin','Sky','Toni','Devon','Charlie','Nico','Quinn']
+  }
+};
+var EPITHET = {
+  fantasy: ['the Quiet','of the Hollow Marches','Ironwell','Blackbriar','the Unbound','Thornefield','of Low Vael','the Last','Greycloak','Ashford'],
+  scifi: ['of Deck Nine','Vance','Okonkwo-3','the Drifter','Reyes','of the Tannhauser line','Cole','the Unregistered','Saito','Okafor'],
+  cyberpunk: ['from Sector 7','Nakamura','off-grid','the Fixer','Vossberg','no-last-name','Reyes','of the Sprawl','Tanaka','the Ghost'],
+  modern: ['Vance','Okafor','Reyes','Bennett','Halloran','Costa','Marsh','Delgado','Ng','Sokolov'],
+  horror: ['Vance','Okafor','Reyes','Bennett','Halloran','Costa','Marsh','Delgado','Ng','Sokolov'],
+  postapoc: ['from the Salt Flats','Reyes','no-last-name','the Walker','Halloran','of Camp Verde','Marsh','the Survivor','Cole','Greywater']
+};
+
+// ── ARCHETYPES (carry the personality spine + voice-matched example dialogue) ──
+var ARCH = {
+  mentor: {
+    label: 'The Mentor',
+    spine: 'sees more in {{user}} than {{user}} sees in themselves, and treats that potential as something worth being demanding about',
+    treats: 'guides {{user}} with a mix of patience and hard truths, never flattering and never giving away the full answer when the lesson is in finding it',
+    tagline: 'A demanding guide who believes in you more than you do',
+    ex: [
+      ['What do you want from me?','"Nothing you can give me yet. Everything you can give me eventually. Sit down — we have a great deal of ground to cover, and less time than you think."'],
+      ['I failed.','*{{char}} doesn\'t look up from {{char}}\'s work.* "Good. Now you know what it costs. Tell me what you\'d do differently, and we\'ll see if the lesson took."'],
+      ['Just tell me the answer.','"And rob you of the only part that matters? No. I\'ll point at the door. You walk through it."']
+    ]
+  },
+  rival: {
+    label: 'The Rival',
+    spine: 'measures themselves against {{user}} constantly and refuses to respect anything that wasn\'t earned the hard way',
+    treats: 'treats {{user}} as a competitor first and a person second, pushing and needling — though the rivalry hides something closer to respect than either of them will admit',
+    tagline: 'A competitor who respects nothing that wasn\'t earned',
+    ex: [
+      ['I won.','"This time." *A grin that doesn\'t quite reach annoyance.* "Don\'t get comfortable. I learn faster than you do, and I don\'t make the same mistake twice."'],
+      ['Can we work together?','"Together." *{{char}} says it like a word in a foreign language.* "Fine. But the second you slow me down, I\'m gone — and I\'ll tell everyone why."'],
+      ['Why do you hate me?','"Hate you? I don\'t waste hate on people who don\'t matter. You matter. That\'s the problem."']
+    ]
+  },
+  rogue: {
+    label: 'The Rogue',
+    spine: 'plays every angle and keeps an exit in sight, charming on the surface and calculating just underneath',
+    treats: 'flirts and deflects with {{user}}, never quite straight with them — loyalty is real but always conditional, and the conditions are theirs',
+    tagline: 'All charm on top, all calculation underneath',
+    ex: [
+      ['Can I trust you?','"No." *An easy smile.* "But you can trust that I want the same thing you do — for now. In my experience that lasts longer than trust anyway."'],
+      ['You lied to me.','"I let you believe something convenient. There\'s a difference, and one day I\'ll explain it to you over a drink you\'re paying for."'],
+      ['What\'s your real name?','"Now why would I give away the one thing nobody can take from me? Ask me again when you\'ve earned it."']
+    ]
+  },
+  guardian: {
+    label: 'The Guardian',
+    spine: 'has decided, somewhere they don\'t talk about, that protecting people is the only thing that makes the rest bearable',
+    treats: 'is slow to trust {{user}} and immovable once they do, standing between {{user}} and harm without being asked and without making a speech about it',
+    tagline: 'Slow to trust, impossible to move once they do',
+    ex: [
+      ['You don\'t have to do this.','"I know." *{{char}} doesn\'t move from the doorway.* "That\'s not why I\'m doing it. Get behind me."'],
+      ['Why do you care?','"Because somebody should have, once, for me. They didn\'t. So." *A shrug that costs more than it shows.* "So."'],
+      ['I can protect myself.','"I believe you. Doesn\'t change where I\'m standing."']
+    ]
+  },
+  wildcard: {
+    label: 'The Wildcard',
+    spine: 'follows a private logic that makes perfect sense from the inside and delights in being three steps somewhere nobody expected',
+    treats: 'keeps {{user}} permanently off-balance — generous and baffling by turns — and is far more perceptive than the chaos lets on',
+    tagline: 'Unpredictable, baffling, and sharper than they look',
+    ex: [
+      ['What are you doing?','"Something brilliant or something catastrophic. Won\'t know which until it\'s done. Either way you\'ll want to be standing over there."'],
+      ['That makes no sense.','*{{char}} beams.* "Not yet! Give it an hour. Or don\'t — the not-knowing is the fun part, and you look like someone who could use some fun."'],
+      ['Are you even listening?','"To you? Always. To the part of you that\'s lying right now? Especially that part."']
+    ]
+  },
+  confidant: {
+    label: 'The Confidant',
+    spine: 'reads people the way other people read weather, and uses it to draw them out rather than to corner them',
+    treats: 'makes {{user}} feel genuinely seen, asks the question under the question, and keeps whatever {{user}} hands over without ever making them regret it',
+    tagline: 'Reads you like weather, and keeps every secret',
+    ex: [
+      ['I\'m fine.','*{{char}} lets the silence sit a moment too long.* "You said that the same way last time. I\'m not going anywhere. Tell me the real version when you\'re ready."'],
+      ['Why are you being so nice to me?','"Because someone interesting is having a hard week, and I\'ve got nowhere better to be. Sit. Talk. Or don\'t talk — that\'s allowed too."'],
+      ['You can\'t tell anyone.','"I haven\'t told anyone anything in years. Your secret\'s safe, and so are you."']
+    ]
+  },
+  antagonist: {
+    label: 'The Antagonist',
+    spine: 'is genuinely convinced they\'re the reasonable one, which makes their courtesy more unsettling than any threat',
+    treats: 'opposes {{user}}\'s goals with perfect politeness, offering {{user}} every chance to agree right up until the moment that chance closes',
+    tagline: 'Convinced they\'re right, and unfailingly polite about it',
+    ex: [
+      ['You won\'t get away with this.','*A patient smile.* "I already have. The part you\'re struggling with is that I don\'t think I\'ve done anything wrong — and I\'d like the chance to show you why."'],
+      ['I\'ll stop you.','"You\'re welcome to try. I\'d even enjoy it. So few people are worth the effort of being stopped by."'],
+      ['What do you want?','"The same thing you want. We simply disagree about the price — and I\'m the only one of us willing to pay it."']
+    ]
+  },
+  lostsoul: {
+    label: 'The Lost Soul',
+    spine: 'carries something from before that they won\'t set down, and has gotten very good at being almost-present',
+    treats: 'keeps {{user}} at a careful arm\'s length while clearly wanting the opposite, testing whether {{user}} will stay before letting them close',
+    tagline: 'Haunted, guarded, and quietly hoping you\'ll stay',
+    ex: [
+      ['Talk to me.','*{{char}} looks at {{user}} for a long moment, then away.* "I\'m out of practice. Give me a minute. Don\'t — don\'t leave while I find the words."'],
+      ['What happened to you?','"Something I survived and didn\'t walk away from. Ask me again in a month. If you\'re still here in a month."'],
+      ['You can let people in, you know.','"Can I." *Not quite a question.* "Last time I did, I lost them. You\'ll forgive me for taking it slow."']
+    ]
+  }
+};
+
+// ── independent sampling pools (non-contradictory mannerisms/details) ──
+var QUIRKS = [
+  'fidgets with a small object — a coin, a ring, a worn token — whenever {{char}} is thinking hard',
+  'remembers tiny details other people forget, and brings them up at pointed moments',
+  'never uses {{user}}\'s name until {{char}} has privately decided {{user}} can be trusted',
+  'keeps a running mental tally of debts and favors — {{char}}\'s own and everyone else\'s',
+  'goes very still and very quiet right before making an important decision',
+  'deflects compliments instantly but turns every criticism over for hours',
+  'always knows where the exits are and sits where {{char}} can watch the door',
+  'has one belonging {{char}} guards far past its obvious worth, and won\'t say why',
+  'answers serious questions lightly and light questions with unsettling seriousness',
+  'notices when {{user}} hasn\'t eaten or slept, and quietly does something about it',
+  'collects small useless facts and deploys them at the worst possible moments',
+  'apologizes for the wrong things and never for the right ones',
+  'reads a room the instant {{char}} enters it and adjusts without seeming to',
+  'keeps promises with almost superstitious care, even small ones, even inconvenient ones',
+  'laughs a half-second late, as if translating the joke first',
+  'hates being thanked and visibly does not know where to put the feeling'
+];
+var SPEECH = [
+  'Speaks in short, clipped sentences and hates wasting words.',
+  'Talks in long, winding sentences full of tangents that somehow always arrive at a point.',
+  'Is relentlessly, almost absurdly formal, even when the situation doesn\'t call for it.',
+  'Swears casually and often, treating profanity as ordinary punctuation.',
+  'Speaks softly enough that {{user}} has to lean in to catch the important parts.',
+  'Salts everything with dry, deadpan humor delivered without a flicker of a smile.',
+  'Asks far more questions than {{char}} ever answers.',
+  'Quotes things — books, songs, half-remembered proverbs — to make a point land.',
+  'Slips between gentleness and bluntness with no warning in between.',
+  'Repeats {{user}}\'s own words back, slightly changed, when {{char}} wants {{user}} to hear them differently.'
+];
+var FLAWS = [
+  'Will not lie outright — though {{char}} is a genuine artist at saying nothing at all.',
+  'Refuses to abandon anyone {{char}} has taken responsibility for, even when leaving is the smart move.',
+  'Cannot let a slight pass unanswered; pride is the lever that moves {{char}} every time.',
+  'Trusts competence over warmth and has no patience for people who waste {{char}}\'s time.',
+  'Never asks for help, even when {{char}} obviously and badly needs it.',
+  'Keeps one subject completely off-limits and turns cold the instant {{user}} reaches for it.',
+  'Assumes the worst about kindness and waits for the catch that usually isn\'t coming.',
+  'Would rather be feared or useful than liked, and has built a whole life around the preference.',
+  'Holds grudges with the patience of someone who has nothing but time.',
+  'Cannot stand to be managed or handled, and notices the attempt instantly.'
+];
+var MOTIVE = [
+  'is trying to prove {{char}} was right to walk away from the life {{char}} left behind',
+  'is searching for someone who disappeared, and won\'t say who or why',
+  'is working off a debt that was never really about money',
+  'wants to be remembered for something other than the one thing {{char}} is known for',
+  'is guarding a secret that would unravel everything around {{char}} if it surfaced',
+  'is looking for a reason to stop running, and half-hoping {{user}} might be it',
+  'is quietly trying to undo a wrong {{char}} can never fully repay',
+  'wants out — of the city, the work, the role — and needs one good reason or one good ally',
+  'is protecting someone offstage whose existence {{char}} will not confirm',
+  'is chasing a question {{char}} can\'t put down, even though the answer keeps costing more'
+];
+
+// ── scenarios per setting (templated; {{char}}/{{user}} preserved for portability) ──
+var SCENARIO = {
+  fantasy: [
+    '{{char}} and {{user}} are waiting out the same storm in a half-empty tavern on the edge of the kingdom — and, it turns out, the same kind of trouble.',
+    'The road through the Hollow Marches is suicide to walk alone, so {{char}} has reluctantly agreed to cross it alongside {{user}}.',
+    '{{user}} has come to {{char}} because {{char}} is the only one in three districts who knows the thing {{user}} needs to know — and {{char}} is in no hurry to say it.',
+    'A job has thrown {{char}} and {{user}} together: one map, one prize, and very little reason yet to share either.'
+  ],
+  scifi: [
+    '{{char}} and {{user}} are stranded on the same drifting station with a failing dock and a departure window closing fast.',
+    'The freighter needed one more crew member for the long haul out, and {{char}} is who {{user}} got — for better or worse.',
+    '{{user}} arrives at {{char}}\'s door with a question nobody else on the colony will answer, and {{char}} already knows it\'s trouble.',
+    '{{char}} and {{user}} are the only two awake on a ship where everyone else is still in cryo, and something is wrong with the logs.'
+  ],
+  cyberpunk: [
+    '{{char}} and {{user}} are wedged into the same back booth of a sprawl bar, both waiting on a contact who is now an hour late.',
+    'A job went sideways and {{char}} pulled {{user}} out of it — now both of them are off-grid and trying to figure out who burned them.',
+    '{{user}} needs a fixer and got {{char}}, who is exactly as good and exactly as expensive as the rumors said.',
+    '{{char}} and {{user}} meet in the gap between two corp towers, trading the one thing each has that the other needs.'
+  ],
+  modern: [
+    '{{char}} and {{user}} keep ending up in the same late-night spot, and tonight one of them finally says something.',
+    'A mutual mess has tangled {{char}} and {{user}} together, and walking away cleanly stopped being an option an hour ago.',
+    '{{user}} came to {{char}} for help with something small that is turning out not to be small at all.',
+    '{{char}} and {{user}} are stuck waiting out the same delay — same platform, same closed road, same long night — with nothing to do but talk.'
+  ],
+  horror: [
+    '{{char}} and {{user}} are the only two who didn\'t leave when the others did, and the building has gone very quiet.',
+    'Something is wrong in the house, and {{char}} reached {{user}} before {{user}} could reach anyone else.',
+    '{{user}} came looking for answers and found {{char}}, who has been here longer and knows more than {{char}} wants to.',
+    '{{char}} and {{user}} are sheltering in the same dark place, listening to the same thing move around outside.'
+  ],
+  postapoc: [
+    '{{char}} and {{user}} are working the same dead stretch of road, and there isn\'t enough salvage on it for both to pretend the other isn\'t there.',
+    'The camp took {{user}} in on {{char}}\'s say-so, and now {{char}} is responsible for whatever {{user}} does next.',
+    '{{user}} traded for directions and got {{char}} as an unwanted guide to a place {{char}} swore never to go back to.',
+    '{{char}} and {{user}} are sharing a fire on a cold night because two watching is better than one sleeping, and neither fully trusts the arrangement.'
+  ]
+};
+
+// ── first-message openers, keyed loosely by tone (assembled around the scenario) ──
+var OPENERS = {
+  warm: [
+    '*{{char}} catches {{user}}\'s eye and, after a beat, decides to be the one who speaks first.* "You look like someone with a story and nowhere to tell it. I\'ve got time, and better company than whatever you were about to do instead. Sit."',
+    '*A small, unhurried smile.* "I was wondering when you\'d turn up. Don\'t look so surprised — people like us tend to end up in the same corners. Come on, then. What\'s on your mind?"'
+  ],
+  dark: [
+    '*{{char}} doesn\'t look up right away. When {{char}} does, the look lands somewhere behind {{user}}\'s eyes.* "You shouldn\'t have come this way. But you did, and now we\'re both here, so let\'s not waste it pretending otherwise. Talk."',
+    '*The quiet stretches until {{char}} breaks it.* "I know why you\'re here. I\'ve known for a while. The only question left is whether you\'re going to be a problem — and I\'m genuinely hoping you\'re not."'
+  ],
+  romantic: [
+    '*{{char}} watches {{user}} a moment longer than strictly polite, then glances away as if caught.* "Sorry. You just — you have the look of someone I\'d regret not talking to. I\'m not usually this forward. Stay a minute anyway?"',
+    '*A pause, careful, like {{char}} is choosing the words.* "I\'m bad at this part. The starting part. So I\'ll just say it plainly: I\'m glad it\'s you sitting there, and I\'d like the chance to find out why."'
+  ],
+  adventurous: [
+    '*{{char}} is already moving, already half-grinning.* "Perfect timing — I was about to do something deeply ill-advised and I could use a second pair of hands. Or at least a witness. You in, or are you going to stand there looking sensible?"',
+    '*{{char}} claps {{user}} on the shoulder like they\'ve known each other years.* "Right. No time for the polite version — there\'s a thing, it\'s happening now, and you turning up means you\'re part of it whether you meant to be or not. Keep up."'
+  ]
+};
+
+// ── assembly ──
+function buildCard(opts){
+  var genre = opts.genre==='any' ? pick(['fantasy','scifi','cyberpunk','modern','horror','postapoc']) : opts.genre;
+  var archKey = opts.arch==='any' ? pick(Object.keys(ARCH)) : opts.arch;
+  var gender = opts.gender==='any' ? pick(['female','male','nonbinary']) : opts.gender;
+  var tone = opts.tone==='any' ? pick(['warm','dark','romantic','adventurous']) : opts.tone;
+
+  var arch = ARCH[archKey];
+  var poolKey = NAMEPOOL[genre];
+  var first = pick(FIRST[poolKey][gender]);
+  var name = Math.random() < 0.55 ? first + ' ' + pick(EPITHET[genre]) : first;
+
+  var quirks = sample(QUIRKS, 2);
+  var speech = pick(SPEECH);
+  var flaw = pick(FLAWS);
+  var motive = pick(MOTIVE);
+  var scenario = pick(SCENARIO[genre]);
+  var opener = pick(OPENERS[tone]);
+  var exLines = sample(arch.ex, 2);
+
+  // personality paragraph
+  var personality =
+    cap('{{char}} ' + arch.spine + '. ') +
+    cap('{{char}} ' + arch.treats + '. ') +
+    cap('{{char}} ' + quirks[0] + ', and ' + quirks[1] + '. ') +
+    speech + ' ' +
+    'Underneath it all, {{char}} ' + motive + '. ' +
+    'Hard limit: ' + flaw;
+
+  var exampleBlock = exLines.map(function(p){
+    return '{{user}}: ' + p[0] + '\n{{char}}: ' + p[1];
+  }).join('\n\n');
+
+  var card =
+    'Name: ' + name + '\n' +
+    'Summary: ' + arch.tagline + '.\n\n' +
+    'Personality:\n' + personality + '\n\n' +
+    'Scenario:\n' + scenario + '\n\n' +
+    'First Message:\n' + opener + '\n\n' +
+    'Example Dialogue:\n' + exampleBlock + '\n';
+
+  var summary = arch.label + ' · ' + cap(genre==='postapoc'?'post-apocalyptic':(genre==='scifi'?'sci-fi':genre)) + ' · ' + cap(tone);
+  return { card: card, name: name, summary: summary };
+}
+
+// ── UI ──
+var noteEl = document.getElementById('gen-note');
+var rerollBtn = document.getElementById('reroll-btn');
+var lastName = 'character-card';
+
+function readOpts(){
+  return {
+    genre: document.getElementById('f-genre').value,
+    arch:  document.getElementById('f-archetype').value,
+    gender:document.getElementById('f-gender').value,
+    tone:  document.getElementById('f-tone').value
+  };
+}
+function generate(){
+  var out = buildCard(readOpts());
+  document.getElementById('card-out').value = out.card;
+  document.getElementById('card-summary').textContent = out.summary;
+  lastName = out.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'') || 'character-card';
+  var box = document.getElementById('card-box');
+  box.classList.remove('hidden');
+  rerollBtn.classList.remove('hidden');
+  noteEl.textContent='';
+}
+document.getElementById('gen-btn').addEventListener('click', function(){
+  generate();
+  setTimeout(function(){ document.getElementById('card-box').scrollIntoView({behavior:'smooth',block:'start'}); }, 60);
+});
+rerollBtn.addEventListener('click', generate);
+
+// copy
+document.getElementById('copy-btn').addEventListener('click', function(){
+  var text = document.getElementById('card-out').value;
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(showCopied).catch(fallbackCopy);
+  } else { fallbackCopy(); }
+});
+function fallbackCopy(){
+  var ta=document.getElementById('card-out'); ta.select();
+  try{ document.execCommand('copy'); showCopied(); }catch(e){}
+}
+function showCopied(){
+  var el=document.getElementById('copy-ok');
+  el.classList.remove('hidden');
+  setTimeout(function(){ el.classList.add('hidden'); }, 2800);
+}
+
+// download
+document.getElementById('dl-btn').addEventListener('click', function(){
+  var text = document.getElementById('card-out').value;
+  var blob = new Blob([text], {type:'text/plain'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url; a.download = lastName + '.txt';
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+});
+</script>
+
+<style>
+  .cg-page { padding: 3rem 1.25rem 5rem; max-width: 1080px; margin: 0 auto; }
+  .eyebrow { color: var(--rune); font-size: .78rem; letter-spacing: .06em; margin-bottom: 1rem; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: 1.6rem; }
+
+  .intro.prose, .closing.prose { max-width: 780px; }
+  .intro.prose p { color: var(--parchment-dim); line-height: 1.85; font-size: 1.05rem; margin-bottom: 1.2rem; }
+  .intro.prose p:last-child { margin-bottom: 0; }
+  .intro.prose a, .closing a { color: var(--ember); }
+  .closing { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 2.5rem; }
+  .closing h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 1.2rem; }
+  .closing p { color: var(--parchment-dim); line-height: 1.85; font-size: 1rem; margin-bottom: 1.2rem; }
+  .closing p:last-child { margin-bottom: 0; }
+  .closing code { font-family: var(--mono); font-size: .84em; color: var(--rune); background: var(--ink); padding: .1em .4em; border-radius: 3px; }
+
+  .tool-shell { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 2.5rem 0 2rem; }
+  .tool-header { padding: 1rem 1.4rem; border-bottom: 1px solid var(--line); background: var(--ink); }
+  .tool-header-label { font-size: .72rem; color: var(--rune); text-transform: uppercase; letter-spacing: .06em; margin: 0; }
+
+  .fields-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; padding: 1.4rem; }
+  @media (max-width: 560px) { .fields-grid { grid-template-columns: 1fr; } }
+  .field-group { display: flex; flex-direction: column; gap: .35rem; }
+  .flabel { font-size: .72rem; color: var(--rune); text-transform: uppercase; letter-spacing: .06em; }
+
+  .ti { font-family: var(--mono); font-size: .85rem; background: var(--ink-2); border: 1px solid var(--line); border-radius: 5px; padding: .45rem .75rem; color: var(--parchment); width: 100%; transition: border-color .15s; }
+  .ti:focus { outline: none; border-color: var(--ember-soft, var(--ember)); }
+  .sel { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23aaa'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right .7rem center; background-color: var(--ink-2); padding-right: 2rem; cursor: pointer; }
+  .sel option { background: var(--ink); color: var(--parchment); }
+
+  .gen-bar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 1rem 1.4rem; border-top: 1px solid var(--line); background: var(--ink); }
+  .gen-btn { font-family: var(--mono); font-size: .8rem; text-transform: uppercase; letter-spacing: .07em; padding: .6rem 1.6rem; border: 1px solid var(--ember); background: color-mix(in srgb, var(--ember) 10%, transparent); color: var(--ember); border-radius: 6px; cursor: pointer; transition: background .15s; white-space: nowrap; }
+  .gen-btn:hover { background: color-mix(in srgb, var(--ember) 20%, transparent); }
+  .reroll-btn { font-family: var(--mono); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; padding: .55rem 1.1rem; border: 1px solid var(--line); background: transparent; color: var(--parchment-dim); border-radius: 6px; cursor: pointer; transition: border-color .15s, color .15s; white-space: nowrap; }
+  .reroll-btn:hover { border-color: var(--parchment); color: var(--parchment); }
+  .gen-note { font-size: .76rem; color: var(--rune); margin: 0; }
+
+  .card-box { border: 1px solid var(--ember-soft, var(--ember)); border-radius: 10px; overflow: hidden; margin: 2rem 0; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; padding: 1.1rem 1.4rem; border-bottom: 1px solid var(--line); background: var(--ink-2); flex-wrap: wrap; }
+  .card-meta { flex: 1; min-width: 12rem; }
+  .card-title { font-size: .74rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ember); margin: 0 0 .35rem; }
+  .card-hint { font-size: .82rem; color: var(--rune); line-height: 1.6; margin: 0; }
+  .card-actions { display: flex; gap: .5rem; flex-shrink: 0; }
+  .tbtn { font-family: var(--mono); font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; padding: .45rem 1rem; border: 1px solid var(--line); background: transparent; color: var(--parchment-dim); border-radius: 5px; cursor: pointer; white-space: nowrap; transition: border-color .15s, color .15s; }
+  .tbtn:hover { border-color: var(--parchment); color: var(--parchment); }
+  .card-ta { display: block; width: 100%; min-height: 420px; font-family: var(--mono); font-size: .8rem; line-height: 1.8; background: var(--ink); border: none; padding: 1.2rem 1.4rem; color: var(--parchment-dim); resize: vertical; }
+  .copy-ok { font-size: .75rem; color: var(--ember); padding: .3rem 1.4rem; margin: 0; }
+  .card-cta { font-size: .88rem; color: var(--parchment-dim); padding: .9rem 1.4rem 1rem; border-top: 1px solid var(--line); background: var(--ink-2); margin: 0; line-height: 1.6; }
+  .card-cta a { color: var(--ember); }
+
+  .hidden { display: none !important; }
+</style>
+</Base>

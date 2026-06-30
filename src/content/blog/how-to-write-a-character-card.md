@@ -21,7 +21,7 @@ faq:
 
 **A character card is a structured document that tells an AI exactly who to be** — its personality, how it speaks, the scene it's in, and how it opens — so the model can play a consistent persona instead of a generic chatbot. It's the single most important artifact in modern AI roleplay, and it's also where most people quietly sabotage their own sessions.
 
-The frustrating part is that card quality, not model quality, is usually what decides whether a character feels alive or hollow. A strong card can make a budget model hold a believable identity for an hour; a weak card will make even a frontier model drift into mush by turn twenty. This guide walks through what every field actually does, the craft principles that separate cards that hold up from cards that don't, and the specific mistakes that flatten a character — so you can write one that survives a real session.
+The frustrating part is that card quality, not model quality, is usually what decides whether a character feels alive or hollow. A strong card can make a budget model hold a believable identity for an hour; a weak card will make even a frontier model drift into mush by turn twenty. This guide walks through what every field actually does, the craft principles that separate cards that hold up from cards that don't, and the specific mistakes that flatten a character — so you can write one that survives a real session. (Prefer to start from a draft rather than a blank field? The free [AI Character Card Generator](/tools/character-card-generator) rolls a complete starting card you can edit as you read along.)
 
 ---
 
