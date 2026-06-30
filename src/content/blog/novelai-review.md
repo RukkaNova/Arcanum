@@ -25,7 +25,7 @@ For a writer, that quality compounds. The sentences are better, so the story you
 
 NovelAI's other real strength is the **Lorebook**, and the best way to understand it is not as a memory patch but as a worldbuilding tool. You create entries — characters, factions, places, rules, history — and the model pulls them in when they're relevant, so the flavourful detail of your setting actually stays in play across a long manuscript.
 
-I found this genuinely welcome. So much of the work of a sustained story is keeping track of what you've established, and a tool that helps you *build* the world and *retain* its texture is exactly the kind of scaffolding this medium needs. Paired with the collaborative and novel-writing features, the Lorebook makes NovelAI a legitimately excellent environment for building stories rather than playing games.
+I found this genuinely welcome. So much of the work of a sustained story is keeping track of what you've established, and a tool that helps you *build* the world and *retain* its texture is exactly the kind of scaffolding this medium needs. Paired with the collaborative and novel-writing features, the Lorebook makes NovelAI a legitimately excellent environment for building stories rather than playing games. (If lorebook worldbuilding is your main draw, [SillyTavern](/blog/sillytavern-vs-novelai)'s World Info is the same idea with free, bring-your-own-model flexibility — we compare them in [SillyTavern vs NovelAI](/blog/sillytavern-vs-novelai).)
 
 ## Where It Falls Behind as a Game
 
