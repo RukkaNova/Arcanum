@@ -69,7 +69,7 @@ The counterargument: if you know what you want and can articulate it, a Claude P
 
 If Janitor AI isn't quite landing for you, our [Janitor AI alternatives guide](/blog/janitor-ai-alternatives) maps the off-ramps by exactly what's frustrating you — weak in-house model, setup friction, or wanting a real game instead of a chat.
 
-Against [SillyTavern](/blog/sillytavern-guide): the character card format is compatible, and many cards move between platforms. SillyTavern gives you deeper control over model parameters and runs locally; Janitor AI gives you a browser interface and a built-in community. They serve similar use cases with different trade-offs around setup complexity and privacy.
+Against [SillyTavern](/blog/sillytavern-guide): the character card format is compatible, and many cards move between platforms. SillyTavern gives you deeper control over model parameters and runs locally; Janitor AI gives you a browser interface and a built-in community. They serve similar use cases with different trade-offs around setup complexity and privacy — we break the choice down point by point in [Janitor AI vs SillyTavern](/blog/janitor-ai-vs-sillytavern).
 
 ## The Verdict
 
