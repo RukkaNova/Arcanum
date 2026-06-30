@@ -71,7 +71,7 @@ Janitor AI, by contrast, is intentionally simple: pick a card, chat. That's a fe
 
 This is Janitor AI's strongest card. Its catalogue is enormous and built-in — hundreds of thousands of community characters across every genre and content rating, browsable and playable on the spot, with a community attached. For discovery, nothing about SillyTavern matches the "browse and immediately play" loop.
 
-SillyTavern has no hosted library of its own. What it has is **format compatibility**: it reads the widely-used community card format, so cards from across the ecosystem — including many that originate on Janitor AI — load and run in it, often with more control over how they behave. The trade-off is that you source cards yourself rather than browsing them in-app. (If you'd rather build your own from scratch, see [how to write a character card](/blog/how-to-write-a-character-card) — the craft is identical on both platforms.)
+SillyTavern has no hosted library of its own. What it has is **format compatibility**: it reads the widely-used community card format, so cards from across the ecosystem — including many that originate on Janitor AI — load and run in it, often with more control over how they behave. The trade-off is that you source cards yourself rather than browsing them in-app. (If you'd rather build your own, [generate one free](/tools/character-card-generator) or learn the craft in [how to write a character card](/blog/how-to-write-a-character-card) — both work identically on either platform.)
 
 ## Filter and Privacy
 

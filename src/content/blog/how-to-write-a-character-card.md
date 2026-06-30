@@ -53,7 +53,7 @@ The next sections cover how to write the three that decide everything: personali
 
 ## Writing the Personality: Specific Beats Long
 
-The single most common mistake is writing personality as a list of soft adjectives. "Kind, mysterious, intelligent, caring, a bit shy but opens up over time" tells the model almost nothing it can act on. Every character is some blend of nice adjectives. What makes a character *this* character is the specifics.
+The single most common mistake is writing personality as a list of soft adjectives. "Kind, mysterious, intelligent, caring, a bit shy but opens up over time" tells the model almost nothing it can act on. Every character is some blend of nice adjectives. What makes a character *this* character is the specifics. (Not sure who to write yet? Start from one of these [roleplay character archetypes](/blog/roleplay-character-ideas), then make it specific.)
 
 Compare:
 
