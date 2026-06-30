@@ -83,7 +83,7 @@ Once it's running and connected, you load a character and start playing.
 
 SillyTavern has a deep feature set, but a handful are why people stay:
 
-- **Character cards.** The portable format for AI characters — a card bundles a persona's personality, voice, scenario, and example dialogue. SillyTavern reads the widely-used card format, so cards from across the community (including many that originate on [Janitor AI](/blog/janitor-ai)) work here, often with more control over how they behave.
+- **Character cards.** The portable format for AI characters — a card bundles a persona's personality, voice, scenario, and example dialogue. SillyTavern reads the widely-used card format, so cards from across the community (including many that originate on [Janitor AI](/blog/janitor-ai)) work here, often with more control over how they behave. If you'd rather build your own, see [how to write a character card](/blog/how-to-write-a-character-card).
 - **World Info / lorebooks.** This is the killer feature. A lorebook is a set of entries that get injected into the prompt only when their keywords come up — so a sprawling world's lore is available on demand without permanently eating your context window. It's the closest thing to giving the AI a reference book it consults as needed.
 - **Personas.** A persistent identity for *you*, the player, that the AI keeps in mind across characters and sessions.
 - **Group chats.** Multiple characters in one scene, each with their own card, taking turns — far better multi-character handling than a single chat box.

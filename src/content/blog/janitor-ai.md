@@ -31,7 +31,7 @@ When evaluating an unfamiliar card, the things that actually predict session qua
 
 Cards written with loose, impressionistic personality descriptions tend to produce characters who shift to match whatever tone the conversation takes rather than holding their own. That can feel like good responsiveness at first and like a lack of identity by hour two. Cards with tight, specific instructions for how the character speaks, what they care about, what they will and won't do — those hold up.
 
-The good news: once you can read a card before launching it, the library becomes genuinely useful. The bad news: it takes a few bad sessions to develop that instinct.
+The good news: once you can read a card before launching it, the library becomes genuinely useful. The bad news: it takes a few bad sessions to develop that instinct. (The same instinct works in reverse when you build your own — our guide on [how to write a character card](/blog/how-to-write-a-character-card) breaks down what actually makes one hold up.)
 
 ## The BYOM Decision
 
