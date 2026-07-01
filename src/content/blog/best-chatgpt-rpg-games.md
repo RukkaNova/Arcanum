@@ -28,11 +28,11 @@ The honest tradeoff: ShadowThorn games are designed for broad accessibility. The
 
 ## 2. AI Dungeon — Best for Pure Creative Freedom
 
-The genre's original and still the most freeform **ChatGPT roleplay** experience available. AI Dungeon gives you complete narrative freedom — any genre, any action, any world, and the model rolls with all of it. Its community has built thousands of scenario templates covering every conceivable setting, and it integrates GPT-4o on higher tiers for noticeably stronger prose.
+The genre's original and still the most freeform AI roleplay experience available. AI Dungeon gives you complete narrative freedom — any genre, any action, any world, and the model rolls with all of it. Its community has built thousands of scenario templates covering every conceivable setting, and its higher tiers run much stronger models — large finetunes and DeepSeek-based options — for noticeably better prose.
 
 The tradeoff is well-documented: total creative freedom with no persistent world state, no game mechanics beyond the narrative, and memory that degrades as the context fills. For players who want the maximum sandbox with no setup whatsoever, it remains a valid and well-maintained entry point. For players who want sustained coherence across many sessions, the engineered systems on this list hold together better. [Read our full AI Dungeon review](/blog/ai-dungeon-review) for the current verdict.
 
-*Runs on: Browser, iOS, Android (multiple model tiers including GPT-4o, freemium)*
+*Runs on: Browser, iOS, Android (multiple model tiers, freemium)*
 
 ## 3. Aevum Realm Architect — Best for Kingdom-Building & Strategy (Arcanum Original)
 
@@ -86,11 +86,11 @@ Three genuine strengths that make ChatGPT a strong RPG platform.
 
 **The Custom GPT ecosystem.** The GPT store gives you a browsable library of pre-built experiences you can load instantly — more than any other model's equivalent. Even if most entries are thin, the best ones are genuinely good and get better as the community matures. For players who want to browse and pick rather than build from scratch, no other platform comes close.
 
-**GPT-4o's prose quality.** For narrative-heavy campaigns, GPT-4o produces consistently strong, varied prose that keeps sessions feeling fresh rather than repetitive. The model's writing voice is well-suited to action, dialogue, and world description — exactly what long **ChatGPT roleplay** sessions demand.
+**ChatGPT's prose quality.** For narrative-heavy campaigns, ChatGPT produces consistently strong, varied prose that keeps sessions feeling fresh rather than repetitive. The model's writing voice is well-suited to action, dialogue, and world description — exactly what long **ChatGPT roleplay** sessions demand.
 
 **The image generation integration.** Custom GPTs can optionally generate images mid-session — useful for visualising locations, characters, or items without leaving the game. No other LLM RPG platform integrates this as smoothly for players who want a visual layer alongside the text.
 
-The honest tradeoff versus Claude: GPT-4o's context window is shorter than Claude's extended context, which means very long campaigns (100+ turns with large knowledge files) may lose earlier thread faster. For sustained, complex campaigns where lore consistency is paramount, Claude Projects give you more headroom. For shorter sessions, broad genre variety, and the convenience of the GPT store, ChatGPT is a genuinely strong choice. See how the platforms compare in our [full clients directory](/clients).
+The honest tradeoff versus Claude: ChatGPT's context window is shorter than Claude's extended context, which means very long campaigns (100+ turns with large knowledge files) may lose earlier thread faster. For sustained, complex campaigns where lore consistency is paramount, Claude Projects give you more headroom. For shorter sessions, broad genre variety, and the convenience of the GPT store, ChatGPT is a genuinely strong choice. See how the platforms compare in our [full clients directory](/clients).
 
 ## How to Set Up a Custom GPT for RPG
 

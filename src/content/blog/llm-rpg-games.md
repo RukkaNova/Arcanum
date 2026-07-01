@@ -188,7 +188,7 @@ All platform reviews are independent. Arcanum has no commercial relationship wit
 
 The model you play on matters. Each of the three major consumer LLMs has genuine strengths and real limitations for roleplay specifically.
 
-**ChatGPT (GPT-4o / Custom GPTs)**
+**ChatGPT (Custom GPTs)**
 The most feature-rich environment for LLM gaming. Custom GPTs allow a dedicated game container — separate from your regular ChatGPT history, with a persistent system prompt and optional knowledge files. Excellent at complex world-building, logical consistency, and rule interpretation. The Custom GPT store also has the largest library of community-built RPG games of any platform. Best suited to games with explicit mechanical systems (Aevum, Star Freighter Drift) where logical consistency under rules pressure matters. For curated picks in this category, see [the best ChatGPT RPG games →](/blog/best-chatgpt-rpg-games).
 
 **Claude (Projects)**

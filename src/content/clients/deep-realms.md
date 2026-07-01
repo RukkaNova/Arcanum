@@ -6,7 +6,7 @@ pricing: "freemium"
 siteUrl: "https://www.deeprealms.io"
 reviewSlug: "deep-realms-review"
 bestFor: "Unrestricted, deeply customized solo campaigns for tech-savvy writers and hardcore RPG enthusiasts."
-models: "GPT-4 / Claude / custom"
+models: "Proprietary — Freya 4.1, Aion, Magni, Astral"
 memoryApproach: "80,000-word store"
 cover: "/img/deep-realms.webp"
 featured: false

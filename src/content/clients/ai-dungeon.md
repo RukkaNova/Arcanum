@@ -39,13 +39,13 @@ The AI's memory is inherently fragile. It frequently hallucinates past events, a
 
 ## Pricing
 
-| Plan | Monthly Cost | Context Limit | Image Credits | Features |
-|------|-------------|---------------|---------------|----------|
-| Wanderer | Free | ~1,000–2,000 tokens | 0 | Ad-free access to the free-tier models |
-| Adventurer | $9.99 | 4,000 tokens | 480/month | 50 permanent memory slots |
-| Champion / Journey | $14.99–$24.99 | 8,000 tokens | 760–960/month | 100–200 memory slots |
-| Mythic | $49.99 | 32,000 tokens | 2,750/month | 400 memory slots |
-| Ultimate | $99.99 | Maximum context | 5,200/month | 800 memory slots |
+| Plan | Monthly Cost | Context Window | Monthly Credits |
+|------|-------------|----------------|-----------------|
+| Wanderer | Free | 4k tokens | 0 |
+| Journey | $14.99 | 8k tokens | 760 |
+| Legend | $29.99 | 16k tokens | 1,650 |
+| Mythic | $49.99 | 32k tokens | 2,750 |
+| Ultimate | $99.99 | 32k tokens (expandable with credits) | 5,200 |
 
 ## Verdict
 

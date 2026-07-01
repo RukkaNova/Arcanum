@@ -48,7 +48,7 @@ Each runs inside the AI you already use — no new app, no account, no subscript
 
 ## The Part Nobody Talks About: Why Most AI Text Adventures Break
 
-Here is the honest part of this genre: most AI text adventures break. Not because the technology isn't capable — Claude, GPT-4o, and Gemini 1.5 can write beautiful interactive fiction — but because a raw conversation has no architecture underneath it.
+Here is the honest part of this genre: most AI text adventures break. Not because the technology isn't capable — Claude, ChatGPT, and Gemini can write beautiful interactive fiction — but because a raw conversation has no architecture underneath it.
 
 Around turn 40–50, the model has forgotten your gold, lost track of who is dead, and started improvising NPCs who were never consistent to begin with. The world loses coherence because nothing is maintaining it. The AI isn't choosing to forget. The facts have literally scrolled out of its context window.
 
