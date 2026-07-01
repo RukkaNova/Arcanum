@@ -47,7 +47,7 @@ DeepSeek connects through Janitor AI's **custom/proxy** configuration (not a one
 The lowest-cost route, straight from the source:
 
 1. **Create a DeepSeek API account** on DeepSeek's official platform and **add a small amount of credit** (a few dollars goes a very long way).
-2. **Generate an API key** and copy it somewhere safe. Treat it like a password.
+2. **Generate an API key** and copy it somewhere safe. Treat it like a password — and use a key from an official provider rather than a stranger's proxy ([here's why that matters](/blog/is-janitor-ai-safe)).
 3. **In Janitor AI, open the API settings** and choose the **custom / proxy / OpenAI-compatible** option.
 4. **Enter the connection details:**
    - **Base URL:** typically `https://api.deepseek.com`

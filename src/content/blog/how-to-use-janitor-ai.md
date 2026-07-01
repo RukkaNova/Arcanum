@@ -99,7 +99,7 @@ A fair question, and the honest answer is "it's a normal third-party online serv
 - **Your API key** is a credential — keep it private, and you can revoke and regenerate it from your provider at any time if you're ever unsure.
 - **Content:** the platform hosts mature, age-gated material alongside everything else; using it well is about choosing the characters you actually want. We cover the content landscape factually in the [uncensored AI roleplay](/blog/uncensored-ai-roleplay) guide.
 
-It isn't malware and it isn't a scam, but like any platform you don't control, the safe posture is: real password, no real-life personal data, private API key.
+It isn't malware and it isn't a scam, but like any platform you don't control, the safe posture is: real password, no real-life personal data, private API key. Our dedicated [Is Janitor AI Safe?](/blog/is-janitor-ai-safe) guide covers privacy, proxy risks, and clone sites in full.
 
 ## Getting the Most Out of It
 
