@@ -124,6 +124,8 @@ A quick filter:
 
 **You want cheap, unrestricted, no local hardware** → DeepSeek V4 through OpenRouter as a SillyTavern backend.
 
+**You want the most permissive mainstream model with almost no setup** → [Grok](/blog/grok-rpg-guide) — the least-filtered frontier model, playable straight from its own app.
+
 **You want the best companion-chat model specifically** → MiniMax M2 (Her).
 
 **You want serious, dark storytelling but not explicit content** → Claude direct, via the [Claude RPG guide](/blog/claude-rpg-guide).

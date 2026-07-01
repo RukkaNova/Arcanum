@@ -102,7 +102,7 @@ Its second draw is permissiveness. xAI positions Grok as deliberately less filte
 
 The catch is consistency under pressure. Grok is strong on *feel* but weaker on rigorous logical follow-through than Claude or GPT — complex rule sets, tight cause-and-effect, and long multi-thread continuity are where it slips more often. It's a superb *character* model and a shakier *engine* model.
 
-One clarification, since the searches blur together: this is about **Grok the model** for roleplay — through the Grok app's text chat or its API in a front-end like [SillyTavern](/blog/sillytavern-guide) — not the separate animated "companion" product (Ani and friends), which is a different, companion-app experience aimed at a different audience.
+One clarification, since the searches blur together: this is about **Grok the model** for roleplay — through the Grok app's text chat or its API in a front-end like [SillyTavern](/blog/sillytavern-guide) — not the separate animated "companion" product (Ani and friends), which is a different, companion-app experience aimed at a different audience. For how to actually set Grok up as a game master — Custom Agents, Workspaces, and the SillyTavern route — see our [Grok RPG guide](/blog/grok-rpg-guide).
 
 **Strengths for roleplay:**
 

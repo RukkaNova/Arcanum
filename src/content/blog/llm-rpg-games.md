@@ -186,7 +186,7 @@ All platform reviews are independent. Arcanum has no commercial relationship wit
 
 ## Choosing the Right Model for LLM RPG Play
 
-The model you play on matters. Each of the three major consumer LLMs has genuine strengths and real limitations for roleplay specifically.
+The model you play on matters. Each of the major consumer LLMs has genuine strengths and real limitations for roleplay specifically.
 
 **ChatGPT (Custom GPTs)**
 The most feature-rich environment for LLM gaming. Custom GPTs allow a dedicated game container — separate from your regular ChatGPT history, with a persistent system prompt and optional knowledge files. Excellent at complex world-building, logical consistency, and rule interpretation. The Custom GPT store also has the largest library of community-built RPG games of any platform. Best suited to games with explicit mechanical systems (Aevum, Star Freighter Drift) where logical consistency under rules pressure matters. For curated picks in this category, see [the best ChatGPT RPG games →](/blog/best-chatgpt-rpg-games).
@@ -196,6 +196,9 @@ The strongest prose writer of the three and the most reliable at maintaining cha
 
 **Gemini (Gems)**
 The practical advantage Gemini has over the other two is context window: Gemini's 2M token window is the largest available to consumer users, which means longer campaigns before memory compression becomes critical. Gemini Gems function like Custom GPTs and Claude Projects — a dedicated game container with a persistent prompt and knowledge files. Well-suited to games with large world bibles (Eirathis Strider's Atlas is substantial) where the model needs to hold a lot of lore in working memory simultaneously. The Gem library is currently the thinnest of the three, which is both a limitation and an opportunity for early content. See the current standouts in [the best Gemini RPG games →](/blog/best-gemini-rpg-games).
+
+**Grok (Custom Agents & Workspaces)**
+The newest of the group and the strongest on emotional intelligence and permissiveness. Grok leads roleplay emotional-IQ rankings and refuses dark or mature scenes far less than the others, making it a natural fit for character-driven, companion, and freeform play. Its container is a pair — Custom Agents (named GM personas) plus Workspaces (persistent files and instructions) — and the fast tier's multi-million-token context suits very long sessions. The trade-off is weaker rule-following than Claude or GPT, so it's a better character model than a strict-mechanics engine. See [the Grok RPG guide →](/blog/grok-rpg-guide).
 
 For a full comparison including DeepSeek, MiniMax M2, and local models, see [Best LLM for Roleplay →](/blog/best-llm-for-roleplay).
 
