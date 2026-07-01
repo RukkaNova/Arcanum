@@ -67,7 +67,7 @@ The most popular budget setup on Janitor AI is **DeepSeek**, because it's surpri
 3. **Enter the provider's base URL**, paste your **key**, and set the **model name** to the DeepSeek model ID your provider lists.
 4. **Save and send a test message.**
 
-That's the whole trick behind the "Janitor AI proxy" and "Janitor AI DeepSeek" searches — a proxy is just an OpenAI-compatible endpoint you point Janitor AI at. For why DeepSeek punches above its price for roleplay specifically, see our [DeepSeek for roleplay](/blog/deepseek-roleplay) guide. Always get keys from the provider's own official site, and check their current docs for the exact base URL and model IDs, since those are the parts that change.
+That's the whole trick behind the "Janitor AI proxy" and "Janitor AI DeepSeek" searches — a proxy is just an OpenAI-compatible endpoint you point Janitor AI at. For the exact base URLs, model names, and both connection routes, see the dedicated [DeepSeek + Janitor AI setup guide](/blog/janitor-ai-deepseek); for why DeepSeek punches above its price for roleplay specifically, see [DeepSeek for roleplay](/blog/deepseek-roleplay). Always get keys from the provider's own official site, and check their current docs for the exact base URL and model IDs, since those are the parts that change.
 
 ## Dialing In Your Settings
 
