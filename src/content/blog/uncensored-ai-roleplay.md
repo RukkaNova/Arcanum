@@ -65,7 +65,7 @@ For one-on-one character roleplay rather than a structured campaign, [Janitor AI
 
 Two things make it work. First, its content policy is lighter than the native surfaces of the models it connects to — the character-card layer mediates prompts in a way that expands what a model will engage with. Second, and more importantly, its **bring-your-own-model (BYOM)** feature lets you route sessions through your own API key. The same character that feels flat on the in-house model comes alive on a frontier model — and routing through the API gives you more latitude than those models' consumer apps allow. The platform has NSFW-flagged content with age verification, so the catalogue's character reflects that going in.
 
-It is the wrong tool for persistent, mechanical campaigns — it has no world state or cross-session memory. But for talking to a specific character without a filter in the way, it's the largest library that exists. See the [Janitor AI review](/blog/janitor-ai) for how to read card quality and set up BYOM.
+It is the wrong tool for persistent, mechanical campaigns — it has no world state or cross-session memory. But for talking to a specific character without a filter in the way, it's the largest library that exists. See the [Janitor AI review](/blog/janitor-ai) for how to read card quality and set up BYOM — or [generate a paste-ready character card](/tools/character-card-generator) in a click to run on it.
 
 **Best for:** companion and character-driven roleplay, minimal setup, anyone who already has an API key to route through.
 

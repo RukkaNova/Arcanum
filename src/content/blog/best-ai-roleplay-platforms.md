@@ -80,7 +80,7 @@ The entry barrier is real: you need basic Python literacy to access the platform
 
 Not every AI roleplay session is a campaign. For players who want to talk to a specific character — a companion, a fictional persona, an archetype — rather than run a world, [Janitor AI](/clients/janitor) has the most extensive library available.
 
-Hundreds of thousands of community-created character cards spanning every genre, franchise, and archetype. The bring-your-own-model feature lets you route sessions through your own Claude or OpenAI API key — turning an existing subscription into access to the full library at marginal token cost. Card quality is variable, but the best creators in the library have spent hundreds of hours testing and refining specific characters.
+Hundreds of thousands of community-created character cards spanning every genre, franchise, and archetype. The bring-your-own-model feature lets you route sessions through your own Claude or OpenAI API key — turning an existing subscription into access to the full library at marginal token cost. Card quality is variable, but the best creators in the library have spent hundreds of hours testing and refining specific characters. Prefer to build your own instead of hunting the library? Our [character card generator](/tools/character-card-generator) rolls a paste-ready one in a click.
 
 It is the wrong platform for anyone who wants mechanics, persistence, or consequences. For companion roleplay and character-driven fiction at scale, it's the best library that exists.
 

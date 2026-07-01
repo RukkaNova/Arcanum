@@ -113,7 +113,7 @@ For the full no-filter landscape see the [uncensored AI roleplay guide](/blog/un
 
 A quick filter:
 
-**You want the same character chat, more control, no filter** → [SillyTavern](/blog/sillytavern-guide), with your cards brought over.
+**You want the same character chat, more control, no filter** → [SillyTavern](/blog/sillytavern-guide), with your cards brought over. (No card yet? [Generate a paste-ready one free](/tools/character-card-generator).)
 
 **You want a direct, similar platform without the setup** → Chub AI.
 
