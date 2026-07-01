@@ -114,3 +114,23 @@ And the honest ceiling: Janitor AI is a *conversation* platform, not a game. It 
 ## The Short Version
 
 Make a free account, try a character on Janitor LLM to get the feel — then **connect your own model**, because that's the real Janitor AI. Use DeepSeek through the proxy route if you want it great and cheap, keep your API key funded and private, and spend your energy on finding (or making) good characters. Do that and you'll have skipped the mediocre first impression that makes most people quit too early.
+
+## Frequently Asked Questions
+
+**How do I use Janitor AI?**
+Create a free account, pick a character from the library, and start chatting on the built-in Janitor LLM. For much better writing, switch to bring-your-own-model: open the API settings, choose your provider, paste an API key (and a proxy URL if you're using one), enter the model name, save, and chat. The character library plus your chosen model is the whole experience.
+
+**Do I need an API key to use Janitor AI?**
+No — Janitor AI works for free on its own Janitor LLM with no key. An API key is only needed if you want to bring your own model, like connecting Claude, GPT, or DeepSeek for higher-quality writing. That's optional, but it's the single biggest upgrade to the experience.
+
+**How do I use DeepSeek with Janitor AI?**
+Get a DeepSeek API key (or access DeepSeek through an aggregator like OpenRouter), then in Janitor AI's API settings choose the custom/proxy option, enter the provider's base URL, paste your key, and set the model name to the DeepSeek model you want. DeepSeek is popular here because it's capable and very cheap per message. Our dedicated [DeepSeek + Janitor AI guide](/blog/janitor-ai-deepseek) covers both connection routes step by step.
+
+**Why is Janitor AI not working or giving a network error?**
+The most common causes are a problem with the model or proxy you connected, an invalid or out-of-credit API key, or temporary platform load. Check that your API key is valid and funded, confirm the proxy URL and model name are correct, try again after a moment if a model is overloaded, and test on the free Janitor LLM to see whether the issue is your connection or your API setup.
+
+**Is Janitor AI safe?**
+Janitor AI is a third-party platform, so normal caution applies: use a strong unique password, don't share personal information in chats, and remember that on the free model your messages pass through Janitor's servers, while with bring-your-own-model they go to your API provider instead. The platform also hosts age-gated mature content; using it is about the characters you choose. It's not malware, but treat it like any online service with your data. The [Is Janitor AI Safe?](/blog/is-janitor-ai-safe) guide covers privacy, proxy risks, and clone sites in full.
+
+**Is Janitor AI free?**
+Yes. The core platform and its built-in Janitor LLM are free to use. The only cost appears if you choose to bring your own model, where you pay the per-message API fee of whatever provider you connect — often just cents per conversation, and pennies with a budget model like DeepSeek.

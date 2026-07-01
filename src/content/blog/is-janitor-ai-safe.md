@@ -90,3 +90,23 @@ Do those, and Janitor AI is about as safe as any mainstream online platform. The
 If the safety picture checks out for you, the [complete setup guide](/blog/how-to-use-janitor-ai) gets you running properly, and connecting a good model — [DeepSeek](/blog/janitor-ai-deepseek) for cheap, or a [frontier model](/blog/best-llm-for-roleplay) for quality — is the upgrade that makes the platform worth using.
 
 And if what you ultimately want is a private, self-contained experience with no third-party platform holding your chats at all, that's worth knowing about: the free [Arcanum Originals](/arcanum-games) run inside the AI you already use (ChatGPT, Claude, or Gemini), so there's no separate service between you and the model — a different answer to the safety question entirely.
+
+## Frequently Asked Questions
+
+**Is Janitor AI safe to use?**
+Yes, for the most part — Janitor AI is a legitimate, widely-used platform, not malware or a scam. The sensible caution is the same as any third-party online service: use a strong unique password, don't put real personal information in chats, and be careful with API keys and third-party proxies. Treat it like any website you don't personally control.
+
+**Is Janitor AI legit or a scam?**
+The official platform at janitorai.com is legitimate. The main scam risk is lookalike or clone sites using the Janitor AI name on different domains, some of which are unrelated services or phishing pages. Make sure you're on the official site, and never enter your password on a lookalike domain.
+
+**Is it safe to use your API key on Janitor AI?**
+Using your own API key from an official provider (like OpenAI, DeepSeek, or OpenRouter) with Janitor AI's built-in bring-your-own-model setting is fine. The real risk is third-party reverse proxies shared in communities — the person running one can potentially see your traffic and misuse your key. Prefer official providers, set a spending limit on your API account, and revoke any key you're unsure about. Our [Janitor AI + DeepSeek guide](/blog/janitor-ai-deepseek) walks through connecting a budget model with your own key, which is the safe route.
+
+**Does Janitor AI save or read your chats?**
+On the free built-in model, your messages pass through Janitor AI's servers and are handled under its privacy policy. With bring-your-own-model, your messages go to your API provider instead. Either way, treat chats as not fully private and never include real personal details like your name, address, or financial information.
+
+**Is Janitor AI safe from viruses?**
+Janitor AI is a website, not software you install, so it doesn't carry malware by itself — standard browser safety applies. The device-level risks come from elsewhere: sketchy third-party proxy tools, fake 'Janitor AI app' downloads, or lookalike sites. Stick to the official website and don't install unofficial add-ons.
+
+**Is Janitor AI safe for minors?**
+No — it's an adult-oriented platform. Alongside general characters it hosts age-gated mature content, so it isn't appropriate for minors. It's designed for adult users who choose the characters they interact with.

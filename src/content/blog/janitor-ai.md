@@ -41,7 +41,7 @@ The bring-your-own-model feature lets you route sessions through your own Claude
 
 The cost question is the practical one. If you already have a Claude Pro or ChatGPT Plus subscription, connecting your API key adds only the marginal token cost of sessions — typically a few cents for a normal conversation, more if you're running long exchanges on Opus-tier models. That math is usually favourable compared to paying a second subscription elsewhere. If you don't already have an API key, you're making a different decision: whether to set one up specifically for Janitor AI, which is likely worth it only if the library itself is what draws you.
 
-Setup takes about ten minutes. The platform's instructions are clear enough that it is not a technical barrier for most users — and our [complete Janitor AI setup guide](/blog/how-to-use-janitor-ai) walks through connecting your own model (including budget options like DeepSeek) step by step.
+Setup takes about ten minutes. The platform's instructions are clear enough that it is not a technical barrier for most users — and our [complete Janitor AI setup guide](/blog/how-to-use-janitor-ai) walks through connecting your own model (including [budget options like DeepSeek](/blog/janitor-ai-deepseek)) step by step. If you're wary about handing an API key to a third-party platform, our [is Janitor AI safe](/blog/is-janitor-ai-safe) guide covers where the real risks are — third-party proxies, clone sites, and how to connect a key safely.
 
 ## What Kind of Roleplay Actually Works Here
 

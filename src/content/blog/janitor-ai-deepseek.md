@@ -104,3 +104,23 @@ Almost every DeepSeek-on-Janitor problem is one of these:
 For the price, DeepSeek is the easiest big upgrade you can make to Janitor AI. It turns the platform's "this is kind of flat" first impression into something genuinely good, for pennies a session. If you outgrow it, the next steps up are a frontier model (compared in our [best LLM for roleplay](/blog/best-llm-for-roleplay) guide) or moving to a more powerful front-end like [SillyTavern](/blog/sillytavern-guide).
 
 And if you find yourself wanting a world that *remembers* — persistent state, mechanics, stakes that carry across sessions — that's something no character-chat setup provides, however good the model. The free [Arcanum Originals](/arcanum-games) are engineered RPG systems built for exactly that, running on the same kind of model you just connected.
+
+## Frequently Asked Questions
+
+**How do I use DeepSeek with Janitor AI?**
+Get a DeepSeek API key (or an OpenRouter key), then in Janitor AI open the API/proxy settings and choose the custom or proxy option. Enter the provider's base URL, paste your key, and set the model name to a DeepSeek model. Save and send a test message. DeepSeek connects through the proxy route rather than a one-click button because it's an OpenAI-compatible API.
+
+**Is DeepSeek free on Janitor AI?**
+The DeepSeek API itself is paid, but it's extremely cheap — often pennies for a long session, far less than routing Claude or GPT. The main free path is through OpenRouter, which has at times offered free or very low-cost access to a DeepSeek model. Janitor AI's own platform is free; the cost is only the DeepSeek API usage.
+
+**Which DeepSeek model is best for Janitor AI?**
+For roleplay, the standard chat model (`deepseek-chat`) is usually the better pick — it writes naturally and responds quickly. The reasoning model (`deepseek-reasoner`) thinks harder before answering, which can help with complex logic but is slower and sometimes reads less like natural prose. Most Janitor AI users stick with the chat model for roleplay.
+
+**What is the DeepSeek base URL for Janitor AI?**
+For a direct DeepSeek connection the base URL is typically `https://api.deepseek.com`, with a model name like `deepseek-chat`. Through OpenRouter the base URL is `https://openrouter.ai/api/v1` with a model name like `deepseek/deepseek-chat`. Always confirm the current values in your provider's own documentation, since model IDs occasionally change.
+
+**Why is DeepSeek not working on Janitor AI?**
+The usual causes are a wrong base URL or model name, an invalid or unfunded API key, or the model being briefly overloaded. Double-check the base URL and model ID against your provider's docs, confirm your key is valid and has credit, and retry after a moment if the model is busy. If Janitor's free model works but DeepSeek doesn't, the problem is in your API settings, not the platform.
+
+**Is DeepSeek good for Janitor AI roleplay?**
+Yes — it's the most popular budget choice for a reason. It writes far better than Janitor's free in-house model, follows character instructions more reliably, and is more permissive with dramatic and mature scenes, all at a tiny fraction of the cost of a frontier model. For *why* it punches so far above its price, see the [DeepSeek for roleplay](/blog/deepseek-roleplay) guide. For the price, it's the sweet spot for Janitor AI roleplay.
