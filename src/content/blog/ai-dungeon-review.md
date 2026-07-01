@@ -89,7 +89,7 @@ This is where opinions become sharply divided.
 
 The free version offers enough functionality for casual experimentation, especially after the Unchained update.
 
-However, users seeking the best AI models, improved memory retention, and advanced features must subscribe to higher-tier plans.
+However, users seeking the best AI models, improved memory retention, and advanced features must subscribe to higher-tier plans. (Not sure which to choose? Our [best AI Dungeon model guide](/blog/best-ai-dungeon-model) sorts the whole lineup by playstyle.)
 
 The biggest criticism is the cost of premium access. Top-tier Mythic and Ultimate subscriptions using the Ultra model can range from roughly $50 to $100 per month. For many players, this is difficult to justify.
 

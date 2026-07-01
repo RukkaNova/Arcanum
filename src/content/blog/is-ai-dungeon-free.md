@@ -26,7 +26,7 @@ The free experience improved significantly with AI Dungeon's Unchained update, w
 
 The paid tiers — Adventure, Hero, and Legendary — unlock meaningful differences, not cosmetic ones.
 
-**Model quality.** The premium plans access **Dragon**, AI Dungeon's more capable model, and connections to frontier models like GPT-4. The prose quality, character consistency, and coherence over long sessions are noticeably better on Dragon than on Griffin. If you have been playing on the free tier and found the writing repetitive or the story logic weak, the model is often the reason.
+**Model quality.** The premium plans access **Dragon**, AI Dungeon's more capable model, and connections to frontier models like GPT-4. The prose quality, character consistency, and coherence over long sessions are noticeably better on Dragon than on Griffin. If you have been playing on the free tier and found the writing repetitive or the story logic weak, the model is often the reason. Our [best AI Dungeon model guide](/blog/best-ai-dungeon-model) breaks down the current lineup and which to pick for your playstyle.
 
 **Memory and context.** Premium tiers get extended memory options, which directly affects how well AI Dungeon holds your story together over long campaigns. The free tier's memory handling is functional for short sessions and degrades over long ones.
 
