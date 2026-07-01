@@ -12,11 +12,11 @@ What the free tier *gives you* is a more complicated question — and "unlimited
 
 ## What the Free Tier Actually Includes
 
-The free tier runs on **Griffin**, AI Dungeon's in-house model. It is functional and capable of generating coherent, entertaining stories. For a quick session, a one-shot adventure, or casual exploration of the format, it works fine.
+The free tier runs on AI Dungeon's in-house finetunes — models like **Muse**, **Wayfarer Small 2**, and **Fable**, plus the **Dynamic Small** auto-switcher. They are genuinely capable of coherent, entertaining stories, and for a quick session, a one-shot adventure, or casual exploration of the format, they work well.
 
 What you get for free:
 - Full access to the story creation interface
-- Griffin model generation with no hard session cap
+- In-house model generation (Muse, Wayfarer, Fable, and more) with no hard session cap
 - The scenario library (thousands of community-built starting points)
 - Single-player adventures in every genre
 
@@ -24,9 +24,9 @@ The free experience improved significantly with AI Dungeon's Unchained update, w
 
 ## What's Behind the Paywall
 
-The paid tiers — Adventure, Hero, and Legendary — unlock meaningful differences, not cosmetic ones.
+The paid tiers — Journey, Legend, Mythic, and Ultimate — unlock meaningful differences, not cosmetic ones.
 
-**Model quality.** The premium plans access **Dragon**, AI Dungeon's more capable model, and connections to frontier models like GPT-4. The prose quality, character consistency, and coherence over long sessions are noticeably better on Dragon than on Griffin. If you have been playing on the free tier and found the writing repetitive or the story logic weak, the model is often the reason. Our [best AI Dungeon model guide](/blog/best-ai-dungeon-model) breaks down the current lineup and which to pick for your playstyle.
+**Model quality.** The premium plans unlock AI Dungeon's largest models — big finetunes like **Nova** and **Wayfarer Large** (70B) and top-tier options such as **DeepSeek V4 Pro** — with more nuance, stronger character consistency, and better coherence over long sessions than the smaller free finetunes. If you have been playing on the free tier and found the writing repetitive or the story logic weak, the model is often the reason. Our [best AI Dungeon model guide](/blog/best-ai-dungeon-model) breaks down the current lineup and which to pick for your playstyle.
 
 **Memory and context.** Premium tiers get extended memory options, which directly affects how well AI Dungeon holds your story together over long campaigns. The free tier's memory handling is functional for short sessions and degrades over long ones.
 
@@ -46,7 +46,7 @@ What "unlimited" does *not* mean: you can generate as fast as you want, indefini
 
 The practical answer for most players: the limits on paid tiers are high enough that you will not notice them in normal play. Casual to moderate users will not hit the ceiling. Players running extended daily campaigns or power-using the platform may.
 
-The free tier is similarly unrestricted in terms of hard caps but is constrained in a different way: the Griffin model's output quality makes very long campaigns frustrating before generation limits become the problem.
+The free tier is similarly unrestricted in terms of hard caps but is constrained in a different way: the smaller free models and their tighter context windows make very long campaigns frustrating before generation limits become the problem.
 
 ## Who the Free Tier Is and Isn't For
 
@@ -58,7 +58,7 @@ The free tier is similarly unrestricted in terms of hard caps but is constrained
 
 **The free tier is not adequate for:**
 - Long campaigns where character and world consistency matter
-- Players who have experienced frontier model quality (Claude, GPT-4, Gemini) and will notice the difference
+- Players who have experienced frontier model quality (Claude, ChatGPT, Gemini) and will notice the difference
 - Anything requiring extended memory, multiplayer, or reliable narrative persistence
 
 Our [full AI Dungeon review](/blog/ai-dungeon-review) covers what the platform does well and where it falls behind in more depth. The short version: the free tier is a reasonable way to try it; it is not a substitute for the full experience.

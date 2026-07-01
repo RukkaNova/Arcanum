@@ -19,7 +19,7 @@ faq:
   - q: "Which has better memory, AI Dungeon or Friends & Fables?"
     a: "Friends & Fables, clearly. Its Working Context system builds a filtered, player-editable record before each response, so NPCs, relationships, and world facts stay consistent across sessions. AI Dungeon's memory is fragile — it hallucinates past events and loses continuity as the context window fills, with better handling locked behind its priciest tiers."
   - q: "Is Friends & Fables free like AI Dungeon?"
-    a: "Not really. AI Dungeon has a genuinely usable free tier on its Griffin model. Friends & Fables is a premium subscription — about $19.95/month (Starter, four players) up to $39.95/month (Legend, six players) — with only a limited trial. AI Dungeon wins on free and casual; Friends & Fables is a paid commitment for serious groups."
+    a: "Not really. AI Dungeon has a genuinely usable free tier on its in-house models. Friends & Fables is a premium subscription — about $19.95/month (Starter, four players) up to $39.95/month (Legend, six players) — with only a limited trial. AI Dungeon wins on free and casual; Friends & Fables is a paid commitment for serious groups."
   - q: "Which is better for multiplayer group play?"
     a: "Friends & Fables. It supports real synchronous play for up to six, with individual character tracking, split-party management, and shared tactical maps. AI Dungeon's multiplayer is casual and asynchronous by comparison — fine for collaborative storytelling, but not a substitute for a group tabletop session."
   - q: "Should I use AI Dungeon, Friends & Fables, or something else?"
@@ -84,7 +84,7 @@ Friends & Fables is expressive — the community has built X-Men simulations, gr
 
 ## Ease of Starting and Price
 
-AI Dungeon wins the on-ramp and the free end. You're playing within seconds, and after the **Unchained update** its free Griffin tier is genuinely usable, ad-free, without the old energy systems. For trying AI storytelling tonight for nothing, it's the obvious door. Its catch is at the *top*: the highest Mythic/Ultimate tiers can run $50–100/month, which is hard to justify for a text experience. (More on the free tier in [is AI Dungeon free?](/blog/is-ai-dungeon-free).)
+AI Dungeon wins the on-ramp and the free end. You're playing within seconds, and after the **Unchained update** its free tier is genuinely usable, ad-free, without the old energy systems. For trying AI storytelling tonight for nothing, it's the obvious door. Its catch is at the *top*: the highest Mythic/Ultimate tiers can run $50–100/month, which is hard to justify for a text experience. (More on the free tier in [is AI Dungeon free?](/blog/is-ai-dungeon-free).)
 
 Friends & Fables is a premium product with only a limited trial — meaningful play means subscribing, roughly $19.95/month (Starter, four players) up to $39.95/month (Legend, six players), with two months free on annual billing. It also asks more of you: it's not a system that runs cleanly on autopilot, and it can occasionally force combat when a social scene would have been better. For a group replacing a standing tabletop night, the math works. For a casual solo dabble, it's a lot.
 
@@ -114,7 +114,7 @@ AI Dungeon is a freeform text-adventure sandbox with no mechanics — you type a
 Friends & Fables, clearly. Its Working Context system builds a filtered, player-editable record before each response, so NPCs, relationships, and world facts stay consistent across sessions. AI Dungeon's memory is fragile — it hallucinates past events and loses continuity as the context window fills, with better handling locked behind its priciest tiers.
 
 **Is Friends & Fables free like AI Dungeon?**
-Not really. AI Dungeon has a genuinely usable free tier on its Griffin model. Friends & Fables is a premium subscription — about $19.95/month (Starter, four players) up to $39.95/month (Legend, six players) — with only a limited trial. AI Dungeon wins on free and casual; Friends & Fables is a paid commitment for serious groups.
+Not really. AI Dungeon has a genuinely usable free tier on its in-house models. Friends & Fables is a premium subscription — about $19.95/month (Starter, four players) up to $39.95/month (Legend, six players) — with only a limited trial. AI Dungeon wins on free and casual; Friends & Fables is a paid commitment for serious groups.
 
 **Which is better for multiplayer group play?**
 Friends & Fables. It supports real synchronous play for up to six, with individual character tracking, split-party management, and shared tactical maps. AI Dungeon's multiplayer is casual and asynchronous by comparison — fine for collaborative storytelling, but not a substitute for a group tabletop session.

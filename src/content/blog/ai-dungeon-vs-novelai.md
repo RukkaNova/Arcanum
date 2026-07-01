@@ -10,7 +10,7 @@ faq:
   - q: "Which has better writing quality, AI Dungeon or NovelAI?"
     a: "NovelAI. Its models are fine-tuned on published fiction, so the prose reads richer and less generic. AI Dungeon's output is frequently criticised as repetitive and cliché on its lower tiers, and matching NovelAI's quality means paying for AI Dungeon's most expensive plans."
   - q: "Does NovelAI have a free tier like AI Dungeon?"
-    a: "No. AI Dungeon has a genuinely usable free tier on its Griffin model. NovelAI offers only a limited trial; real use requires a subscription, roughly $10 to $25 per month depending on the tier. The trade-off is that NovelAI's flat pricing is cheaper than AI Dungeon's top tiers, which can run $50 to $100 per month."
+    a: "No. AI Dungeon has a genuinely usable free tier on its in-house models. NovelAI offers only a limited trial; real use requires a subscription, roughly $10 to $25 per month depending on the tier. The trade-off is that NovelAI's flat pricing is cheaper than AI Dungeon's top tiers, which can run $50 to $100 per month."
   - q: "Which has better memory, AI Dungeon or NovelAI?"
     a: "NovelAI, by design. Its Lorebook lets you pin characters, factions, locations, and world rules so the AI recalls them across long stories — the most direct fix for memory loss in this category. AI Dungeon's memory is inconsistent on longer campaigns, and its better memory handling is locked behind its highest-priced tiers."
   - q: "Is NovelAI uncensored compared to AI Dungeon?"
@@ -37,7 +37,7 @@ This is a head-to-head on the things that actually decide it — writing quality
 | **Live knowledge** | No live browsing | No live browsing |
 | **Content filter** | History of filtering | No filter |
 | **Privacy** | Past moderation controversy | Privacy-first; encrypted stories |
-| **Free tier** | Yes, genuinely usable (Griffin) | Trial only; subscription for real use |
+| **Free tier** | Yes, genuinely usable (in-house models) | Trial only; subscription for real use |
 | **Price** | Free, or ~$50–100/mo at the top | Flat ~$10–25/mo |
 
 The one-line summary: **AI Dungeon is the better free game; NovelAI is the better writing tool.** Everything below is the detail behind that sentence.
@@ -86,7 +86,7 @@ AI Dungeon carries the opposite legacy. Several years ago it was caught up in a 
 
 ## Ease of Use and Price
 
-Here AI Dungeon takes the points back. It's far easier to start: the game-like framing means you're playing within seconds, and after the **Unchained update** the free tier (on the Griffin model) is genuinely usable, with far fewer interruptions and no intrusive ads. For a casual player who wants to try AI storytelling tonight for nothing, it's the obvious entry point.
+Here AI Dungeon takes the points back. It's far easier to start: the game-like framing means you're playing within seconds, and after the **Unchained update** the free tier (on its in-house models) is genuinely usable, with far fewer interruptions and no intrusive ads. For a casual player who wants to try AI storytelling tonight for nothing, it's the obvious entry point.
 
 NovelAI asks for commitment up front. There's no real free tier — just a limited trial — so meaningful use means subscribing, roughly $10 to $25 per month across its tiers, and learning an editor-style interface. The upside: that flat pricing is *cheaper* than AI Dungeon's top Mythic/Ultimate plans, which can run $50 to $100 per month. So the price story flips depending on tier — AI Dungeon wins at the free/casual end, NovelAI wins at the serious end. (For the AI Dungeon free-tier specifics, see [is AI Dungeon free?](/blog/is-ai-dungeon-free).)
 
@@ -113,7 +113,7 @@ It depends on what you want. NovelAI has noticeably better writing quality, the 
 NovelAI. Its models are fine-tuned on published fiction, so the prose reads richer and less generic. AI Dungeon's output is frequently criticised as repetitive and cliché on its lower tiers, and matching NovelAI's quality means paying for AI Dungeon's most expensive plans.
 
 **Does NovelAI have a free tier like AI Dungeon?**
-No. AI Dungeon has a genuinely usable free tier on its Griffin model. NovelAI offers only a limited trial; real use requires a subscription, roughly $10 to $25 per month depending on the tier. The trade-off is that NovelAI's flat pricing is cheaper than AI Dungeon's top tiers, which can run $50 to $100 per month.
+No. AI Dungeon has a genuinely usable free tier on its in-house models. NovelAI offers only a limited trial; real use requires a subscription, roughly $10 to $25 per month depending on the tier. The trade-off is that NovelAI's flat pricing is cheaper than AI Dungeon's top tiers, which can run $50 to $100 per month.
 
 **Which has better memory, AI Dungeon or NovelAI?**
 NovelAI, by design. Its Lorebook lets you pin characters, factions, locations, and world rules so the AI recalls them across long stories — the most direct fix for memory loss in this category. AI Dungeon's memory is inconsistent on longer campaigns, and its better memory handling is locked behind its highest-priced tiers.

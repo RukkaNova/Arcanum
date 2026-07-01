@@ -5,7 +5,7 @@ rating: 3.5
 pricing: "freemium"
 siteUrl: "https://aidungeon.com"
 bestFor: "Emergent, unrestricted storytelling and dream-logic narratives where the constraints of reality don't apply."
-models: "Griffin / Dragon (premium)"
+models: "In-house finetunes (Muse, Wayfarer, Hearthfire, Fable) + premium DeepSeek V4 Pro / 70B models"
 memoryApproach: "In-context, limited"
 cover: "/img/ai-dungeon.webp"
 reviewSlug: "ai-dungeon-review"
@@ -17,7 +17,7 @@ As the foundational product that essentially established the AI RPG genre upon i
 
 ## How It Works
 
-AI Dungeon functions as an interactive narrative generator without rigid, hard-coded game mechanics. Players input text commands dictating their actions, and the AI responds by advancing the narrative dynamically. By 2026, the platform utilizes a suite of sophisticated models — including Mistral 12B, Llama 3.3, and proprietary Latitude models like Griffin, Dragon, and the highest-tier Ultra — to render diverse narrative styles and tones.
+AI Dungeon functions as an interactive narrative generator without rigid, hard-coded game mechanics. Players input text commands dictating their actions, and the AI responds by advancing the narrative dynamically. By 2026, the platform utilizes a suite of sophisticated finetunes — free-tier models like Muse, Wayfarer, and Hearthfire (built on Mistral, Llama 3.3, and Gemma) up through premium tiers running Nova (70B) and DeepSeek V4 Pro — to render diverse narrative styles and tones.
 
 The platform relies entirely on a conversational context window, giving players unparalleled freedom to shape the world without being restricted by dice rolls, character sheets, or complex numerical tracking. This is both its greatest strength and its most fundamental architectural weakness.
 
@@ -25,7 +25,7 @@ The platform relies entirely on a conversational context window, giving players 
 
 The primary advantage of AI Dungeon lies in its immediate accessibility and absolute creative freedom. Compared to highly structured competitors like Friends & Fables or RoleForge, AI Dungeon does not require players to understand complex tabletop rules to start playing. It possesses a massive user-generated library of adventures and allows for fluid, uninterrupted play.
 
-Recent updates have introduced an "Unchained" experience, providing ad-free, unlimited play using the Griffin model for all free users — effectively eliminating the frustrating energy and action-point systems of previous iterations and converting legacy actions into scales. A dedicated Steam version is also available, where a one-time purchase unlocks advanced settings and offline flexibility.
+Recent updates have introduced an "Unchained" experience, providing ad-free, unlimited play on the free-tier models for all free users — effectively eliminating the frustrating energy and action-point systems of previous iterations and converting legacy actions into scales. A dedicated Steam version is also available, where a one-time purchase unlocks advanced settings and offline flexibility.
 
 ## What It Does Best (and Worst)
 
@@ -41,10 +41,10 @@ The AI's memory is inherently fragile. It frequently hallucinates past events, a
 
 | Plan | Monthly Cost | Context Limit | Image Credits | Features |
 |------|-------------|---------------|---------------|----------|
-| Wanderer | Free | ~1,000–2,000 tokens | 0 | Ad-free Griffin model access |
+| Wanderer | Free | ~1,000–2,000 tokens | 0 | Ad-free access to the free-tier models |
 | Adventurer | $9.99 | 4,000 tokens | 480/month | 50 permanent memory slots |
 | Champion / Journey | $14.99–$24.99 | 8,000 tokens | 760–960/month | 100–200 memory slots |
-| Mythic | $49.99 | 32,000 tokens (Ultra) | 2,750/month | 400 memory slots |
+| Mythic | $49.99 | 32,000 tokens | 2,750/month | 400 memory slots |
 | Ultimate | $99.99 | Maximum context | 5,200/month | 800 memory slots |
 
 ## Verdict

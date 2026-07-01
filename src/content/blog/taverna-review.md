@@ -19,7 +19,7 @@ Taverna runs entirely as a Discord bot. Invite it to your server, set up a chann
 
 This matters more than it sounds for groups that keep meaning to try AI tabletop but never quite get around to it. The platform's premise is that the distance between "we should try this" and "we're playing" should be measured in minutes rather than setup sessions.
 
-The technical back-end is OpenAI's API — GPT-4 capabilities running the mechanical and narrative layer, handling initiative tracking, combat management, group inventory, and character leveling via the commands players type naturally in chat. The mechanical automation is genuinely impressive: the complexity of 5e combat adjudication running silently behind Discord's message interface, with players simply describing what they do.
+The technical back-end is OpenAI's API — GPT-class capabilities running the mechanical and narrative layer, handling initiative tracking, combat management, group inventory, and character leveling via the commands players type naturally in chat. The mechanical automation is genuinely impressive: the complexity of 5e combat adjudication running silently behind Discord's message interface, with players simply describing what they do.
 
 One notable privacy point: OpenAI has confirmed it does not train its models on user data processed through the API. For groups that run mature narratives or want session content to stay genuinely private, this puts Taverna ahead of some browser-based platforms where data practices are less transparent.
 

@@ -17,7 +17,7 @@ Recognizing that millions of roleplayers already use Discord as their primary co
 
 ## How It Works
 
-Taverna is deployed entirely as a sophisticated Discord bot. It utilizes the OpenAI API — specifically ChatGPT and GPT-4 capabilities — to run full fantasy campaigns directly within native text channels. The bot is fully automated via familiar slash commands. It handles all the mechanical complexity behind the scenes: tracking combat turn orders, managing group inventory, leveling characters, and adjudicating complex 5e combat scenarios — while players simply describe their actions naturally in the chat.
+Taverna is deployed entirely as a sophisticated Discord bot. It utilizes the OpenAI API — specifically ChatGPT / GPT-class capabilities — to run full fantasy campaigns directly within native text channels. The bot is fully automated via familiar slash commands. It handles all the mechanical complexity behind the scenes: tracking combat turn orders, managing group inventory, leveling characters, and adjudicating complex 5e combat scenarios — while players simply describe their actions naturally in the chat.
 
 The experience feels like playing with a DM who lives in the server. No tabs to switch, no new interfaces to learn.
 

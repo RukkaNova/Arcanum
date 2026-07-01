@@ -61,7 +61,7 @@ The catch is the third kind of free — you supply the hardware (a capable GPU) 
 
 ## 4. AI Dungeon — Best Free Freeform Sandbox
 
-**[AI Dungeon](/blog/is-ai-dungeon-free)**'s free tier became genuinely usable after the Unchained update: ad-free play on the Griffin model without the old energy systems. If you want to improvise an open-ended story with zero setup and zero cost, it's the easiest door in — type anything and go. The limits are writing quality and memory on the free model, and the premium tiers get expensive, but as a *free* sandbox it delivers.
+**[AI Dungeon](/blog/is-ai-dungeon-free)**'s free tier became genuinely usable after the Unchained update: ad-free play on its in-house models without the old energy systems. If you want to improvise an open-ended story with zero setup and zero cost, it's the easiest door in — type anything and go. The limits are writing quality and memory on the free model, and the premium tiers get expensive, but as a *free* sandbox it delivers.
 
 **Kind of free:** free tier (usable)
 **Best for:** instant, unrestricted freeform storytelling

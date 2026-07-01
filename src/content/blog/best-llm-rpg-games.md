@@ -72,7 +72,7 @@ The LLM RPG that took a fundamentally different approach to the memory problem: 
 
 ## 8. Janitor AI (with external model)
 
-Janitor AI is the largest community character-library platform, with tens of thousands of user-created characters and the ability to connect your own API key. For LLM RPG players specifically, the "bring your own model" feature means you can connect Claude or GPT-4 and run sessions with your preferred frontier model while browsing Janitor's extensive character catalogue. It is a different experience from an engineered game system — more character-chat than campaign — but for players who want a massive library and model flexibility, it is one of the most useful clients available. See our full assessment in the [clients directory](/clients/janitor).
+Janitor AI is the largest community character-library platform, with tens of thousands of user-created characters and the ability to connect your own API key. For LLM RPG players specifically, the "bring your own model" feature means you can connect Claude or GPT and run sessions with your preferred frontier model while browsing Janitor's extensive character catalogue. It is a different experience from an engineered game system — more character-chat than campaign — but for players who want a massive library and model flexibility, it is one of the most useful clients available. See our full assessment in the [clients directory](/clients/janitor).
 
 *Runs on: Browser (bring-your-own-model via API)*
 
@@ -90,7 +90,7 @@ Worth naming explicitly: a well-crafted Claude Project with a strong system prom
 
 ## 11. A Custom ChatGPT GPT
 
-The equivalent for ChatGPT. Custom GPTs — available to ChatGPT Plus subscribers — let you package a system prompt, knowledge files, and conversation starters into a shareable game. The ecosystem of community-built GPTs includes some genuinely inventive LLM RPG experiments, and the GPT Store makes discovery easier than hunting for prompts on Reddit. The tradeoff versus Claude Projects is context length: GPT-4o handles long sessions well but can lose thread in very extended campaigns faster than Claude's extended context. For players already on ChatGPT, building or finding a well-made Custom GPT is the natural starting point.
+The equivalent for ChatGPT. Custom GPTs — available to ChatGPT Plus subscribers — let you package a system prompt, knowledge files, and conversation starters into a shareable game. The ecosystem of community-built GPTs includes some genuinely inventive LLM RPG experiments, and the GPT Store makes discovery easier than hunting for prompts on Reddit. The tradeoff versus Claude Projects is context length: ChatGPT handles long sessions well but can lose thread in very extended campaigns faster than Claude's extended context. For players already on ChatGPT, building or finding a well-made Custom GPT is the natural starting point.
 
 *Runs on: ChatGPT Plus (Custom GPTs)*
 

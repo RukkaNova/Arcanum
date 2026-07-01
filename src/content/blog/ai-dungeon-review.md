@@ -41,7 +41,7 @@ For years, players criticized the platform's energy systems and monetization res
 
 The Unchained update removed many of those barriers.
 
-Free players using the Griffin model can now enjoy substantially fewer interruptions, and the removal of intrusive advertisements has dramatically improved accessibility. This change has helped restore goodwill among casual users who previously abandoned the platform.
+Free players on the current free-tier models can now enjoy substantially fewer interruptions, and the removal of intrusive advertisements has dramatically improved accessibility. This change has helped restore goodwill among casual users who previously abandoned the platform.
 
 For newcomers wondering whether AI Dungeon is worth trying, the free tier is now considerably more attractive than it was in previous years.
 
@@ -91,7 +91,7 @@ The free version offers enough functionality for casual experimentation, especia
 
 However, users seeking the best AI models, improved memory retention, and advanced features must subscribe to higher-tier plans. (Not sure which to choose? Our [best AI Dungeon model guide](/blog/best-ai-dungeon-model) sorts the whole lineup by playstyle.)
 
-The biggest criticism is the cost of premium access. Top-tier Mythic and Ultimate subscriptions using the Ultra model can range from roughly $50 to $100 per month. For many players, this is difficult to justify.
+The biggest criticism is the cost of premium access. Top-tier Mythic and Ultimate subscriptions running the largest premium models can range from roughly $50 to $100 per month. For many players, this is difficult to justify.
 
 At those prices, users naturally begin comparing AI Dungeon against premium AI chat platforms, advanced roleplaying alternatives, and other AI-assisted creative tools.
 

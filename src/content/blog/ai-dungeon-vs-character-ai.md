@@ -14,7 +14,7 @@ faq:
   - q: "Which is more uncensored, AI Dungeon or Character.AI?"
     a: "AI Dungeon, by a wide margin. Its whole identity is creative freedom — you can take a story almost anywhere. Character.AI runs a strict content filter that interrupts not just explicit material but conflict, romance, and dark themes. If filtering is your dealbreaker, AI Dungeon is the freer of the two, though dedicated no-filter options go further still."
   - q: "Is Character.AI or AI Dungeon free?"
-    a: "Both have genuinely usable free tiers. Character.AI is free with an optional paid tier for faster responses during busy periods. AI Dungeon is free on its Griffin model after the Unchained update, but its best models and memory are locked behind premium tiers that run as high as roughly $50 to $100 per month — the most expensive option in this comparison."
+    a: "Both have genuinely usable free tiers. Character.AI is free with an optional paid tier for faster responses during busy periods. AI Dungeon is free on its in-house models after the Unchained update, but its best models and memory are locked behind premium tiers that run as high as roughly $50 to $100 per month — the most expensive option in this comparison."
   - q: "Should I use AI Dungeon, Character.AI, or something else?"
     a: "Use AI Dungeon to improvise a freeform story with total creative freedom. Use Character.AI for the easiest way to chat with a specific character, or Janitor AI for that same job done better. If what you actually want is a structured game with mechanics, persistent memory, and stakes that carry across sessions, neither fits — an engineered system you run on a frontier model serves you far better."
 ---
@@ -84,7 +84,7 @@ AI Dungeon isn't a character library at all — it's a scenario engine. There ar
 
 ## Price
 
-Both are free to start, which matters. Character.AI is free with an optional paid tier (c.ai+) for faster responses during peak times — and notably, paying doesn't lift the two things that actually limit it, the filter and the memory. AI Dungeon is free and genuinely playable on its Griffin model after the Unchained update, but its best models and memory live in premium tiers that climb to roughly $50–100/month at the top — the priciest option in this matchup, and a frequent target of criticism for the value it returns. For free, casual use, both are reasonable; at the high end, AI Dungeon asks the most.
+Both are free to start, which matters. Character.AI is free with an optional paid tier (c.ai+) for faster responses during peak times — and notably, paying doesn't lift the two things that actually limit it, the filter and the memory. AI Dungeon is free and genuinely playable on its in-house models after the Unchained update, but its best models and memory live in premium tiers that climb to roughly $50–100/month at the top — the priciest option in this matchup, and a frequent target of criticism for the value it returns. For free, casual use, both are reasonable; at the high end, AI Dungeon asks the most.
 
 ## Which Should You Choose?
 
@@ -115,7 +115,7 @@ It depends on the kind of roleplay. For open-ended, do-anything storytelling and
 AI Dungeon, by a wide margin. Its whole identity is creative freedom — you can take a story almost anywhere. Character.AI runs a strict content filter that interrupts not just explicit material but conflict, romance, and dark themes. If filtering is your dealbreaker, AI Dungeon is the freer of the two, though dedicated no-filter options go further still.
 
 **Is Character.AI or AI Dungeon free?**
-Both have genuinely usable free tiers. Character.AI is free with an optional paid tier for faster responses during busy periods. AI Dungeon is free on its Griffin model after the Unchained update, but its best models and memory are locked behind premium tiers that run as high as roughly $50 to $100 per month — the most expensive option in this comparison.
+Both have genuinely usable free tiers. Character.AI is free with an optional paid tier for faster responses during busy periods. AI Dungeon is free on its in-house models after the Unchained update, but its best models and memory are locked behind premium tiers that run as high as roughly $50 to $100 per month — the most expensive option in this comparison.
 
 **Should I use AI Dungeon, Character.AI, or something else?**
 Use AI Dungeon to improvise a freeform story with total creative freedom. Use Character.AI for the easiest way to chat with a specific character, or Janitor AI for that same job done better. If what you actually want is a structured game with mechanics, persistent memory, and stakes that carry across sessions, neither fits — an engineered system you run on a frontier model serves you far better.
