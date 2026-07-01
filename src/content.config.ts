@@ -91,6 +91,8 @@ const blog = defineCollection({
     // Optional FAQ — renders a second FAQPage JSON-LD block. Each answer must
     // mirror the visible FAQ text on the page (plain text, no markdown links).
     faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+    // Optional ItemList — renders an ItemList JSON-LD block for directory/list pages.
+    itemList: z.array(z.object({ name: z.string(), url: z.string().optional(), description: z.string().optional() })).optional(),
     // Optional lite-facade YouTube review (no iframe on load — see VideoFacade.astro).
     video: z.object({
       id: z.string(),

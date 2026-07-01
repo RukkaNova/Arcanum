@@ -1,11 +1,13 @@
 ---
-title: "The Complete Directory of LLM RPG Games: Every AI Roleplay Game for ChatGPT, Claude & Gemini (2026)"
-description: "The independent directory of LLM RPG games — Custom GPT RPG, Claude Project RPG, Gemini Gems, and the best free AI RPGs reviewed and rated. No install. No new subscription."
+title: "The AI RPG Directory (2026): Every LLM RPG Game & Platform for ChatGPT, Claude, Gemini & Grok"
+description: "The independent AI RPG directory — every LLM RPG game and AI RPG platform reviewed and rated. Custom GPT, Claude Project and Gemini Gem RPGs, plus the full platform landscape. No install, no new subscription, no fabricated ratings."
 section: "lists"
 pubDate: 2026-06-28
-updatedDate: 2026-06-28
-tags: ["LLM RPG", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "AI RPG directory", "best free AI RPG", "Custom GPT RPG", "Claude Project RPG"]
+updatedDate: 2026-07-01
+tags: ["AI RPG directory", "AI RPG directories", "AI RPG", "AI RPG games", "LLM RPG", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "best free AI RPG", "Custom GPT RPG"]
 faq:
+  - q: "What is an AI RPG directory?"
+    a: "An AI RPG directory is a curated hub for discovering AI-driven roleplaying games, game-master tools, and platforms. A good one catalogs both LLM-native games — Custom GPTs, Claude Projects, and Gemini Gems that run inside an AI you already use — and standalone AI RPG platforms like AI Dungeon or Friends & Fables, with independent reviews rather than self-promotion. Arcanum is a dedicated AI RPG directory covering both, with first-hand ratings and no paid listings."
   - q: "What is the difference between an LLM RPG game and an AI RPG platform?"
     a: "An LLM RPG game runs inside an AI you already use — a Custom GPT inside ChatGPT, a Project inside Claude, a Gem inside Gemini. No separate account, no new subscription. An AI RPG platform is a standalone product with its own interface, account, and usually its own pricing. Both have value; they serve different preferences. This directory covers the first. Arcanum's clients section covers the second."
   - q: "Do I need a paid subscription to play these games?"
@@ -22,11 +24,42 @@ faq:
     a: "Yes. ChatGPT, Claude, and Gemini all have mobile apps. Custom GPTs, Projects, and Gems are accessible on mobile. The games in this directory are fully playable on phone or tablet."
   - q: 'What does "LLM-native" mean?'
     a: "A game designed from the ground up for a large language model interface, rather than adapted from a traditional tabletop or video game framework. LLM-native design accounts for the specific strengths and failure modes of language models — context windows, character drift, agency erosion, resolution without dice — in a way that traditional game design frameworks do not."
+itemList:
+  - name: "Aevum Realm Architect"
+    url: "/arcanum-games/aevum"
+    description: "LLM RPG: a medieval serf-to-monarch kingdom-builder with a social-hierarchy simulation engine."
+  - name: "The Chronicler"
+    url: "/arcanum-games/the-chronicler"
+    description: "LLM RPG: a world-agnostic relationship engine where companions behave with real emotional logic."
+  - name: "Eirathis Strider"
+    url: "/arcanum-games/eirathis"
+    description: "LLM RPG: an open-world mature adventure with dice-less tactical combat across a three-layer cosmology."
+  - name: "Star Freighter Drift"
+    url: "/arcanum-games/star-freighter-drift"
+    description: "LLM RPG: a sci-fi space-trading survival sim balancing trade, customs heat, and ship integrity."
+  - name: "AI Dungeon"
+    url: "/clients/ai-dungeon"
+    description: "AI RPG platform: the original AI text adventure, built for maximum creative freedom."
+  - name: "Friends & Fables"
+    url: "/clients/friends-and-fables"
+    description: "AI RPG platform: a visual tabletop with D&D 5e tactical combat and group play."
+  - name: "RoleForge"
+    url: "/clients/roleforge"
+    description: "AI RPG platform: database-backed solo campaigns with persistent world state."
+  - name: "Deep Realms"
+    url: "/clients/deep-realms"
+    description: "AI RPG platform: fantasy world-building with a large memory window and rich NPC systems."
+  - name: "Janitor AI"
+    url: "/clients/janitor"
+    description: "AI RPG platform: the largest character library, with bring-your-own-model support."
+  - name: "Voyage"
+    url: "/clients/voyage"
+    description: "AI RPG platform: Latitude's structured successor to AI Dungeon, with real consequences and permadeath."
 ---
 
 If you search "AI RPG" in 2026, you find the same thing on every page: a platform selling you its own product while pretending to give you a guide. Jenova wants you to subscribe to Roleplay Game Master. HowWorks wants your click. Wanderfolk put themselves first on their own list. AI Dungeon reviewed AI Dungeon.
 
-Arcanum has no product to sell you and no subscription to push. This is a directory — the only one dedicated specifically to LLM-native roleplay games that run inside the AI you already use. No install. No new subscription. No separate platform. Just games engineered to run inside ChatGPT, Claude, and Gemini, reviewed and rated by someone who has spent four decades studying how roleplaying systems work and the last several years engineering LLM games specifically.
+Arcanum has no product to sell you and no subscription to push. This is an **AI RPG directory** — a curated, independent hub for discovering AI roleplaying games and platforms — and the only one dedicated specifically to LLM-native roleplay games that run inside the AI you already use. No install. No new subscription. No separate platform. Just games engineered to run inside ChatGPT, Claude, and Gemini, reviewed and rated by someone who has spent four decades studying how roleplaying systems work and the last several years engineering LLM games specifically.
 
 That is the only lens this directory uses. Does it hold together? Does it respect your agency? Does it solve the problems that kill most AI campaigns? Does it give you a game worth playing — or just a prompt that breaks down after twenty turns?
 
@@ -182,6 +215,8 @@ LLM-native games are one half of the AI RPG ecosystem. For players who want a de
 
 All platform reviews are independent. Arcanum has no commercial relationship with any platform listed here. Full reviews at [/clients/](/clients).
 
+**The wider landscape.** The category is bigger than the platforms Arcanum has tested first-hand. Others worth knowing — listed here as pointers rather than rated entries, because a rating requires a genuine first-hand review — include **Saga** (long-form persistent-world AI text RPG), **aiga_** (an AI story game with naturally branching narratives), **Master of Lore** (an AI game master for fantasy and myth campaigns), and **LitRPG Adventures** (AI worldbuilding and generator tools for GMs). As each is reviewed, it moves up into the rated directory above.
+
 ---
 
 ## Choosing the Right Model for LLM RPG Play
@@ -219,6 +254,9 @@ Most LLM RPGs fail not because of bad writing but because they don't solve the s
 ---
 
 ## Frequently Asked Questions
+
+**What is an AI RPG directory?**
+An AI RPG directory is a curated hub for discovering AI-driven roleplaying games, game-master tools, and platforms. A good one catalogs both LLM-native games — Custom GPTs, Claude Projects, and Gemini Gems that run inside an AI you already use — and standalone AI RPG platforms like AI Dungeon or Friends & Fables, with independent reviews rather than self-promotion. Arcanum is a dedicated AI RPG directory covering both, with first-hand ratings and no paid listings.
 
 **What is the difference between an LLM RPG game and an AI RPG platform?**
 An LLM RPG game runs inside an AI you already use — a Custom GPT inside ChatGPT, a Project inside Claude, a Gem inside Gemini. No separate account, no new subscription. An AI RPG platform is a standalone product with its own interface, account, and usually its own pricing. Both have value; they serve different preferences. This directory covers the first. Arcanum's [clients section](/clients) covers the second.

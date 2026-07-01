@@ -31,7 +31,11 @@ const ORIGIN='https://arcanumrpgs.com';
 const videoLd=d.video
   ?{'@context':'https://schema.org','@type':'VideoObject',name:d.video.title,description:d.video.description??d.description,thumbnailUrl:[ORIGIN+d.video.poster],uploadDate:(d.video.uploadDate??d.pubDate).toISOString(),...(d.video.duration&&{duration:d.video.duration}),embedUrl:`https://www.youtube.com/embed/${d.video.id}`,contentUrl:`https://youtu.be/${d.video.id}`}
   :null;
-const ldBlocks=[baseLd,faqLd,videoLd].filter(Boolean);
+// Optional ItemList block (frontmatter `itemList`) — for directory/list pages.
+const itemListLd=d.itemList?.length
+  ?{'@context':'https://schema.org','@type':'ItemList',itemListElement:d.itemList.map((it,i)=>({'@type':'ListItem',position:i+1,name:it.name,...(it.url&&{url:ORIGIN+it.url}),...(it.description&&{description:it.description})}))}
+  :null;
+const ldBlocks=[baseLd,faqLd,videoLd,itemListLd].filter(Boolean);
 const jsonLd=ldBlocks.length>1?ldBlocks:ldBlocks[0];
 const fmtDur=(iso)=>{const m=iso?.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);if(!m)return null;return `${+(m[1]||0)}:${String(+(m[2]||0)).padStart(2,'0')}`;};
 const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.duration)}`:'Video review'):null;
