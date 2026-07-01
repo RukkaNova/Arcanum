@@ -99,6 +99,8 @@ Almost every DeepSeek-on-Janitor problem is one of these:
 - **Wrong model format.** Direct DeepSeek uses `deepseek-chat`; OpenRouter uses `deepseek/deepseek-chat`. Mixing the format with the wrong URL is a common slip.
 - **Works on Janitor LLM but not DeepSeek.** That isolates the issue to your API config — not your connection or the platform.
 
+For every other Janitor AI error — beyond DeepSeek specifically — the full [Janitor AI not working](/blog/janitor-ai-not-working) guide covers each one in order.
+
 ## Is It Worth It?
 
 For the price, DeepSeek is the easiest big upgrade you can make to Janitor AI. It turns the platform's "this is kind of flat" first impression into something genuinely good, for pennies a session. If you outgrow it, the next steps up are a frontier model (compared in our [best LLM for roleplay](/blog/best-llm-for-roleplay) guide) or moving to a more powerful front-end like [SillyTavern](/blog/sillytavern-guide).

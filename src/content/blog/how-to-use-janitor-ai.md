@@ -50,7 +50,7 @@ If you only take one thing from this guide: **the platform is worth using becaus
 
 The exact buttons shift as the site updates, but the shape of the process is always the same:
 
-1. **Get an API key from a provider.** This is an account with the company whose model you want to use — for example OpenAI (for GPT) or DeepSeek — where you generate a secret API key and add a small amount of credit. Your key is like a password; don't share it.
+1. **Get an API key from a provider.** This is an account with the company whose model you want to use — for example OpenAI (for GPT) or DeepSeek — where you generate a secret API key and add a small amount of credit. Your key is like a password; don't share it. Our [Janitor AI API key guide](/blog/janitor-ai-api-key) covers exactly where to get one, which provider to pick, and how to add it.
 2. **Open the API settings in Janitor AI.** Inside a chat (or in your account configuration) there's an API/model configuration panel. This is where you tell Janitor AI to use your model instead of the free one.
 3. **Choose the connection type.** You'll pick the kind of API you're connecting — a direct provider option (like OpenAI) or a **custom/proxy** option for anything OpenAI-compatible (which is how you reach models like DeepSeek and aggregators like OpenRouter).
 4. **Enter your details.** Paste your **API key**, set the **model name** (the exact model ID from your provider), and — for the custom/proxy route — the **base URL** the provider gives you.
@@ -67,7 +67,7 @@ The most popular budget setup on Janitor AI is **DeepSeek**, because it's surpri
 3. **Enter the provider's base URL**, paste your **key**, and set the **model name** to the DeepSeek model ID your provider lists.
 4. **Save and send a test message.**
 
-That's the whole trick behind the "Janitor AI proxy" and "Janitor AI DeepSeek" searches — a proxy is just an OpenAI-compatible endpoint you point Janitor AI at. For the exact base URLs, model names, and both connection routes, see the dedicated [DeepSeek + Janitor AI setup guide](/blog/janitor-ai-deepseek); for why DeepSeek punches above its price for roleplay specifically, see [DeepSeek for roleplay](/blog/deepseek-roleplay). Always get keys from the provider's own official site, and check their current docs for the exact base URL and model IDs, since those are the parts that change.
+That's the whole trick behind the ["Janitor AI proxy"](/blog/janitor-ai-proxy) and "Janitor AI DeepSeek" searches — a proxy is just an OpenAI-compatible endpoint you point Janitor AI at. For the exact base URLs, model names, and both connection routes, see the dedicated [DeepSeek + Janitor AI setup guide](/blog/janitor-ai-deepseek); for why DeepSeek punches above its price for roleplay specifically, see [DeepSeek for roleplay](/blog/deepseek-roleplay). Always get keys from the provider's own official site, and check their current docs for the exact base URL and model IDs, since those are the parts that change.
 
 ## Dialing In Your Settings
 
@@ -88,7 +88,7 @@ Most "Janitor AI not working" problems are API-setup problems, not platform outa
 - **It works on Janitor LLM but not your model.** That isolates it to your API config, not your internet or the platform — recheck the key, URL, and model name.
 - **Everything is slow or erroring at once.** Occasionally it's platform load; try again later before assuming your setup is broken.
 
-The fastest diagnostic is switching to the free Janitor LLM: if that works and your model doesn't, the problem is in your BYOM settings.
+The fastest diagnostic is switching to the free Janitor LLM: if that works and your model doesn't, the problem is in your BYOM settings. For a dedicated, error-by-error walkthrough — network errors, invalid key, insufficient balance, outages, and more — see [Janitor AI not working](/blog/janitor-ai-not-working).
 
 ## Is Janitor AI Safe?
 
