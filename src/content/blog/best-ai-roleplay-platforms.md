@@ -3,6 +3,7 @@ title: "Best AI Roleplay Platforms in 2026: The Complete Guide"
 description: "From Discord-native bots to SQL-backed dungeon masters, here are the best AI roleplay platforms in 2026 — ranked by use case so you pick the right one first time."
 section: "lists"
 pubDate: 2026-06-23
+updatedDate: 2026-07-02
 tags: ["best AI roleplay platforms", "AI roleplay platforms 2026", "best AI RPG platform", "best AI dungeon master", "AI tabletop 2026", "AI roleplay site", "best AI DM"]
 ---
 
@@ -136,9 +137,19 @@ Mechanical transparency is the other distinguishing feature: Difficulty Classes,
 
 ---
 
+## Best AI Roleplay Platform for Coherent Guided Stories: Hidden Door
+
+Every other platform on this list fights the same war: keeping a freely generating AI coherent over a long campaign. [Hidden Door](/clients/hidden-door) refused to fight it. It is a narrative engine, not a simulation — game state lives in cards, and stories are assembled from a hand-authored trope library inside licensed and public-domain worlds (Call of Cthulhu, Pride and Prejudice, The Wizard of Oz, The Crow) built on actual rights-holder partnerships.
+
+The result is the most coherent AI storyteller we have tested: no memory drift, no dissolving plot threads, no world that stops making sense at turn fifty. The trade is severe, though — you cannot create at will, and combat and inventory are narrative-based rather than simulated. Sandbox players will feel the walls fast. It is also the only major platform where world builders get paid when others play their worlds, which makes it uniquely attractive for creators.
+
+**Full review:** [Hidden Door Review](/blog/hidden-door-review)
+
+---
+
 ## Beyond Platforms: Build Your Own AI RPG with Arcanum Originals
 
-All ten platforms above run their own backend. Arcanum Originals takes a different approach: engineered game engines you download as files and load directly into ChatGPT, Claude, or Gemini. No subscription beyond your existing AI.
+All eleven platforms above run their own backend. Arcanum Originals takes a different approach: engineered game engines you download as files and load directly into ChatGPT, Claude, or Gemini. No subscription beyond your existing AI.
 
 Each release is a master prompt plus a world knowledge file, designed together to run a specific kind of campaign with mechanical depth that survives long sessions:
 
