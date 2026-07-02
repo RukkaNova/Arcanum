@@ -8,6 +8,7 @@ reviewSlug: "hidden-door-review"
 bestFor: "Coherent guided stories in licensed worlds; creators who publish worlds and get paid."
 models: "Own narrative engine"
 memoryApproach: "Card-based world state"
+cover: "/img/hidden-door.webp"
 featured: false
 updated: 2026-07-02
 ---
