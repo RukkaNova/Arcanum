@@ -109,6 +109,8 @@ The co-pilot mode generates battle maps, NPC backstories, lore documents, and co
 
 It also functions as a standalone AI DM for solo or group play via Gemini 3 Flash, with voice narration and integrated scene imagery. The DM co-pilot mode is the stronger use case, but the standalone is capable for casual sessions.
 
+If you want to go all-in on the toolkit side, [ZapGM](/clients/zapgm) is the most complete human-DM kit we've reviewed — AI co-GM lore cards, generated battle maps, a full VTT with dynamic lighting, and per-NPC voices, with exports to Roll20 and Foundry. It has no standalone AI DM mode at all; it's a kit, and an excellent one. [Full review](/blog/zapgm-review).
+
 **Full review:** [MacerAI Review](/blog/macerai-review)
 
 ---
