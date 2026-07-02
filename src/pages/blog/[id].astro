@@ -3,10 +3,19 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import VideoFacade from '../../components/VideoFacade.astro';
 export async function getStaticPaths(){
-  const posts=await getCollection('blog');
+  const posts=(await getCollection('blog')).filter(p=>!p.data.draft);
   return posts.map(p=>({params:{id:p.id},props:{post:p}}));
 }
 const { post }=Astro.props; const { Content, headings }=await render(post); const d=post.data;
+// Related posts (build-time): ranked by shared tags, same-section as tiebreaker signal.
+const allPosts=(await getCollection('blog')).filter(p=>p.id!==post.id&&!p.data.draft);
+const tagSet=new Set(d.tags);
+const related=allPosts
+  .map(p=>({p,score:p.data.tags.filter(t=>tagSet.has(t)).length+(p.data.section===d.section?0.5:0)}))
+  .filter(x=>x.score>0)
+  .sort((a,b)=>b.score-a.score||b.p.data.pubDate.valueOf()-a.p.data.pubDate.valueOf())
+  .slice(0,4)
+  .map(x=>x.p);
 const toc=headings.filter(h=>h.depth===2);
 const showToc=toc.length>=4;
 const dateModified=(d.updatedDate??d.pubDate).toISOString();
@@ -67,6 +76,19 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
         <a class="dl-btn" href={`/arcanum-games/${d.releaseSlug}`}>↓ Download free — get the files</a>
       </div>
     )}
+    {related.length>0 && (
+      <aside class="related" aria-label="Related reading">
+        <p class="related-label mono">// related reading</p>
+        <ul>
+          {related.map(r=>(
+            <li>
+              <a href={`/blog/${r.id}`}>{r.data.title}</a>
+              <p class="rdesc">{r.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )}
   </article>
   <style>
     .post{padding:2.5rem 1.25rem 3rem;max-width:720px;}
@@ -87,6 +109,12 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
     .prose{margin-top:2rem;}
     .prose :global(p){margin-bottom:1rem;}
     .dl-cta{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line);}
+    .related{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.8rem;}
+    .related-label{color:var(--rune);font-size:.78rem;letter-spacing:.06em;margin-bottom:1rem;}
+    .related ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1.1rem;}
+    .related a{font-family:var(--display);font-size:1.15rem;font-weight:600;color:var(--parchment);}
+    .related a:hover{color:var(--ember);text-decoration:none;}
+    .rdesc{color:var(--parchment-dim);font-size:.9rem;line-height:1.5;margin-top:.2rem;}
     .dl-btn{font-family:var(--mono);font-size:.9rem;background:var(--ember);color:var(--ink);padding:.8rem 1.6rem;border-radius:7px;font-weight:600;display:inline-block;}
     .dl-btn:hover{text-decoration:none;filter:brightness(1.08);}
   </style>

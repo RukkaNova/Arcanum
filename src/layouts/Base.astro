@@ -60,6 +60,7 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
   {ogImage && <meta name="twitter:image" content={ogImage} />}
 
   <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Arcanum — The Codex" href="/rss.xml" />
 
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 
@@ -195,6 +196,8 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
         <a href="/privacy">Privacy Policy</a>
         <span class="sep">·</span>
         <a href="/terms">Terms of Use</a>
+        <span class="sep">·</span>
+        <a href="/rss.xml">RSS</a>
       </div>
     </div>
   </footer>
