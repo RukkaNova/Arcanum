@@ -1,0 +1,52 @@
+---
+// Functional breadcrumb styled as the site's terminal eyebrow ("// a / b / c").
+// Emits BreadcrumbList JSON-LD; the last crumb is the current page (unlinked).
+interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Props {
+  trail: Crumb[];
+}
+const { trail } = Astro.props;
+const ORIGIN = 'https://arcanumrpgs.com';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: trail.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.label,
+    ...(c.href && { item: ORIGIN + c.href }),
+  })),
+};
+---
+<nav class="crumbs mono" aria-label="Breadcrumb">
+  <span class="crumb-mark" aria-hidden="true">//</span>
+  {trail.map((c, i) => (
+    <>
+      {i > 0 && <span class="crumb-sep" aria-hidden="true">/</span>}
+      {c.href
+        ? <a href={c.href}>{c.label}</a>
+        : <span class="crumb-here" aria-current="page">{c.label}</span>}
+    </>
+  ))}
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+<style>
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .45rem;
+    font-size: .78rem;
+    letter-spacing: .04em;
+    color: var(--rune);
+    margin-bottom: 1rem;
+  }
+  .crumb-mark { color: var(--rune); }
+  .crumb-sep { color: var(--line); }
+  .crumbs a { color: var(--parchment-dim); }
+  .crumbs a:hover { color: var(--ember); text-decoration: none; }
+  .crumb-here { color: var(--rune); }
+</style>

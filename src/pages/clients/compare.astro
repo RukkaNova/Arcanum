@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const allClients = await getCollection('clients');
 const sorted = allClients.sort((a, b) => (b.data.rating ?? 0) - (a.data.rating ?? 0));
@@ -54,7 +55,7 @@ const jsonLd = {
 >
   <div class="wrap compare-page">
 
-    <p class="eyebrow mono">// clients / compare</p>
+    <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Clients', href: '/clients' }, { label: 'Compare' }]} />
     <h1>AI Roleplay Platforms — Side-by-Side</h1>
 
     <div class="intro prose">

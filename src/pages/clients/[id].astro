@@ -7,6 +7,7 @@ export async function getStaticPaths(){
 }
 import Stars from '../../components/Stars.astro';
 import VideoFacade from '../../components/VideoFacade.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 const { client }=Astro.props; const { Content }=await render(client); const d=client.data;
 const metaDesc=(()=>{if(!d.bestFor)return d.tagline;const full=`${d.tagline} Best for: ${d.bestFor}`;return full.length<=160?full:d.tagline;})();
 // Single editorial rating = Review with author, not an aggregateRating of one
@@ -22,7 +23,7 @@ const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.d
 ---
 <Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={metaDesc} type="article" image={d.cover} jsonLd={jsonLd}>
   <article class="wrap game">
-    <a class="back mono" href="/clients">← all clients</a>
+    <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Clients', href: '/clients' }, { label: d.title }]} />
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}
     <div class="badges"><span class="token">{d.pricing}</span>{d.rating && <span class="rating mono"><Stars rating={d.rating}/> {d.rating}/5</span>}</div>
     <h1>{d.title}</h1>
@@ -40,7 +41,6 @@ const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.d
   </article>
   <style>
     .game{padding:2rem 1.25rem 3rem;max-width:760px;}
-    .back{color:var(--parchment-dim);font-size:.8rem;}
     .hero-img{margin:1.4rem 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;aspect-ratio:16/9;}
     .hero-img img{width:100%;height:100%;object-fit:cover;display:block;}
     .badges{display:flex;gap:.6rem;align-items:center;margin:.6rem 0 1rem;}

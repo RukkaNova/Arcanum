@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import VideoFacade from '../../components/VideoFacade.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 export async function getStaticPaths(){
   const posts=(await getCollection('blog')).filter(p=>!p.data.draft);
   return posts.map(p=>({params:{id:p.id},props:{post:p}}));
@@ -53,7 +54,7 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
 ---
 <Base title={`${d.title} | Arcanum`} description={d.description} type="article" jsonLd={jsonLd}>
   <article class="wrap post">
-    <a class="back mono" href="/blog">← Codex</a>
+    <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Codex', href: '/blog' }, { label: d.title }]} />
     <h1>{d.title}</h1>
     <div class="byline">
       <time class="mono" datetime={d.pubDate.toISOString()}>{displayDate}</time>
@@ -92,7 +93,6 @@ const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{yea
   </article>
   <style>
     .post{padding:2.5rem 1.25rem 3rem;max-width:720px;}
-    .back{color:var(--parchment-dim);font-size:.8rem;}
     h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;line-height:1.08;margin:1.2rem 0 .5rem;}
     .byline{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.2rem;}
     .byline time,.byline .author,.byline .updated{color:var(--rune);font-size:.8rem;}

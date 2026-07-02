@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -24,7 +25,7 @@ const jsonLd = {
 >
 <div class="wrap pb-page">
 
-  <p class="eyebrow mono">// tools</p>
+  <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'AI RPG Tools', href: '/tools' }, { label: 'AI RPG Prompt Builder' }]} />
   <h1>AI RPG Prompt Builder</h1>
 
   <div class="intro prose">
