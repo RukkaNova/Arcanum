@@ -35,7 +35,7 @@ The central problem in AI roleplay is memory. AI Dungeon forgets. AI Realm's con
 
 Every mechanical fact in a RoleForge campaign — HP, inventory, NPC relationship scores, faction reputation, world state — lives in a SQL database. The AI is only the narration engine. It reads the database state and describes what happened. It cannot override it. A character you killed stays dead. A grudge an NPC holds stays in the record indefinitely.
 
-For long-form solo campaigns where you want a world that doesn't lie to you, this is the strongest architecture available. Currently in free alpha with no usage limits for early adopters.
+For long-form solo campaigns where you want a world that doesn't lie to you, this is the strongest architecture available. Currently in closed alpha (unrated until public release per our pre-release policy), free with no usage limits for those with access.
 
 **Full review:** [RoleForge Review](/blog/roleforge-review)
 

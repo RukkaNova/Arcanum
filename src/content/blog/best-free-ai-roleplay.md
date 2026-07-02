@@ -14,7 +14,7 @@ faq:
   - q: "Can I play AI roleplay for free without signing up for a new platform?"
     a: "Yes. If you already use ChatGPT, Claude, or Gemini — even on their free tiers — you can run a full roleplay yourself. The free AI RPG Prompt Builder assembles a system prompt to paste in, or you can load a free Arcanum Original for a fully engineered game. No new account required."
   - q: "Are free AI roleplay platforms actually any good, or what's the catch?"
-    a: "Some are genuinely excellent — RoleForge (free) is rated 4.5/5. The usual catches on 'free' are: free tiers with generation limits, weaker in-house models you're nudged to upgrade from, or free software that needs your own hardware (SillyTavern). The trick is knowing which kind of free each one is, which this guide spells out."
+    a: "Some are genuinely excellent — RoleForge (free) is a standout, though it is currently in closed alpha. The usual catches on 'free' are: free tiers with generation limits, weaker in-house models you're nudged to upgrade from, or free software that needs your own hardware (SillyTavern). The trick is knowing which kind of free each one is, which this guide spells out."
   - q: "Is there a free uncensored AI roleplay option?"
     a: "Yes. Running an open-weight model locally through SillyTavern is free after hardware and has no filter, and some platforms with free tiers are more permissive than the mainstream apps. See the uncensored AI roleplay guide for the full no-filter landscape."
 ---
@@ -43,9 +43,9 @@ That makes them "free on a model you already have" *and* genuinely free at the s
 
 ## 2. RoleForge — Best Free Hosted Platform
 
-If you'd rather a platform handle everything, **[RoleForge](/clients/roleforge)** is the standout free option and one of the highest-rated platforms we've reviewed at all. It's free, and its headline feature is the thing most free platforms lack: real persistent memory. A SQL database holds the actual state of your world and characters, and the LLM narrates what the database says happened — so a long campaign stays consistent instead of quietly forgetting itself.
+If you'd rather a platform handle everything, **[RoleForge](/clients/roleforge)** is the standout free option — currently in closed alpha, and unrated until public release per our pre-release policy. It's free, and its headline feature is the thing most free platforms lack: real persistent memory. A SQL database holds the actual state of your world and characters, and the LLM narrates what the database says happened — so a long campaign stays consistent instead of quietly forgetting itself.
 
-That a platform this capable is free is genuinely unusual. **[Full review](/blog/roleforge-review)** (rated 4.5/5).
+That a platform this capable is free is genuinely unusual. **[Full review](/blog/roleforge-review)** (currently in closed alpha — unrated until public release).
 
 **Kind of free:** genuinely free (hosted)
 **Best for:** long solo campaigns that actually remember you
@@ -134,7 +134,7 @@ Yes. The Arcanum Originals are free downloads you run on a model you already hav
 Yes. If you already use ChatGPT, Claude, or Gemini — even on their free tiers — you can run a full roleplay yourself. The free [AI RPG Prompt Builder](/tools/prompt-builder) assembles a system prompt to paste in, or you can load a free Arcanum Original for a fully engineered game. No new account required.
 
 **Are free AI roleplay platforms actually any good, or what's the catch?**
-Some are genuinely excellent — RoleForge (free) is rated 4.5/5. The usual catches on "free" are: free tiers with generation limits, weaker in-house models you're nudged to upgrade from, or free software that needs your own hardware (SillyTavern). The trick is knowing which kind of free each one is, which this guide spells out.
+Some are genuinely excellent — RoleForge (free) is a standout, though it is currently in closed alpha. The usual catches on "free" are: free tiers with generation limits, weaker in-house models you're nudged to upgrade from, or free software that needs your own hardware (SillyTavern). The trick is knowing which kind of free each one is, which this guide spells out.
 
 **Is there a free uncensored AI roleplay option?**
 Yes. Running an open-weight model locally through SillyTavern is free after hardware and has no filter, and some platforms with free tiers are more permissive than the mainstream apps. See the [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay) for the full no-filter landscape.

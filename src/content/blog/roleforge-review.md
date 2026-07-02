@@ -2,12 +2,14 @@
 title: "RoleForge Review (2026): The AI RPG That Won't Let the DM Cheat"
 description: "RoleForge uses a SQL database to run the world and the AI to narrate it — a fundamental rethink of how AI RPGs handle memory and rules. Here's what that actually feels like."
 section: "platform-reviews"
-rating: 4.5
 pubDate: 2026-06-23
+updatedDate: 2026-07-02
 tags: ["RoleForge review", "roleforge.ai review", "AI RPG no hallucination", "AI DM review", "deterministic AI RPG", "best AI RPG 2026", "AI tabletop review"]
 ---
 
-Every honest AI RPG review eventually confronts the same problem: at some point, the AI cheats. Not maliciously — it halluccinates. A rule gets quietly reinterpreted. A dead NPC resurfaces. A consequence the player earned vanishes from the record. This is not a quality issue unique to any particular model; it is a structural property of language models working from context windows alone.
+*Status (July 2026): RoleForge is currently in closed alpha. Per our policy of not scoring pre-release software, the rating previously attached to this review has been withdrawn until public release. The analysis below stands.*
+
+Every honest AI RPG review eventually confronts the same problem: at some point, the AI cheats. Not maliciously — it hallucinates. A rule gets quietly reinterpreted. A dead NPC resurfaces. A consequence the player earned vanishes from the record. This is not a quality issue unique to any particular model; it is a structural property of language models working from context windows alone.
 
 RoleForge decided to solve that problem architecturally rather than hope future models would improve past it. The result is the only AI RPG platform where the AI genuinely cannot override the rules, because the rules aren't the AI's job.
 
@@ -47,7 +49,7 @@ The platform's strict adherence to deterministic rules is its strongest feature 
 
 If you've played tabletop with a strict, old-school DM who rules-as-written and accepts no appeals, that's the energy. Some players find this deeply satisfying — outcomes are earned or not, and the world is honest. Others will find it frustrating, particularly players who have grown accustomed to AI systems that are infinitely persuadable.
 
-This is, ultimately, a design preference. But it's worth being explicit about: RoleForge is the platform for players who want the game to push back. The blog post on [why LLMs forget](blog/why-llms-forget) is useful background reading if you want to understand why this architecture matters for long-term play.
+This is, ultimately, a design preference. But it's worth being explicit about: RoleForge is the platform for players who want the game to push back. The blog post on [why LLMs forget](/blog/why-llms-forget) is useful background reading if you want to understand why this architecture matters for long-term play.
 
 ## Verdict
 
@@ -55,4 +57,4 @@ RoleForge is the most intellectually principled AI RPG currently available. Its 
 
 For solo players who prioritize consistency, consequence, and a world that doesn't forget — this is the strongest recommendation in the space. When multiplayer ships, it may set a new standard outright.
 
-**RoleForge Rating: 4.5/5** — The AI RPG that solved the memory problem by keeping memory out of the AI's hands. Currently the best platform for long-form solo campaign play.
+**RoleForge: unrated — closed alpha.** The AI RPG that solved the memory problem by keeping memory out of the AI's hands, and the strongest architecture for long-form solo campaign play we've seen. A full rating returns when RoleForge reaches public release.

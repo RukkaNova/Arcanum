@@ -16,7 +16,7 @@ faq:
   - q: "Is NovelAI good for roleplay or just writing?"
     a: "NovelAI is built for writing — an editor where you author and steer every beat. It can be used for roleplay, but it doesn't run a game for you the way a dedicated RPG platform does: it won't reason about consequences, enforce rules, or keep a world consistent on its own. For roleplay where the AI runs the world, a game-first tool serves you better."
   - q: "Do I need to pay for a NovelAI alternative?"
-    a: "Not necessarily. Several strong alternatives are free: AI Dungeon's free tier is playable, SillyTavern is free and open-source, and the Arcanum Originals are free downloads. Others, like Friends & Fables or RoleForge, are subscription platforms — so you can match the cost to whether you want free play or a fuller managed experience."
+    a: "Not necessarily. Several strong alternatives are free: AI Dungeon's free tier is playable, SillyTavern is free and open-source, the Arcanum Originals are free downloads, and RoleForge is fully free (currently in closed alpha). Others, like Friends & Fables, are subscription platforms — so you can match the cost to whether you want free play or a fuller managed experience."
 ---
 
 **NovelAI is the best AI writing studio most people will ever use — and that's exactly why some of them go looking for something else.** Made by Anlatan, it hands you an editor, fiction-tuned prose that reads like a novel, and a Lorebook that keeps your world's detail in play across a long manuscript. If your goal is to *write* a story, little else comes close, as our [full NovelAI review](/blog/novelai-review) lays out.
@@ -145,4 +145,4 @@ NovelAI's models are tuned for prose rather than reasoning, so over a long sessi
 NovelAI is built for writing — an editor where you author and steer every beat. It can be used for roleplay, but it doesn't run a game for you the way a dedicated RPG platform does: it won't reason about consequences, enforce rules, or keep a world consistent on its own. For roleplay where the AI runs the world, a game-first tool serves you better.
 
 **Do I need to pay for a NovelAI alternative?**
-Not necessarily. Several strong alternatives are free: AI Dungeon's free tier is playable, SillyTavern is free and open-source, and the Arcanum Originals are free downloads. Others, like Friends & Fables or RoleForge, are subscription platforms — so you can match the cost to whether you want free play or a fuller managed experience.
+Not necessarily. Several strong alternatives are free: AI Dungeon's free tier is playable, SillyTavern is free and open-source, the Arcanum Originals are free downloads, and RoleForge is fully free (currently in closed alpha). Others, like Friends & Fables, are subscription platforms — so you can match the cost to whether you want free play or a fuller managed experience.

@@ -1,7 +1,6 @@
 ---
 title: "RoleForge"
 tagline: "The AI RPG that solved hallucination — a SQL database runs the world, the LLM just narrates what happened."
-rating: 4.5
 pricing: "free"
 siteUrl: "https://roleforge.ai"
 reviewSlug: "roleforge-review"
@@ -10,8 +9,10 @@ models: "SQL engine + LLM narrator"
 memoryApproach: "SQL database, persistent"
 cover: "/img/roleforge.webp"
 featured: true
-updated: 2026-06-17
+updated: 2026-07-02
 ---
+
+*Status (July 2026): RoleForge is currently in closed alpha. Per our policy of not scoring pre-release software, its rating has been withdrawn until public release — the assessment below stands.*
 
 While other platforms rely entirely on the AI to manage the world state, RoleForge fundamentally separates the narrative engine from the game mechanics, prioritizing absolute mathematical consistency over generative interpretation. It is the most architecturally honest AI RPG on the market — and the only one that has genuinely solved the memory problem rather than papering over it.
 

@@ -203,7 +203,7 @@ LLM-native games are one half of the AI RPG ecosystem. For players who want a de
 | Platform | Rating | Pricing | Best For |
 |---|---|---|---|
 | Friends & Fables | ★★★★½ | Freemium | Visual tabletop, D&D 5e tactical combat, group play |
-| RoleForge | ★★★★½ | Free | Solo campaigns, clean narrative interface, active development |
+| RoleForge | Closed alpha (unrated) | Free | Solo campaigns, clean narrative interface, active development |
 | Deep Realms | ★★★★ | Freemium | Fantasy world-building, rich NPC systems |
 | Janitor AI | ★★★★ | Freemium | Largest character library, BYOM flexibility |
 | MacerAI | ★★★★ | Freemium | Character-driven roleplay, strong persona consistency |

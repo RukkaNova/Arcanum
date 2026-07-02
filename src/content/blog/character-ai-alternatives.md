@@ -85,7 +85,7 @@ If you weren't really there for the giant character catalogue — if you wanted 
 
 If the memory failure was the dealbreaker — characters forgetting their own personality, the relationship resetting, the world contradicting itself — **[RoleForge](/clients/roleforge)** attacks the problem at the architecture level. Instead of relying on the model's context window to remember everything, it runs a SQL database that holds the actual state of the world and characters, and uses the LLM only to narrate what the database says happened.
 
-The practical result is the structural persistence Character.AI can't offer: characters, relationships, and world facts stay consistent across a long solo campaign because they're stored, not "remembered." It's free, and it's the strongest pick in this roster for anyone whose frustration was specifically that nothing carried forward. **[Full review](/blog/roleforge-review)** (rated 4.5/5).
+The practical result is the structural persistence Character.AI can't offer: characters, relationships, and world facts stay consistent across a long solo campaign because they're stored, not "remembered." It's free, and it's the strongest pick in this roster for anyone whose frustration was specifically that nothing carried forward. **[Full review](/blog/roleforge-review)** (currently in closed alpha — unrated until public release).
 
 **Solves:** memory failure, world consistency, response drift
 **Cost:** free

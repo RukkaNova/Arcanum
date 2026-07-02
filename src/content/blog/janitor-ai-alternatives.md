@@ -67,7 +67,7 @@ Be clear-eyed about the trade, though: it runs only its own model (no bring-your
 
 For the most important migration — the player who realised Janitor AI is a conversation and they wanted a *world* — **[RoleForge](/clients/roleforge)** is the cleanest answer. Instead of leaning on the context window, it runs a SQL database that holds the actual state of characters and the world, and uses the LLM only to narrate what the database says happened.
 
-The result is the persistence Janitor AI structurally can't offer: characters, relationships, and world facts stay consistent across a long campaign because they're *stored*, not "remembered." It's free, and it's our top pick for anyone whose real frustration was that nothing carried forward. **[Full review](/blog/roleforge-review)** (rated 4.5/5).
+The result is the persistence Janitor AI structurally can't offer: characters, relationships, and world facts stay consistent across a long campaign because they're *stored*, not "remembered." It's free, and it's our top pick for anyone whose real frustration was that nothing carried forward. **[Full review](/blog/roleforge-review)** (currently in closed alpha — unrated until public release).
 
 **Solves:** chat-not-game, memory, consistency
 **Cost:** free
