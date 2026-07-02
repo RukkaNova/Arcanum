@@ -121,6 +121,8 @@ The platform is native mobile — iOS and Android, designed for pick-up-and-play
 
 Currently in invite-only beta. For players who want AI roleplay that pushes back — where the dice can kill you and choices carry real weight — this is the most interesting structural development in the space.
 
+If Voyage's invite gate blocks you and you want mobile freeform play instead of structure, [FableAI](/clients/fableai) is the best-produced open-access alternative — voice narration, AI art, and co-op, at gem-economy prices. [Full review](/blog/fableai-review).
+
 **Full review:** [Voyage Review](/blog/voyage-review)
 
 ---
@@ -147,9 +149,19 @@ The result is the most coherent AI storyteller we have tested: no memory drift, 
 
 ---
 
+## Best AI Roleplay Platform for Edgy Campaigns: Old Greg's Tavern
+
+Most AI DMs are sanded down to a friendly neutral. [Old Greg's Tavern](/clients/old-gregs-tavern) commits to a voice — grit, bite, and irreverence as the house style — and it's the only platform we've tested whose DM we'd recognize blind. Structurally it targets the same long-session campaign market as Friends & Fables, landing between F&F and AI Dungeon on the spectrum: less mechanical rigor than the former, far more game than the latter.
+
+The group economics are quietly the best in the category: invited friends (up to five) play completely free on the host's credits, so one subscription runs a whole table. There's no real free solo tier, and it's a bit clunkier than its biggest competitor — but the edge is not a marketing line.
+
+**Full review:** [Old Greg's Tavern Review](/blog/old-gregs-tavern-review)
+
+---
+
 ## Beyond Platforms: Build Your Own AI RPG with Arcanum Originals
 
-All eleven platforms above run their own backend. Arcanum Originals takes a different approach: engineered game engines you download as files and load directly into ChatGPT, Claude, or Gemini. No subscription beyond your existing AI.
+All the platforms above run their own backend. Arcanum Originals takes a different approach: engineered game engines you download as files and load directly into ChatGPT, Claude, or Gemini. No subscription beyond your existing AI.
 
 Each release is a master prompt plus a world knowledge file, designed together to run a specific kind of campaign with mechanical depth that survives long sessions:
 

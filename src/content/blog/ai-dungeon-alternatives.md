@@ -102,6 +102,15 @@ The trade-off is the inverse of AI Dungeon's: you cannot create at will. Combat 
 **Solves:** memory drift, incoherent campaigns, world consistency
 **Cost:** free tier (unlimited turns, 5 worlds); subscription for full catalog — [full review](/blog/hidden-door-review)
 
+## 9. FableAI — Best for the Same Loop With Real Production Values
+
+If you left AI Dungeon not because of the freeform loop but because of how it *feels* — plain text, no presentation — **[FableAI](/clients/fableai)** is the same freewrite core wrapped in a dramatically better package: AI-generated art, cinematic voice narration with soundtracks, co-op play, and a large multi-chapter adventure library. It is the best-produced mobile AI RPG we have reviewed.
+
+The catch is cost. Everything runs on gems, and the art and narration that justify choosing FableAI burn them fastest — playing it as designed costs more than AI Dungeon's equivalent tiers. Same structureless loop, better clothes, higher bill.
+
+**Solves:** production values, mobile experience, co-op play
+**Cost:** free daily gem allowance (~30 actions); subscriptions and gem packs for regular play — [full review](/blog/fableai-review)
+
 ## The Category AI Dungeon Never Addressed
 
 One angle conspicuously absent from most "AI Dungeon alternatives" lists: engineered LLM-native systems — games designed specifically to run inside the frontier models you already pay for, without requiring a new platform, account, or subscription.
@@ -114,6 +123,7 @@ AI Dungeon was always a standalone platform. What it never offered was a way to 
 |---|---|
 | Memory fails mid-campaign | NovelAI (Lorebook), Deep Realms (80k window) |
 | Campaigns dissolve into incoherence | Hidden Door (authored narrative engine) |
+| Same loop, better presentation | FableAI (art + voice, gem economy) |
 | Filter interrupts dramatic scenes | DreamGen, SillyTavern |
 | Free tier too limited | Aevum / Star Freighter (free), SillyTavern (free) |
 | No real game mechanics or structure | Aevum Realm Architect, Friends & Fables |
