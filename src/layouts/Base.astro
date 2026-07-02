@@ -13,7 +13,9 @@ const { title, description, image, type = 'website', jsonLd, noindex = false } =
 const canonical = new URL(Astro.url.pathname, Astro.site);
 // Every page gets a share card: its own art if passed, else the site-wide default.
 const ogImage = new URL(image ?? '/img/arcanum-og.webp', Astro.site);
-const SITE = 'Arcanum';
+// External surfaces say "Arcanum RPGs" — plain "Arcanum" collides with the
+// 2001 Troika CRPG and other tabletop brands in search.
+const SITE = 'Arcanum RPGs';
 const path = Astro.url.pathname;
 const navItems = [
   { href: '/games', label: 'Games' },

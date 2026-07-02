@@ -6,11 +6,26 @@ const games = await getCollection('games');
 const clients = await getCollection('clients');
 const releases = await getCollection('releases');
 
-const jsonLd = {
-  '@context': 'https://schema.org', '@type': 'WebSite', name: 'Arcanum',
-  description: 'The home base for LLM roleplay: discover the best public AI RPGs, compare roleplay platforms, and download original Arcanum game engines for ChatGPT, Claude, and Gemini.',
-  url: 'https://arcanumrpgs.com',
-};
+// "Arcanum" alone collides in search with the 2001 Troika CRPG, arcanumrpg.com,
+// and Arcanum Worlds — the canonical entity name is "Arcanum RPGs", and sameAs
+// points at our verified external profiles so Google can tell the entities apart.
+const jsonLd = [
+  {
+    '@context': 'https://schema.org', '@type': 'WebSite', name: 'Arcanum RPGs', alternateName: 'Arcanum',
+    description: 'The home base for LLM roleplay: discover the best public AI RPGs, compare roleplay platforms, and download original Arcanum game engines for ChatGPT, Claude, and Gemini.',
+    url: 'https://arcanumrpgs.com',
+    publisher: { '@id': 'https://arcanumrpgs.com/#organization' },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'Organization',
+    '@id': 'https://arcanumrpgs.com/#organization',
+    name: 'Arcanum RPGs', alternateName: 'Arcanum',
+    url: 'https://arcanumrpgs.com',
+    email: 'hello@arcanumrpgs.com',
+    logo: { '@type': 'ImageObject', url: 'https://arcanumrpgs.com/android-chrome-512x512.png', width: 512, height: 512 },
+    sameAs: ['https://www.youtube.com/@ArcanumRPGs', 'https://ko-fi.com/D3O621P17T'],
+  },
+];
 ---
 <Base
   title="Arcanum — The Home Base for AI RPGs & LLM Roleplay Games"

@@ -8,11 +8,17 @@ const jsonLd={
   url:'https://arcanumrpgs.com/about',
   description:'Founder of Arcanum. Four decades of experience across tabletop RPGs, CRPGs, MMOs, gamebooks, and AI-driven roleplay systems.',
   knowsAbout:['Roleplaying Games','AI RPG','LLM Roleplay','Text Adventures','Interactive Fiction','Tabletop RPGs','Computer RPGs','Emergent Storytelling','Campaign Design','AI Dungeon Masters'],
+  // Same Organization entity as the homepage (@id matches) — "Arcanum RPGs" +
+  // sameAs disambiguate us from the 2001 Troika CRPG and other Arcanum brands.
   founder:{
     '@type':'Organization',
-    name:'Arcanum',
+    '@id':'https://arcanumrpgs.com/#organization',
+    name:'Arcanum RPGs',
+    alternateName:'Arcanum',
     url:'https://arcanumrpgs.com',
-    email:'hello@arcanumrpgs.com'
+    email:'hello@arcanumrpgs.com',
+    logo:{'@type':'ImageObject',url:'https://arcanumrpgs.com/android-chrome-512x512.png',width:512,height:512},
+    sameAs:['https://www.youtube.com/@ArcanumRPGs','https://ko-fi.com/D3O621P17T']
   }
 };
 ---
