@@ -11,8 +11,13 @@ const fmt=(d)=>d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'n
     <h1>The Codex</h1>
     <p class="sub">Reviews, guides, and field notes for LLM roleplay.</p>
     <p class="method">All reviews are the independent assessment of <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI roleplay systems. Game and platform ratings reflect mechanical depth, long-campaign stability, and value for the player's time, scored out of 5.</p>
+    <nav class="jump" aria-label="Codex sections">
+      {bySection.map(g=>(
+        <a class="mono" href={`#${g.key}`}>{g.label} <span class="count">{g.items.length}</span></a>
+      ))}
+    </nav>
     {bySection.map(g=>(
-      <section class="sec">
+      <section class="sec" id={g.key}>
         <h2 class="mono">{g.label}</h2>
         <ul class="posts">
           {g.items.map(p=>(
@@ -29,7 +34,11 @@ const fmt=(d)=>d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'n
     .method{font-family:var(--mono);font-size:.78rem;color:var(--rune);line-height:1.6;margin-bottom:2.2rem;max-width:620px;}
     .method a{color:var(--rune);text-decoration:underline;text-underline-offset:2px;}
     .method a:hover{color:var(--ember);}
-    .sec{margin-bottom:2.6rem;}
+    .jump{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.4rem;}
+    .jump a{font-size:.78rem;letter-spacing:.04em;color:var(--parchment-dim);border:1px solid var(--line);border-radius:6px;padding:.35rem .7rem;background:var(--ink-2);transition:border-color .15s,color .15s;}
+    .jump a:hover{border-color:var(--ember);color:var(--ember);text-decoration:none;}
+    .jump .count{color:var(--rune);margin-left:.25rem;}
+    .sec{margin-bottom:2.6rem;scroll-margin-top:4.5rem;}
     .sec h2{font-family:var(--serif);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ember);border-bottom:1px solid var(--line);padding-bottom:.6rem;margin-bottom:1.1rem;}
     .posts{list-style:none;display:flex;flex-direction:column;gap:1rem;}
     .posts a{display:block;border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.3rem;background:var(--ink-2);color:var(--parchment);transition:border-color .18s;}
