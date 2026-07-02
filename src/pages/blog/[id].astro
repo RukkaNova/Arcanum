@@ -52,7 +52,7 @@ const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.d
 const displayDate=d.pubDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
 const updatedDisplay=d.updatedDate?d.updatedDate.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}):null;
 ---
-<Base title={`${d.title} | Arcanum`} description={d.description} type="article" jsonLd={jsonLd}>
+<Base title={`${d.title} | Arcanum RPGs`} description={d.description} type="article" jsonLd={jsonLd}>
   <article class="wrap post">
     <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Codex', href: '/blog' }, { label: d.title }]} />
     <h1>{d.title}</h1>

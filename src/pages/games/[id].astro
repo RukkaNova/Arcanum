@@ -17,7 +17,7 @@ const isOwnProduct=d.author==='Arcanum'||!!d.releaseSlug;
 // (Google review-snippet guidelines; ratingCount:1 misrepresents an aggregate).
 const jsonLd={'@context':'https://schema.org','@type':'VideoGame',name:d.title,description:d.tagline,genre:d.genres,gamePlatform:modelLabel(d.model),...(d.rating&&!isOwnProduct&&{review:{'@type':'Review',author:{'@type':'Person',name:'Rukka',url:'https://arcanumrpgs.com/about'},reviewRating:{'@type':'Rating',ratingValue:d.rating,bestRating:5,worstRating:1}}})};
 ---
-<Base title={`${d.title} — ${modelLabel(d.model)} RPG | Arcanum`} description={d.tagline} type="article" image={d.cover} jsonLd={jsonLd}>
+<Base title={`${d.title} — ${modelLabel(d.model)} RPG | Arcanum RPGs`} description={d.tagline} type="article" image={d.cover} jsonLd={jsonLd}>
   <article class="wrap game">
     <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Games', href: '/games' }, { label: d.title }]} />
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}

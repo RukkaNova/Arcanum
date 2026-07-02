@@ -8,7 +8,7 @@ const games = (await getCollection('games')).sort((a,b)=>b.data.updated.valueOf(
 const allGenres = [...new Set(games.flatMap(g=>g.data.genres))].sort();
 const modelKeys = Object.keys(MODELS);
 ---
-<Base title="All AI RPG Games — ChatGPT, Claude & Gemini | Arcanum" description="Browse the best public AI text RPGs. Filter by model (ChatGPT, Claude, Gemini) and by genre — mystery, fantasy, sci-fi, romance and more.">
+<Base title="All AI RPG Games — ChatGPT, Claude & Gemini | Arcanum RPGs" description="Browse the best public AI text RPGs. Filter by model (ChatGPT, Claude, Gemini) and by genre — mystery, fantasy, sci-fi, romance and more.">
   <div class="wrap browse">
     <h1>Public AI RPG Games</h1>
     <p class="sub">{games.length} of the best AI RPGs you can play right now. Filter by model, or by genre.</p>

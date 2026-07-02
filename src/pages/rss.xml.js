@@ -5,7 +5,7 @@ export async function GET(context) {
   const posts = (await getCollection('blog', ({ data }) => !data.draft))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   return rss({
-    title: 'Arcanum — The Codex',
+    title: 'Arcanum RPGs — The Codex',
     description:
       'Guides, game reviews, platform reviews and lists for AI RPGs and LLM roleplay on ChatGPT, Claude, and Gemini.',
     site: context.site,

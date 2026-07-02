@@ -6,7 +6,7 @@ const posts=(await getCollection('blog')).filter(p=>!p.data.draft).sort((a,b)=>b
 const bySection=Object.keys(SECTIONS).map(s=>({key:s,label:SECTIONS[s],items:posts.filter(p=>p.data.section===s)})).filter(g=>g.items.length);
 const fmt=(d)=>d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
 ---
-<Base title="The Codex — LLM RPG Guides, Reviews & Lists | Arcanum" description="Guides, game reviews, platform reviews and lists for LLM roleplay. Learn to run better AI campaigns and find the best games and clients.">
+<Base title="The Codex — LLM RPG Guides, Reviews & Lists | Arcanum RPGs" description="Guides, game reviews, platform reviews and lists for LLM roleplay. Learn to run better AI campaigns and find the best games and clients.">
   <div class="wrap codex">
     <h1>The Codex</h1>
     <p class="sub">Reviews, guides, and field notes for LLM roleplay.</p>

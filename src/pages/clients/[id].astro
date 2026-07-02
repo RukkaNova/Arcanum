@@ -21,7 +21,7 @@ const jsonLd=videoLd?[appLd,videoLd]:appLd;
 const fmtDur=(iso)=>{const m=iso?.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);if(!m)return null;return `${+(m[1]||0)}:${String(+(m[2]||0)).padStart(2,'0')}`;};
 const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.duration)}`:'Video review'):null;
 ---
-<Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={metaDesc} type="article" image={d.cover} jsonLd={jsonLd}>
+<Base title={`${d.title} Review — LLM Roleplay Client | Arcanum RPGs`} description={metaDesc} type="article" image={d.cover} jsonLd={jsonLd}>
   <article class="wrap game">
     <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Clients', href: '/clients' }, { label: d.title }]} />
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}

@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Stars from '../../components/Stars.astro';
 const clients=(await getCollection('clients')).sort((a,b)=>(b.data.rating??0)-(a.data.rating??0));
 ---
-<Base title="Best LLM Roleplay Platforms & Clients Reviewed | Arcanum" description="Honest reviews of every AI roleplay client — Janitor, Friends & Fables, AI Dungeon, SillyTavern and more. See which LLM gaming platform is actually worth your time.">
+<Base title="Best LLM Roleplay Platforms & Clients Reviewed | Arcanum RPGs" description="Honest reviews of every AI roleplay client — Janitor, Friends & Fables, AI Dungeon, SillyTavern and more. See which LLM gaming platform is actually worth your time.">
   <div class="wrap browse">
     <h1>Clients</h1>
     <p class="sub">Every roleplay platform, reviewed. Find the one worth your time — or skip them all and play on your own AI.</p>
