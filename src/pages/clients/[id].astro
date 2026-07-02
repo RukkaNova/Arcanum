@@ -9,7 +9,9 @@ import Stars from '../../components/Stars.astro';
 import VideoFacade from '../../components/VideoFacade.astro';
 const { client }=Astro.props; const { Content }=await render(client); const d=client.data;
 const metaDesc=(()=>{if(!d.bestFor)return d.tagline;const full=`${d.tagline} Best for: ${d.bestFor}`;return full.length<=160?full:d.tagline;})();
-const appLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
+// Single editorial rating = Review with author, not an aggregateRating of one
+// (Google review-snippet guidelines).
+const appLd={'@context':'https://schema.org','@type':'SoftwareApplication',name:d.title,applicationCategory:'GameApplication',description:d.tagline,...(d.rating&&{review:{'@type':'Review',author:{'@type':'Person',name:'Rukka',url:'https://arcanumrpgs.com/about'},reviewRating:{'@type':'Rating',ratingValue:d.rating,bestRating:5,worstRating:1}}})};
 const ORIGIN='https://arcanumrpgs.com';
 const videoLd=d.video
   ?{'@context':'https://schema.org','@type':'VideoObject',name:d.video.title,description:d.video.description??d.tagline,thumbnailUrl:[ORIGIN+d.video.poster],uploadDate:(d.video.uploadDate??d.updated).toISOString(),...(d.video.duration&&{duration:d.video.duration}),embedUrl:`https://www.youtube.com/embed/${d.video.id}`,contentUrl:`https://youtu.be/${d.video.id}`}
@@ -18,7 +20,7 @@ const jsonLd=videoLd?[appLd,videoLd]:appLd;
 const fmtDur=(iso)=>{const m=iso?.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);if(!m)return null;return `${+(m[1]||0)}:${String(+(m[2]||0)).padStart(2,'0')}`;};
 const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.duration)}`:'Video review'):null;
 ---
-<Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={metaDesc} type="article" jsonLd={jsonLd}>
+<Base title={`${d.title} Review — LLM Roleplay Client | Arcanum`} description={metaDesc} type="article" image={d.cover} jsonLd={jsonLd}>
   <article class="wrap game">
     <a class="back mono" href="/clients">← all clients</a>
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}

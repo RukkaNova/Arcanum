@@ -11,9 +11,12 @@ const { game }=Astro.props; const { Content }=await render(game); const d=game.d
 // Don't emit self-serving rating structured data for Arcanum's own games (Originals
 // have author 'Arcanum' / a releaseSlug). Third-party games may still carry it.
 const isOwnProduct=d.author==='Arcanum'||!!d.releaseSlug;
-const jsonLd={'@context':'https://schema.org','@type':'Game',name:d.title,description:d.tagline,genre:d.genres,gamePlatform:modelLabel(d.model),...(d.rating&&!isOwnProduct&&{aggregateRating:{'@type':'AggregateRating',ratingValue:d.rating,ratingCount:1,bestRating:5}})};
+// VideoGame (a Game + SoftwareApplication subtype) is review-snippet eligible.
+// A single editorial rating is a Review with an author — NOT an aggregateRating
+// (Google review-snippet guidelines; ratingCount:1 misrepresents an aggregate).
+const jsonLd={'@context':'https://schema.org','@type':'VideoGame',name:d.title,description:d.tagline,genre:d.genres,gamePlatform:modelLabel(d.model),...(d.rating&&!isOwnProduct&&{review:{'@type':'Review',author:{'@type':'Person',name:'Rukka',url:'https://arcanumrpgs.com/about'},reviewRating:{'@type':'Rating',ratingValue:d.rating,bestRating:5,worstRating:1}}})};
 ---
-<Base title={`${d.title} — ${modelLabel(d.model)} RPG | Arcanum`} description={d.tagline} type="article" jsonLd={jsonLd}>
+<Base title={`${d.title} — ${modelLabel(d.model)} RPG | Arcanum`} description={d.tagline} type="article" image={d.cover} jsonLd={jsonLd}>
   <article class="wrap game">
     <a class="back mono" href="/games">← all games</a>
     {d.cover && <div class="hero-img"><img src={d.cover} alt={d.title} width="800" height="450"/></div>}

@@ -36,11 +36,10 @@ const jsonLd = {
       applicationCategory: 'GameApplication',
       url: c.data.siteUrl ?? `https://arcanumrpgs.com/clients/${c.id}`,
       ...(c.data.rating && {
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: c.data.rating,
-          bestRating: 5,
-          ratingCount: 1,
+        review: {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
+          reviewRating: { '@type': 'Rating', ratingValue: c.data.rating, bestRating: 5, worstRating: 1 },
         }
       }),
     }
