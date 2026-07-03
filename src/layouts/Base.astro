@@ -64,7 +64,7 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="alternate" type="application/rss+xml" title="Arcanum RPGs — The Codex" href="/rss.xml" />
 
-  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />}
 
   <style is:global>
     @font-face {

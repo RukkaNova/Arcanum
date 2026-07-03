@@ -1,0 +1,12 @@
+# Cloudflare Pages security headers.
+# CSP notes: 'unsafe-inline' script-src is required by the <script is:inline>
+# blocks on /tools/*; style-src inline is required by Astro's inlined styles.
+# frame-src covers the VideoFacade YouTube embed; img-src data: covers the
+# inline SVG data-URI used as the <select> chevron. HSTS is managed in the
+# Cloudflare dashboard (SSL/TLS → Edge Certificates), not here.
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
