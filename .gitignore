@@ -24,3 +24,6 @@ Thumbs.db
 
 # Cloudflare / wrangler
 .wrangler/
+
+# internal working handbook (local-only, repo is public)
+CLAUDE.md
