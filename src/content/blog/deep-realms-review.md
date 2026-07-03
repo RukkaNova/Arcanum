@@ -5,6 +5,13 @@ section: "platform-reviews"
 rating: 4
 pubDate: 2026-06-23
 tags: ["Deep Realms review", "deeprealms.io review", "AI RPG power user", "AI DM uncensored", "custom AI RPG", "Deep Realms platform review", "AI world building 2026"]
+video:
+  id: "nI4SBjd9yFo"
+  title: "Deep Realms Review (2026) – The Most Underrated AI RPG?"
+  poster: "/img/facadedrreview.webp"
+  duration: "PT6M7S"
+  uploadDate: 2026-07-03
+  description: "A hands-on video review of Deep Realms: the Python-programmable World Engine, 80,000-word memory, and unrestricted proprietary models in action — plus the verdict on who this power-user platform is really for."
 ---
 
 There is a category of player that every mainstream AI RPG platform eventually fails. They're not casual users. They're the ones who've noticed that the AI keeps forgetting plot threads, who've tried to run campaigns that require the world to behave with internal consistency, who've gotten frustrated with content filters triggering mid-session during a perfectly legitimate conflict scene. They're often writers as much as gamers. They want a tool, not a toy.

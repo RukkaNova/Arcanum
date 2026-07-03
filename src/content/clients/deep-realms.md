@@ -11,6 +11,13 @@ memoryApproach: "80,000-word store"
 cover: "/img/deep-realms.webp"
 featured: false
 updated: 2026-06-17
+video:
+  id: "nI4SBjd9yFo"
+  title: "Deep Realms Review (2026) – The Most Underrated AI RPG?"
+  poster: "/img/facadedrreview.webp"
+  duration: "PT6M7S"
+  uploadDate: 2026-07-03
+  description: "A hands-on video review of Deep Realms: the Python-programmable World Engine, 80,000-word memory, and unrestricted proprietary models in action — plus the verdict on who this power-user platform is really for."
 ---
 
 For power users, professional writers, and creators who find standard graphical interfaces limiting, Deep Realms offers an exceptionally robust, heavily customizable text-first engine. It is not for everyone — and it knows it. But for the specific player who wants programmatic control over every mechanic in their world, nothing else comes close.
