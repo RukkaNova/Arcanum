@@ -61,7 +61,7 @@ The free tier is similarly unrestricted in terms of hard caps but is constrained
 - Players who have experienced frontier model quality (Claude, ChatGPT, Gemini) and will notice the difference
 - Anything requiring extended memory, multiplayer, or reliable narrative persistence
 
-Our [full AI Dungeon review](/blog/ai-dungeon-review) covers what the platform does well and where it falls behind in more depth. The short version: the free tier is a reasonable way to try it; it is not a substitute for the full experience.
+Our [full AI Dungeon review](/blog/ai-dungeon-review) covers what the platform does well and where it falls behind in more depth. The short version: the free tier is a reasonable way to try it; it is not a substitute for the full experience. (Wondering about the privacy side before you sign up? That's answered directly in [Is AI Dungeon safe?](/blog/is-ai-dungeon-safe))
 
 ## If the Free Tier Isn't What You Need
 

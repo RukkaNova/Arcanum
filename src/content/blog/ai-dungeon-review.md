@@ -81,7 +81,7 @@ Although the platform has undergone significant changes since then, many long-ti
 
 For some players, the controversy remains a historical footnote. For others, it permanently damaged trust in the platform.
 
-Whether this matters to you will depend on how heavily you value privacy and how comfortable you are with the platform's current policies.
+Whether this matters to you will depend on how heavily you value privacy and how comfortable you are with the platform's current policies. We take the whole question apart — what actually happened in 2021, what changed since, and how private your stories are today — in [Is AI Dungeon safe?](/blog/is-ai-dungeon-safe)
 
 ## Is AI Dungeon Worth the Subscription Cost?
 
