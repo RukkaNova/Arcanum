@@ -49,7 +49,7 @@ Run locally and nothing leaves your machine, which is the strongest privacy stor
 
 The most like-for-like swap. Chub AI (also known as Chub Venus) is the other large character-card platform — a big, permissive library of user-made personas with its own hosted models, plus support for connecting external ones. For players who liked Janitor AI's *concept* but wanted a different house — a different catalogue, different uptime, a comparable content stance — it's the closest direct alternative, and cards port between the two without much friction.
 
-It serves the same character-chat use case rather than fixing the deeper "it's not a game" limitation, but as a sideways move it's the obvious one. *(Chub AI is an independent third party; we haven't put it through a first-hand Arcanum review, so this is a pointer, not a rating.)*
+It serves the same character-chat use case rather than fixing the deeper "it's not a game" limitation, but as a sideways move it's the obvious one. Go in with eyes open, though: our first-hand [Chub AI review](/blog/chub-ai-review) rates it 2/5 — the library and flexibility are excellent, but the platform around them is unpolished and unintuitive, so it works better as a card source than a new home.
 
 **Solves:** catalogue change, reliability, no-setup hosted models
 **Cost:** free tier; paid options
