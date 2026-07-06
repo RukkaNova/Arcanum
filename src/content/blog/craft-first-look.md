@@ -46,4 +46,4 @@ And the strongest signal isn't in the build at all. Through the roughest hours o
 
 ## What Happens Next
 
-We'll keep playing through the beta and publish a full, rated review when Craft launches. Until then, our [Friends & Fables review](/blog/friends-and-fables-review) covers the studio's current game — and if Craft delivers on what these 24 hours suggest, that review is going to need a sequel of its own.
+We'll keep playing through the beta and publish a full, rated review when Craft launches. In the meantime, we sat down with the team building it to ask why they started over instead of evolving Friends & Fables — read the [exclusive Craft interview](/blog/craft-interview). Until the full review lands, our [Friends & Fables review](/blog/friends-and-fables-review) covers the studio's current game — and if Craft delivers on what these 24 hours suggest, that review is going to need a sequel of its own.

@@ -42,7 +42,7 @@ Multiplayer support for up to six players is real, not aspirational. Groups can 
 
 Friends & Fables is not a passive system. The richness of the architecture means the AI can occasionally force encounters — defaulting to combat when a social resolution would have been more interesting, or mismanaging turn order in complex multi-faction scenes. The system requires engagement to perform at its ceiling; it does not run cleanly on autopilot.
 
-The developer is simultaneously building a successor platform called Craft, which has created some community uncertainty about long-term support for the current product. This is worth knowing, not as a reason to avoid it, but as context for understanding the roadmap.
+The developer is simultaneously building a successor platform called Craft, which has created some community uncertainty about long-term support for the current product. This is worth knowing, not as a reason to avoid it, but as context for understanding the roadmap — we go straight to the team behind that decision in our [exclusive Craft interview](/blog/craft-interview).
 
 Pricing is premium. The Starter tier at $19.95/month is the minimum that unlocks unlimited turns and four-player groups; the Legend tier at $39.95 gets you to six players and the highest character customization cap. Annual billing gives two months free. For groups that replace two-monthly TTRPG sessions with a standing Friends & Fables game, the math works. For solo players, the cost is harder to justify when [RoleForge](/clients/roleforge) offers a comparable solo experience at a lower current price point.
 
