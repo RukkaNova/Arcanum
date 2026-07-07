@@ -104,6 +104,9 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
     h1, h2, h3 { font-family: var(--display); }
     a { color: var(--ember); text-decoration: none; }
     a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    /* inline links in running body copy need a non-color cue (WCAG 1.4.1) — nav/button/UI links keep their own affordance */
+    p a { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--ember) 45%, transparent); text-underline-offset: 2px; }
+    p a:hover { text-decoration-color: var(--ember); }
     .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
     .mono { font-family: var(--mono); }
     /* the "machine tag" — platform/genre chips read as terminal tokens */

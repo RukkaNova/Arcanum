@@ -4,9 +4,11 @@
 # frame-src covers the VideoFacade YouTube embed; img-src data: covers the
 # inline SVG data-URI used as the <select> chevron. HSTS is managed in the
 # Cloudflare dashboard (SSL/TLS → Edge Certificates), not here.
+# script-src/connect-src allow static.cloudflareinsights.com + cloudflareinsights.com
+# for the Cloudflare Web Analytics beacon (auto-injected by Cloudflare Pages).
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
