@@ -139,7 +139,9 @@ The model you choose shapes the experience:
 - **Claude** is, in my testing, the strongest model for character-driven and relationship-heavy roleplay. See the [Claude RPG guide](/blog/claude-rpg-guide).
 - **Gemini's** enormous context window makes it the best pick for very long campaigns. See the [Gemini RPG guide](/blog/gemini-rpg-guide).
 
-To skip the hard part, the free [AI RPG Prompt Builder](/tools/prompt-builder) assembles a structured, copy-paste-ready DM prompt — pick genre, tone, focus, and memory approach, and it builds the system prompt for you, no account and no AI call. For a finished, professionally-engineered engine instead of a starter prompt, every [Arcanum Original](/arcanum-games) is a complete AI DM you download and load in minutes.
+To skip the hard part, the free [AI RPG Prompt Builder](/tools/prompt-builder) assembles a structured, copy-paste-ready DM prompt — pick genre, tone, focus, and memory approach, and it builds the system prompt for you, no account and no AI call. See [the best RPG prompts for every model](/blog/rpg-prompts) for the full anatomy of what makes one of these prompts actually hold together. For a finished, professionally-engineered engine instead of a starter prompt, every [Arcanum Original](/arcanum-games) is a complete AI DM you download and load in minutes.
+
+Prefer to just start typing? [AI RPG chat](/blog/ai-rpg-chat) covers how to run the same idea in a plain chat window with zero setup, and how to keep it from drifting once it's running.
 
 ---
 
