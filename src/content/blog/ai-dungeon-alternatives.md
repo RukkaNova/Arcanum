@@ -79,7 +79,7 @@ The ceiling here is high and the floor requires technical comfort. It is not des
 
 The open-source option. SillyTavern is a frontend, KoboldAI is a backend — together they give you full control over your model, your memory system, your content filters (or lack thereof), and your data. Everything runs locally. Nothing leaves your machine. The community has built thousands of character cards, scenario packs, and world-building templates.
 
-The tradeoff is setup complexity. You need a GPU with at least 12GB of VRAM for a usable local experience, or a cloud notebook like Google Colab as an alternative. If you have the hardware and the patience, nothing else on this list gives you this level of control for free.
+The tradeoff is setup complexity. You need a GPU with at least 12GB of VRAM for a usable local experience, or a cloud notebook like Google Colab as an alternative. If you have the hardware and the patience, nothing else on this list gives you this level of control for free. Our [SillyTavern installation guide](/blog/sillytavern-installation-guide) and dedicated [KoboldCpp](/blog/sillytavern-kobold-setup) setup walkthrough cover the full process; the fuller side-by-side is in [AI Dungeon vs SillyTavern](/blog/ai-dungeon-vs-sillytavern).
 
 **Solves:** filter interruption, cost, data privacy
 **Cost:** free (hardware required)

@@ -37,7 +37,7 @@ That "in that order" matters. Chub began life as a card hub (the name is literal
 
 ## Chub AI vs Janitor AI
 
-The comparison everyone actually wants: they serve the same use case — big permissive card library, hosted models plus bring-your-own — and Janitor AI simply executes it better. Janitor's experience is more coherent, its community surface is friendlier, and its weak spots (the in-house model, the proxy setup) are well-mapped with [known workarounds](/blog/how-to-use-janitor-ai). Chub's advantages are at the margins: a somewhat more open catalogue and more built-in model routes. As a *destination*, Janitor wins comfortably; as a *library*, Chub holds its own against anyone.
+The comparison everyone actually wants: they serve the same use case — big permissive card library, hosted models plus bring-your-own — and Janitor AI simply executes it better. Janitor's experience is more coherent, its community surface is friendlier, and its weak spots (the in-house model, the proxy setup) are well-mapped with [known workarounds](/blog/how-to-use-janitor-ai). Chub's advantages are at the margins: a somewhat more open catalogue and more built-in model routes. As a *destination*, Janitor wins comfortably; as a *library*, Chub holds its own against anyone. The full point-by-point breakdown is in [Chub AI vs Janitor AI](/blog/chub-ai-vs-janitor-ai).
 
 ## Who Is Chub AI Actually For?
 
@@ -53,6 +53,6 @@ Free to browse and chat, with paid subscriptions unlocking the stronger hosted m
 
 Chub AI is a great warehouse and a poor storefront. The card library and the flexibility around it are genuinely first-rate — as a *resource*, it has earned its place in the ecosystem, and power users will keep mining it for worlds and plots no matter what any review says. But as a *platform* — the thing you'd actually spend your evening inside — it's unstructured, unpolished, unintuitive, and inconsistent, and it trails every direct competitor at the job it's nominally selling.
 
-Source your cards here. Play them somewhere better — [Janitor AI](/blog/janitor-ai) if you want the same concept done well, [SillyTavern](/blog/sillytavern-guide) if you want the control without the pretense, or a free [Arcanum Original](/arcanum-games) if what you actually want is a game with rules and memory rather than an open-ended chat.
+Source your cards here. Play them somewhere better — [Janitor AI](/blog/janitor-ai) if you want the same concept done well, [SillyTavern](/blog/sillytavern-guide) if you want the control without the pretense (compared directly in [Chub AI vs SillyTavern](/blog/chub-ai-vs-sillytavern)), or a free [Arcanum Original](/arcanum-games) if what you actually want is a game with rules and memory rather than an open-ended chat.
 
 **Chub AI Rating: 2/5** — One of the best character libraries in the space, wrapped in one of its weakest platforms. Visit for the cards; don't move in.

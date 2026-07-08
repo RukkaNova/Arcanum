@@ -39,7 +39,7 @@ Content safety controls deserve a mention: a G-rated "Family" lock and mature co
 
 RoleForge is currently in alpha, which has real implications. Access requires filling out a questionnaire about your RPG background and playstyle — a filter that reflects the developer's genuine interest in engaged players rather than drive-by testers. The waitlist is real.
 
-For those who get in, the full feature set is currently free with no usage limits. Early access grants Founder status — a permanent profile badge and promised lifetime early access and discounted pricing at launch. The anticipated paid tiers ($20–$40/month) suggest premium positioning at launch.
+For those who get in, the full feature set is currently free with no usage limits. Early access grants Founder status — a permanent profile badge and promised lifetime early access and discounted pricing at launch. The anticipated paid tiers ($20–$40/month) suggest premium positioning at launch. If the wait or the closed-alpha access gate is the blocker, [RoleForge vs Janitor AI](/blog/roleforge-vs-janitor-ai) covers what's available today instead and how the two solve genuinely different problems.
 
 Multiplayer is on the roadmap but not yet live. Solo campaigns with AI mercenaries as party members is the current format. Players looking for a group experience should look at [Friends & Fables](/clients/friends-and-fables), which handles multiplayer better than anything else on the market. For players comfortable going solo, RoleForge's current offering is more coherent than most platforms' shipped products.
 

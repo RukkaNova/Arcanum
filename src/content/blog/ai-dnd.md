@@ -88,7 +88,7 @@ Three platforms stand out specifically for 5e-style play, each for a different s
 [Taverna](/clients/taverna) runs a full 5e-style AI Game Master as a Discord bot — no new app, no new accounts. It handles initiative, combat, group inventory, and leveling through slash commands in a channel your group already uses. The trade-off is that a text channel isn't a battlemap, so spatial combat is abstracted. Best for story-driven groups who lost their DM to scheduling. Currently invite-only beta. **[Full review](/blog/taverna-review)** (rated 4/5).
 
 ### Friends & Fables — Best Full-Table Replacement
-[Friends & Fables](/clients/friends-and-fables) goes furthest toward replicating a real tabletop: a multi-model system that forgets less than competitors, plus hex battlemap combat with line-of-sight and damage resistances, for up to six players. It's the strongest pick if you want the full VTT experience and will engage with its complexity. **[Full review](/blog/friends-and-fables-review)**.
+[Friends & Fables](/clients/friends-and-fables) goes furthest toward replicating a real tabletop: a multi-model system that forgets less than competitors, plus hex battlemap combat with line-of-sight and damage resistances, for up to six players. It's the strongest pick if you want the full VTT experience and will engage with its complexity. **[Full review](/blog/friends-and-fables-review)**. Weighing it against AI Realm specifically? See [AI Realm vs Friends & Fables](/blog/ai-realm-vs-friends-and-fables).
 
 For the wider field — solo persistence engines, async play, and non-5e systems — see [best AI roleplay platforms](/blog/best-ai-roleplay-platforms) and the side-by-side [comparison matrix](/clients/compare).
 

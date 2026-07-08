@@ -43,7 +43,7 @@ Compare this to [RoleForge](/clients/roleforge), which addresses the same proble
 
 The player who gets the most from AI Realm is someone who knows D&D 5e already — the learning curve really is zero if you've played before — and wants to run a short-to-medium adventure without the overhead of scheduling. One-shots, small arcs, and exploratory sessions in the 5e ruleset work well here. The character creation wizard is genuinely good, the combat resolution is reliable, and the visual scene generation gives the experience enough texture that it doesn't feel like a text parser from 2008. If you're comparing AI Realm against the other ways to play D&D with an AI, our [AI D&D guide](/blog/ai-dnd) covers the full field.
 
-For extended campaigns requiring deep state continuity, AI Realm is not currently the right architecture. [Friends & Fables](/clients/friends-and-fables) handles longer multi-session play better, and RoleForge's database backbone makes it the more principled answer to the persistence problem.
+For extended campaigns requiring deep state continuity, AI Realm is not currently the right architecture. [Friends & Fables](/clients/friends-and-fables) handles longer multi-session play better, and RoleForge's database backbone makes it the more principled answer to the persistence problem. The full point-by-point comparison against Friends & Fables is in [AI Realm vs Friends & Fables](/blog/ai-realm-vs-friends-and-fables).
 
 The visual scene generation, available on paid tiers, is a useful extra rather than a selling point. The images serve as session flavour; they are not tactical maps.
 
