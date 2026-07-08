@@ -57,7 +57,7 @@ Two things: the app itself, and a model to connect it to.
 **The model** is where the real decision is, and it splits into two paths:
 
 - **Cloud API** — point SillyTavern at a hosted model through its API: Claude, OpenAI, or an aggregator like OpenRouter that exposes many models (including budget options like DeepSeek and roleplay specialists). Easiest path, no powerful hardware needed, pay per token. Note that frontier APIs still apply their content filters.
-- **Local model** — run an open-weight model on your own GPU via a backend like KoboldCpp, Ollama, LM Studio, or text-generation-webui, then connect SillyTavern to it. This is the fully private, fully unrestricted route, but it needs capable hardware (a GPU with roughly 12GB+ of VRAM for a good experience).
+- **Local model** — run an open-weight model on your own GPU via a backend like [KoboldCpp](/blog/sillytavern-kobold-setup), [Ollama](/blog/sillytavern-ollama-setup), LM Studio, or text-generation-webui, then connect SillyTavern to it. This is the fully private, fully unrestricted route, but it needs capable hardware (a GPU with roughly 12GB+ of VRAM for a good experience).
 
 Which model you choose matters as much as any SillyTavern setting. Our [best LLM for roleplay guide](/blog/best-llm-for-roleplay) breaks down the options — Claude and GPT for quality, Gemini for context length, DeepSeek for budget, MiniMax M2 for character consistency, and local Llama/Qwen fine-tunes for unrestricted privacy-first play.
 
@@ -75,7 +75,7 @@ The install is more approachable than its reputation suggests. The broad shape o
 
 For exact, current commands and platform-specific notes, follow the project's official documentation at **docs.sillytavern.app** — it's maintained by the developers and stays current with releases in a way no third-party walkthrough can. (There's also an official "SillyTavern Launcher" that automates much of the above if you'd prefer a guided installer.)
 
-Once it's running and connected, you load a character and start playing.
+Once it's running and connected, you load a character and start playing. For the full step-by-step version of this section — including Windows-specific gotchas, updating, and a troubleshooting checklist for the errors that stop most beginners — see our complete [SillyTavern installation guide](/blog/sillytavern-installation-guide).
 
 ---
 

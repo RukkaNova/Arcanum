@@ -95,7 +95,7 @@ Both can be free, with different shapes. Janitor AI is free on its in-house mode
 
 **Choose Janitor AI if** you want to start in two minutes, browse a massive library, play on your phone, and not think about setup. It's the better casual, beginner, and discovery-first option. **[Full Janitor AI review](/blog/janitor-ai)** (rated 4/5).
 
-**Choose SillyTavern if** you want maximum control, privacy, lorebooks, group chats, and the option of uncensored local models — and you're willing to invest in a one-time setup. It's the power user's tool. **[Full SillyTavern guide](/blog/sillytavern-guide)**.
+**Choose SillyTavern if** you want maximum control, privacy, lorebooks, group chats, and the option of uncensored local models — and you're willing to invest in a one-time setup. It's the power user's tool. **[Full SillyTavern guide](/blog/sillytavern-guide)** and our **[installation walkthrough](/blog/sillytavern-installation-guide)** if you're ready to set it up.
 
 **Use both, honestly.** This is the answer more often than with most comparisons. A common path is to start on Janitor AI to discover what you like, then graduate to SillyTavern for control once you've outgrown the browser — carrying your favourite cards across, since the format is shared. They're not really rivals so much as two rungs on the same ladder.
 

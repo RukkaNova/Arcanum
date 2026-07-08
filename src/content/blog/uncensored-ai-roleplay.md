@@ -120,7 +120,7 @@ A quick filter:
 
 **You want to talk to a specific character with minimal setup** → [Janitor AI](/clients/janitor) with BYOM.
 
-**You want genuinely zero restrictions and full privacy, and have a GPU** → a local model (Llama 3.3 70B / Qwen3 32B) via [SillyTavern](/blog/sillytavern-guide).
+**You want genuinely zero restrictions and full privacy, and have a GPU** → a local model (Llama 3.3 70B / Qwen3 32B) via [SillyTavern](/blog/sillytavern-guide) — see our [Ollama](/blog/sillytavern-ollama-setup) or [KoboldCpp](/blog/sillytavern-kobold-setup) setup guides to get running.
 
 **You want cheap, unrestricted, no local hardware** → DeepSeek V4 through OpenRouter as a SillyTavern backend.
 
