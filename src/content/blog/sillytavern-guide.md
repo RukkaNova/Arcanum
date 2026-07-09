@@ -77,6 +77,8 @@ For exact, current commands and platform-specific notes, follow the project's of
 
 Once it's running and connected, you load a character and start playing. For the full step-by-step version of this section — including Windows-specific gotchas, updating, and a troubleshooting checklist for the errors that stop most beginners — see our complete [SillyTavern installation guide](/blog/sillytavern-installation-guide).
 
+Once it's installed, here's how to use SillyTavern day to day — the features that actually matter once you're up and running.
+
 ---
 
 ## The Features That Actually Matter
@@ -88,6 +90,12 @@ SillyTavern has a deep feature set, but a handful are why people stay:
 - **Personas.** A persistent identity for *you*, the player, that the AI keeps in mind across characters and sessions.
 - **Group chats.** Multiple characters in one scene, each with their own card, taking turns — far better multi-character handling than a single chat box.
 - **Extensions.** Optional add-ons for text-to-speech narration, image generation (via a Stable Diffusion backend), summarization, and vector-based memory. You bolt on what you want.
+
+### SillyTavern Extensions Explained
+
+Extensions are optional plugins that hook into SillyTavern's chat pipeline without touching the core interface — you switch on what you want from the Extensions panel and leave the rest off, so the app stays lean by default. A few are worth knowing by name. The **TTS extension** reads character responses aloud through a voice provider of your choice, turning a text exchange into something closer to a voiced scene. The **Image Generation extension** connects to a Stable Diffusion backend, local or hosted, so a character or moment in the story can produce an accompanying image on demand, straight from the chat. And the **Data Bank** — covered in more depth in the memory section below — is vector-based storage that indexes past messages and documents, then pulls back only the relevant pieces when they're actually needed instead of occupying your context window the whole time.
+
+None of this is required to use SillyTavern well, but it's why power users rarely go back to a plain chat box afterward: extensions let you shape the tool around the kind of session you actually want — voiced, illustrated, memory-heavy, or all three — instead of accepting whatever fixed feature set a consumer app ships with.
 
 ---
 
