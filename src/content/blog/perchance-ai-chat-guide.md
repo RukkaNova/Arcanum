@@ -78,6 +78,8 @@ Against **[Character.AI](/clients/characterai)**, the difference is mostly the f
 
 Against a **database-backed RPG platform** like [Friends & Fables](/clients/friends-and-fables) or [RoleForge](/clients/roleforge), Perchance isn't really a competitor at all — those are structured games with persistent world state, and Perchance is a conversational chat tool. If what you actually want is a campaign that holds together over weeks, that's a different category of tool entirely.
 
+The comparison that comes up most often in practice, though, is **[Janitor AI](/clients/janitor)** — the two platforms keep inviting it, close enough in spirit that we broke it down point by point in [Perchance vs Janitor AI](/blog/perchance-vs-janitor-ai). Short version: Perchance wins on fast, unrestricted creative generation; Janitor AI wins on character depth and long-form roleplay.
+
 ---
 
 ## Who It's For — and Its Real Limitations
@@ -85,6 +87,8 @@ Against a **database-backed RPG platform** like [Friends & Fables](/clients/frie
 **Perchance is a strong fit if** you want to try AI character roleplay right now, for free, with no commitment — no account to create, no app to install, nothing to configure. It's also a reasonable pick if what you want is maximum manual control over the exact text of a conversation, since directly editing the chat log isn't something most hosted platforms allow.
 
 **It's a weaker fit if** you want your characters and history to follow you across devices, since there's no account layer syncing anything. It's also worth knowing that, as a free, ad-supported, community-built tool layered on top of a generator platform rather than a dedicated roleplay product, it doesn't carry the same polish, uptime guarantees, or long-term memory architecture that a purpose-built platform invests in. For a single session or a casual character chat, that rarely matters. For a serious, long-running campaign, the gap becomes more visible.
+
+We put all of this to the test directly and rated it from the RPG angle in our [full Perchance review](/blog/perchance-review) (3/5) — free, fast, and genuinely fun for casual play, capped mainly by inconsistent memory and a lack of real game structure.
 
 ---
 

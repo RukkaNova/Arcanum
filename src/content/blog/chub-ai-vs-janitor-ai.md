@@ -77,6 +77,8 @@ Both are free to browse and chat, with paid tiers unlocking stronger hosted mode
 
 **Want a real game instead of a chat?** Neither platform tracks persistent world state or consequences. [RoleForge](/clients/roleforge) and [Friends & Fables](/clients/friends-and-fables) are built for that instead, and the free [Arcanum Originals](/arcanum-games) run structured campaigns on any frontier model you already pay for.
 
+**Want the free, zero-setup option instead?** [Perchance](/clients/perchance) trades depth for speed — no account, no configuration, and a much lighter creative-generation focus than either Chub AI or Janitor AI. See [Perchance vs Janitor AI](/blog/perchance-vs-janitor-ai) for the direct comparison.
+
 ## Frequently Asked Questions
 
 **Is Chub AI or Janitor AI better?**

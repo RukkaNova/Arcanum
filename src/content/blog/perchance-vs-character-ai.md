@@ -35,7 +35,7 @@ faq:
 | **Price** | Free, ad-supported, no cap | Free, with an optional paid tier |
 | **Cross-device sync** | No persistent account to sync | Yes, tied to your account |
 | **Ease of use** | Slightly rougher, but zero friction to start | Very polished, beginner-friendly app |
-| **Arcanum rating** | Not yet reviewed — [full guide](/blog/perchance-ai-chat-guide) | [2/5](/blog/characterai-review) |
+| **Arcanum rating** | [3/5](/blog/perchance-review) | [2/5](/blog/characterai-review) |
 
 The one-line summary: **Character.AI is the easier, more curated on-ramp; Perchance is the more open, more hands-on alternative.** The detail is below.
 
