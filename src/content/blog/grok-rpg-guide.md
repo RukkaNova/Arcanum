@@ -74,7 +74,7 @@ To start from scratch:
 3. Start a chat with your GM agent inside the Workspace. The game master is already running.
 4. For a long master prompt, remember the ~4,000-character agent cap — push the detail into the Workspace file.
 
-If you'd rather generate a ready-made system prompt, the [AI RPG Prompt Builder](/tools/prompt-builder) assembles a structured GM prompt in under a minute — pick your genre, tone, and focus, and drop the result into a Grok agent (and the longer sections into a Workspace file). For the engineering that keeps any long campaign from unravelling — on Grok or anything else — [why AI campaigns fall apart at turn 50](/blog/why-llms-forget) covers the memory and agency decisions that matter most.
+If you'd rather generate a ready-made system prompt, the [AI RPG Prompt Builder](/tools/prompt-builder) now assembles a structured GM prompt for Grok directly — pick Grok as your model, then a genre, tone, and focus, and it builds a Custom-Agent-ready prompt in under a minute. Two complete worked examples, plus exactly where to paste them, are on the [Grok RPG prompts](/blog/grok-rpg-prompts) page. For the engineering that keeps any long campaign from unravelling — on Grok or anything else — [why AI campaigns fall apart at turn 50](/blog/why-llms-forget) covers the memory and agency decisions that matter most.
 
 Search "Grok RPG" and find companions. Come here and find the game master.
 

@@ -1,20 +1,21 @@
 ---
-title: "The Best RPG Prompts for ChatGPT, Claude & Gemini (Free Generator)"
-description: "What actually makes an RPG prompt work — the six-part structure every good one shares — plus a free generator and a complete worked example for ChatGPT, Claude, or Gemini."
+title: "The Best RPG Prompts for ChatGPT, Claude, Gemini & Grok (Free Generator)"
+description: "What actually makes an RPG prompt work — the six-part structure every good one shares — plus a free generator and a complete worked example for ChatGPT, Claude, Gemini, or Grok."
 section: "guides"
 pubDate: 2026-07-07
+updatedDate: 2026-07-09
 tags: ["RPG prompts", "roleplaying prompts", "role playing prompts", "AI RPG prompt", "system prompt RPG", "AI RPG", "LLM RPG"]
 faq:
-  - q: "What are the best RPG prompts for ChatGPT, Claude, and Gemini?"
+  - q: "What are the best RPG prompts for ChatGPT, Claude, Gemini, and Grok?"
     a: "The best ones share the same six-part structure regardless of model: a defined game-master persona and world, a tone, a primary focus, agency rules, a memory protocol, and a platform note. The free AI RPG Prompt Builder assembles all six for whichever model you choose, and each model has its own page of ready-to-paste worked examples."
   - q: "Is there a free RPG prompt generator?"
     a: "Yes. The AI RPG Prompt Builder builds a complete system prompt in under a minute — pick your model, genre, tone, focus, and memory approach. It runs entirely client-side: no account, no API call, nothing sent anywhere."
   - q: "What's the difference between a roleplaying prompt and a character prompt?"
     a: "An RPG prompt configures the AI to be the game master — the world, the rules, every NPC. A character prompt (sometimes called a character card) defines a single companion or persona the AI plays inside that game. You generally need the first before the second matters."
-  - q: "Do RPG prompts work differently on ChatGPT, Claude, and Gemini?"
-    a: "The core structure is identical, but the container and the platform note differ: ChatGPT prompts are built for a Custom GPT, Claude prompts for a Claude Project, and Gemini prompts for a Gemini Gem. Each container gives the prompt persistent memory across sessions in a slightly different way."
+  - q: "Do RPG prompts work differently on ChatGPT, Claude, Gemini, and Grok?"
+    a: "The core structure is identical, but the container and the platform note differ: ChatGPT prompts are built for a Custom GPT, Claude prompts for a Claude Project, Gemini prompts for a Gemini Gem, and Grok prompts for a Custom Agent paired with a Workspace. Each container gives the prompt persistent memory across sessions in a slightly different way."
   - q: "Can I use one RPG prompt on any AI model?"
-    a: "Yes — a prompt without a platform note will work in any chat window, though you'll lose the persistent-container advantages (Custom GPT, Project, or Gem). It's the fastest way to test a prompt before committing it to a specific model's container."
+    a: "Yes — a prompt without a platform note will work in any chat window, though you'll lose the persistent-container advantages (Custom GPT, Project, Gem, or Custom Agent). It's the fastest way to test a prompt before committing it to a specific model's container."
   - q: "Why do most RPG prompts stop working after a while?"
     a: "Because most are a single sentence with no agency rules and no memory protocol. The model starts narrating your choices for you and forgetting earlier facts as the context fills up. A structured prompt with an explicit memory-compression instruction is what prevents this — see why AI campaigns fall apart at turn 50."
 ---
@@ -60,7 +61,7 @@ Track all established facts — character names, world details, promises made, e
 Begin when the player is ready. Ask for the details you need to open the session — character name, background, starting situation, or whatever the genre calls for — then begin.
 ```
 
-Paste that into any chat window on any model and it will run a coherent session. What it's missing is the platform note — the piece that makes a Custom GPT, Claude Project, or Gemini Gem remember this setup permanently instead of just for one conversation. That's model-specific, and it's what the generator adds automatically.
+Paste that into any chat window on any model and it will run a coherent session. What it's missing is the platform note — the piece that makes a Custom GPT, Claude Project, Gemini Gem, or Grok Custom Agent remember this setup permanently instead of just for one conversation. That's model-specific, and it's what the generator adds automatically.
 
 ## Generate One for Your Exact Model, Free
 
@@ -73,6 +74,7 @@ The anatomy above is identical everywhere, but the container — and which model
 - **[ChatGPT RPG prompts](/blog/chatgpt-rpg-prompts)** — built for a Custom GPT, the largest ready-made game library of any model (the GPT Store), and the gentlest on-ramp if you've never built a system prompt before.
 - **[Claude RPG prompts](/blog/claude-rpg-prompts)** — built for a Claude Project, and the strongest pick if prose quality and holding a complex rule set across a long session matter most to you.
 - **[Gemini RPG prompts](/blog/gemini-rpg-prompts)** — built for a Gemini Gem, and the best choice for the longest campaigns thanks to Gemini's context window, which runs up to 2 million tokens in its most capable configurations.
+- **[Grok RPG prompts](/blog/grok-rpg-prompts)** — built for a Custom Agent paired with a Workspace, and the strongest pick for emotionally-driven, permissive, character-led campaigns where Grok's fewer refusals matter most.
 
 Each of those pages has two complete, ready-to-paste prompts in different genres, plus exactly where to paste them. For the full model-by-model breakdown — strengths, weaknesses, and which one wins for what kind of roleplay — see [best LLM for roleplay](/blog/best-llm-for-roleplay).
 
@@ -88,11 +90,11 @@ Each of those pages has two complete, ready-to-paste prompts in different genres
 
 A generated prompt is a starting point, not a finished game. Once you've pasted one in, add specifics — your character's name, a concrete premise, factions you care about, house rules — the prompt gives the AI its operating instructions, and everything that makes the campaign *yours* is layered on top. If you'd rather run a plain chat with no container at all, [AI RPG chat](/blog/ai-rpg-chat) covers exactly how to keep a freeform session on the rails. And if a long campaign starts drifting, the free [Campaign Memory Tool](/tools/campaign-memory) tracks world state and generates a compression prompt to hand the AI a clean summary.
 
-If you'd rather skip prompt engineering altogether, the [Arcanum Originals](/arcanum-games) are complete, fully-engineered RPG systems — the prompt, the world bible, and the memory management all built in — free to download and load into ChatGPT, Claude, or Gemini.
+If you'd rather skip prompt engineering altogether, the [Arcanum Originals](/arcanum-games) are complete, fully-engineered RPG systems — the prompt, the world bible, and the memory management all built in — free to download and load into ChatGPT, Claude, Gemini, or Grok.
 
 ## Frequently Asked Questions
 
-**What are the best RPG prompts for ChatGPT, Claude, and Gemini?**
+**What are the best RPG prompts for ChatGPT, Claude, Gemini, and Grok?**
 The best ones share the same six-part structure regardless of model: a defined game-master persona and world, a tone, a primary focus, agency rules, a memory protocol, and a platform note. The free [AI RPG Prompt Builder](/tools/prompt-builder) assembles all six for whichever model you choose, and each model has its own page of ready-to-paste worked examples.
 
 **Is there a free RPG prompt generator?**
@@ -101,11 +103,11 @@ Yes. The AI RPG Prompt Builder builds a complete system prompt in under a minute
 **What's the difference between a roleplaying prompt and a character prompt?**
 An RPG prompt configures the AI to be the game master — the world, the rules, every NPC. A character prompt (sometimes called a character card) defines a single companion or persona the AI plays inside that game. You generally need the first before the second matters.
 
-**Do RPG prompts work differently on ChatGPT, Claude, and Gemini?**
-The core structure is identical, but the container and the platform note differ: ChatGPT prompts are built for a Custom GPT, Claude prompts for a Claude Project, and Gemini prompts for a Gemini Gem. Each container gives the prompt persistent memory across sessions in a slightly different way.
+**Do RPG prompts work differently on ChatGPT, Claude, Gemini, and Grok?**
+The core structure is identical, but the container and the platform note differ: ChatGPT prompts are built for a Custom GPT, Claude prompts for a Claude Project, Gemini prompts for a Gemini Gem, and Grok prompts for a Custom Agent paired with a Workspace. Each container gives the prompt persistent memory across sessions in a slightly different way.
 
 **Can I use one RPG prompt on any AI model?**
-Yes — a prompt without a platform note will work in any chat window, though you'll lose the persistent-container advantages (Custom GPT, Project, or Gem). It's the fastest way to test a prompt before committing it to a specific model's container.
+Yes — a prompt without a platform note will work in any chat window, though you'll lose the persistent-container advantages (Custom GPT, Project, Gem, or Custom Agent). It's the fastest way to test a prompt before committing it to a specific model's container.
 
 **Why do most RPG prompts stop working after a while?**
 Because most are a single sentence with no agency rules and no memory protocol. The model starts narrating your choices for you and forgetting earlier facts as the context fills up. A structured prompt with an explicit memory-compression instruction is what prevents this — see [why AI campaigns fall apart at turn 50](/blog/why-llms-forget).

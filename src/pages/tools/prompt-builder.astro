@@ -6,7 +6,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
   name: 'AI RPG Prompt Builder',
-  description: 'Free browser-based tool that assembles a ready-to-paste system prompt for ChatGPT, Claude, or Gemini RPG sessions. Select genre, tone, focus, and memory approach — the tool builds the prompt instantly, client-side, no AI required.',
+  description: 'Free browser-based tool that assembles a ready-to-paste system prompt for ChatGPT, Claude, Gemini, or Grok RPG sessions. Select genre, tone, focus, and memory approach — the tool builds the prompt instantly, client-side, no AI required.',
   url: 'https://arcanumrpgs.com/tools/prompt-builder',
   applicationCategory: 'GameApplication',
   operatingSystem: 'Any',
@@ -17,7 +17,7 @@ const jsonLd = {
 };
 ---
 <Base
-  title="AI RPG Prompt Builder — Generate a System Prompt for ChatGPT, Claude, or Gemini | Arcanum RPGs"
+  title="AI RPG Prompt Builder — Generate a System Prompt for ChatGPT, Claude, Gemini, or Grok | Arcanum RPGs"
   description="Select your model, genre, tone, focus, and memory approach. The AI RPG Prompt Builder assembles a ready-to-paste system prompt in seconds — pure client-side, no account, no API calls."
   image="/img/arcanum-og.webp"
   type="website"
@@ -30,8 +30,8 @@ const jsonLd = {
 
   <div class="intro prose">
     <p>The gap between "I want to run an RPG inside ChatGPT" and "I have a session that actually works" is almost always the system prompt. Most players skip it entirely, paste a two-sentence placeholder, and then wonder why the AI invents things it shouldn't, loses track of what happened, or never quite feels like a <em>game</em>. A well-structured system prompt is the difference between an AI that thinks it's writing a story and one that knows it's running a campaign for you.</p>
-    <p>This tool builds that prompt in under a minute. Select your model, genre, tone, focus, and campaign length — the tool assembles a structured, copy-paste-ready system prompt you drop straight into <strong>ChatGPT</strong> as Custom GPT instructions, a <strong>Claude Project's</strong> custom instructions, or a <strong>Gemini Gem</strong>. No AI is called. Nothing is sent anywhere. The intelligence is in the template, not in a generation step.</p>
-    <p>For the best results on Claude, read the <a href="/blog/claude-rpg-guide">Claude RPG guide</a> to learn exactly where to paste these instructions inside a Project. For Gemini, the <a href="/blog/gemini-rpg-guide">Gemini RPG guide</a> covers Gem setup — where the 2M-token context window makes this kind of prompt particularly powerful over long campaigns.</p>
+    <p>This tool builds that prompt in under a minute. Select your model, genre, tone, focus, and campaign length — the tool assembles a structured, copy-paste-ready system prompt you drop straight into <strong>ChatGPT</strong> as Custom GPT instructions, a <strong>Claude Project's</strong> custom instructions, a <strong>Gemini Gem</strong>, or a <strong>Grok Custom Agent</strong>. No AI is called. Nothing is sent anywhere. The intelligence is in the template, not in a generation step.</p>
+    <p>For the best results on Claude, read the <a href="/blog/claude-rpg-guide">Claude RPG guide</a> to learn exactly where to paste these instructions inside a Project. For Gemini, the <a href="/blog/gemini-rpg-guide">Gemini RPG guide</a> covers Gem setup — where the 2M-token context window makes this kind of prompt particularly powerful over long campaigns. For Grok, the <a href="/blog/grok-rpg-guide">Grok RPG guide</a> covers Custom Agents and Workspaces — Grok's version of the same persistent container.</p>
   </div>
 
   <!-- ═══════════════════════════════ TOOL SHELL -->
@@ -50,6 +50,7 @@ const jsonLd = {
           <option value="chatgpt">ChatGPT</option>
           <option value="claude">Claude</option>
           <option value="gemini">Gemini</option>
+          <option value="grok">Grok</option>
         </select>
       </div>
 
@@ -129,7 +130,7 @@ const jsonLd = {
   <div class="closing prose">
     <h2>How to Use a Generated Prompt</h2>
     <p>A generated prompt is a strong starting point, not a ceiling. Paste it into your model of choice and start editing immediately: add your character's name, a specific world premise you've invented, factions, mechanics you want emphasised, or any house rules that matter to you. The prompt gives the AI its operating instructions; everything that makes the campaign yours gets layered on top.</p>
-    <p>Want to see what the output actually looks like before you build one? Each model has a set of worked, ready-to-paste examples straight from this tool — two complete prompts apiece, plus exactly where they go: <a href="/blog/claude-rpg-prompts">Claude RPG prompts</a> (Claude Project), <a href="/blog/chatgpt-rpg-prompts">ChatGPT RPG prompts</a> (Custom GPT), and <a href="/blog/gemini-rpg-prompts">Gemini RPG prompts</a> (Gemini Gem). For the anatomy behind all of them — the six parts every real RPG prompt needs — see <a href="/blog/rpg-prompts">the best RPG prompts guide</a>. Running D&D specifically? The <a href="/blog/chatgpt-dnd-prompts">free ChatGPT D&D prompt generator</a> layers a 5e-style ruleset on top of this same tool.</p>
+    <p>Want to see what the output actually looks like before you build one? Each model has a set of worked, ready-to-paste examples straight from this tool — two complete prompts apiece, plus exactly where they go: <a href="/blog/claude-rpg-prompts">Claude RPG prompts</a> (Claude Project), <a href="/blog/chatgpt-rpg-prompts">ChatGPT RPG prompts</a> (Custom GPT), <a href="/blog/gemini-rpg-prompts">Gemini RPG prompts</a> (Gemini Gem), and <a href="/blog/grok-rpg-prompts">Grok RPG prompts</a> (Custom Agent + Workspace). For the anatomy behind all of them — the six parts every real RPG prompt needs — see <a href="/blog/rpg-prompts">the best RPG prompts guide</a>. Running D&D specifically? The <a href="/blog/chatgpt-dnd-prompts">free ChatGPT D&D prompt generator</a> layers a 5e-style ruleset on top of this same tool.</p>
     <p>The <a href="/blog/claude-rpg-guide">Claude RPG guide</a> walks through exactly how to set up a Claude Project for a long campaign — including where these instructions go, how to load world documents into Project Knowledge, and what makes Claude particularly well-suited to slow-burn relationship campaigns. The <a href="/blog/gemini-rpg-guide">Gemini RPG guide</a> covers the same for Gemini Gems, where the 2M-token context window is a genuine structural advantage for exploration-heavy and long-form play.</p>
     <p>If your campaign runs long, the <a href="/tools/campaign-memory">Campaign Memory Tool</a> handles the other side of the problem: tracking characters, plot threads, world facts, and relationships in a structured form, then generating a compression prompt that lets the AI read your full state and return a compact memory block. Between a solid starting prompt and a structured memory approach, coherent AI campaigns past turn 100 are achievable on any platform.</p>
     <p>The <a href="/arcanum-games">Arcanum Originals</a> — Aevum Realm Architect, Eirathis Strider, The Chronicler, Star Freighter Drift — solve the system prompt problem from a different angle: they are fully-engineered RPG engines where the prompt, the world bible, and the memory management are all built in from the start. If you want to drop into a complete system rather than build from a template, they are free to download.</p>
@@ -172,7 +173,8 @@ var FOCUS = {
 var MODEL_SUFFIX = {
   'chatgpt': 'PLATFORM NOTE\nYou are running as a Custom GPT in ChatGPT. Maintain a hidden internal notepad tracking campaign state — active characters, key relationships, significant events, world facts, and the last scene. Consult it before each response. If the player types /fix_state, surface your current understanding of the campaign state and invite corrections.',
   'claude': 'PLATFORM NOTE\nYou are running as a Claude Project. Use your persistent memory within this Project across all conversations in it. Maintain detailed internal tracking of campaign state: characters, relationships, events, world facts. If the player types /fix_state, summarise your current understanding of the campaign state clearly and invite the player to correct anything that has drifted.',
-  'gemini': 'PLATFORM NOTE\nYou are running as a Gemini Gem. Your extended context allows deep campaign awareness across long sessions. Maintain a running internal log of world state, character development, and plot threads throughout the campaign. If the player types /fix_state, provide a clear readout of your current understanding and adjust based on the player\'s corrections.'
+  'gemini': 'PLATFORM NOTE\nYou are running as a Gemini Gem. Your extended context allows deep campaign awareness across long sessions. Maintain a running internal log of world state, character development, and plot threads throughout the campaign. If the player types /fix_state, provide a clear readout of your current understanding and adjust based on the player\'s corrections.',
+  'grok': 'PLATFORM NOTE\nYou are running as a Custom Agent in Grok, paired with a Workspace holding your persistent files and world documents. Treat any uploaded Workspace file as your source of truth for world state. Maintain detailed internal tracking of campaign state: characters, relationships, events, world facts. If the player types /fix_state, summarise your current understanding of the campaign state clearly and invite the player to correct anything that has drifted.'
 };
 
 var AGENCY = 'AGENCY RULES\nNever narrate the player character\'s thoughts, words, or actions — describe the world and wait for the player to act. If an NPC makes a proposal or initiates something, present it and stop; the player decides the response. Never fast-forward time, skip scenes, or summarise travel unless the player explicitly asks to. If the player attempts something unlikely or impossible, describe the consequence honestly — do not silently succeed it on their behalf.';
