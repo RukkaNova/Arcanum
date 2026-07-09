@@ -161,6 +161,16 @@ The group economics are quietly the best in the category: invited friends (up to
 
 ---
 
+## Best AI Roleplay Platform for Collaborative Storytelling: Dunia
+
+[Dunia](/clients/dunia) declines the sandbox-vs-structure fight most platforms on this list are having. You generate a world, then play inside it with an author's toolkit layered on top: edit any previous message, branch the story into an alternate timeline without losing the one you already told. It lands between AI Dungeon and Friends & Fables — less freeform than the former, less mechanically rigorous than the latter — because it's optimising for prose quality and consistent NPCs, not for either end of that spectrum.
+
+The trade is real: little mechanical progression, no stat-based advancement, no tactical combat — fights resolve narratively. If you want a game system, look elsewhere on this list. If what you actually want is an interactive novel with a narrator who holds a world together, this is one of the better options we've tested.
+
+**Full review:** [Dunia Review](/blog/dunia-review)
+
+---
+
 ## Beyond Platforms: Build Your Own AI RPG with Arcanum Originals
 
 All the platforms above run their own backend. Arcanum Originals takes a different approach: engineered game engines you download as files and load directly into ChatGPT, Claude, or Gemini. No subscription beyond your existing AI.

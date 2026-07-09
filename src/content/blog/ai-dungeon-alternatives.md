@@ -111,6 +111,15 @@ The catch is cost. Everything runs on gems, and the art and narration that justi
 **Solves:** production values, mobile experience, co-op play
 **Cost:** free daily gem allowance (~30 actions); subscriptions and gem packs for regular play — [full review](/blog/fableai-review)
 
+## 10. Dunia — Best for Editorial Control Over Your Story
+
+If what frustrated you about AI Dungeon was having no way to fix a bad turn — a plot thread you didn't want, a scene that landed wrong — **[Dunia](/clients/dunia)** solves it directly: edit any previous message, or branch the story into an alternate timeline without losing the version you already played. World creation is fast, NPCs hold their personalities better than most competitors, and the prose is a clear step up from the category average.
+
+The catch is the same one Hidden Door makes from a different angle: this isn't really a game system. Little mechanical progression, no tactical combat, narrative-only resolution. Come for the writing and the authorial control; don't come for a ruleset.
+
+**Solves:** no way to fix a bad turn, weak prose, inconsistent NPCs
+**Cost:** free to start, no credit card required; credit-based for ongoing play — [full review](/blog/dunia-review)
+
 ## The Category AI Dungeon Never Addressed
 
 One angle conspicuously absent from most "AI Dungeon alternatives" lists: engineered LLM-native systems — games designed specifically to run inside the frontier models you already pay for, without requiring a new platform, account, or subscription.
@@ -131,5 +140,6 @@ AI Dungeon was always a standalone platform. What it never offered was a way to 
 | Want total control | SillyTavern + KoboldAI |
 | Want writing quality | NovelAI |
 | Want multiplayer | Friends & Fables |
+| Want to edit/branch your story | Dunia |
 
 The era of AI Dungeon being the default answer to "where do I do AI roleplay" is genuinely over. The question now is which alternative fits your specific frustration — and in 2026, there are genuinely good answers for the first time.
