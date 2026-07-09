@@ -71,6 +71,12 @@ This creates a situation where free users receive a fun but sometimes chaotic ex
 
 For casual storytelling, this may not be a major problem. For players seeking deep, persistent campaigns lasting dozens of hours, it can become frustrating.
 
+## Latitude's Own Fix: AI Dungeon vs Voyage
+
+Latitude, the studio behind AI Dungeon, is clearly aware of the complaints above — because it built the answer to them itself. Voyage is Latitude's structured successor to AI Dungeon, aimed squarely at the frustration that builds up over long sessions: nothing you do ever really matters, because the story bends around you no matter what you try or how badly you fail.
+
+Where AI Dungeon runs on pure narrative fiat, Voyage introduces real dice, skill checks, hit points, and permanent character death, so risk and failure carry actual weight. It's the same lineage of technology, rebuilt around consequence instead of infinite accommodation. It's currently invite-only beta and leans mobile-first, so it isn't a drop-in replacement for AI Dungeon today — the two serve genuinely different appetites, one rewarding total creative freedom and the other rewarding earned outcomes. We break down the full tradeoff in our [Voyage review](/blog/voyage-review).
+
 ## The Privacy Controversy Still Affects Trust
 
 No honest AI Dungeon review would be complete without mentioning the platform's most controversial chapter.
