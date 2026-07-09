@@ -9,7 +9,7 @@ tags: ["NovelAI", "NovelAI review", "AI writing", "AI storytelling", "Lorebook",
 
 There's a question worth settling before you subscribe to NovelAI: do you want to *write* a story, or do you want to *play* one? Because NovelAI answers the first question better than almost anything else on the market, and the second one less well than it used to. Get the distinction right and it's a joy. Get it wrong and you'll spend a subscription wondering why the most beautiful prose engine you've ever used keeps tripping over its own plot.
 
-You'll find NovelAI in our [client directory](/clients/novelai), and weighed directly against its old rival in [AI Dungeon vs NovelAI](/blog/ai-dungeon-vs-novelai). This is the full review.
+You'll find NovelAI in our [client directory](/clients/novelai), and weighed directly against its old rival in [AI Dungeon vs NovelAI](/blog/ai-dungeon-vs-novelai). This is the full review. (For the broader write-vs-play question this opens with, see [text-based RPG vs. AI interactive fiction](/blog/text-based-rpg-interactive-fiction).)
 
 ## What NovelAI Is
 

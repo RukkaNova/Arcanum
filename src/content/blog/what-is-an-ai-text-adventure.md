@@ -12,7 +12,7 @@ A **traditional text adventure** — *Choose Your Own Adventure*, *Zork*, the or
 
 An **AI text adventure** replaces that script with a large language model. There is no page 47. The dragon exists because the AI decided it fits the scene, or doesn't — because you talked your way past it. Every outcome is generated on the fly, in response to exactly what you typed, in the exact moment you typed it. The ceiling is the model's capacity to imagine. The floor is whatever you bring.
 
-That shift has quietly produced one of the most interesting genres in interactive fiction.
+That shift has quietly produced one of the most interesting genres in interactive fiction. (If you're weighing this against a tool built for *writing* a story rather than playing one, see [text-based RPG vs. AI interactive fiction](/blog/text-based-rpg-interactive-fiction) — this page covers the play side in full.)
 
 ## What Actually Makes It Different
 

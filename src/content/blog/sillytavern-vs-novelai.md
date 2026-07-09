@@ -21,7 +21,7 @@ faq:
 
 If you're choosing between **SillyTavern and NovelAI**, the cleanest way to cut through it is to answer one question first: do you want to *write* a story, or *play* one? [NovelAI](/clients/novelai) is an all-in-one writing studio built around its own fiction-tuned models — you author and steer long-form prose in its editor. [SillyTavern](/blog/sillytavern-guide) is a free, local front-end with no model of its own — you connect whatever model you like and roleplay with characters through a deeply configurable interface. One is a novelist's workstation; the other is a roleplayer's cockpit.
 
-They overlap enough to get compared — both are enthusiast-grade, both are unfiltered, both lean on a lorebook for worldbuilding — but they're optimised for opposite things. This compares them on what actually decides it: the model, prose quality, worldbuilding and memory, control, the filter, and price.
+They overlap enough to get compared — both are enthusiast-grade, both are unfiltered, both lean on a lorebook for worldbuilding — but they're optimised for opposite things. This compares them on what actually decides it: the model, prose quality, worldbuilding and memory, control, the filter, and price. (For the write-vs-play question in general, beyond just these two, see [text-based RPG vs. AI interactive fiction](/blog/text-based-rpg-interactive-fiction).)
 
 ## The Short Version
 
