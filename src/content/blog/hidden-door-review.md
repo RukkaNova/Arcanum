@@ -11,7 +11,7 @@ faq:
   - q: "Is Hidden Door like AI Dungeon?"
     a: "No — they sit at opposite ends of the field. AI Dungeon is a freeform simulation where the model improvises anything you type. Hidden Door is a narrative engine that assembles stories from a hand-authored trope library, which makes it far more coherent but means you cannot create at will."
   - q: "Can you create your own world in Hidden Door?"
-    a: "Yes. Personal worlds are available on the free tier, and subscribers get Atlas, the world-building and publishing toolkit. Published creators earn money when other players play in their worlds — Hidden Door is the only major platform paying world builders."
+    a: "Yes. Personal worlds are available on the free tier, and subscribers get Atlas, the world-building and publishing toolkit. Published creators earn money when other players play in their worlds — one of the only platforms paying world builders this way, alongside Dunia's community creator revenue share."
 ---
 
 Every platform in our [client directory](/clients) sits somewhere on one axis: how much of the world is simulated, and how much is narrated. [AI Dungeon](/blog/ai-dungeon-review) and [Friends & Fables](/blog/friends-and-fables-review) live toward the simulation end — open systems that track state and let you push on the world to see what gives. Hidden Door is the purest example we have reviewed of the opposite pole. It is not a simulation at all. It is a narrative engine, and once you understand that, everything it does brilliantly and everything that frustrated us falls into place.
@@ -50,9 +50,9 @@ Every free-generation platform we review is fighting that war with retrieval sys
 
 ## Creators Get Paid
 
-The feature that gives Hidden Door a pull nothing else in the field has: world builders and IP owners earn money when other people play in their worlds.
+A feature most of the field still doesn't have: world builders and IP owners earn money when other people play in their worlds.
 
-Subscribers get Atlas, the world-building and publishing toolkit, and published worlds generate revenue for their creators. Combine that with the rights-holder partnerships at the platform's foundation and you get something genuinely novel: a place where a professional creative with a fanbase can put a world and be compensated for the play it attracts, rather than donating it to a platform's content pool. For authors, filmmakers, and serious world-builders deciding where to invest, that answer exists nowhere else — and we think it makes the project attractive in a way its competitors have not noticed.
+Subscribers get Atlas, the world-building and publishing toolkit, and published worlds generate revenue for their creators. Combine that with the rights-holder partnerships at the platform's foundation and you get something genuinely novel: a place where a professional creative with a fanbase can put a world and be compensated for the play it attracts, rather than donating it to a platform's content pool. [Dunia](/blog/dunia-review) is the other platform in our directory paying creators — a 20% community revenue share — but Hidden Door's model is built on licensed IP partnerships specifically, a heavier and more formal commitment than a general revenue-share program.
 
 ## Pricing
 
@@ -62,7 +62,7 @@ For how this stacks up against the rest of the roster, the [platform comparison 
 
 ## Verdict: 3/5
 
-Hidden Door is the most coherent AI storyteller we have tested, and the only platform paying the people who build its worlds. It earns real points for both. But the same architecture that delivers that coherence takes the pen out of your hand: you are a co-author working inside someone else's deck of cards, never the god of your own world. Players coming from the simulation end of the field — the AI Dungeon lineage, the tabletop-structure platforms — will feel the walls fast, and no amount of polish makes the walls move.
+Hidden Door is the most coherent AI storyteller we have tested, and one of the only platforms paying the people who build its worlds. It earns real points for both. But the same architecture that delivers that coherence takes the pen out of your hand: you are a co-author working inside someone else's deck of cards, never the god of your own world. Players coming from the simulation end of the field — the AI Dungeon lineage, the tabletop-structure platforms — will feel the walls fast, and no amount of polish makes the walls move.
 
 If you want a story that holds together inside a world you love, this is the best-built version of that on the market. If you want to create at will, look at the [simulation side of the directory](/blog/best-ai-roleplay-platforms) instead. 3 out of 5.
 
@@ -75,4 +75,4 @@ Yes, with real limits. The free tier gives you unlimited stories and turns per d
 No — they sit at opposite ends of the field. AI Dungeon is a freeform simulation where the model improvises anything you type. Hidden Door is a narrative engine that assembles stories from a hand-authored trope library, which makes it far more coherent but means you cannot create at will.
 
 **Can you create your own world in Hidden Door?**
-Yes. Personal worlds are available on the free tier, and subscribers get Atlas, the world-building and publishing toolkit. Published creators earn money when other players play in their worlds — Hidden Door is the only major platform paying world builders.
+Yes. Personal worlds are available on the free tier, and subscribers get Atlas, the world-building and publishing toolkit. Published creators earn money when other players play in their worlds — one of the only platforms paying world builders this way, alongside Dunia's community creator revenue share.

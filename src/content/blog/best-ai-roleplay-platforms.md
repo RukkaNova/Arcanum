@@ -145,7 +145,7 @@ Mechanical transparency is the other distinguishing feature: Difficulty Classes,
 
 Every other platform on this list fights the same war: keeping a freely generating AI coherent over a long campaign. [Hidden Door](/clients/hidden-door) refused to fight it. It is a narrative engine, not a simulation — game state lives in cards, and stories are assembled from a hand-authored trope library inside licensed and public-domain worlds (Call of Cthulhu, Pride and Prejudice, The Wizard of Oz, The Crow) built on actual rights-holder partnerships.
 
-The result is the most coherent AI storyteller we have tested: no memory drift, no dissolving plot threads, no world that stops making sense at turn fifty. The trade is severe, though — you cannot create at will, and combat and inventory are narrative-based rather than simulated. Sandbox players will feel the walls fast. It is also the only major platform where world builders get paid when others play their worlds, which makes it uniquely attractive for creators.
+The result is the most coherent AI storyteller we have tested: no memory drift, no dissolving plot threads, no world that stops making sense at turn fifty. The trade is severe, though — you cannot create at will, and combat and inventory are narrative-based rather than simulated. Sandbox players will feel the walls fast. It is also one of the only platforms where world builders get paid when others play their worlds — built on licensed-IP partnerships here, versus [Dunia](/clients/dunia)'s community creator revenue share — which makes it attractive for anyone thinking about publishing rather than just playing.
 
 **Full review:** [Hidden Door Review](/blog/hidden-door-review)
 

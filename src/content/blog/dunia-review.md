@@ -33,7 +33,9 @@ The standout mechanical feature is the **branching timeline system**: you can ex
 
 Here's the honest trade: **Dunia is not really a game system.** There's little mechanical progression, no meaningful stat-based advancement, and no tactical combat — fights resolve narratively rather than on a grid or through dice. If part of what you want from an AI RPG is the *game* half of that phrase — rules that push back, numbers that matter, a character sheet that grows — Dunia won't give it to you.
 
-It's also **credit-based rather than unlimited**, which shapes how you play: heavier or ongoing use draws down credits instead of running on a flat subscription with no ceiling. Check [Dunia's own pricing page](https://dunia.gg/credits) for current terms.
+It's also **credit-based rather than unlimited**, which shapes how you play: the free tier gives 75 credits a day with no rollover, and paid tiers ($19.95/mo for 200/day, $39.95/mo for 400/day, both with rollover) buy you more daily runway rather than an uncapped subscription. World creation and session slots are unlimited at every tier, including free — only the daily credit budget changes. One-time credit packs exist too, for players who'd rather top up occasionally than subscribe.
+
+One nice wrinkle: Dunia pays its creators. Publish a world and you earn 20% of what other players spend in it — a general revenue-share model, distinct from [Hidden Door](/blog/hidden-door-review)'s licensed-IP creator payouts, but a genuine reason to build here if you have an audience.
 
 ## Who It's For
 

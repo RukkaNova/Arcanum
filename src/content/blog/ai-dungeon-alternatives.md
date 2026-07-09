@@ -97,7 +97,7 @@ Like Aevum, it is a free download with no new platform required. Unlike AI Dunge
 
 If what drove you away from AI Dungeon was watching a good campaign dissolve — forgotten characters, dropped threads, a world that stopped making sense — **[Hidden Door](/clients/hidden-door)** is the alternative built specifically against that failure. It is a narrative engine rather than a simulation: stories are assembled from a hand-authored trope library inside licensed worlds (Call of Cthulhu, Pride and Prejudice, The Wizard of Oz, The Crow), with game state tracked as cards. Coherence is close to absolute.
 
-The trade-off is the inverse of AI Dungeon's: you cannot create at will. Combat and inventory are narrative-based, not simulated, and mid-scene you play the cards the engine deals. Come for a guided story that holds together; do not come to be the god of the world. Creators get a unique deal here too — published world builders earn money when others play their worlds.
+The trade-off is the inverse of AI Dungeon's: you cannot create at will. Combat and inventory are narrative-based, not simulated, and mid-scene you play the cards the engine deals. Come for a guided story that holds together; do not come to be the god of the world. Creators get a real deal here too — published world builders earn money when others play their worlds, on the strength of the platform's licensed-IP partnerships.
 
 **Solves:** memory drift, incoherent campaigns, world consistency
 **Cost:** free tier (unlimited turns, 5 worlds); subscription for full catalog — [full review](/blog/hidden-door-review)

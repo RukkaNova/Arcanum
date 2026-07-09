@@ -25,7 +25,7 @@ The free tier is unusually generous where it counts: unlimited stories and turns
 
 Coherence, first and above everything. Because the engine works from bounded, authored components instead of open-ended generation, it solves the consistency problems that platforms like [AI Dungeon](/clients/ai-dungeon) still struggle with. Stories do not drift. Characters do not forget who they are. The world around turn fifty behaves like the world at turn five.
 
-Second — and this is the feature the rest of the field misses entirely — creators get paid. World builders and IP owners earn money when other people play in their worlds. No other platform in this directory has a working answer to "why would a serious world-builder invest here," and Hidden Door does.
+Second — a feature most of the field still misses — creators get paid. World builders and IP owners earn money when other people play in their worlds. [Dunia](/clients/dunia) is the other platform in this directory with a working answer here (a 20% revenue share for creators), but Hidden Door's is built on actual licensed-IP partnerships, which is a different, heavier kind of commitment to the model.
 
 ## What It Does Best (and Worst)
 

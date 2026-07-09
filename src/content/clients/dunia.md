@@ -31,7 +31,19 @@ Worst for anyone who wants a game system. There's little mechanical progression,
 
 ## Pricing
 
-Freemium, credit-based: you can start without a credit card, and heavier or ongoing play draws down credits rather than running on a flat unlimited subscription. Check [Dunia's own pricing page](https://dunia.gg/credits) for current tiers and costs — they weren't stable enough at time of writing to reprint here.
+Freemium, credit-based, with genuinely unlimited world creation and session slots at every tier — only the daily credit allowance changes.
+
+| Plan | Cost | Credits/Day | Rollover |
+|------|------|-------------|----------|
+| Free | $0 | 75/day | None |
+| Imagineer | $19.95/mo | 200/day | Up to 3 days (cap 600) |
+| Myth Maker | $39.95/mo | 400/day | Up to 6 days (cap 2400) |
+
+One-time credit packs are also available (300 for $3, up to 8,910 for $81 at a 10% bonus) for occasional players who'd rather top up than subscribe. Only paid tiers count toward Dunia's creator revenue share — see below.
+
+## Creators Earn Too
+
+Dunia pays its world-builders: publish a world, and you earn 20% of what other players spend inside it. It's a different model from [Hidden Door](/clients/hidden-door)'s licensed-IP creator payouts — this is a general community revenue share rather than rights-holder partnerships — but it's a genuine reason for a creator with an audience to build here rather than elsewhere.
 
 ## Verdict
 
