@@ -10,7 +10,7 @@ ChatGPT is where most people meet AI roleplay for the first time. It's the model
 
 That abundance is the blessing and the curse. Most of those Custom GPTs are thin: a clever name, a two-paragraph prompt, and nothing underneath that survives a real campaign. A handful are genuinely engineered, and they're excellent. The difference between the two isn't obvious from the store listing — it only shows up around turn thirty, when the thin ones start forgetting your character and the good ones don't.
 
-This is the player's guide to ChatGPT RPG. What ChatGPT does well as a game master, how Custom GPTs turn it into a real game container, where it genuinely falls short compared to Claude and Gemini, and how to start — whether you want to browse the store or build your own.
+This is the player's guide to ChatGPT RPG. What ChatGPT does well as a game master, how Custom GPTs turn it into a real game container, where it genuinely falls short compared to Claude and Gemini, and how to start — whether you want to browse the store or build your own. For the direct head-to-head on all three, see [ChatGPT vs Claude vs Gemini for roleplay](/blog/chatgpt-vs-claude-vs-gemini-roleplay).
 
 ## Why ChatGPT for RPGs
 

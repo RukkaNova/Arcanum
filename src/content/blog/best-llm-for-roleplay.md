@@ -16,7 +16,7 @@ faq:
     a: "Claude, because engineered RPG systems live or die on instruction-following and Claude holds complex rule sets most reliably across a long session. GPT-5.5 is a close second. This is why the Arcanum Originals are optimised for Claude Projects, with ChatGPT Custom GPTs and Gemini Gems as strong alternatives."
 ---
 
-Picking the best LLM for roleplay in 2026 is a genuinely different question from picking the best LLM for coding or research — the qualities that matter are different, the tradeoffs hit differently, and the community consensus has shifted meaningfully over the past year. This guide is based on what the actual roleplay community uses and says, not benchmark scores alone.
+Picking the best LLM for roleplay in 2026 is a genuinely different question from picking the best LLM for coding or research — the qualities that matter are different, the tradeoffs hit differently, and the community consensus has shifted meaningfully over the past year. This guide is based on what the actual roleplay community uses and says, not benchmark scores alone. If you just want the three mainstream defaults compared head-to-head, see [ChatGPT vs Claude vs Gemini for roleplay](/blog/chatgpt-vs-claude-vs-gemini-roleplay) — this guide goes wider, into Grok, specialist and budget models, and local options.
 
 The short version: there is no single best LLM for all roleplay. The right choice depends on whether you prioritise prose quality, instruction following, context length, content restrictions, or cost. Here is the honest breakdown of each major option.
 

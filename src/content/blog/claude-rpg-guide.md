@@ -12,7 +12,7 @@ Nothing for someone who just wants to play.
 
 That gap is worth naming, because it reflects a real mismatch between where the conversation about Claude RPGs happens and what Claude is actually capable of as a game master. Developers found Claude first and built tools with it. Players haven't been told yet that the same model sitting in their browser — the one they use to draft emails and summarise documents — is one of the most capable solo RPG engines available today, and that setting it up takes about five minutes.
 
-This is the player's guide to Claude RPG. What Claude does that other models don't, how to build a proper container for a long campaign, and the best games already built for it.
+This is the player's guide to Claude RPG. What Claude does that other models don't, how to build a proper container for a long campaign, and the best games already built for it. If you're weighing Claude against the other two mainstream options, [ChatGPT vs Claude vs Gemini for roleplay](/blog/chatgpt-vs-claude-vs-gemini-roleplay) covers the direct comparison.
 
 ## Why Claude Specifically
 

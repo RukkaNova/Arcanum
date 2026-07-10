@@ -8,7 +8,7 @@ tags: ["Gemini RPG", "Gemini Gems RPG", "AI RPG", "LLM RPG", "Google Gemini role
 
 Most players who want an AI RPG open ChatGPT or Claude by reflex. That choice is usually habit, not analysis. Gemini has a structural advantage those models can't match — one that matters specifically for the thing that breaks most AI campaigns — and almost nobody is building on it.
 
-This guide covers what that advantage is, how to turn Gemini into a proper text RPG using Gems, what genres it handles best, and where it genuinely falls short compared to Claude and ChatGPT. If you've been running AI campaigns on other models and hitting the same walls, the reason Gemini deserves a serious look is worth understanding clearly.
+This guide covers what that advantage is, how to turn Gemini into a proper text RPG using Gems, what genres it handles best, and where it genuinely falls short compared to Claude and ChatGPT. If you've been running AI campaigns on other models and hitting the same walls, the reason Gemini deserves a serious look is worth understanding clearly. For the direct head-to-head on all three, see [ChatGPT vs Claude vs Gemini for roleplay](/blog/chatgpt-vs-claude-vs-gemini-roleplay).
 
 ## The Real Reason to Use Gemini for RPGs
 
