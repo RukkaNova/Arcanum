@@ -25,7 +25,7 @@ Reference files sit behind the prompt here, unlike a prompt-only generalist such
 
 ## Who It's For
 
-Play 8-Bit Kingdoms if you want strategy and consequence over a long arc rather than a single character's story — the succession mechanic rewards exactly the kind of player who enjoys watching choices compound over "in-game" decades. It sits well alongside [Aevum Realm Architect](/arcanum-games/aevum) for anyone building out a kingdom-builder rotation across models, and the wider [best ChatGPT RPG games](/blog/best-chatgpt-rpg-games) round-up maps the rest of the field.
+Play 8-Bit Kingdoms if you want strategy and consequence over a long arc rather than a single character's story — the succession mechanic rewards exactly the kind of player who enjoys watching choices compound over "in-game" decades. It sits well alongside [Aevum Realm Architect](/arcanum-games/aevum) for anyone building out a kingdom-builder rotation across models — see our [full kingdom-builder AI RPG comparison](/blog/best-kingdom-builder-ai-rpgs) for both side by side — and the wider [best ChatGPT RPG games](/blog/best-chatgpt-rpg-games) round-up maps the rest of the field.
 
 Look elsewhere if you'd rather inhabit one character closely across an entire campaign — the dynasty framing means your personal connection to any single ruler is, by design, temporary.
 
