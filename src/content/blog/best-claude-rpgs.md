@@ -28,7 +28,7 @@ Tired of fantasy? **[Star Freighter Drift](/arcanum-games/star-freighter-drift)*
 
 All four run beautifully as **Claude Projects**, which keep each game's rules and world file active across every conversation. The setup is the same for each: create a new Project, paste the game's master prompt into the project's custom instructions, and upload its world file (the Atlas, romance engine, or Star Chart) to the project's Knowledge. Then start a chat inside the project and play.
 
-Download links, files, and full step-by-step setup guides are on each game's page: [Aevum Realm Architect](/arcanum-games/aevum), [The Chronicler](/arcanum-games/the-chronicler), [Eirathis Strider](/arcanum-games/eirathis), and [Star Freighter Drift](/arcanum-games/star-freighter-drift).
+Download links, files, and full step-by-step setup guides are on each game's page: [Aevum Realm Architect](/arcanum-games/aevum), [The Chronicler](/arcanum-games/the-chronicler), [Eirathis Strider](/arcanum-games/eirathis), and [Star Freighter Drift](/arcanum-games/star-freighter-drift) — or see [our full install walkthrough](/blog/how-to-download-and-install-arcanum-rpgs) for the exact Claude Project setup shared across all four.
 
 These four cover the full range of what Claude can do as a game master — strategy, romance, mature adventure, and sci-fi survival. Download whichever calls to you, and find out how good a Claude RPG can actually be.
 
