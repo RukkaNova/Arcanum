@@ -1,10 +1,10 @@
 ﻿---
 title: "Why Your AI Campaign Falls Apart at Turn 50 (and How to Fix It)"
-description: "Your AI RPG starts great, then loses the thread. Why LLM campaigns break down after turn 50 — and the fixes that keep ChatGPT, Claude, or Gemini coherent."
+description: "Your AI RPG starts great, then loses the thread. Why LLM campaigns suffer memory drift after turn 50 — and the fixes for long AI roleplay sessions that keep ChatGPT, Claude, or Gemini coherent."
 section: "guides"
 pubDate: 2026-06-18
-updatedDate: 2026-06-25
-tags: ["AI RPG", "LLM RPG", "AI roleplay tips", "AI memory", "ChatGPT RPG", "Claude RPG", "prompt engineering"]
+updatedDate: 2026-07-10
+tags: ["AI RPG", "LLM RPG", "AI roleplay tips", "AI memory", "AI memory drift", "long AI roleplay session tips", "ChatGPT RPG", "Claude RPG", "prompt engineering"]
 ---
 
 It always starts so well. The first hour of an AI roleplay is magic — vivid scenes, a world that feels alive, characters with spark. Then, somewhere around turn 40 or 50, it quietly falls apart. The game forgets you already paid the blacksmith. A character who died two sessions ago walks into the tavern. Your companions stop having opinions and just wait for you to do things. The story drifts into describing the weather because the model has run out of anything real to say.
@@ -46,6 +46,16 @@ Beyond those three, a few engineering choices keep long campaigns stable:
 - **Agency protection.** Set a hard rule that the model never narrates your character's thoughts, words, or actions — only the world's. This prevents the slow erosion where the model starts deciding things for you. A simple "rewind" command (an "Agency Check") lets you undo any overstep instantly.
 - **A state-correction command.** Even with a log, drift happens. A built-in `/fix_state` style command tells the model to stop, re-read its own log, and present a corrected status. It's a manual reset button for accuracy.
 - **Pacing control.** Long games die when the model fast-forwards through travel and conversations, or bundles five actions into one paragraph. Rules that force it to *halt at thresholds* — stopping at the door instead of walking you through it — keep you in control and keep events legible.
+
+## Quick Tips for Longer AI Roleplay Sessions
+
+If you just want the practical checklist rather than the mechanics behind it:
+
+- **Ask for a status summary every 20–30 turns** and paste it back in as an anchor — this is manual memory compression, and it's the single highest-leverage habit for a long session.
+- **Name the drift when you see it.** If an NPC contradicts something established earlier, say so directly rather than letting the AI paper over it — a direct correction fixes it faster than continuing and hoping it self-corrects.
+- **Keep sessions in the same conversation or Project/Gem** rather than starting fresh chats — restarting loses everything the running context held, even the parts that hadn't drifted yet.
+- **Use a structured memory tool for anything past a couple hours of play.** The free [Campaign Memory Tool](/tools/campaign-memory) tracks state and generates a compression prompt for exactly this purpose.
+- **Prefer a model with a larger context window for very long campaigns.** [Gemini's context advantage](/blog/gemini-rpg-guide) is a genuine structural edge here, not just a spec-sheet number.
 
 ## The Honest Bottom Line
 
