@@ -21,7 +21,7 @@ faq:
 
 An **AI Dungeon Master** is a large language model configured to run a tabletop roleplaying campaign in the role a human Game Master would normally fill: it describes the world, voices every non-player character, adjudicates the rules, and responds to whatever you decide to do — turn by turn, in natural language, with no script written in advance.
 
-That is the whole promise, and in 2026 it is no longer hypothetical. You can sit down tonight, with no group and no scheduling, and play a genuine campaign run entirely by an AI. The harder questions are the ones nobody answers honestly: how does an AI DM actually work under the hood, where does it fall apart, and which one should you actually use? I have spent the better part of two years running campaigns across every serious platform on the market and building my own engines on top of ChatGPT, Claude, and Gemini. This is the guide I wish I'd had at the start.
+That is the whole promise, and in 2026 it is no longer hypothetical. You can sit down tonight, with no group and no scheduling, and play a genuine campaign run entirely by an AI — one specific, structured form of [LLM roleplay](/blog/what-is-llm-roleplay), the broader category this guide's format belongs to. The harder questions are the ones nobody answers honestly: how does an AI DM actually work under the hood, where does it fall apart, and which one should you actually use? I have spent the better part of two years running campaigns across every serious platform on the market and building my own engines on top of ChatGPT, Claude, and Gemini. This is the guide I wish I'd had at the start.
 
 ---
 

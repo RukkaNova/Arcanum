@@ -19,7 +19,7 @@ faq:
     a: "Because the AI's memory is bounded by its context window, and a long solo campaign accumulates more lore and history than fits — so details drift. It's the defining limitation of the format. Database-backed platforms and a deliberate memory routine (like the Campaign Memory Tool) are how you beat it."
 ---
 
-**Solo RPG with AI** means playing a full roleplaying campaign by yourself — no group to assemble, no human Game Master to schedule — with an AI doing the jobs the table normally shares: narrating the world, voicing every NPC, and deciding what happens when you try something. If you've ever wanted to play an RPG but couldn't get four friends free on the same night, this is the format that removes that problem entirely.
+**Solo RPG with AI** means playing a full roleplaying campaign by yourself — no group to assemble, no human Game Master to schedule — with an AI doing the jobs the table normally shares: narrating the world, voicing every NPC, and deciding what happens when you try something. It's [LLM roleplay](/blog/what-is-llm-roleplay) stripped down to one player and one AI. If you've ever wanted to play an RPG but couldn't get four friends free on the same night, this is the format that removes that problem entirely.
 
 It's also not as new as it sounds. Solo roleplaying has its own long tradition — players using oracles, random tables, and "GM emulators" to answer *what happens next?* when there's no GM in the room. AI is simply the most powerful oracle ever built: instead of rolling on a table and interpreting a cryptic result, you ask, and a narrative answer comes back in full prose. That's the shift this guide is about, and how to make the most of it.
 

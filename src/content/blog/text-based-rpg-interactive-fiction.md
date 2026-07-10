@@ -25,7 +25,7 @@ This page draws that line clearly, then routes you to what actually fits each si
 
 ## Where Both Terms Come From
 
-Text adventures are old — *Zork*, *Colossal Cave*, the *Choose Your Own Adventure* books — all built on a fixed script an author wrote in advance. Swap that script for a live language model and you get what we call an [AI text adventure](/blog/what-is-an-ai-text-adventure): every scene generated for exactly what you do next, with no page 47 waiting to be turned to. "Text-based RPG" and "AI interactive fiction" are both descendants of that same shift, and the full history and mechanics of it live on that page. What's worth adding here is the split those older terms don't capture on their own.
+Text adventures are old — *Zork*, *Colossal Cave*, the *Choose Your Own Adventure* books — all built on a fixed script an author wrote in advance. Swap that script for a live language model and you get what we call an [AI text adventure](/blog/what-is-an-ai-text-adventure): every scene generated for exactly what you do next, with no page 47 waiting to be turned to. "Text-based RPG" and "AI interactive fiction" are both descendants of that same shift — specific formats within the wider category of [LLM roleplay](/blog/what-is-llm-roleplay) — and the full history and mechanics of it live on that page. What's worth adding here is the split those older terms don't capture on their own.
 
 ## The Real Split: Playing a Character vs. Writing One
 
