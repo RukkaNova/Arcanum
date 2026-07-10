@@ -102,7 +102,7 @@ If you haven't used Custom GPTs before, the setup takes under five minutes:
 4. Under **Knowledge**, click **Upload files** and add any world files — the Atlas, the Star Chart, whatever the game uses.
 5. Click **Create / Save** and open it to begin.
 
-The GPT persists and can be reopened any time — every session starts from the same instructions and knowledge base, with no re-pasting required. Full step-by-step setup guides for Aevum Realm Architect and Star Freighter Drift are on their release pages.
+The GPT persists and can be reopened any time — every session starts from the same instructions and knowledge base, with no re-pasting required. Full step-by-step setup guides for Aevum Realm Architect and Star Freighter Drift are on their release pages, or see [our full install walkthrough](/blog/how-to-download-and-install-arcanum-rpgs) for every Arcanum game on every platform.
 
 ## The Bottom Line on ChatGPT RPG in 2026
 

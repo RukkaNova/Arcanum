@@ -82,7 +82,7 @@ If you haven't used Gems before, the setup takes under five minutes:
 4. Use the **Add knowledge / upload files** option to attach any world files — the Atlas, the Star Chart, whatever the game uses.
 5. Save the Gem, then select it to begin your first session.
 
-The Gem persists across all your conversations. Every new session inside it starts from the same instructions and knowledge base, with no re-pasting required. That persistence is what makes a Gemini Gem a genuine home for a long campaign rather than a one-off chat. Full step-by-step setup guides for both Eirathis Strider and Star Freighter Drift are on their respective pages.
+The Gem persists across all your conversations. Every new session inside it starts from the same instructions and knowledge base, with no re-pasting required. That persistence is what makes a Gemini Gem a genuine home for a long campaign rather than a one-off chat. Full step-by-step setup guides for both Eirathis Strider and Star Freighter Drift are on their respective pages, or see [our full install walkthrough](/blog/how-to-download-and-install-arcanum-rpgs) for every Arcanum game on every platform.
 
 ## The Gemini RPG Ecosystem Is Still Early — But Worth Your Time Now
 

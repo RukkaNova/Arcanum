@@ -81,7 +81,7 @@ If you want more structure without leaving the model you already use:
 - **[Claude](/blog/claude-rpg-guide)** generally handles long, rule-heavy campaigns most consistently.
 - **[Gemini](/blog/gemini-rpg-guide)** has the longest context window of the three, which directly helps campaigns stay coherent longer.
 
-If you'd rather load a complete, pre-built game than improvise from scratch, the [Arcanum Originals](/arcanum-games) are free downloads that run on all three — setup is a five-minute copy-paste, and each game page has step-by-step instructions for ChatGPT, Claude, and Gemini. For the widest view of everything worth playing across every model and platform, [our complete directory of LLM RPG games](/blog/llm-rpg-games) is the place to start browsing.
+If you'd rather load a complete, pre-built game than improvise from scratch, the [Arcanum Originals](/arcanum-games) are free downloads that run on all three — setup is a five-minute copy-paste, and [our full install walkthrough](/blog/how-to-download-and-install-arcanum-rpgs) covers ChatGPT, Claude, and Gemini step by step. For the widest view of everything worth playing across every model and platform, [our complete directory of LLM RPG games](/blog/llm-rpg-games) is the place to start browsing.
 
 ## Frequently Asked Questions
 
