@@ -11,6 +11,8 @@ tags: ["Isekai RPG review", "Vantiel RPG", "ChatGPT RPG", "Custom GPT RPG", "ise
 
 Most AI RPGs I review fail at the world and survive on their systems. [Isekai RPG](/games/isekai-rpg), the Custom GPT by Vantiel RPG, is the rare inversion: the systems are light, almost minimalist, but the world of Vantiel is one of the most genuinely original settings I've played inside a frontier model. That makes it a strange game to score — and a perfect one to learn from, because everything that's frustrating about it is the same thing that's frustrating about LLM roleplay in general, just more visible.
 
+*(Not to be confused with [Vantiel from Cortana Labs](/blog/vantiel-review) — a different, unrelated Custom GPT that happens to share the name.)*
+
 So this review is going to do something a little different from a feature checklist. The features are easy to summarize and I'll get them out of the way quickly. The real question with Isekai RPG isn't *what it does* — it's *whether you can keep it doing it* across a long campaign. That's where the game lives or dies, and it's where almost no other review of an AI RPG actually goes.
 
 ## The World Is the Reason You Play

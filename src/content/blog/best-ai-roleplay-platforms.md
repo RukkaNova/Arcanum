@@ -171,6 +171,10 @@ The trade is real: little mechanical progression, no stat-based advancement, no 
 
 ---
 
+## Worth Watching, Not Yet a Top Pick: Vantiel
+
+[Vantiel](/clients/vantiel) deserves a mention for its world alone — genuinely well-built lore and above-average narration, running as a Custom GPT on your own ChatGPT subscription. The promotional site is polished and promises real reactivity and persistent memory. The catch: none of that is built yet. Underneath the marketing, it's ChatGPT running on its native context window, with the same drift and forgetting as any unmanaged freeform session. Good for the writing and the world right now; not the engine its own pitch describes. [Full review](/blog/vantiel-review).
+
 ## Beyond Platforms: Build Your Own AI RPG with Arcanum Originals
 
 All the platforms above run their own backend. Arcanum Originals takes a different approach: engineered game engines you download as files and load directly into ChatGPT, Claude, or Gemini. No subscription beyond your existing AI.
