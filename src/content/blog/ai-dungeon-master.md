@@ -113,7 +113,7 @@ Each of these is reviewed in depth, first-hand, in [the Codex](/blog) — and co
 
 A quick filter, by what you actually want:
 
-**You want to play D&D 5e, properly** → [AI Realm](/clients/ai-realm) for accessible solo 5e; [Friends & Fables](/clients/friends-and-fables) for the full VTT experience; [Taverna](/clients/taverna) if your group lives in Discord.
+**You want to play D&D 5e, properly** → [AI Realm](/clients/ai-realm) for accessible solo 5e; [Friends & Fables](/clients/friends-and-fables) for the full VTT experience; [Taverna](/clients/taverna) if your group lives in Discord. Running it yourself instead? [How to play D&D solo with AI](/blog/how-to-play-dnd-solo-with-ai) is the step-by-step guide.
 
 **You want a solo campaign that truly remembers** → [RoleForge](/clients/roleforge) for the most reliable persistence.
 

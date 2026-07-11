@@ -96,7 +96,7 @@ For the wider field — solo persistence engines, async play, and non-5e systems
 
 ## Running Your Own AI D&D Game on ChatGPT, Claude, or Gemini
 
-You don't need a dedicated platform. If you have ChatGPT, Claude, or Gemini, you can run a 5e-style game yourself — the missing piece is a good system prompt that tells the model to track state, enforce checks, and move one beat at a time.
+You don't need a dedicated platform. If you have ChatGPT, Claude, or Gemini, you can run a 5e-style game yourself — the missing piece is a good system prompt that tells the model to track state, enforce checks, and move one beat at a time. For the actual step-by-step walkthrough — Session Zero, character creation, running combat, and keeping a long campaign from drifting — see [how to play D&D solo with AI](/blog/how-to-play-dnd-solo-with-ai).
 
 A few pointers for doing it well, and doing it cleanly:
 

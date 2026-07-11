@@ -90,7 +90,7 @@ For a persistent game, paste it as a Custom GPT rather than at the top of a plai
 3. If you're playing in a homebrew setting, upload your world notes under **Knowledge** so the model can consult them mid-session.
 4. Save. Every new chat with that GPT opens with the Dungeon Master — and its 5e-style ruleset — already running.
 
-Without a paid plan, paste the same prompt at the top of a normal ChatGPT conversation. It works for that session; you just lose the saved, shareable container. For the deeper mechanics of Custom GPTs and how ChatGPT compares to Claude and Gemini as a game master, see the [ChatGPT RPG guide](/blog/chatgpt-rpg-guide). For two more ready-to-paste examples in different genres, see [ChatGPT RPG prompts](/blog/chatgpt-rpg-prompts).
+Without a paid plan, paste the same prompt at the top of a normal ChatGPT conversation. It works for that session; you just lose the saved, shareable container. For the deeper mechanics of Custom GPTs and how ChatGPT compares to Claude and Gemini as a game master, see the [ChatGPT RPG guide](/blog/chatgpt-rpg-guide). For two more ready-to-paste examples in different genres, see [ChatGPT RPG prompts](/blog/chatgpt-rpg-prompts). And once the prompt is running, [how to play D&D solo with AI](/blog/how-to-play-dnd-solo-with-ai) walks through Session Zero, your first scene, and combat step by step.
 
 ## If You Want a Dedicated 5e Platform Instead
 
