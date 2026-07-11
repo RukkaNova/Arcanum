@@ -28,7 +28,7 @@ Players can see what Franz is working with and edit it. That is not a gimmick. I
 
 The practical effect is that characters maintain their identities across sessions more reliably than any other platform I've tested. The NPC you developed a complicated relationship with three sessions ago remembers it. The sword you lost to a river two weeks back doesn't quietly reappear. That consistency is what makes a campaign feel real.
 
-If you've read our [Janitor AI review](/blog/janitor-ai), you'll recognize the contrast: Janitor AI builds its experience around characters, not continuity. Friends & Fables builds it around continuity, and it shows.
+If you've read our [Janitor AI review](/blog/janitor-ai), you'll recognize the contrast: Janitor AI builds its experience around characters, not continuity. Friends & Fables builds it around continuity, and it shows. We break that contrast down axis by axis in [Janitor AI vs Friends & Fables](/blog/janitor-ai-vs-friends-and-fables).
 
 ## The Tactical Layer
 

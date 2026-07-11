@@ -76,7 +76,7 @@ The result is the persistence Janitor AI structurally can't offer: characters, r
 
 If you want not just memory but *mechanics* — and the option to play with other people — **[Friends & Fables](/clients/friends-and-fables)** is the most complete AI tabletop available. It runs a real ruleset with stats, dice, and hex-map combat, a multi-model AI Game Master that maintains session state far better than a single-model chat, and synchronous multiplayer for up to six players.
 
-It's a different experience from character chat, not a drop-in clone, and it's a premium subscription that rewards engagement. But if "I want it to be an actual game with a group" was the itch Janitor AI couldn't reach, this goes furthest. **[Full review](/blog/friends-and-fables-review)** (rated 4.5/5).
+It's a different experience from character chat, not a drop-in clone, and it's a premium subscription that rewards engagement. But if "I want it to be an actual game with a group" was the itch Janitor AI couldn't reach, this goes furthest. **[Full review](/blog/friends-and-fables-review)** (rated 4.5/5) — or see the direct axis-by-axis breakdown in [Janitor AI vs Friends & Fables](/blog/janitor-ai-vs-friends-and-fables).
 
 **Solves:** chat-not-game, structure, multiplayer, memory
 **Cost:** premium subscription

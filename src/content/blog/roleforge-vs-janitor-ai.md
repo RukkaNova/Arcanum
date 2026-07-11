@@ -69,7 +69,7 @@ Janitor AI is free on its in-house model, with bring-your-own-model costing what
 
 **Choose RoleForge if** you want a solo campaign that genuinely remembers what happened, are willing to apply for alpha access, and are comfortable with a world that pushes back rather than bending to a clever line of dialogue. **[Full RoleForge review](/blog/roleforge-review)** (unrated — closed alpha).
 
-**Want a group instead of solo?** RoleForge's multiplayer is roadmap-only for now. [Friends & Fables](/clients/friends-and-fables) is the strongest current option for a structured group campaign with a real AI Game Master.
+**Want a group instead of solo?** RoleForge's multiplayer is roadmap-only for now. [Friends & Fables](/clients/friends-and-fables) is the strongest current option for a structured group campaign with a real AI Game Master — see [Janitor AI vs Friends & Fables](/blog/janitor-ai-vs-friends-and-fables) for that comparison directly.
 
 **Not sure either fits?** If Janitor AI's lack of structure is the problem, our [Janitor AI alternatives guide](/blog/janitor-ai-alternatives) maps the full field by what specifically frustrated you — including RoleForge as the top pick for exactly the "I want a world, not a chat" migration.
 
