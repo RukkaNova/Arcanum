@@ -1,9 +1,10 @@
 ﻿---
 title: "11 Best LLM RPG Games You Can Play Inside ChatGPT, Claude & Gemini Right Now"
-description: "The best LLM RPG games inside ChatGPT, Claude, and Gemini — no install needed. From kingdom-builders to space-smuggler sims, these are the deepest in 2026."
+description: "The best LLM for RPG play inside ChatGPT, Claude, and Gemini — no install needed. From kingdom-builders to space-smuggler sims, these are the deepest in 2026."
 section: "lists"
 pubDate: 2026-06-20
-tags: ["LLM RPG", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "AI RPG", "best AI RPG 2026", "text RPG"]
+updatedDate: 2026-07-11
+tags: ["LLM RPG", "best LLM for RPG", "ChatGPT RPG", "Claude RPG", "Gemini RPG", "AI RPG", "best AI RPG 2026", "text RPG"]
 ---
 
 Most "AI RPG" lists are about standalone apps and Steam games — products you download, accounts you create, subscriptions you pay for. This list is different. Every entry here runs directly inside ChatGPT, Claude, or Gemini — the AI you already use, on the device you already have, with no install, no new account, and no paywall. Load a game, start playing. That's the whole setup.
