@@ -61,7 +61,7 @@ For a short one-shot, this doesn't matter much. For a long, single continuous ca
 
 This is closer to a tie than the marketing of any of the three would suggest. ChatGPT, Claude, and Gemini all apply comparable content guardrails — none of them is the permissive choice, and all three can interrupt dramatic, tense, or morally complex scenes that have nothing to do with explicit content. Anecdotally, Claude's defaults are occasionally the strictest of the three on ambiguous material, but the gap between all three is smaller than the gap between any of them and a genuinely unrestricted option.
 
-If the filter is your actual frustration, none of these three solves it. Grok is meaningfully less filtered by design, and a local open-weight model run through [SillyTavern](/blog/sillytavern-guide) removes the filter entirely. Our [best LLM for roleplay guide](/blog/best-llm-for-roleplay) and [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay) both cover that territory in depth — this comparison stays focused on the three mainstream defaults.
+If the filter is your actual frustration, none of these three solves it. Grok is meaningfully less filtered by design, and a local open-weight model run through [SillyTavern](/blog/sillytavern-guide) removes the filter entirely. Our [best LLM for roleplay guide](/blog/best-llm-for-roleplay) and [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay) both cover that territory in depth — this comparison stays focused on the three mainstream defaults. If one of these three is refusing scenes you'd expect it to allow, [why AI refuses to roleplay](/blog/ai-refuses-to-roleplay) covers the specific framing fixes before you conclude the filter itself is the wall.
 
 ## Price and Access
 

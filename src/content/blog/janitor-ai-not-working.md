@@ -74,6 +74,7 @@ Sometimes it "works" but the output is broken — empty messages, replies that s
 - **Regenerate** the reply first — a single bad generation is often a one-off.
 - **Temperature too high** can produce chaotic or garbled output; nudge it down for steadier replies.
 - **Context too full.** A very long conversation can strain the model, cause dropped memory, or trigger errors. Summarising or starting a fresh chat helps — and this ceiling is inherent to every model, as explained in [why LLMs forget](/blog/why-llms-forget).
+- **Repeating itself instead of erroring out.** If the character keeps echoing the same phrase or gesture rather than failing outright, that's a distinct pattern-locking issue, not a connection problem — [why AI roleplay keeps repeating itself](/blog/ai-roleplay-repetition-loop) covers the fix, including the temperature and repetition-penalty settings BYOM setups expose.
 
 ## The Site Itself Won't Load
 

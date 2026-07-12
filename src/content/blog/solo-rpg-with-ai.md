@@ -89,7 +89,7 @@ A quick filter:
 
 **You want full control and a long, unrestricted campaign** → [Deep Realms](/clients/deep-realms).
 
-**You want to build exactly your own game, free** → the [AI RPG Prompt Builder](/tools/prompt-builder), plus the [Campaign Memory Tool](/tools/campaign-memory) to keep it coherent.
+**You want to build exactly your own game, free** → the [AI RPG Prompt Builder](/tools/prompt-builder), plus the [Campaign Memory Tool](/tools/campaign-memory) to keep it coherent — [here's exactly how to summarize a long solo campaign](/blog/how-to-summarize-ai-roleplay-campaign) once it grows past a session or two.
 
 For the wider field, see [best AI roleplay platforms](/blog/best-ai-roleplay-platforms) and the [LLM RPG directory](/blog/best-llm-rpg-games).
 

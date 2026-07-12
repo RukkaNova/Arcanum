@@ -54,7 +54,8 @@ If you just want the practical checklist rather than the mechanics behind it:
 - **Ask for a status summary every 20–30 turns** and paste it back in as an anchor — this is manual memory compression, and it's the single highest-leverage habit for a long session.
 - **Name the drift when you see it.** If an NPC contradicts something established earlier, say so directly rather than letting the AI paper over it — a direct correction fixes it faster than continuing and hoping it self-corrects.
 - **Keep sessions in the same conversation or Project/Gem** rather than starting fresh chats — restarting loses everything the running context held, even the parts that hadn't drifted yet.
-- **Use a structured memory tool for anything past a couple hours of play.** The free [Campaign Memory Tool](/tools/campaign-memory) tracks state and generates a compression prompt for exactly this purpose.
+- **Use a structured memory tool for anything past a couple hours of play.** The free [Campaign Memory Tool](/tools/campaign-memory) tracks state and generates a compression prompt for exactly this purpose — see [how to actually write one](/blog/how-to-summarize-ai-roleplay-campaign) if you'd rather do it by hand.
+- **If replies start echoing themselves instead of drifting,** that's a related but distinct failure — see [why AI roleplay keeps repeating itself](/blog/ai-roleplay-repetition-loop) for the fix.
 - **Prefer a model with a larger context window for very long campaigns.** [Gemini's context advantage](/blog/gemini-rpg-guide) is a genuine structural edge here, not just a spec-sheet number.
 
 ## The Honest Bottom Line
