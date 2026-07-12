@@ -50,6 +50,8 @@ Pricing is premium. The Starter tier at $19.95/month is the minimum that unlocks
 
 [AI Realm](/clients/ai-realm) is the most direct comparison for 5e rule-faithful play. Friends & Fables is more feature-rich, more visually sophisticated, and handles longer campaigns better — but it also costs more and asks more from the player to configure properly. We break that down axis by axis in [AI Realm vs Friends & Fables](/blog/ai-realm-vs-friends-and-fables). For how it stacks up specifically as a way to play D&D with AI, see our [AI D&D guide](/blog/ai-dnd). At the opposite end of the spectrum sits the freeform sandbox: we put structure against improvisation directly in [AI Dungeon vs Friends & Fables](/blog/ai-dungeon-vs-friends-and-fables).
 
+Against other long-session AI DMs, three more direct comparisons: [Old Greg's Tavern vs Friends & Fables](/blog/old-gregs-tavern-vs-friends-and-fables) puts our mechanical rigor against Old Greg's edgier, cheaper-for-groups tone; [Deep Realms vs Friends & Fables](/blog/deep-realms-vs-friends-and-fables) covers the visual VTT against a Python-programmable, unrestricted power-user engine; and [Taverna vs Friends & Fables](/blog/taverna-vs-friends-and-fables) weighs our dedicated platform against a Discord-native bot with zero setup friction.
+
 For groups that want to play together without a human DM and are willing to invest in setup, Friends & Fables has no real rival at the current state of the AI RPG market. For solo players prioritizing long-term consistency above everything else, the database architecture of RoleForge is the more principled answer, though Friends & Fables' Working Context approach closes that gap more than most comparisons acknowledge.
 
 ## Verdict

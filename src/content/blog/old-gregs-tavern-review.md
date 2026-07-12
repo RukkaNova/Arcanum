@@ -48,7 +48,7 @@ The flip side: there is no meaningful free solo tier. Playing your own campaigns
 
 Old Greg's Tavern walked into Friends & Fables' market and carved out a seat through sheer personality. Less rigorous, a bit clunkier — and the only AI DM we've tested whose voice we'd recognize blind. The persistence works, the friends-play-free model makes it the easy group pick, and the edge is not a marketing line. 4 out of 5.
 
-For how it stacks against the full roster, see the [platform comparison table](/clients/compare) — and if mechanical rigor is what you actually want, our [Friends & Fables review](/blog/friends-and-fables-review) covers the other side of this trade.
+For how it stacks against the full roster, see the [platform comparison table](/clients/compare) — and if mechanical rigor is what you actually want, our [Friends & Fables review](/blog/friends-and-fables-review) covers the other side of this trade. We put the two head-to-head, axis by axis, in [Old Greg's Tavern vs Friends & Fables](/blog/old-gregs-tavern-vs-friends-and-fables).
 
 ## FAQ
 

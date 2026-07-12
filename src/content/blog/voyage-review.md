@@ -13,7 +13,7 @@ Latitude noticed. Voyage is the answer.
 
 Where AI Dungeon gives players complete narrative fiat, Voyage introduces structure: skill checks, hit points, spatial positioning, and — the headline feature — permanent character death. This is the same company, the same lineage of technology, rebuilt around the principle that a story you can lose is worth playing and a story you can't lose is not.
 
-Our [AI Dungeon review](/blog/ai-dungeon-review) covers the predecessor in detail. This review is about whether Voyage's answer to that platform's core problem is the right one.
+Our [AI Dungeon review](/blog/ai-dungeon-review) covers the predecessor in detail. This review is about whether Voyage's answer to that platform's core problem is the right one — and we put the two head-to-head, axis by axis, in [Voyage vs AI Dungeon](/blog/voyage-vs-ai-dungeon).
 
 ## The World Engine: What "Real Consequences" Means
 

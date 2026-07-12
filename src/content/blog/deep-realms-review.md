@@ -50,7 +50,11 @@ For players who don't care about this either way, it's a non-factor. The content
 
 Where Deep Realms noticeably falls short of premium competitors is the visual layer. There are no hex battlemaps. No character portrait generators with consistent outputs. No dynamic scene visualization in the vein of [Friends & Fables](/clients/friends-and-fables) or even AI Realm.
 
-Deep Realms is a text-and-image-generation platform, and the image generation is a feature rather than an integrated system. For players who need spatial tactical awareness or want the visual texture of a full VTT experience, this will feel like a gap. For players who live in prose — writers, worldbuilders, players who care about narrative above all — the text quality of the Freya and Aion models compensates significantly.
+Deep Realms is a text-and-image-generation platform, and the image generation is a feature rather than an integrated system. For players who need spatial tactical awareness or want the visual texture of a full VTT experience, this will feel like a gap. For players who live in prose — writers, worldbuilders, players who care about narrative above all — the text quality of the Freya and Aion models compensates significantly. We put the two head-to-head in [Deep Realms vs Friends & Fables](/blog/deep-realms-vs-friends-and-fables).
+
+## Compared to the Competition
+
+Against [Janitor AI](/clients/janitor), the comparison is less obvious but comes up often: both platforms attract players frustrated by content filters elsewhere, but they solve completely different problems once you're past that shared complaint. We break down the "unrestricted campaign engine vs unrestricted character library" question directly in [Deep Realms vs Janitor AI](/blog/deep-realms-vs-janitor-ai).
 
 ## Pricing and Who Should Pay It
 
