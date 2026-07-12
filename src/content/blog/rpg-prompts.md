@@ -65,7 +65,7 @@ Paste that into any chat window on any model and it will run a coherent session.
 
 ## Generate One for Your Exact Model, Free
 
-The [AI RPG Prompt Builder](/tools/prompt-builder) builds all six parts for you in under a minute — no account, no API call, nothing sent anywhere. Choose your model, a genre (medieval fantasy, sci-fi, cyberpunk, horror, and five others), a tone, a primary focus, and whether you want a standard or long-campaign memory protocol. It assembles a complete prompt with the correct platform note for whichever model you picked.
+The [AI RPG Prompt Builder](/tools/prompt-builder) builds all six parts for you in under a minute — no account, no API call, nothing sent anywhere. Choose your model, a genre (medieval fantasy, sci-fi, cyberpunk, horror, and five others), a tone, a primary focus, and whether you want a standard or long-campaign memory protocol. It assembles a complete prompt with the correct platform note for whichever model you picked. (If terms like "memory protocol" or "context window" aren't familiar yet, the [AI roleplay glossary](/blog/ai-roleplay-glossary) defines them in one place.)
 
 ## Pick Your Model
 
