@@ -1,0 +1,59 @@
+---
+// Newsletter capture — Kit (ConvertKit), plain HTML form only.
+// No third-party JS: the form POSTs directly to Kit, so PageSpeed stays 100.
+//
+// TO ACTIVATE: create a form in Kit (Grow → Landing Pages & Forms → New form,
+// any inline layout — only the endpoint matters), open its embed code, and copy
+// the numeric ID from the action URL (https://app.kit.com/forms/XXXXXXX/subscriptions).
+// Paste that ID below and rebuild. Enable double opt-in in the form's settings
+// (Settings → Incentive → require confirmation) for GDPR.
+//
+// While KIT_FORM_ID is empty this component renders nothing anywhere.
+const KIT_FORM_ID = '';
+
+interface Props {
+  variant?: 'footer' | 'panel';
+}
+const { variant = 'footer' } = Astro.props;
+const action = `https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`;
+---
+{KIT_FORM_ID !== '' && (
+  <div class={variant === 'panel' ? 'nl nl-panel' : 'nl nl-footer'}>
+    <p class="nl-head mono">{variant === 'panel' ? '✉ Patch notes & new worlds' : '✉ New worlds, by email'}</p>
+    <p class="nl-copy">
+      {variant === 'panel'
+        ? 'The Originals keep growing. One email when a new version, an expansion, or an entirely new world ships — nothing else.'
+        : 'One email when a new Original ships or a major review lands. No spam, unsubscribe anytime.'}
+    </p>
+    <form class="nl-form" action={action} method="post">
+      <input class="nl-input mono" type="email" name="email_address" required placeholder="you@example.com" aria-label="Email address" />
+      <button class="nl-btn mono" type="submit">Subscribe</button>
+    </form>
+    <p class="nl-fine">Handled by Kit. Details in our <a href="/privacy">privacy policy</a>.</p>
+  </div>
+)}
+<style>
+  .nl-head { font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--gild); margin-bottom: .35rem; }
+  .nl-copy { color: var(--parchment-dim); font-size: .92rem; margin-bottom: .9rem; max-width: 34rem; }
+  .nl-form { display: flex; gap: .6rem; flex-wrap: wrap; }
+  .nl-input {
+    flex: 1 1 220px; max-width: 320px; font-size: .85rem; color: var(--parchment);
+    background: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: .55rem .8rem;
+  }
+  .nl-input::placeholder { color: var(--parchment-dim); opacity: .6; }
+  .nl-input:hover { border-color: var(--ember-soft); }
+  .nl-btn {
+    font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; font-weight: 600;
+    background: var(--ember); color: var(--ink); border: 1px solid var(--ember);
+    border-radius: 6px; padding: .55rem 1.1rem; cursor: pointer; transition: filter .18s;
+  }
+  .nl-btn:hover { filter: brightness(1.08); }
+  .nl-fine { font-size: .75rem; color: var(--parchment-dim); opacity: .75; margin-top: .6rem; }
+  .nl-fine a { color: var(--parchment-dim); text-decoration: underline; text-underline-offset: 2px; }
+  .nl-fine a:hover { color: var(--ember); }
+  .nl-panel {
+    margin-top: 2rem; padding: 1.4rem; border: 1px solid var(--line);
+    border-radius: 12px; background: var(--ink-2);
+  }
+  .nl-footer { padding: 1.2rem 0 .2rem; border-top: 1px solid var(--line); }
+</style>

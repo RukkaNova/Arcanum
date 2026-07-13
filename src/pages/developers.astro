@@ -1,0 +1,103 @@
+---
+import Base from '../layouts/Base.astro';
+// The B2B page: how platforms get reviewed (free), how they buy visibility
+// (paid, always labeled), and how they hire the design work behind the
+// Originals. The editorial firewall at the bottom is the part that keeps
+// the rest worth paying for — never soften it.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Work With Arcanum — Developer Services',
+  url: 'https://arcanumrpgs.com/developers',
+  serviceType: 'AI RPG review coverage, sponsored placement, and LLM game-design services',
+  provider: {
+    '@type': 'Organization',
+    '@id': 'https://arcanumrpgs.com/#organization',
+    name: 'Arcanum RPGs',
+    url: 'https://arcanumrpgs.com',
+    email: 'hello@arcanumrpgs.com'
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Developer services',
+    itemListElement: [
+      { '@type': 'Offer', name: 'Featured placement (monthly)', price: '99', priceCurrency: 'USD' },
+      { '@type': 'Offer', name: 'Launch package', price: '199', priceCurrency: 'USD' },
+      { '@type': 'Offer', name: 'Engine & prompt audit', price: '199', priceCurrency: 'USD' },
+      { '@type': 'Offer', name: 'Custom world or scenario design', price: '499', priceCurrency: 'USD' },
+      { '@type': 'Offer', name: 'Full engine design', price: '1499', priceCurrency: 'USD' }
+    ]
+  }
+};
+---
+<Base
+  title="Work With Arcanum — For AI RPG Developers & Studios | Arcanum RPGs"
+  description="Building an AI RPG platform? Get reviewed for free, buy clearly-labeled featured placement or launch coverage, or hire the LLM game-design experience behind the Arcanum Originals."
+  jsonLd={jsonLd}
+>
+  <article class="wrap devs">
+    <p class="eyebrow mono">// for developers</p>
+    <h1>Work With Arcanum</h1>
+
+    <div class="body">
+      <p class="lede">Arcanum is the independent portal for AI RPGs — every platform in our directory played first-hand before it's rated, read by people actively deciding what to play next.</p>
+
+      <p>If you're building an AI RPG platform, this page is the whole menu: how to get reviewed (free, always), how to be more visible (paid, always labeled), and how to hire the design experience behind the <a href="/arcanum-games">Arcanum Originals</a>. The rules that keep our coverage worth appearing in are at the <a href="#firewall">bottom of this page</a> — if you read nothing else, read those.</p>
+
+      <h2>Get Reviewed — Free</h2>
+      <p>Every entry in the <a href="/clients">platform directory</a> exists because we personally played the platform. There is no fee, no fast lane, and no way to influence the outcome.</p>
+      <ul>
+        <li><strong>How:</strong> email <a href="mailto:hello@arcanumrpgs.com">hello@arcanumrpgs.com</a> with a link. If your platform is gated, include access — comped access is always disclosed in our coverage and never buys a better word.</li>
+        <li><strong>What happens:</strong> we play it the way a player would, then publish an honest rated review and a directory entry.</li>
+        <li><strong>Pre-release builds</strong> (alpha/beta) get a clearly-labeled hands-on first look with no score — scores wait for public release.</li>
+        <li><strong>Coverage isn't guaranteed</strong>, and directory entries follow our brand-safety policy: adult-focused platforms aren't eligible for the directory.</li>
+      </ul>
+
+      <h2>Featured Placement — <span class="price mono">$99/month</span></h2>
+      <p>A highlighted slot for your platform at the top of the directory, always carrying a visible <em>Featured</em> label. Limited to three concurrent slots so the directory stays a directory. Month to month, cancel anytime. Your platform must already have an Arcanum review — featured placement changes where you appear, never what our review says.</p>
+
+      <h2>Launch Package — <span class="price mono">$199</span></h2>
+      <p>Launching, or shipping the update you've been building toward? The package: a sponsored announcement in the <a href="/blog">Codex</a> news section written from your materials, plus a homepage spotlight for one week. Both clearly labeled as sponsored. This is an announcement, not a review — reviews can't be bought at any price, including this one.</p>
+
+      <h2>Arcanum Forge — LLM Game-Design Services</h2>
+      <p>The <a href="/arcanum-games">Arcanum Originals</a> are our résumé: engines with deterministic economies, social systems with real teeth, and memory architectures designed to survive turn two hundred. If your AI game master forgets, railroads, or falls apart under real players, that's the exact class of problem we design against.</p>
+      <ul>
+        <li><strong>Engine &amp; prompt audit — from <span class="price mono">$199</span>.</strong> We play your system and read your prompt architecture, then deliver a written teardown: where it breaks, why, and what to change.</li>
+        <li><strong>Custom world or scenario design — from <span class="price mono">$499</span>.</strong> A complete world, campaign, or scenario built natively for your platform's engine and constraints.</li>
+        <li><strong>Full engine design — from <span class="price mono">$1,499</span>.</strong> A game system designed from the ground up for your product: mechanics, memory strategy, world logic, and the prompt architecture that holds it together.</li>
+      </ul>
+      <p>One thing to know before hiring us: paid design work is a material connection, so any Arcanum review of a platform we've worked for will disclose that relationship, prominently. If that trade-off doesn't work for you, don't hire us — the review stays independent either way.</p>
+
+      <h2>Interviews &amp; Press</h2>
+      <p>We run founder interviews when there's a real story — see our <a href="/blog/craft-interview">interview with the team behind Craft</a>. Editorial, free, and by pitch: tell us what you're building and why it matters.</p>
+
+      <h2 id="firewall">The Editorial Firewall</h2>
+      <ul>
+        <li>Reviews, ratings, and directory descriptions are <strong>never for sale</strong> and never influenced by any commercial relationship.</li>
+        <li>Anything paid is <strong>always visibly labeled</strong> — "Featured" on placements, "Sponsored" on announcements.</li>
+        <li>Buying — or declining to buy — anything on this page has <strong>zero effect</strong> on whether we cover you or what we say.</li>
+        <li>Comped access, subscriptions, and paid Forge work are <strong>always disclosed</strong> in any coverage they touch.</li>
+        <li>If a paid placement and our editorial judgment ever conflict, <strong>editorial wins</strong> and the money goes back.</li>
+      </ul>
+
+      <h2>Start Here</h2>
+      <p>Email <a href="mailto:hello@arcanumrpgs.com">hello@arcanumrpgs.com</a> with <strong>"Review"</strong>, <strong>"Featured"</strong>, <strong>"Launch"</strong>, or <strong>"Forge"</strong> in the subject. Payment by invoice — card or PayPal.</p>
+      <p class="email mono"><a href="mailto:hello@arcanumrpgs.com">hello@arcanumrpgs.com</a></p>
+    </div>
+  </article>
+
+  <style>
+    .devs { padding: 4rem 1.25rem 5rem; max-width: 780px; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 2rem; }
+    .lede { font-size: 1.2rem; color: var(--parchment); margin-bottom: 1.5rem; }
+    .body p { color: var(--parchment-dim); margin-bottom: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+    .body h2 { font-size: 1.35rem; font-weight: 600; margin: 2.4rem 0 .8rem; color: var(--parchment); }
+    .body ul { padding-left: 1.4rem; margin-bottom: 1.4rem; }
+    .body li { color: var(--parchment-dim); margin-bottom: .6rem; line-height: 1.7; font-size: 1.05rem; }
+    .body li strong, .body p strong { color: var(--parchment); }
+    .price { color: var(--gild); font-size: .95em; letter-spacing: .02em; }
+    .email { font-size: 1.1rem; margin-top: .4rem; }
+    .email a { color: var(--ember); letter-spacing: .02em; }
+  </style>
+</Base>

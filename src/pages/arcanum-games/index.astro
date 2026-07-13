@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { modelShort } from '../../platforms';
 import KofiButton from '../../components/KofiButton.astro';
+import Newsletter from '../../components/Newsletter.astro';
 const releases=(await getCollection('releases')).sort((a,b)=>b.data.updated.valueOf()-a.data.updated.valueOf());
 ---
 <Base title="Arcanum Originals — Downloadable AI RPG Engines | Arcanum RPGs" description="Original game engines built by Arcanum. Download the files, load them into ChatGPT, Claude, or Gemini, and play deeply-crafted worlds you won't find anywhere else.">
@@ -27,6 +28,7 @@ const releases=(await getCollection('releases')).sort((a,b)=>b.data.updated.valu
       <p>All games are free to play on your own AI. If they gave you a good session:</p>
       <KofiButton />
     </div>
+    <Newsletter variant="panel" />
     <div class="about-strip">
       <p>Arcanum Originals are complete, engineered RPG systems — not character cards, not bare prompts. Each one is a master prompt plus a world knowledge file, designed together to run a specific kind of campaign with real mechanical depth and world consistency across long sessions.</p>
       <p>The kingdom-builder tracks your domain, your treasury, and the social hierarchy you navigate on the way to power. The relationship RPG tracks companion goals, trust, and emotional state without a single visible meter. The mature open-world adventure enforces dice-less tactical combat across a three-layer cosmology. The space-trading survival sim tracks cargo, customs heat, and reactor temperature in genuine tension with each other.</p>

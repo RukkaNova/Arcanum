@@ -5,6 +5,7 @@ import { modelLabel } from '../../platforms';
 import KofiButton from '../../components/KofiButton.astro';
 import Stars from '../../components/Stars.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Newsletter from '../../components/Newsletter.astro';
 export async function getStaticPaths(){
   const r=await getCollection('releases');
   return r.map(x=>({params:{id:x.id},props:{rel:x}}));
@@ -63,6 +64,8 @@ const jsonLd={'@context':'https://schema.org','@type':'VideoGame',name:d.title,d
       <p>This game is free. If it gave you a good night at the table, a coffee keeps the worlds coming.</p>
       <KofiButton label="Support on Ko-fi" />
     </div>
+
+    <Newsletter variant="panel" />
   </article>
   <style>
     .rel{padding:2rem 1.25rem 3rem;max-width:780px;}

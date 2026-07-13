@@ -6,9 +6,12 @@
 # Cloudflare dashboard (SSL/TLS → Edge Certificates), not here.
 # script-src/connect-src allow static.cloudflareinsights.com + cloudflareinsights.com
 # for the Cloudflare Web Analytics beacon (auto-injected by Cloudflare Pages).
+# form-action allows the newsletter form's plain-HTML POST to Kit (app.kit.com;
+# app.convertkit.com is Kit's legacy domain, same service) and nothing else —
+# explicitly listing it is tighter than the spec default (unspecified = any target).
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.youtube-nocookie.com; font-src 'self'; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com; form-action 'self' https://app.kit.com https://app.convertkit.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
