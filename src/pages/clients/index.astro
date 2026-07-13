@@ -26,9 +26,15 @@ const clients=(await getCollection('clients')).sort((a,b)=>(b.data.rating??0)-(a
         </a>
       ))}
     </div>
+    <div class="devs-strip">
+      <p>Building or launching an AI RPG platform? See how to get <a href="/developers">reviewed, featured, or listed here</a>.</p>
+    </div>
   </div>
   <style>
     .browse{padding:3rem 1.25rem 2rem;}
+    .devs-strip{margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--line);}
+    .devs-strip p{color:var(--parchment-dim);font-size:.9rem;}
+    .devs-strip a{color:var(--rune);}
     h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;}
     .sub{color:var(--parchment-dim);margin:.4rem 0 .8rem;max-width:40rem;}
     .guide{font-size:.8rem;margin-bottom:2rem;}

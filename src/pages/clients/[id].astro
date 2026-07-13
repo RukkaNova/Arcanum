@@ -38,9 +38,15 @@ const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.d
     </div>
     {d.video && <VideoFacade id={d.video.id} poster={d.video.poster} title={d.video.title} caption={videoCaption} />}
     <div class="prose"><Content/></div>
+    <div class="devs-note">
+      <p>Building an AI RPG platform, or part of the team behind {d.title}? See how to <a href="/developers">work with Arcanum</a>.</p>
+    </div>
   </article>
   <style>
     .game{padding:2rem 1.25rem 3rem;max-width:760px;}
+    .devs-note{margin-top:2rem;padding-top:1.4rem;border-top:1px solid var(--line);}
+    .devs-note p{color:var(--parchment-dim);font-size:.88rem;}
+    .devs-note a{color:var(--rune);}
     .hero-img{margin:1.4rem 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;aspect-ratio:16/9;}
     .hero-img img{width:100%;height:100%;object-fit:cover;display:block;}
     .badges{display:flex;gap:.6rem;align-items:center;margin:.6rem 0 1rem;}

@@ -171,6 +171,10 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
     .footer-kofi span { color: var(--parchment-dim); font-size: .85rem; }
     .kofi-link { font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--gild); border: 1px solid var(--gild); padding: .4rem 1rem; border-radius: 6px; transition: background .18s, color .18s; white-space: nowrap; }
     .kofi-link:hover { background: var(--gild); color: var(--ink); text-decoration: none; }
+    .footer-devs { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .footer-devs span { color: var(--parchment-dim); font-size: .85rem; }
+    .devs-link { font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--rune); border: 1px solid var(--rune); padding: .4rem 1rem; border-radius: 6px; transition: background .18s, color .18s; white-space: nowrap; }
+    .devs-link:hover { background: var(--rune); color: var(--ink); text-decoration: none; }
   </style>
 </head>
 <body>
@@ -196,11 +200,13 @@ const isActive = (href: string) => path === href || path.startsWith(href + '/');
         <span>Every world we release is free to play. If we earned it:</span>
         <a href="https://ko-fi.com/arcanumrpgs" target="_blank" rel="noopener" class="kofi-link">☕ Buy me a coffee</a>
       </div>
+      <div class="footer-devs">
+        <span>Building an AI RPG platform?</span>
+        <a href="/developers" class="devs-link">Work with Arcanum →</a>
+      </div>
       <Newsletter variant="footer" />
       <div class="footer-legal">
         <a href="/contact">Contact</a>
-        <span class="sep">·</span>
-        <a href="/developers">For Developers</a>
         <span class="sep">·</span>
         <a href="/privacy">Privacy Policy</a>
         <span class="sep">·</span>
