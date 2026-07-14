@@ -15,6 +15,8 @@ Not every entry here needs three sections to explain. [Solo D&D Starter](/games/
 
 Drop it into Claude with a level filled in and you get exactly what it asks for — a setting, a stated objective, and a first encounter, narrated from there as a freeform conversation. No stat block, no dice, no rules layer. Its whole value is speed: zero setup between deciding you want a solo session and being in one.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## What You Don't Get
 
 Everything past that first scene is you and the model improvising with nothing to lean on. There's no persistence if you close the chat, no world that exists independently of what you're told in the moment, and no mechanical resistance if you decide your character can do anything at all. It's a conversation starter, not a system.

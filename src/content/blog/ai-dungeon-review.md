@@ -71,6 +71,8 @@ This creates a situation where free users receive a fun but sometimes chaotic ex
 
 For casual storytelling, this may not be a major problem. For players seeking deep, persistent campaigns lasting dozens of hours, it can become frustrating.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Latitude's Own Fix: AI Dungeon vs Voyage
 
 Latitude, the studio behind AI Dungeon, is clearly aware of the complaints above — because it built the answer to them itself. Voyage is Latitude's structured successor to AI Dungeon, aimed squarely at the frustration that builds up over long sessions: nothing you do ever really matters, because the story bends around you no matter what you try or how badly you fail.

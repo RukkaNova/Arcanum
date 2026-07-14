@@ -31,6 +31,8 @@ None of this is heavy. There are no stat sheets to wrestle, no dice math, no rul
 
 Here's the honest part. Isekai RPG drifts. On a short session you'll barely notice; over a long campaign it becomes the defining experience. The model gradually loosens its grip on the game's own systems — the rules it was told to enforce quietly stop being enforced, the world's specific flavor starts sanding back down toward generic fantasy, and you find yourself correcting it more and more often just to keep playing the game you started.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 This isn't bad luck or a bad model. It's structural. Isekai RPG asks ChatGPT to *self-enforce* a fairly rich set of systems using nothing but a prompt, and a prompt is not memory. As the conversation grows, the original instructions get buried under thousands of tokens of play, and the model starts privileging recent context over the founding rules. This is the exact mechanism I broke down in [why LLMs forget](/blog/why-llms-forget): the game's design leans on the model to hold a consistency it is architecturally bad at holding. The richer the world you're trying to protect, the more obvious the slippage. Vantiel is rich, so the slippage is obvious.
 
 The frustrating thing is that the world is good enough to make you *want* to fight for it. A weaker setting would drift and you wouldn't care. This one drifts and it stings, because you can feel the original design underneath the model's wandering.

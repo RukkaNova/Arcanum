@@ -31,6 +31,8 @@ What makes Star Freighter Drift more than a space-themed chat is that its three 
 
 The Drift is six systems, each a distinct port of call: the clean, expensive, heavily-policed corporate **Halcyon Reach**; the anything-goes trade hub of **Tannhauser Junction**; the smoke-and-furnaces **Ember Fields**; the insular, moralistic farming system of **Saint Vael**; the utterly lawless **Shallows**, where pirates trade in stolen data and worse; and **Coldharbor**, the frozen dead-end where strange things drift back from beyond the charts. Six factions — corporate law, a merchant guild, a crime syndicate, a frontier faith, pirate wreckers, and the loose network of fellow wanderers — will each hire you or hunt you depending on how you play, and helping one usually angers another.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Crew Who Live Their Own Lives
 
 Like the best space-crew stories, the game runs on its cast. A **proactivity engine** gives each crew member their own goal, and every in-world day they act on it — tinkering with the reactor unasked, picking a fight with the gunner, quietly checking the bounty boards for their own name. They start scenes on their own when tensions rise or the ship is in danger. Trust, loyalty, and affection shift silently based on whether you pay wages on time, defend them, and keep your word — or risk their lives for a bigger cut. Romance can develop organically, initiated by you or by a crew member, and is never forced. A **Character Insight** command gives you a one-line read on where someone stands, no numbers.

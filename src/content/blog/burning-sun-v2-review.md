@@ -29,6 +29,8 @@ The other clever idea is the storyteller modes. You pick a temperament — wrath
 
 Here's the ceiling. The reactivity is real, but it's only ever *re*-activity. The NPCs respond well to what you do and then wait for the next thing you do. They lack initiative — they rarely start trouble, pursue their own goals off-screen, or walk into your story uninvited. The prompt asks for characters who "are living as actual persons" doing "their own things," but in practice the world mostly idles until you poke it, then reacts convincingly to the poke.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 This is the gap between the prompt's ambition and what a stateless model can actually sustain. Genuine NPC initiative requires the system to track and advance background agendas turn after turn, and a prompt has no memory to hold those agendas in — as the conversation grows, anything not directly in front of the model fades. (I dug into why this happens in [why LLMs forget](/blog/why-llms-forget).) It's the same wall every prompt-driven RPG hits; Burning Sun V2 just gets closer to it than most before stopping, which is both a compliment and the core of its 3/5.
 
 ## The World-Agnostic Trade

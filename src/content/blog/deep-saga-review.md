@@ -21,6 +21,8 @@ It also doesn't pull punches. Failure and character death are genuinely on the t
 
 The headline feature is the per-scene image generation, and it's a pleasant touch — most text-first Custom GPTs don't bother. But it's worth being honest about what that feature is actually worth in 2026: image generation is trivial to attach to any GPT now, so this isn't the differentiator it might have been when Deep Saga first launched. Judge it on the writing and the structure underneath the pictures, because that's what you're actually playing.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## The Prompt-Only Ceiling
 
 Here's the honest limitation. Deep Saga ships as a single master prompt — no reference files, no knowledge base, nothing to fall back on beyond its own instructions. That puts it in company with every other prompt-only Custom GPT: instant to start, and the writing holds up fine for a sitting, but there's no canon behind the curtain to anchor it once a session runs long. [Solo RPG Master](/blog/solo-rpg-master-review) hits the same wall for the same structural reason, and [why LLMs forget](/blog/why-llms-forget) covers why a prompt alone can't fix it. [8-Bit Kingdoms](/blog/8-bit-kingdoms-review), reviewed the same week as this one, takes the opposite bet — worth reading side by side to see what loading real reference files actually buys a game.

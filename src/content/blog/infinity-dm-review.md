@@ -33,6 +33,8 @@ Difficulty Classes, advantage and disadvantage statuses, initiative order, comba
 
 The platform supports multiple DM personalities from a neutral relator to a highly lethal judge — controlling not just difficulty but tone, how the AI scales encounters, and how much it intervenes narratively versus staying mechanical. For different group compositions, selecting the right DM personality is the first real customization decision.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 The model pool — Google, xAI, Xiaomi, Deepseek — is broader than most platforms, which provides some resilience against any single provider's downtime or policy changes. It also introduces the privacy consideration: player inputs travel to external model providers, which matters for groups running mature or sensitive narrative content. The developer has been candid about this constraint rather than papering over it.
 
 ## What Async Play Feels Like

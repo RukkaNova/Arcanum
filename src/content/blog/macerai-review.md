@@ -31,6 +31,8 @@ The experience is good. Not exceptional — MacerAI's mechanical layer is less r
 
 The underlying model is Gemini 3 Flash, which brings two relevant considerations. First, Gemini Flash is genuinely capable for conversational and narrative generation — faster than heavier models, with reasonable instruction adherence. Second, Google's safety filters apply, which means occasional interruptions during combat-heavy scenes that might get flagged as violent content. For most sessions this is not a frequent problem; for dark or gritty campaigns it can be.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 The Nano Banana integration for map generation produces serviceable battle maps quickly. They're not the hex-precision of [Friends & Fables' grid system](/clients/friends-and-fables), but for groups that just need "here's a rough room layout" without spending twenty minutes in a map editor, the speed is the point.
 
 ## Who MacerAI Is Most Useful For

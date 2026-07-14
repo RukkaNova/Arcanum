@@ -38,6 +38,8 @@ The breadth of what the community has actually built — X-Men simulations, grim
 
 Multiplayer support for up to six players is real, not aspirational. Groups can run synchronous sessions with individual character tracking, split party management, and shared tactical maps.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Where the Complexity Shows
 
 Friends & Fables is not a passive system. The richness of the architecture means the AI can occasionally force encounters — defaulting to combat when a social resolution would have been more interesting, or mismanaging turn order in complex multi-faction scenes. The system requires engagement to perform at its ceiling; it does not run cleanly on autopilot.

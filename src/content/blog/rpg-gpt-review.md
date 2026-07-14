@@ -15,6 +15,8 @@ tags: ["RPG GPT review", "GPTInfinite", "ChatGPT RPG", "Custom GPT RPG", "AI tex
 
 Judged purely on features, there isn't much to say. RPG GPT doesn't ship a designed world, a reference document, or a mechanic that separates it from dozens of similar entries in the GPT store. Nothing about it is hard to replicate — a competent prompt engineer could write something functionally identical in an afternoon. If you've played [Solo RPG Master](/blog/solo-rpg-master-review) or any other prompt-only generalist, you already know the shape of the experience: you bring the premise, it narrates the consequences, and the setting is only as original as what you ask for.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## The One Thing It Gets Right
 
 Here's the part that actually earns its score. RPG GPT is noticeably more disciplined about staying in character than most of its peers. It doesn't cite its own instructions mid-scene, doesn't reference "the prompt" or break the fourth wall to explain what it's doing, and doesn't leak the seams the way a lot of Custom GPTs do once a session runs long enough to pressure them. That's a narrower skill than inventing a new system, but it's a real one, and plenty of more ambitious GPTs fumble it. Immersion holds because the model never reminds you it's a model.

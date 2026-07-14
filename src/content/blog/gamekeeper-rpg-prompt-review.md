@@ -15,6 +15,8 @@ tags: ["Gemini RPG prompt", "simple AI RPG", "copy-paste RPG prompt", "AI text R
 
 The instruction is short: the model becomes a "gamekeeper," sets the scene, and prints a small JSON block — name, location, inventory — at the top of every reply. That's the whole mechanic, and it's a smart one in isolation: it turns your inventory into something you can actually see and copy out, and it means you could theoretically pause a session and paste the last JSON block back in to resume later.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Everything Else Is Missing
 
 Past that save-file trick, there's nothing. No combat, no skill checks, no world document to keep the setting from drifting into the same handful of defaults — the author's own notes point out the model tends to default to a dark forest, and there's nothing in the prompt steering it anywhere else. It's freeform storytelling with a visible inventory, not a game with systems.

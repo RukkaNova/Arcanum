@@ -33,6 +33,8 @@ If the review ended at "easy to start and huge selection," Character.AI would sc
 
 **The memory.** Continuity is weak. Characters forget earlier details, drift out of personality, and lose the thread over a longer conversation. For a tool whose entire value is sustaining a believable persona, that's a structural problem, not a quirk.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 **It's chat, not games.** Character.AI is built for talking to a single character — a person, a celebrity, a persona. That's a legitimate thing many people want, and it's fine at it. But it's not a place to play a structured game with stakes and consequences, and the game-style bots that exist are thin next to dedicated RPG platforms. Arriving expecting a game is the most common way people end up disappointed. If you came wanting to play a story rather than chat with a character, the freeform sandbox is the other end of the spectrum — see [AI Dungeon vs Character.AI](/blog/ai-dungeon-vs-character-ai).
 
 **It's a worse Janitor AI.** This is the verdict-defining one. [Janitor AI](/blog/janitor-ai) does the same core job — a huge library of user-made characters you chat with — but with a meaningfully lighter content filter and, crucially, bring-your-own-model support. That means the same character can be written by a frontier model like Claude instead of a locked-in in-house one, which transforms the quality. Once you've experienced character chat with a lighter filter and a stronger model behind it, Character.AI's strict moderation and fixed model are hard to go back to.

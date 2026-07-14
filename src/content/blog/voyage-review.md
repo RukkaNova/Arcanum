@@ -35,6 +35,8 @@ Selecting the right DM personality for your intent matters more than most featur
 
 Voyage is designed for iOS and Android, with the experience clearly optimized around touch interface and short-session play. The design philosophy is pick-up-and-play: sessions are meant to fit into commutes, breaks, and casual time rather than requiring a dedicated block at a desk.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 This is a genuine differentiator in a market where most AI RPG platforms feel like desktop web applications with reluctant mobile views. Voyage on mobile is native and comfortable.
 
 The constraint is that desktop use is secondary. Players accustomed to the keyboard-and-monitor experience of browser-based platforms will find Voyage functional but not optimized for their context. There's no hex battlemap, no tactical grid, no visual layer beyond scene art — which reflects the mobile design priority, where visual complexity costs user attention rather than enhancing it.

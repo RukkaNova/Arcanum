@@ -27,6 +27,8 @@ The prompt also names the right counterweight: cyberpsychosis. Augmentation is s
 
 The escalation system supports the long game too. Defeat a nemesis and the prompt introduces a bigger one, which keeps the stakes climbing across a campaign. It's a smart way to fight the natural deflation of a story that's already had its big villain — though the hand-off can occasionally feel forced, a new antagonist arriving because the structure demands one rather than because the story earned it.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Where the Reward Economy Breaks It
 
 The biggest problem is generosity. The prompt instructs the gamemaster to award credits, upgrades, and intel for big scores, and Claude takes that brief enthusiastically — money and cybernetics get thrown at you left and right, and the game drifts into being too easy. In a genre that's supposed to be about scarcity and desperate trade-offs, abundance is the wrong failure mode. It also undercuts the augmentation loop above: cyber-modification is only meaningful as a *sacrifice*, and when upgrades are free, the body stops feeling like a resource you're spending.

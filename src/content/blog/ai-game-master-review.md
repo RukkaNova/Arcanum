@@ -21,6 +21,8 @@ Being an AI Dungeon-alike is not a crime — half the category descends from it.
 
 At comparable subscription prices — $15 to $25 a month against AI Dungeon's tiers — the value question isn't close. And if you're willing to leave the freeform lane entirely, most of our [directory](/clients) offers more for the same money.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## The Storefront Tells You What to Expect
 
 We try to review the game, not the website. But sometimes the website is data. At the time of this review, AI Game Master's own pricing page contained literal placeholder text — "Add terms and conditions" — alongside multiple misspellings ("Entuhsiast," "Unlimted," "Sequals") and two different tiers priced identically at $25 with wildly different token allowances.

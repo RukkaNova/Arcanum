@@ -27,6 +27,8 @@ Perchance is a free, browser-based AI Character Chat generator, one tool within 
 
 **It lacks depth.** There's no progression, no persistent world state, no mechanics of any kind — it's a conversation with a character, and it doesn't pretend to be more than that. For a single scene or a casual session, that's fine. For anyone coming in expecting an RPG in the fuller sense, the ceiling is low and it's hit fast.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 **Memory is extremely inconsistent.** This is the biggest practical problem. Even with the Lore Box feature and an adjustable context window, sessions lose track of earlier details noticeably faster and less predictably than on a dedicated roleplay platform. A character can forget something established two messages ago, which makes anything beyond a short session genuinely hard to hold together.
 
 **It isn't a game, and shouldn't be scored like one that's trying to be.** This is the fairest way to frame the rating below: Perchance isn't a failed RPG platform, it's a very good casual chat tool being judged partly on RPG criteria it was never built to satisfy.

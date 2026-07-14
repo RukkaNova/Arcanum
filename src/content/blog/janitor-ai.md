@@ -49,6 +49,8 @@ Character-driven one-on-one conversation is where Janitor AI is at its best. The
 
 Social and ensemble roleplay — conversations involving multiple characters interacting — works up to a point. The Groups feature exists and is functional. But longer multi-character threads tend to see voices blur as the context fills: characters start responding with similar rhythms, distinct speaking patterns flatten, and the model's job of tracking multiple personas simultaneously visibly strains. Solo sessions are more reliable.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 What doesn't work: anything that requires the platform to remember something from a previous session, track a resource, enforce a rule consistently across dozens of exchanges, or give you the feeling that your choices have weight beyond the immediate conversation. Janitor AI has no mechanism for any of that. Players who have been using engineered RPG systems — games built around persistent state and mechanical structure — will find the lack of scaffolding jarring. The session ends, and nothing carries forward.
 
 ## The Content Question

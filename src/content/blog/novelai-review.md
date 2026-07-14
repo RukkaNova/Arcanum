@@ -31,6 +31,8 @@ I found this genuinely welcome. So much of the work of a sustained story is keep
 
 Here's the honest other side, and it's why this isn't a higher score. As an AI RPG, NovelAI no longer leads the pack, and the weaknesses are consistent.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 - **Reasoning.** Its reasoning is noticeably weaker than the current alternatives. It's a writer, not a thinker — ask it to hold a complex situation together logically and the cracks show in a way they don't on reasoning-strong models.
 - **No live knowledge.** It doesn't browse the internet as it answers, so it simply misses knowledge that a connected model would have on hand. For grounded or reference-heavy play, that's a real gap.
 - **Plot holes and inconsistency.** In longer play it creates plot holes with some regularity and drifts into inconsistency. The Lorebook helps you *store* lore, but the model's handling of it isn't airtight, and over a long session that adds up.

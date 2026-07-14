@@ -34,6 +34,8 @@ Now the catch, and it's the review's second thesis: you will pay.
 
 Everything in FableAI runs on gems — an energy currency spent on AI responses and, at much higher burn rates, on the image generation and voice narration that justify choosing FableAI in the first place. The free tier's daily allowance (roughly 30 actions' worth) is fine for sampling; playing the app the way it's designed to be played — art on, narration on, sessions that go somewhere — will have you paying a lot, through subscriptions or gem packs, with ads as the grind alternative.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 That's the honest comparison with its ancestor: better design and production value than AI Dungeon, and a higher effective price to enjoy them. Neither platform gives you mechanics; you're choosing between a cheaper plain edition and a more expensive illustrated one.
 
 ## Pricing

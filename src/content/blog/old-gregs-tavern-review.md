@@ -34,6 +34,8 @@ On the structure spectrum that defines this category, Old Greg's Tavern lands in
 
 You get real characters with stats and enough campaign scaffolding to make progress feel earned — but less mechanical rigor than F&F brings. Fewer hard rules, less systematic depth, fewer moments where the system itself pushes back on you. The trade is speed and looseness: sessions move, and the platform never buries a good scene under bookkeeping.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 It is also, frankly, a bit clunkier than its biggest competitor — interface rough edges, occasional seams in long sessions. Solid, but you will notice.
 
 ## The Best Group Deal in the Category

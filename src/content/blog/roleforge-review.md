@@ -33,6 +33,8 @@ Running the same dungeon scenario in "Grand Chronicle" versus "Iron and Ash" pro
 
 Portrait Forge, the platform's character art generation, produces solid results that hold visual consistency across sessions. Hand-drawn genre maps with real-time fog of war give exploration a spatial honesty that top-down tile grids usually lack. This is not a platform optimized for tactical grid combat — RoleForge's visual design is atmospheric rather than tactical, which suits the solo campaign format it's built for.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Content safety controls deserve a mention: a G-rated "Family" lock and mature content options allow the platform to function credibly across age ranges without making the default experience feel sanitized.
 
 ## The Alpha Reality

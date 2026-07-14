@@ -31,6 +31,8 @@ The standout feature is what the game calls the **Deference Engine**, and it is 
 
 This single rule transforms the experience. Your rise from serf to monarch *means* something because the game never lets you forget how far down you started. Every rung of the ladder has to be climbed, and the social simulation makes each promotion feel like a genuine shift in how the entire world treats you.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Rukka — the designer of Aevum — has written a full [design essay on the Deference Engine](/blog/aevum-design-essay/): why the early-game friction is intentional, how faction-specific social logic creates genuinely different playthroughs, and the deeper effect the system has on players over long campaigns.
 
 ## Romance, War, Spycraft, and Lost Magic

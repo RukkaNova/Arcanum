@@ -31,6 +31,8 @@ That "in that order" matters. Chub began life as a card hub (the name is literal
 
 **It lacks polish, badly.** The interface looks amateurish next to any mainstream competitor — inconsistent layouts, unfinished-feeling flows, design that reads like a side project. That's forgivable in an open-source tool; it's harder to forgive in a platform asking for a subscription.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 **Hosted model quality is inconsistent.** Sessions swing between serviceable and poor depending on which model you're on and how it's configured. The floor is low, and a newcomer has no way to know why their first conversation fell flat — or that the fix is buried in model selection and presets.
 
 **It isn't intuitive.** This is the rare hosted platform that's *harder* to get right than the power-user tools it resembles. SillyTavern is honest about being a cockpit; Chub AI looks like a website anyone can use, then quietly expects cockpit-level configuration knowledge to get a good result.

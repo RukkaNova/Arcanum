@@ -34,6 +34,8 @@ ZapGM — out of early access since June 2026 — bundles what would otherwise b
 
 Yes — and in this niche that sentence carries weight. The platform is professional, seems reputable from everything we were able to gauge, and does what it claims to do pretty well: the maps generate, the voices land, the cards keep the campaign coherent. After a season of reviewing platforms whose headline features come with asterisks, a toolkit that simply works as advertised earns its rating on reliability alone.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Within our directory its nearest neighbor is [MacerAI](/blog/macerai-review), whose co-pilot mode serves the same human-DM audience. ZapGM goes deeper on the toolkit side — the full VTT, exportable maps, and per-NPC voices make it the most complete kit we've reviewed — while MacerAI keeps a capable standalone AI DM mode that ZapGM doesn't attempt.
 
 ## Who It's For — and Who It Isn't

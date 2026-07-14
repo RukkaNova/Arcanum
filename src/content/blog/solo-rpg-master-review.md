@@ -29,6 +29,8 @@ Consistency and player agency are the other two pillars. The story stays coheren
 
 Here's the cost. Because the prompt carries no world of its own, the setting is only ever as original as the words you feed it. Ask for a zombie apocalypse and you get a competent, well-run zombie apocalypse — the *cliché* version, because there's no built-in lore to surprise you with. Ask for medieval fantasy and you get exactly the medieval fantasy you already had in your head. The game is a superb director working without a script of its own, so it stages whatever you hand it, and most of us hand it the familiar.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 This is the inverse of a world-first game. Compare it to [Isekai RPG](/blog/isekai-rpg-review), which ships a richly designed setting called Vantiel: that game gives you genuine novelty but drifts away from its own systems over a long campaign. Solo RPG Master has the opposite profile — it almost never drifts into incoherence because there's less specific canon to betray, but it also can't hand you originality you didn't bring yourself. Neither approach is wrong; they're two answers to the same hard problem, and which one suits you depends on whether you'd rather supply the world or have one supplied to you.
 
 The practical upshot: Solo RPG Master rewards players with imagination. If you arrive with a specific, unusual premise, it will run it beautifully. If you arrive expecting the game to be the creative one, you'll get polished cliché.

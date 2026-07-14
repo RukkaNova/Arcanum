@@ -29,6 +29,8 @@ One of Eirathis Strider's best features is its **agency-based combat engine**. T
 
 Your abilities grow through a **skill-tier mastery system** spanning disciplines like Blade Mastery, Shadow Arts, the Way of the Wind, Runeblade Discipline, and the dream-and-illusion Weavebound Arts. You never see an XP bar; instead, repeated smart use of a skill quietly raises its tier from Novice toward Mythic, shown narratively as your movements becoming sharper and more practiced.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Companions Who Feel Alive
 
 Like the best party-based RPGs, Eirathis Strider lives or dies on its cast — and its companions are built to feel human. A **proactivity engine** has each companion pursue their own goal every in-world day, taking small actions whether or not you are watching: sharpening a blade while stealing glances at you, drinking alone after a hard conversation, secretly paying an informant for news of their family. They initiate scenes on their own when a relationship shifts, when jealousy spikes, or when a memory is triggered.

@@ -35,6 +35,8 @@ AI Realm's mechanical reliability is real in the short term. In extended campaig
 
 The practical result: NPCs the player met three sessions ago start behaving inconsistently. A plotline the player thought they'd advanced quietly resets. Spell rules that were enforced correctly in session one get quietly mishandled by session four. These are not catastrophic failures — they are the slow accumulation of small inconsistencies that, for a serious campaign player, are exactly the kind of thing that kills immersion.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Community feedback on this is pointed enough that it's worth taking seriously. Some players have described the late-game experience as effectively broken for anything requiring long-term continuity. That's a hard ceiling, and no interface feature resolves it.
 
 Compare this to [RoleForge](/clients/roleforge), which addresses the same problem architecturally — by routing all mechanical state through a SQL database that the AI cannot override. The trade-off there is flexibility and multiplayer; the gain is a world that genuinely holds its shape.

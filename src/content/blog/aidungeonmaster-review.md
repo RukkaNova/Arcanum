@@ -32,6 +32,8 @@ We could find no published revenue-share terms, so file the promise as real but 
 
 Now the other story. AIDungeonMaster.ai is closed access — you apply for early access and wait; there is no open signup. And yet the homepage advertises "10,000+ Early Access Signups" alongside a "4.8 Average Rating."
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Think about what that second number means for a product the public cannot try. Rated by whom? Verified how? A big signup figure for a gated product is already unverifiable; a public rating average for a closed platform is the kind of number that exists to be believed, not checked. We can't call it false — that's the point, nobody outside can call it anything — but it made us weary, and it should make you weary too.
 
 And then there's the name. AIDungeonMaster.ai sits one keystroke of confusion away from the best-known brand in this entire space, and the domain reads like it was optimized to collect AI Dungeon's search traffic. Maybe that's coincidence; "AI dungeon master" is also just the generic term (we've written a [whole explainer](/blog/ai-dungeon-master) on it). But combined with the unverifiable numbers, the pattern is a marketing posture that leans on borrowed credibility — and that posture is why this review is scored where it is.

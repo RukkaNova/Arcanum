@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import StarterKitForm from '../components/StarterKitForm.astro';
+
+const items = [
+  { kind: 'Free Game', title: 'Aevum Realm Architect', tagline: 'Rise from serf to sovereign in a deterministic low-fantasy kingdom-builder.', rating: 4.9, cover: '/img/aevum.webp', href: '/arcanum-games/aevum' },
+  { kind: 'Free Game', title: 'Eirathis Strider', tagline: 'A mature, Witcher-style open-world AI RPG for Gemini.', rating: 4.8, cover: '/img/eirathis.webp', href: '/arcanum-games/eirathis' },
+  { kind: 'Free Game', title: 'The Chronicler', tagline: 'A slow-burn, relationship-driven AI RPG for Claude.', rating: 4.6, cover: '/img/the-chronicler.webp', href: '/arcanum-games/the-chronicler' },
+  { kind: 'Free Client', title: 'Friends & Fables', tagline: 'The highest-feature-density AI RPG — hex battlemaps, a GM who remembers.', rating: 4.5, cover: '/img/friends-and-fables.webp', href: '/clients/friends-and-fables' },
+  { kind: 'Free Client', title: 'Janitor AI', tagline: 'Huge character library, bring-your-own-model, fewer guardrails.', rating: 4.0, cover: '/img/janitor-ai.webp', href: '/clients/janitor' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The AI RPG Player Starter Kit',
+  description: 'A free PDF pairing the 3 best free AI RPG games with the 2 best free clients, plus a setup guide — curated by Arcanum RPGs.',
+  author: { '@type': 'Person', name: 'Rukka', url: 'https://arcanumrpgs.com/about' },
+};
+---
+<Base
+  title="The AI RPG Player Starter Kit — Free PDF | Arcanum RPGs"
+  description="Free download: the 3 best free AI RPG games, the 2 best free AI RPG clients, and a step-by-step setup guide — Arcanum's curated starter kit for new players."
+  jsonLd={jsonLd}
+>
+  <article class="wrap sk">
+    <p class="eyebrow mono">// free download</p>
+    <h1>The AI RPG Player Starter Kit</h1>
+    <p class="lede">Three free games. Two free clients. A step-by-step setup guide. Everything a new player needs to start an AI RPG tonight, curated from everything we've personally tested and rated — one PDF, straight to your inbox.</p>
+
+    <div class="grid">
+      {items.map(it => (
+        <a class="card" href={it.href}>
+          <div class="thumb"><img src={it.cover} alt={it.title} loading="lazy" width="800" height="450" /></div>
+          <div class="body">
+            <div class="foot mono"><span>{it.kind}</span><span class="rating">★ {it.rating}</span></div>
+            <h2>{it.title}</h2>
+            <p class="tag">{it.tagline}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <StarterKitForm />
+
+    <div class="about-strip">
+      <p>Arcanum RPGs tests and rates every AI RPG game and client we cover, first-hand — no exceptions. This kit is the shortlist: the highest-rated free pick in each category, plus the exact clicks to get each one running, whether you're loading a game file into ChatGPT, Claude, or Gemini, or just signing into a ready-made client.</p>
+      <p>Want the full picture first? Browse the <a href="/arcanum-games">Arcanum Originals</a> or the <a href="/clients">full platform directory</a>.</p>
+    </div>
+  </article>
+
+  <style>
+    .sk { padding: 3rem 1.25rem 4rem; max-width: 900px; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 1rem; }
+    .lede { font-size: 1.15rem; color: var(--parchment-dim); max-width: 42rem; margin-bottom: 2.4rem; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1.2rem; }
+    @media (min-width: 700px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border: 1px solid var(--ember-soft); border-radius: 12px; overflow: hidden; background: var(--ink-2); color: var(--parchment); transition: border-color .18s, transform .18s; }
+    .card:hover { border-color: var(--ember); text-decoration: none; transform: translateY(-2px); }
+    .thumb { aspect-ratio: 16/9; background: var(--ink); border-bottom: 1px solid var(--line); }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .body { padding: 1.1rem 1.3rem; }
+    .foot { display: flex; justify-content: space-between; font-size: .72rem; text-transform: uppercase; letter-spacing: .04em; color: var(--rune); margin-bottom: .6rem; }
+    .rating { color: var(--gild); }
+    .card h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: .4rem; }
+    .tag { color: var(--parchment-dim); font-size: .92rem; line-height: 1.5; }
+    .about-strip { margin-top: 2.6rem; padding-top: 2rem; border-top: 1px solid var(--line); max-width: 760px; }
+    .about-strip p { color: var(--parchment-dim); font-size: .98rem; line-height: 1.7; margin-bottom: .9rem; }
+    .about-strip p:last-child { margin-bottom: 0; }
+  </style>
+</Base>

@@ -15,6 +15,8 @@ Some entries in this directory are engineered systems with knowledge files and h
 
 Character creation is three picks: a realm, a character type, and a companion creature, with random suggestions if you'd rather not decide. From there Gemini runs a main quest, drops NPCs and side content into your path, and offers four options every turn instead of the usual two or three — a small but real point of difference. It also tracks a rough moral alignment, letting you lean villainous or morally grey without the model fighting you on it.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Where It Runs Out
 
 That's the entire feature list. There's no reference document behind the prompt, no combat resolution, no persistent world beyond what the conversation remembers turn to turn. The four-choice format and the alignment tracking are genuinely nice ideas, but they're decoration on top of a plain narrative loop — the moment you've seen a few turns, you've seen the whole system.

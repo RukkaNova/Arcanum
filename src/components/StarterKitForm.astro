@@ -1,0 +1,55 @@
+---
+// Lead-magnet capture for The AI RPG Player Starter Kit — Kit (ConvertKit), plain HTML form only.
+// Separate form from Newsletter.astro's general list so it can carry its own
+// Kit "Incentive" (the PDF) without touching the sitewide newsletter form.
+//
+// TO ACTIVATE:
+// 1. In Kit → Grow → Landing Pages & Forms → New form. Any inline layout works.
+// 2. Open the form's Incentive tab, upload public/files/starter-kit/ai-rpg-player-starter-kit.pdf
+//    (or set "Redirect after subscribing" to https://arcanumrpgs.com/starter-kit/thank-you,
+//    which links straight to the file — either delivery method works).
+// 3. Enable double opt-in for GDPR (Settings → Incentive → require confirmation).
+// 4. Copy the numeric ID from the embed action URL (https://app.kit.com/forms/XXXXXXX/subscriptions)
+//    and paste it below, then rebuild.
+//
+// While FORM_ID is empty this component renders a direct download link instead,
+// so the page still works before Kit is wired up.
+const FORM_ID = '';
+const action = `https://app.kit.com/forms/${FORM_ID}/subscriptions`;
+const DIRECT_PDF = '/files/starter-kit/ai-rpg-player-starter-kit.pdf';
+---
+<div class="skf">
+  <p class="skf-head mono">✉ Get the Starter Kit</p>
+  <p class="skf-copy">Enter your email and the kit lands in your inbox — the 3 games, the 2 clients, and the setup guide, in one PDF. You'll also hear about new Originals and major reviews. No spam, unsubscribe anytime.</p>
+  {FORM_ID !== '' ? (
+    <form class="skf-form" action={action} method="post">
+      <input class="skf-input mono" type="email" name="email_address" required placeholder="you@example.com" aria-label="Email address" />
+      <button class="skf-btn mono" type="submit">Send me the kit</button>
+    </form>
+  ) : (
+    <a class="skf-btn skf-btn-link mono" href={DIRECT_PDF}>↓ Download the Starter Kit</a>
+  )}
+  <p class="skf-fine">Handled by Kit. Details in our <a href="/privacy">privacy policy</a>.</p>
+</div>
+<style>
+  .skf { margin-top: 2rem; padding: 1.4rem; border: 1px solid var(--line); border-radius: 12px; background: var(--ink-2); }
+  .skf-head { font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; color: var(--gild); margin-bottom: .35rem; }
+  .skf-copy { color: var(--parchment-dim); font-size: .92rem; margin-bottom: .9rem; max-width: 34rem; }
+  .skf-form { display: flex; gap: .6rem; flex-wrap: wrap; }
+  .skf-input {
+    flex: 1 1 220px; max-width: 320px; font-size: .85rem; color: var(--parchment);
+    background: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: .55rem .8rem;
+  }
+  .skf-input::placeholder { color: var(--parchment-dim); opacity: .6; }
+  .skf-input:hover { border-color: var(--ember-soft); }
+  .skf-btn {
+    font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; font-weight: 600;
+    background: var(--ember); color: var(--ink); border: 1px solid var(--ember);
+    border-radius: 6px; padding: .55rem 1.1rem; cursor: pointer; transition: filter .18s;
+  }
+  .skf-btn:hover { filter: brightness(1.08); text-decoration: none; }
+  .skf-btn-link { display: inline-block; }
+  .skf-fine { font-size: .75rem; color: var(--parchment-dim); opacity: .75; margin-top: .6rem; }
+  .skf-fine a { color: var(--parchment-dim); text-decoration: underline; text-underline-offset: 2px; }
+  .skf-fine a:hover { color: var(--ember); }
+</style>

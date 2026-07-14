@@ -24,6 +24,8 @@ The promotional site backs this up before you've played a single turn — it's o
 
 Here's the honest part. Vantiel's marketing promises reactivity and persistent memory — language that implies a real system tracking state, consequences, and continuity underneath the story. What actually runs the game is ChatGPT itself, unmodified by any external memory layer or state-tracking backend that I could find. The "reactivity" is the model responding in the moment, the same way any competent freeform ChatGPT session does. The "memory" is the standard context window, with exactly the drift and forgetting that implies over a long campaign — the same failure mode [we've broken down in detail elsewhere](/blog/why-llms-forget), and one that engineered systems solve with hidden state logs, memory compression, and correction commands that Vantiel doesn't currently have.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 None of that makes it a bad session. It makes it a Custom GPT with excellent presentation and a genuinely good world, dressed in language that describes a more finished product than what's actually running. For now, this is an overhyped Custom GPT — not a scam, not empty, just ahead of itself in how it talks about what it is.
 
 ## A Quick Note on the Name

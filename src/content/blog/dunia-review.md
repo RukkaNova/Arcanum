@@ -29,6 +29,8 @@ If you're used to thinking about this category as a spectrum — [AI Dungeon](/b
 
 The standout mechanical feature is the **branching timeline system**: you can explore an alternate path — a different choice, a different outcome — without erasing the story you already told. Paired with the ability to **edit any previous message**, Dunia gives you an author's level of control that pure "game" platforms deliberately withhold in favour of consequence and agency. It also handles genre broadly — this isn't a fantasy-only engine.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## Where It Falls Behind
 
 Here's the honest trade: **Dunia is not really a game system.** There's little mechanical progression, no meaningful stat-based advancement, and no tactical combat — fights resolve narratively rather than on a grid or through dice. If part of what you want from an AI RPG is the *game* half of that phrase — rules that push back, numbers that matter, a character sheet that grows — Dunia won't give it to you.

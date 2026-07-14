@@ -29,6 +29,8 @@ The RomanceCronos engine is the heart of what makes this RPG different, and its 
 
 The engine is built on genuinely human axioms. Desire is not the same as trust — a companion can want you, even sleep with you, while still not trusting you, and sex does not automatically manufacture intimacy. Trust grows slowly through consistency, discretion, and showing up when it matters, but it breaks fast through pressure, manipulation, or weaponizing intimacy, and once broken it does not passively regenerate. Silence, distance, and polite withdrawal are valid outcomes, not failure states. Relationships between companions can even develop on their own, independent of you.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Most importantly, the engine never advances a major relationship beat — a confession, a breakup, intimacy — without your explicit consent. Romance can be initiated by you or, if it would feel natural, by a companion who has genuinely come to feel something. But it always emerges organically. It is never forced, and it is never assumed.
 
 ## Total Player Agency

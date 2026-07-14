@@ -1,0 +1,29 @@
+---
+// Destination for Kit's "redirect after subscribing" setting on the Starter
+// Kit form (see src/components/StarterKitForm.astro). Noindex: this page has
+// no content of its own without an email opt-in behind it.
+import Base from '../../layouts/Base.astro';
+const PDF = '/files/starter-kit/ai-rpg-player-starter-kit.pdf';
+---
+<Base
+  title="Your Starter Kit is ready | Arcanum RPGs"
+  description="Download The AI RPG Player Starter Kit."
+  noindex={true}
+>
+  <article class="wrap ty">
+    <p class="eyebrow mono">// you're in</p>
+    <h1>Your Starter Kit is ready</h1>
+    <p class="lede">Thanks for subscribing — here's your copy. It's also on its way to your inbox in case you want it later.</p>
+    <a class="dl-btn" href={PDF} download>↓ Download the Starter Kit (PDF)</a>
+    <p class="next">While you're here: browse the <a href="/arcanum-games">Arcanum Originals</a> or the <a href="/clients">full platform directory</a> for what to try next.</p>
+  </article>
+  <style>
+    .ty { padding: 4rem 1.25rem 5rem; max-width: 640px; text-align: center; margin-inline: auto; }
+    .eyebrow { color: var(--rune); font-size: .8rem; letter-spacing: .05em; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 600; margin-bottom: 1rem; }
+    .lede { font-size: 1.1rem; color: var(--parchment-dim); margin-bottom: 2rem; line-height: 1.7; }
+    .dl-btn { font-family: var(--mono); font-size: .95rem; background: var(--ember); color: var(--ink); padding: .9rem 1.8rem; border-radius: 7px; font-weight: 600; display: inline-block; }
+    .dl-btn:hover { text-decoration: none; filter: brightness(1.08); }
+    .next { margin-top: 2.4rem; color: var(--parchment-dim); font-size: .95rem; }
+  </style>
+</Base>

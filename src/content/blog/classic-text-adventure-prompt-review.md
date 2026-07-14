@@ -15,6 +15,8 @@ tags: ["Claude RPG prompt", "simple AI RPG", "copy-paste RPG prompt", "text adve
 
 The setup is room-by-room exploration: detailed descriptions of where you are, simple verb commands to move and interact, and an inventory the model enforces with basic if-then logic — try to open a locked chest without the key and it says no, consistently. Compared to a pure freeform prompt, that consistency is a real, if modest, strength. The model has an actual structure to check your actions against instead of just improvising agreement.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 ## The Structure Is Also the Ceiling
 
 But the structure is thin by design. There's no character progression, no combat, no stakes beyond finding your way through rooms and objects, and no world that was designed ahead of time — you're exploring whatever the model generates as you go, in the same handful of fantasy-dungeon shapes these prompts tend to default to. It's a faithful recreation of a genre from decades ago, including that genre's limitations.

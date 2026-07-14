@@ -31,6 +31,8 @@ For groups whose tabletop sessions are primarily social — collaborative storyt
 
 For groups who want tactical grid combat with spatial precision, Taverna cannot provide it. The interface is text, and the spatial abstraction is text. A comparison to [Friends & Fables](/clients/friends-and-fables), which runs full hex battlemap combat with line-of-sight calculations, makes the gap obvious. But that comparison isn't really fair: Friends & Fables is built to replace a physical gaming table. Taverna is built to add a DM to a friend group that's already using Discord. We break the full tradeoff down in [Taverna vs Friends & Fables](/blog/taverna-vs-friends-and-fables).
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Multi-player handling is where Taverna performs best relative to its format constraints. Groups can run campaigns together via their existing server, with each player maintaining their character across sessions without creating accounts anywhere outside Discord. For friend groups spread across time zones who already coordinate via Discord, this is the natural fit.
 
 ## The Closed Beta Limitation

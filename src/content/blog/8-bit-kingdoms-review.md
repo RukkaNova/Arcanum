@@ -21,6 +21,8 @@ Play then unfolds in five-year turns. Each one presents a situation and a set of
 
 Here's the part that sets it apart. Your ruler ages with every turn, and eventually dies or is replaced — at which point one of their heirs inherits the throne and play continues with the next generation. You're not managing a character; you're managing a bloodline. Decisions from decades earlier resurface as consequences for a ruler who wasn't even born when you made them, which gives the game a sense of weight and continuity that single-character RPGs structurally can't offer. It ends the way a real dynasty story should: when your line either achieves its long-term ambition or suffers a decisive failure, closed out with a reign summary and a performance score.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Reference files sit behind the prompt here, unlike a prompt-only generalist such as [Deep Saga](/blog/deep-saga-review) — and it shows in how consistently the kingdoms, families, and diplomatic states hold together turn to turn. It's the same principle behind why a heavily-documented system like [Aevum Realm Architect](/blog/aevum-realm-architect) stays coherent longer than a bare prompt: giving the model something to consult beats asking it to improvise everything from a single instruction block.
 
 ## Who It's For

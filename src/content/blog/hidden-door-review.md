@@ -46,6 +46,8 @@ Now the other side of the ledger, and it is substantial.
 
 Because the engine works from bounded, authored components instead of open-ended generation, Hidden Door essentially does not have the failure mode that defines this entire category. We have written at length about [why LLMs forget](/blog/why-llms-forget) — memory drift, dissolving plot threads, worlds that stop feeling real around turn fifty. Hidden Door's stories do not drift. Characters stay themselves. Set-ups pay off. The world in week six behaves like the world in hour one.
 
+> **Get the free Starter Kit →** The 3 best free AI RPG games, the 2 best free clients, and a 30-second setup guide, bundled in one PDF. [Get it free](/starter-kit).
+
 Every free-generation platform we review is fighting that war with retrieval systems, summary buffers, and external databases, and all of them still lose ground eventually. Hidden Door refused to fight it at all — it constrained the battlefield instead. That is a real architectural achievement, and players who have been burned by one too many collapsed campaigns will feel the difference immediately.
 
 ## Creators Get Paid
