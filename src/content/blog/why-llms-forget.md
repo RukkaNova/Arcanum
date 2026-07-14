@@ -64,6 +64,8 @@ You can patch a lot of this by hand: ask for status summaries, remind the model 
 
 That's exactly what a well-engineered AI RPG does for you. [The games we build at Arcanum](/arcanum-games) are designed around these fixes from the ground up — persistent hidden logs that track every detail, memory pruning that keeps long campaigns stable, proactivity engines that keep the world alive, and agency protocols that keep you in the driver's seat. If you've been frustrated by campaigns that crumble at turn 50, that's the difference: not a better model, but a better engine running on it.
 
+It's also the exact distinction platforms are starting to compete on. [RoleForge](/blog/roleforge-review) runs a SQL database as ground truth so the LLM only narrates, never decides, what's true. In our [MythEngine first look](/blog/mythengine-first-look), the developer put the same idea more bluntly: most "unlimited memory" claims are a regular model with search bolted on, and search doesn't know the difference between a fact that's still true and one that stopped being true nine sessions ago.
+
 If you want a structured tool for maintaining campaign state manually across any AI, the [Campaign Memory Tool](/tools/campaign-memory) is free, runs entirely in your browser, and includes a compression prompt generator you paste into ChatGPT, Claude, or Gemini to get a compact session memory block back. No account, no data stored, works with any platform. This matters most in [solo RPG with AI](/blog/solo-rpg-with-ai), where there's no group to collectively remember the campaign for you.
 
 Whether you build your own systems or download one that already solves these problems, the takeaway is the same — a great long-form AI campaign isn't luck. It's architecture.
