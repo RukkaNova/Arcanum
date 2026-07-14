@@ -58,7 +58,6 @@ const jsonLd={'@context':'https://schema.org','@type':'VideoGame',name:d.title,d
           </li>
         ))}
       </ul>
-      {d.githubUrl && <p class="gh-link"><a href={d.githubUrl} target="_blank" rel="noopener">View source on GitHub →</a></p>}
     </section>
 
     <div class="support">
@@ -96,7 +95,6 @@ const jsonLd={'@context':'https://schema.org','@type':'VideoGame',name:d.title,d
     .finfo{display:flex;flex-direction:column;gap:.15rem;}
     .fname{font-size:.9rem;color:var(--parchment);}
     .flabel{font-size:.75rem;color:var(--parchment-dim);}
-    .gh-link{margin-top:.9rem;font-size:.85rem;}
     .dl{font-family:var(--mono);font-size:.8rem;background:var(--ember);color:var(--ink);padding:.45rem .9rem;border-radius:6px;font-weight:600;white-space:nowrap;}
     .dl:hover{text-decoration:none;filter:brightness(1.08);}
     .support{margin-top:2rem;padding:1.4rem;border:1px solid var(--line);border-radius:12px;background:var(--ink-2);display:flex;flex-direction:column;gap:.8rem;}
