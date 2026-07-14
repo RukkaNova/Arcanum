@@ -1,16 +1,16 @@
 ---
-title: "MythEngine First Look: 24 Hours Inside a Closed Beta With Memory That Actually Holds"
-description: "MythEngine's narrative mode paired with Maelstrom, its world-state memory engine, delivered the most stable, hallucination-free recall we've tested in 24 hours of closed-beta play. Our hands-on first look, plus what the developer told us about building a referee the AI can't overrule."
+title: "MythEngine First Look: 24 Hours Inside an Open Beta With Memory That Actually Holds"
+description: "MythEngine's narrative mode paired with Maelstrom, its world-state memory engine, delivered the most stable, hallucination-free recall we've tested in 24 hours of open-beta play. Our hands-on first look, plus what the developer told us about building a referee the AI can't overrule."
 section: "news"
 pubDate: 2026-07-14
-tags: ["MythEngine", "MythEngine beta", "MythEngine first look", "AI RPG beta", "Maelstrom memory engine", "AI RPG memory", "AI dungeon master", "closed beta AI RPG"]
+tags: ["MythEngine", "MythEngine beta", "MythEngine first look", "AI RPG beta", "Maelstrom memory engine", "AI RPG memory", "AI dungeon master", "open beta AI RPG"]
 ---
 
-*Access disclosure: the developer provided closed-beta access with unlimited messages and campaigns. No conditions were attached to our coverage; this first look is independent and unpaid.*
+*Access disclosure: MythEngine's beta is open to the public, but the developer also gave us an account with unlimited messages and campaigns for testing — a material connection beyond what any player can get today. No conditions were attached to our coverage; this first look is independent and unpaid.*
 
-*This is a hands-on first look at a closed beta, not a review. We don't score pre-release software — a beta can't be fairly rated, and this one is still changing by the day. We also only tested Narrative Mode, MythEngine's choose-your-own-adventure-style mode; the platform's "full rules" mode is still in development and wasn't part of these 24 hours. A full rated review comes at launch.*
+*This is a hands-on first look at an open beta, not a review. We don't score pre-release software — a beta can't be fairly rated, and this one is still changing by the day. We also only tested Narrative Mode, MythEngine's choose-your-own-adventure-style mode; the platform's "full rules" mode is still in development and wasn't part of these 24 hours. A full rated review comes at launch.*
 
-MythEngine is a new AI RPG platform currently in closed beta, and we spent our first 24 hours inside it in Narrative Mode — a freeform, choose-your-own-adventure-style way to play, as opposed to the crunchier "full rules" mode still being built. Here's what those 24 hours actually looked like.
+MythEngine is a new AI RPG platform currently in open beta — anyone can get in — and we spent our first 24 hours inside it in Narrative Mode — a freeform, choose-your-own-adventure-style way to play, as opposed to the crunchier "full rules" mode still being built. Here's what those 24 hours actually looked like.
 
 ## The Memory Holds Up
 
@@ -56,6 +56,6 @@ The developer was candid about the tradeoff this creates: "So the job is earning
 
 ## What Happens Next
 
-MythEngine is still closed-beta software, and Narrative Mode is only half the platform — we haven't touched full rules mode, and won't judge it until it's ready to be judged. What we can say from 24 hours: the memory is the best we've tested this early, the developer is present and responsive, and the remaining gaps — presentation and pushback — are the kind of thing betas exist to work out.
+MythEngine is still open-beta software, and Narrative Mode is only half the platform — we haven't touched full rules mode, and won't judge it until it's ready to be judged. What we can say from 24 hours: the memory is the best we've tested this early, the developer is present and responsive, and the remaining gaps — presentation and pushback — are the kind of thing betas exist to work out.
 
-We'll keep playing and publish a full, rated review once MythEngine is out of closed beta. Until then, our [directory of AI RPG platforms](/clients) covers everything already available to play today, and [why AI campaigns fall apart at turn 50](/blog/why-llms-forget) has the fuller breakdown of the memory problem MythEngine is trying to solve.
+We'll keep playing and publish a full, rated review once MythEngine leaves beta. Until then, our [directory of AI RPG platforms](/clients) covers everything already available to play today, and [why AI campaigns fall apart at turn 50](/blog/why-llms-forget) has the fuller breakdown of the memory problem MythEngine is trying to solve.
