@@ -63,6 +63,7 @@ const releases = defineCollection({
     videoId: z.string().optional(),
     rating: z.number().min(0).max(5).optional(),
     reviewSlug: z.string().optional(),
+    githubUrl: z.string().optional(),
     files: z.array(z.object({
       name: z.string(),
       path: z.string(),

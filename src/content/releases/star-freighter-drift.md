@@ -8,6 +8,7 @@ partner: false
 cover: "/img/star-freighter-drift.webp"
 rating: 4.7
 reviewSlug: "star-freighter-drift"
+githubUrl: "https://github.com/RukkaNova/star-freighter-drift"
 version: "1.0"
 featured: true
 nsfw: false

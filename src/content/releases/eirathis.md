@@ -8,6 +8,7 @@ partner: false
 cover: "/img/eirathis.webp"
 rating: 4.8
 reviewSlug: "eirathis-strider"
+githubUrl: "https://github.com/RukkaNova/eirathis-strider"
 version: "1.0"
 featured: true
 nsfw: false

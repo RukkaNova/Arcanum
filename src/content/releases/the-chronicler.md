@@ -8,6 +8,7 @@ partner: false
 cover: "/img/the-chronicler.webp"
 rating: 4.6
 reviewSlug: "the-chronicler"
+githubUrl: "https://github.com/RukkaNova/the-chronicler"
 version: "1.0"
 featured: true
 nsfw: false
