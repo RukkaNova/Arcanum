@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects — https://developers.cloudflare.com/pages/configuration/redirects/
+# 2026-07-14: merged 4 near-identical 2/5 bare-prompt reviews into one comparison roundup.
+/blog/classic-text-adventure-prompt-review /blog/simple-ai-rpg-prompts-reviewed#classic-text-adventure-prompt 301
+/blog/solo-dnd-starter-prompt-review /blog/simple-ai-rpg-prompts-reviewed#solo-dd-starter-prompt 301
+/blog/gamekeeper-rpg-prompt-review /blog/simple-ai-rpg-prompts-reviewed#gamekeeper-rpg-prompt 301
+/blog/realm-companion-rpg-prompt-review /blog/simple-ai-rpg-prompts-reviewed#realm--companion-rpg-prompt 301

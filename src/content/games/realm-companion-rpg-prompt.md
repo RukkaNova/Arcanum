@@ -5,7 +5,7 @@ model: "gemini"
 genres: ["Fantasy", "Multi-Genre", "Roleplay"]
 rating: 2
 author: "Quantisan"
-reviewSlug: "realm-companion-rpg-prompt-review"
+reviewSlug: "simple-ai-rpg-prompts-reviewed#realm--companion-rpg-prompt"
 cover: "/img/realm-companion-rpg-prompt.webp"
 featured: false
 nsfw: false

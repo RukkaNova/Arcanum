@@ -5,7 +5,7 @@ model: "gemini"
 genres: ["Fantasy", "Roleplay", "Multi-Genre"]
 rating: 2
 author: "Tiefseetauchner"
-reviewSlug: "gamekeeper-rpg-prompt-review"
+reviewSlug: "simple-ai-rpg-prompts-reviewed#gamekeeper-rpg-prompt"
 cover: "/img/gamekeeper-rpg-prompt.webp"
 featured: false
 nsfw: false

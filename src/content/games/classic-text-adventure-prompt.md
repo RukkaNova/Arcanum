@@ -5,7 +5,7 @@ model: "claude"
 genres: ["Fantasy", "Exploration", "Roleplay"]
 rating: 2
 author: "Jon Radoff"
-reviewSlug: "classic-text-adventure-prompt-review"
+reviewSlug: "simple-ai-rpg-prompts-reviewed#classic-text-adventure-prompt"
 cover: "/img/classic-text-adventure-prompt.webp"
 featured: false
 nsfw: false

@@ -5,7 +5,7 @@ model: "claude"
 genres: ["Fantasy", "Roleplay"]
 rating: 2
 author: "Matthew Maynor"
-reviewSlug: "solo-dnd-starter-prompt-review"
+reviewSlug: "simple-ai-rpg-prompts-reviewed#solo-dd-starter-prompt"
 cover: "/img/solo-dnd-starter-prompt.webp"
 featured: false
 nsfw: false

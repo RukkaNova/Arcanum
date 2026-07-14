@@ -21,6 +21,20 @@ Judged purely on features, there isn't much to say. RPG GPT doesn't ship a desig
 
 Here's the part that actually earns its score. RPG GPT is noticeably more disciplined about staying in character than most of its peers. It doesn't cite its own instructions mid-scene, doesn't reference "the prompt" or break the fourth wall to explain what it's doing, and doesn't leak the seams the way a lot of Custom GPTs do once a session runs long enough to pressure them. That's a narrower skill than inventing a new system, but it's a real one, and plenty of more ambitious GPTs fumble it. Immersion holds because the model never reminds you it's a model.
 
+## RPG GPT vs. Solo RPG Master vs. Isekai RPG
+
+RPG GPT sits in the same generalist, no-reference-file corner of the ChatGPT store as [Solo RPG Master](/blog/solo-rpg-master-review) and [Isekai RPG](/blog/isekai-rpg-review), and the three make an instructive comparison precisely because each one trades away something different.
+
+| | RPG GPT | Solo RPG Master | Isekai RPG |
+|---|---|---|---|
+| **Built-in world** | None — generic, whatever you ask for | None — generic, whatever you ask for | Vantiel — genuinely original, designed setting |
+| **Character writing** | Competent, unremarkable | Best-in-class; the most varied, believable cast we've tested | Strong, but shaped by the world's systems |
+| **Staying in character** | Its headline strength — never cites its own instructions or breaks the fourth wall | Generally solid | Drifts over long campaigns as systems loosen |
+| **Mechanical tracking** | Minimal, not a focus | Advertised (stats, inventory) but collapses within ~20 turns | Deliberately light by design |
+| **Rating** | [3/5](/blog/rpg-gpt-review) | [4/5](/blog/solo-rpg-master-review) | [3/5](/blog/isekai-rpg-review) |
+
+Solo RPG Master wins on characters and remains the more popular pick for a reason — but the price of its generalism is the same as RPG GPT's: no world of its own, so the setting is only as original as what you bring. Isekai RPG is the opposite bet — a genuinely designed world that's worth the trip, but one that requires you to actively manage drift over a long campaign, something neither RPG GPT nor Solo RPG Master asks of you because neither has as much specific canon to lose in the first place. RPG GPT's actual edge in this group is consistency of *voice*: it's the one least likely to remind you, mid-scene, that it's a language model.
+
 ## Who It's For
 
 Play RPG GPT if you want a plain, dependable text RPG session with no setup beyond picking a premise, and you value a GM that never breaks character over one that tries something more ambitious and occasionally trips over itself doing it. Look elsewhere — [Isekai RPG](/blog/isekai-rpg-review) or [8-Bit Kingdoms](/blog/8-bit-kingdoms-review) — if you want a game with an actual designed hook.

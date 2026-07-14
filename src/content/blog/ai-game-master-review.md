@@ -33,8 +33,21 @@ Maybe it's unfinished; maybe it's unattended. Either way, when a paid product's 
 
 Free: 5 tokens every 4 hours, 5 story slots. Explorer: $15/month, 500 tokens. Enthusiast: $25/month, 1,000 tokens. Game Master: also $25/month, unlimited tokens and slots. (Yes — the two top tiers cost the same. We assume you'd pick the unlimited one.)
 
+## Alternatives Worth Considering
+
+If you're shopping for a mobile AI RPG and landed here first, these are the platforms actually worth your download instead:
+
+| Platform | Rating | Price | Structure | Why pick it over AI Game Master |
+|---|---|---|---|---|
+| [AI Dungeon](/blog/ai-dungeon-review) | 3.5/5 | Free – $99.99/mo | Freeform | The mature original — bigger scenario library, more polish, the same freeform lane done properly |
+| [FableAI](/blog/fableai-review) | 3.5/5 | Freemium (gems) | Freeform | Dramatically better production values — generated art and voice narration on every scene |
+| [Voyage](/blog/voyage-review) | 4/5 | Freemium | Structured (dice, permadeath) | Actual consequences instead of narrative fiat — skill checks and permanent death built into the flow |
+| [Old Greg's Tavern](/blog/old-gregs-tavern-review) | 4/5 | Freemium (credits) | Persistent campaign | An edgier voice with real continuity, and invited friends play free on your credits |
+
+None of these cost more at the entry point than AI Game Master, and all four score higher. The only scenario where AI Game Master wins is if a specific feature keeps you there that we haven't found — for freeform mobile storytelling generally, start with AI Dungeon or FableAI instead.
+
 ## Verdict: 1/5
 
-We don't hand out 1-star ratings for being bad at something ambitious — we hand them out when we can't construct a reason to choose a platform over its obvious alternative. If you want freeform AI storytelling on your phone, [FableAI](/blog/fableai-review) does it with dramatically better production values, and AI Dungeon itself remains the more polished original. AI Game Master is the same idea, rougher, with a token meter. 1 out of 5.
+We don't hand out 1-star ratings for being bad at something ambitious — we hand them out when we can't construct a reason to choose a platform over its obvious alternative. AI Game Master is the same idea as AI Dungeon, rougher, with a token meter. 1 out of 5.
 
 The [platform comparison table](/clients/compare) has the full field if you're choosing a home for freeform play.
