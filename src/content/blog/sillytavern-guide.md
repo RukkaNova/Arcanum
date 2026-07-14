@@ -3,7 +3,7 @@ title: "SillyTavern: What It Is, How to Set It Up, and Why Roleplayers Swear By 
 description: "A plain-English guide to SillyTavern — what it actually is, what it isn't, how to install and connect a model, and whether this power-user roleplay front-end is right for you."
 section: "guides"
 pubDate: 2026-06-29
-tags: ["SillyTavern", "what is SillyTavern", "SillyTavern guide", "how to set up SillyTavern", "SillyTavern setup", "SillyTavern beginner guide", "SillyTavern uncensored", "best AI roleplay front-end"]
+tags: ["SillyTavern", "what is SillyTavern", "SillyTavern guide", "how to set up SillyTavern", "SillyTavern setup", "SillyTavern beginner guide", "SillyTavern uncensored", "best AI roleplay front-end", "SillyTavern hidden text"]
 faq:
   - q: "What is SillyTavern?"
     a: "SillyTavern is a free, open-source front-end for AI roleplay that you install on your own computer. It provides a powerful interface — character cards, lorebooks, prompt control, group chats, extensions — but it doesn't generate text itself; you connect it to a language model that does."
@@ -96,6 +96,10 @@ SillyTavern has a deep feature set, but a handful are why people stay:
 Extensions are optional plugins that hook into SillyTavern's chat pipeline without touching the core interface — you switch on what you want from the Extensions panel and leave the rest off, so the app stays lean by default. A few are worth knowing by name. The **TTS extension** reads character responses aloud through a voice provider of your choice, turning a text exchange into something closer to a voiced scene. The **Image Generation extension** connects to a Stable Diffusion backend, local or hosted, so a character or moment in the story can produce an accompanying image on demand, straight from the chat. And the **Data Bank** — covered in more depth in the memory section below — is vector-based storage that indexes past messages and documents, then pulls back only the relevant pieces when they're actually needed instead of occupying your context window the whole time.
 
 None of this is required to use SillyTavern well, but it's why power users rarely go back to a plain chat box afterward: extensions let you shape the tool around the kind of session you actually want — voiced, illustrated, memory-heavy, or all three — instead of accepting whatever fixed feature set a consumer app ships with.
+
+### Hiding Text From the AI
+
+SillyTavern's `/hide` and `/unhide` slash commands remove specific messages from what the model actually reads, without deleting them from your visible chat log. Type `/hide 4` to exclude message 4 from the prompt (a ghost icon marks it as hidden in the log), or `/hide 4-9` to hide a whole range; `/unhide` reverses it the same way. It's a chat-log tool that operates on entire messages by index — not an inline tag — which makes it useful for stripping a meta-note, an aside, or an early exchange out of the AI's context without losing the record for yourself. The full syntax is in SillyTavern's own [STscript command reference](https://docs.sillytavern.app/usage/st-script/).
 
 ---
 

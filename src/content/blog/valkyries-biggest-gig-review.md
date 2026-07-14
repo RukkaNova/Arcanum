@@ -6,12 +6,12 @@ rating: 3
 pubDate: 2026-06-28
 cover: "/img/valkyries-biggest-gig.webp"
 reviewSlug: "valkyries-biggest-gig-review"
-tags: ["Valkyrie's Biggest Gig review", "Claude RPG", "Claude cyberpunk RPG", "cyberpunk AI RPG", "Claude prompt RPG", "solo RPG prompt", "AI text RPG", "transhuman RPG"]
+tags: ["Valkyrie's Biggest Gig review", "Claude RPG", "Claude cyberpunk RPG", "cyberpunk AI RPG", "Claude prompt RPG", "solo RPG prompt", "AI text RPG", "transhuman RPG", "cyberpunk Valkyrie"]
 ---
 
 [Valkyrie's Biggest Gig](/games/valkyries-biggest-gig) is a copy-paste prompt by FistFulofValkyries that turns Claude into a gamemaster for a gritty solo cyberpunk RPG. On paper that's a crowded corner of the hobby — cyberpunk is the default aesthetic for half the AI RPGs out there. What makes this one worth a separate look isn't the neon or the megacorps; it's a single design choice in the prompt that quietly reshapes how you play: it makes your *body* the resource you spend.
 
-Most RPGs treat the character as a fixed pole around which the story turns. Valkyrie's Biggest Gig treats the character as something you progressively trade away and rebuild. That's the lens for this review — what the augmentation focus does well, and where the prompt's other instincts undercut it.
+Most RPGs treat the character as a fixed pole around which the story turns. Valkyrie's Biggest Gig treats the character as something you progressively trade away and rebuild — the cyberpunk Valkyrie experience is defined by that trade, not by the neon dressing around it. That's the lens for this review — what the augmentation focus does well, and where the prompt's other instincts undercut it.
 
 ## What Valkyrie's Biggest Gig Is
 

@@ -4,7 +4,7 @@ description: "AI Dungeon pioneered AI storytelling, but is it still worth it in 
 section: "platform-reviews"
 rating: 3.5
 pubDate: 2026-06-20
-tags: ["AI Dungeon", "AI Dungeon review", "AI RPG", "AI storytelling", "text adventure", "LLM RPG", "AI roleplay"]
+tags: ["AI Dungeon", "AI Dungeon review", "AI RPG", "AI storytelling", "text adventure", "LLM RPG", "AI roleplay", "AI Dungeon subscription pricing"]
 ---
 
 Artificial intelligence has transformed text-based gaming, and few platforms have had a bigger impact than AI Dungeon. As one of the first AI-powered storytelling games to achieve mainstream success, AI Dungeon helped create an entirely new genre of interactive entertainment. But in 2026, with more advanced competitors entering the market, many players are asking the same question: Is AI Dungeon worth it?
@@ -91,7 +91,17 @@ For some players, the controversy remains a historical footnote. For others, it 
 
 Whether this matters to you will depend on how heavily you value privacy and how comfortable you are with the platform's current policies. We take the whole question apart — what actually happened in 2021, what changed since, and how private your stories are today — in [Is AI Dungeon safe?](/blog/is-ai-dungeon-safe)
 
-## Is AI Dungeon Worth the Subscription Cost?
+## AI Dungeon Subscription Pricing (2026)
+
+| Tier | Price | Credits/mo | Context | Memory Bank |
+|---|---|---|---|---|
+| Wanderer (Free) | $0 | — | Up to 4k tokens | 25 memories |
+| Journey | $14.99/mo | 760 | Up to 8k tokens | 100 memories |
+| Legend | $29.99/mo | 1,650 | Up to 16k tokens | 200 memories |
+| Mythic | $49.99/mo | 2,750 | Up to 32k tokens | 400 memories |
+| Ultimate | $99.99/mo | 5,200 | Up to 32k tokens (expandable) | 800 memories |
+
+*Prices per [AI Dungeon's own help center](https://help.aidungeon.com/memberships-benefits); all paid tiers also offer 6- and 12-month billing at a discount. AI Dungeon changes pricing and tiers periodically — verify current numbers in the app before subscribing.*
 
 This is where opinions become sharply divided.
 
@@ -99,7 +109,7 @@ The free version offers enough functionality for casual experimentation, especia
 
 However, users seeking the best AI models, improved memory retention, and advanced features must subscribe to higher-tier plans. (Not sure which to choose? Our [best AI Dungeon model guide](/blog/best-ai-dungeon-model) sorts the whole lineup by playstyle.)
 
-The biggest criticism is the cost of premium access. Top-tier Mythic and Ultimate subscriptions running the largest premium models can range from roughly $50 to $100 per month. For many players, this is difficult to justify.
+The biggest criticism is the cost of premium access. Top-tier Mythic and Ultimate subscriptions running the largest premium models run $49.99 to $99.99 per month. For many players, this is difficult to justify.
 
 At those prices, users naturally begin comparing AI Dungeon against premium AI chat platforms, advanced roleplaying alternatives, and other AI-assisted creative tools.
 
