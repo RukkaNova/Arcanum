@@ -25,7 +25,7 @@ The reason most AI RPG campaigns drift into incoherence is not that the language
 
 The practical experience is noticeably different from platforms like [AI Realm](/clients/ai-realm) or [AI Dungeon](/clients/ai-dungeon). Log off for a week. Come back. Your inventory is exactly as you left it. The NPC you insulted last session still holds a grudge. The fog-of-war map updates correctly from where you explored. The world remembers — because the world is a database entry, not a language model's inference.
 
-RoleForge isn't alone in betting on that separation. In our [MythEngine first look](/blog/mythengine-first-look), the open-beta developer described building "a referee the AI can't overrule" as the actual hard problem — a different implementation, the same underlying wager that narration and ground truth need to be two separate jobs.
+RoleForge isn't alone in betting on that separation. In our [MythEngyn first look](/blog/mythengyn-first-look), the open-beta developer described building "a referee the AI can't overrule" as the actual hard problem — a different implementation, the same underlying wager that narration and ground truth need to be two separate jobs.
 
 ## The Narrative Layer: Eight Tones That Actually Differ
 
