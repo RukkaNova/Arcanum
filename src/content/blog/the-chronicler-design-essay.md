@@ -24,6 +24,8 @@ The second problem with meters is that they make relationships gameable. Once yo
 
 The Chronicler's design answer is to remove the meter entirely. There is no number. There is no threshold. What exists instead is a hidden simulation of a person — their trust, their attachment, their doubts, their history with you — tracked by the game master without ever being surfaced as a figure the player can read or optimise. The player feels the relationship entirely through how the companion behaves, which is exactly how relationships work in reality.
 
+Not every platform is reaching for the same answer. Our [Fable Forge first look](/blog/fable-forge-first-look) covers a system built on close to the opposite instinct — tagging individual memories by weight and sentiment and using those tags to explicitly gate relationship milestones. It's a more gamified structure than a meter, but it's also a deliberate, surfaced one rather than a hidden simulation, and it's a reasonable illustration of just how much design space sits between "meter" and "no meter at all."
+
 ## A System Without a World
 
 The Chronicler is not a fantasy game or a romance game or a slow-burn narrative game. It is a relationship engine, and it is deliberately world-agnostic.
