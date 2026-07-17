@@ -38,7 +38,7 @@ We asked the developer what the hardest part of building MythEngyn has been. The
 
 > "The hard part was never getting AI to tell a story. It was building a world that stays true underneath the story, and a referee the AI can't overrule."
 
-That framing lines up with what we felt hands-on: the narration is competent, but it's the *consistency* underneath it — the thing that let it go 24 hours with one small miss — that's the actual engineering. MythEngyn isn't unusual in making that bet; [RoleForge](/blog/roleforge-review) makes a similar one, running a SQL database as the source of truth so the LLM only narrates what already happened rather than deciding it. MythEngyn's version of that ground truth is a system the developer calls **Maelstrom**.
+That framing lines up with what we felt hands-on: the narration is competent, but it's the *consistency* underneath it — the thing that let it go 24 hours with one small miss — that's the actual engineering. MythEngyn isn't unusual in making that bet; [RoleForge](/blog/roleforge-preview) makes a similar one, running a SQL database as the source of truth so the LLM only narrates what already happened rather than deciding it. MythEngyn's version of that ground truth is a system the developer calls **Maelstrom**.
 
 ## The Memory Marketing Problem
 

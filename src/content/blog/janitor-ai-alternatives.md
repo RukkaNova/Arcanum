@@ -65,9 +65,9 @@ Be clear-eyed about the trade, though: it runs only its own model (no bring-your
 
 ## 4. RoleForge — Best if You Want a Game, Not a Chat
 
-For the most important migration — the player who realised Janitor AI is a conversation and they wanted a *world* — **[RoleForge](/clients/roleforge)** is the cleanest answer. Instead of leaning on the context window, it runs a SQL database that holds the actual state of characters and the world, and uses the LLM only to narrate what the database says happened.
+For the most important migration — the player who realised Janitor AI is a conversation and they wanted a *world* — **[RoleForge](/clients/roleforge)** is the cleanest answer on paper. Instead of leaning on the context window, it's built to run a SQL database that holds the actual state of characters and the world, using the LLM only to narrate what the database says happened.
 
-The result is the persistence Janitor AI structurally can't offer: characters, relationships, and world facts stay consistent across a long campaign because they're *stored*, not "remembered." It's free, and it's our top pick for anyone whose real frustration was that nothing carried forward. **[Full review](/blog/roleforge-review)** (currently in closed alpha — unrated until public release).
+The intended result is persistence Janitor AI structurally can't offer: characters, relationships, and world facts should stay consistent across a long campaign because they're *stored*, not "remembered." It's free, and on architecture alone it's our top pick for anyone whose real frustration was that nothing carried forward — though it's closed alpha and we haven't tested it hands-on. **[Preview](/blog/roleforge-preview)** (currently in closed alpha — unrated until public release, not yet tested by us).
 
 **Solves:** chat-not-game, memory, consistency
 **Cost:** free

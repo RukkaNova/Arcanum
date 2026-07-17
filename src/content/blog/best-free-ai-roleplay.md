@@ -45,7 +45,7 @@ That makes them "free on a model you already have" *and* genuinely free at the s
 
 If you'd rather a platform handle everything, **[RoleForge](/clients/roleforge)** is the standout free option — currently in closed alpha, and unrated until public release per our pre-release policy. It's free, and its headline feature is the thing most free platforms lack: real persistent memory. A SQL database holds the actual state of your world and characters, and the LLM narrates what the database says happened — so a long campaign stays consistent instead of quietly forgetting itself.
 
-That a platform this capable is free is genuinely unusual. **[Full review](/blog/roleforge-review)** (currently in closed alpha — unrated until public release).
+That a platform this capable-on-paper is free is genuinely unusual. **[Preview](/blog/roleforge-preview)** (currently in closed alpha — unrated until public release, not yet tested by us).
 
 **Kind of free:** genuinely free (hosted)
 **Best for:** long solo campaigns that actually remember you

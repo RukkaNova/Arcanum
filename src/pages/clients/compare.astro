@@ -16,6 +16,7 @@ const rows = sorted.map(c => ({
   bestFor: c.data.bestFor ?? '—',
   reviewSlug: c.data.reviewSlug ?? null,
 }));
+const hasUnratedRow = rows.some(r => r.reviewSlug && r.rating === null);
 
 // Rows are server-rendered (crawlable, scoped-style-safe); JS only re-sorts/filters them.
 const stars = (r: number | null) =>
@@ -60,7 +61,7 @@ const jsonLd = {
 
     <div class="intro prose">
       <p>{rows.length} platforms. One table. Everything you need to decide which AI roleplay client is worth your time — without opening {rows.length} tabs.</p>
-      <p>Every entry below comes from a full hands-on review by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems. Ratings reflect mechanical depth, long-campaign stability, and value for your time, scored out of 5. Pricing reflects the free-tier reality, not the marketing headline. The <strong>Models</strong> column names what AI actually runs under the hood. <strong>Memory</strong> describes how — or whether — the platform keeps your world coherent across sessions.</p>
+      <p>Every rated entry below comes from a full hands-on review by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems. Ratings reflect mechanical depth, long-campaign stability, and value for your time, scored out of 5. Pricing reflects the free-tier reality, not the marketing headline. The <strong>Models</strong> column names what AI actually runs under the hood. <strong>Memory</strong> describes how — or whether — the platform keeps your world coherent across sessions.{hasUnratedRow && ' Closed-alpha platforms not yet playable by the public carry no rating and no hands-on claim — their Review column links to an architecture preview instead, clearly marked as such.'}</p>
       <p>Use the filters to narrow by pricing tier. Click any column header to sort. The <strong>Review</strong> link opens the full write-up for each platform.</p>
       <p class="method mono">Not sure which to pick? The <a href="/blog/best-ai-roleplay-platforms">Best AI Roleplay Platforms guide</a> gives ranked recommendations by player type. For a no-subscription alternative, the <a href="/arcanum-games">Arcanum Originals</a> are free games that run inside models you already pay for.</p>
     </div>
@@ -97,7 +98,7 @@ const jsonLd = {
               <td class="col-models">{r.models}</td>
               <td class="col-memory">{r.memory}</td>
               <td class="col-bestfor dim">{r.bestFor}</td>
-              <td class="col-review">{r.reviewSlug ? <a href={`/blog/${r.reviewSlug}`} class="rev-link mono">→ Review</a> : '—'}</td>
+              <td class="col-review">{r.reviewSlug ? <a href={`/blog/${r.reviewSlug}`} class="rev-link mono">{r.rating === null ? '→ Preview' : '→ Review'}</a> : '—'}</td>
             </tr>
           ))}
         </tbody>
@@ -108,7 +109,7 @@ const jsonLd = {
     <div class="closing prose">
       <h2>Reading the Data</h2>
       <p>A few patterns worth naming before you click through to any review.</p>
-      <p><strong>Free doesn't mean limited.</strong> Taverna is completely free and rated 4.0, and RoleForge — also free, currently in closed alpha and unrated per our pre-release policy — remains the reference for solo long-campaign persistence. The free tiers genuinely work for the use cases they're built for: solo persistence (RoleForge) and Discord-native group play (Taverna). Freemium platforms, by contrast, vary enormously in what the free tier actually provides before the upsell appears.</p>
+      <p><strong>Free doesn't mean limited.</strong> Taverna is completely free and rated 4.0, and RoleForge — also free, currently in closed alpha and unrated per our pre-release policy — is, on architecture alone, the one to watch for solo long-campaign persistence. The free tiers genuinely work for the use cases they're built for: solo persistence (RoleForge, on paper) and Discord-native group play (Taverna, hands-on). Freemium platforms, by contrast, vary enormously in what the free tier actually provides before the upsell appears.</p>
       <p><strong>Memory architecture determines campaign length.</strong> Platforms running on standard in-context windows — AI Dungeon, AI Realm, Taverna — all share the same ceiling: the model forgets what happened before the context fills. RoleForge solves this with a SQL database. Deep Realms extends it with an 80,000-word external store. Friends & Fables handles it through multi-model state synchronisation. The Memory column is the fastest way to identify which platforms can actually run a six-month campaign versus which ones degrade by session four.</p>
       <p><strong>Model flexibility matters if you pay elsewhere.</strong> Janitor AI's bring-your-own-API approach means you're not paying twice — if you already subscribe to Claude or GPT-4, you bring that subscription to a large character library. Deep Realms does the same. On every other platform on this list, you're paying for their model access specifically.</p>
       <p>Full write-ups for every platform are linked in the Review column. The <a href="/clients">client directory</a> has all {rows.length} cards in one view. If you are still working out which genre of AI roleplay suits you — pure narrative freedom, structured D&D mechanics, character-chat, or multiplayer tactical — the <a href="/blog/best-ai-roleplay-platforms">Best AI Roleplay Platforms guide</a> makes that distinction explicit.</p>

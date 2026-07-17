@@ -34,7 +34,7 @@ const videoCaption=d.video?(d.video.duration?`Video review · ${fmtDur(d.video.d
     </div>
     <div class="actions">
       {d.siteUrl && <a class="launch" href={d.siteUrl} target="_blank" rel="noopener">Visit {d.title} ↗</a>}
-      {d.reviewSlug && <a class="review" href={`/blog/${d.reviewSlug}`}>Full review →</a>}
+      {d.reviewSlug && <a class="review" href={`/blog/${d.reviewSlug}`}>{d.rating ? 'Full review →' : 'Preview →'}</a>}
     </div>
     {d.video && <VideoFacade id={d.video.id} poster={d.video.poster} title={d.video.title} caption={videoCaption} />}
     <div class="prose"><Content/></div>

@@ -83,9 +83,9 @@ If you weren't really there for the giant character catalogue — if you wanted 
 
 ## 5. RoleForge — Best When You Want It to Actually Remember
 
-If the memory failure was the dealbreaker — characters forgetting their own personality, the relationship resetting, the world contradicting itself — **[RoleForge](/clients/roleforge)** attacks the problem at the architecture level. Instead of relying on the model's context window to remember everything, it runs a SQL database that holds the actual state of the world and characters, and uses the LLM only to narrate what the database says happened.
+If the memory failure was the dealbreaker — characters forgetting their own personality, the relationship resetting, the world contradicting itself — **[RoleForge](/clients/roleforge)** is designed to attack the problem at the architecture level. Instead of relying on the model's context window to remember everything, it's built to run a SQL database that holds the actual state of the world and characters, using the LLM only to narrate what the database says happened.
 
-The practical result is the structural persistence Character.AI can't offer: characters, relationships, and world facts stay consistent across a long solo campaign because they're stored, not "remembered." It's free, and it's the strongest pick in this roster for anyone whose frustration was specifically that nothing carried forward. **[Full review](/blog/roleforge-review)** (currently in closed alpha — unrated until public release).
+The intended result is structural persistence Character.AI can't offer: characters, relationships, and world facts should stay consistent across a long solo campaign because they're stored, not "remembered." It's free, and on architecture alone it's the strongest pick in this roster for anyone whose frustration was specifically that nothing carried forward — though it's closed alpha and we haven't tested it hands-on. **[Preview](/blog/roleforge-preview)** (currently in closed alpha — unrated until public release, not yet tested by us).
 
 **Solves:** memory failure, world consistency, response drift
 **Cost:** free
@@ -138,7 +138,7 @@ A quick filter:
 ## Frequently Asked Questions
 
 **What is the best Character.AI alternative in 2026?**
-It depends on what you're replacing. For character chat with a lighter filter, [Janitor AI](/clients/janitor) is the closest like-for-like. For total control and no filter at all, [SillyTavern](/blog/sillytavern-guide). For a persistent companion, Kindroid. For an actual game with memory and stakes, [RoleForge](/blog/roleforge-review) or [Friends & Fables](/blog/friends-and-fables-review).
+It depends on what you're replacing. For character chat with a lighter filter, [Janitor AI](/clients/janitor) is the closest like-for-like. For total control and no filter at all, [SillyTavern](/blog/sillytavern-guide). For a persistent companion, Kindroid. For an actual game with memory and stakes, [RoleForge](/blog/roleforge-preview) or [Friends & Fables](/blog/friends-and-fables-review).
 
 **Is there a Character.AI alternative with no filter?**
 Yes. SillyTavern running a local model has no platform filter at all, DreamGen runs open-weight models without one, and Janitor AI's content policy is meaningfully lighter than Character.AI's. See our [uncensored AI roleplay guide](/blog/uncensored-ai-roleplay) for the full set of options.
