@@ -10,6 +10,8 @@ models: "Undisclosed"
 memoryApproach: "Persistent memory (claimed)"
 cover: "/img/aidungeonmaster.webp"
 featured: false
+status: "upcoming"
+accessNote: "Application-gated early access"
 updated: 2026-07-02
 ---
 

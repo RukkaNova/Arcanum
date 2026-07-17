@@ -9,6 +9,8 @@ models: "SQL engine + LLM narrator"
 memoryApproach: "SQL database, persistent"
 cover: "/img/roleforge.webp"
 featured: true
+status: "upcoming"
+accessNote: "Closed alpha — waitlist required"
 updated: 2026-07-17
 ---
 

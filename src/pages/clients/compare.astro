@@ -15,8 +15,11 @@ const rows = sorted.map(c => ({
   memory: c.data.memoryApproach ?? '—',
   bestFor: c.data.bestFor ?? '—',
   reviewSlug: c.data.reviewSlug ?? null,
+  status: c.data.status,
+  accessNote: c.data.accessNote ?? null,
 }));
 const hasUnratedRow = rows.some(r => r.reviewSlug && r.rating === null);
+const hasUpcomingRow = rows.some(r => r.status === 'upcoming');
 
 // Rows are server-rendered (crawlable, scoped-style-safe); JS only re-sorts/filters them.
 const stars = (r: number | null) =>
@@ -61,8 +64,8 @@ const jsonLd = {
 
     <div class="intro prose">
       <p>{rows.length} platforms. One table. Everything you need to decide which AI roleplay client is worth your time — without opening {rows.length} tabs.</p>
-      <p>Every rated entry below comes from a full hands-on review by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems. Ratings reflect mechanical depth, long-campaign stability, and value for your time, scored out of 5. Pricing reflects the free-tier reality, not the marketing headline. The <strong>Models</strong> column names what AI actually runs under the hood. <strong>Memory</strong> describes how — or whether — the platform keeps your world coherent across sessions.{hasUnratedRow && ' Closed-alpha platforms not yet playable by the public carry no rating and no hands-on claim — their Review column links to an architecture preview instead, clearly marked as such.'}</p>
-      <p>Use the filters to narrow by pricing tier. Click any column header to sort. The <strong>Review</strong> link opens the full write-up for each platform.</p>
+      <p>Every rated entry below comes from a full hands-on review by <a href="/about">Rukka</a> — four decades across tabletop RPGs, CRPGs, MMOs, and AI-driven roleplay systems. Ratings reflect mechanical depth, long-campaign stability, and value for your time, scored out of 5. Pricing reflects the free-tier reality, not the marketing headline. The <strong>Models</strong> column names what AI actually runs under the hood. <strong>Memory</strong> describes how — or whether — the platform keeps your world coherent across sessions.{hasUpcomingRow && ' A 🔒 next to a platform name means it\'s closed alpha, closed beta, or application-gated — not open to the general public yet. Some of those are already rated from early access; the still-unrated one links to an architecture preview instead of a verdict.'}</p>
+      <p>Use the filters to narrow by pricing tier or access. Click any column header to sort. The <strong>Review</strong> link opens the full write-up for each platform.</p>
       <p class="method mono">Not sure which to pick? The <a href="/blog/best-ai-roleplay-platforms">Best AI Roleplay Platforms guide</a> gives ranked recommendations by player type. For a no-subscription alternative, the <a href="/arcanum-games">Arcanum Originals</a> are free games that run inside models you already pay for.</p>
     </div>
 
@@ -72,6 +75,7 @@ const jsonLd = {
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="free">Free only</button>
         <button class="filter-btn" data-filter="freemium">Freemium</button>
+        {hasUpcomingRow && <button class="filter-btn" data-filter="upcoming">Coming soon 🔒</button>}
       </div>
       <p class="sort-hint mono">Click column headers to sort</p>
     </div>
@@ -91,8 +95,8 @@ const jsonLd = {
         </thead>
         <tbody id="compare-body">
           {rows.map(r => (
-            <tr data-pricing={r.pricing} data-rating={r.rating ?? -1} data-title={r.title}>
-              <td class="col-platform"><a href={`/clients/${r.id}`}>{r.title}</a></td>
+            <tr data-pricing={r.pricing} data-status={r.status} data-rating={r.rating ?? -1} data-title={r.title}>
+              <td class="col-platform"><a href={`/clients/${r.id}`}>{r.title}</a>{r.status==='upcoming' && <span class="lock-badge mono" title={r.accessNote ?? 'Not yet publicly available'}>🔒</span>}</td>
               <td class="col-rating mono">{stars(r.rating)}</td>
               <td class="col-pricing"><span class="token pricing-chip">{r.pricing}</span></td>
               <td class="col-models">{r.models}</td>
@@ -138,7 +142,7 @@ const jsonLd = {
         });
         let visibleCount = 0;
         sorted.forEach(row => {
-          const show = activeFilter === 'all' || row.dataset.pricing === activeFilter;
+          const show = activeFilter === 'all' || row.dataset.pricing === activeFilter || (activeFilter === 'upcoming' && row.dataset.status === 'upcoming');
           row.classList.toggle('hidden', !show);
           if (show) visibleCount++;
           tbody.appendChild(row);
@@ -266,6 +270,7 @@ const jsonLd = {
       text-decoration: none;
     }
     .col-platform a:hover { color: var(--ember); }
+    .lock-badge { margin-left: .4rem; font-size: .78rem; cursor: help; }
 
     .col-rating { color: var(--gild) !important; white-space: nowrap; }
 

@@ -10,6 +10,8 @@ models: "Own (D&D 5e-trained)"
 memoryApproach: "In-context (Discord)"
 cover: "/img/taverna.webp"
 featured: false
+status: "upcoming"
+accessNote: "Closed beta — invite only"
 updated: 2026-06-17
 ---
 

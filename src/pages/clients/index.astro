@@ -2,30 +2,72 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Stars from '../../components/Stars.astro';
-const clients=(await getCollection('clients')).sort((a,b)=>(b.data.rating??0)-(a.data.rating??0));
+const all=(await getCollection('clients')).sort((a,b)=>(b.data.rating??0)-(a.data.rating??0));
+const launched=all.filter(c=>c.data.status!=='upcoming');
+const upcoming=all.filter(c=>c.data.status==='upcoming');
 ---
-<Base title="Best LLM Roleplay Platforms & Clients Reviewed | Arcanum RPGs" description="Honest reviews of every AI roleplay client — Janitor, Friends & Fables, AI Dungeon, SillyTavern and more. See which LLM gaming platform is actually worth your time.">
+<Base title="Best LLM Roleplay Platforms & Clients Reviewed | Arcanum RPGs" description="Honest reviews of every AI roleplay client — Janitor, Friends & Fables, AI Dungeon, SillyTavern and more. See which LLM gaming platform is actually worth your time, plus what's coming next in closed alpha and beta.">
   <div class="wrap browse">
     <h1>Clients</h1>
     <p class="sub">Every roleplay platform, reviewed. Find the one worth your time — or skip them all and play on your own AI.</p>
     <p class="guide mono"><a href="/blog/best-ai-roleplay-platforms">→ Not sure where to start? See our Best AI Roleplay Platforms guide.</a></p>
     <p class="guide mono"><a href="/clients/compare">→ Compare all platforms side by side — rating, pricing, models, memory.</a></p>
-    <div class="list">
-      {clients.map(c=>(
-        <a class="row" href={`/clients/${c.id}`}>
-          <div class="thumb">{c.data.cover && <img src={c.data.cover} alt={c.data.title} loading="lazy" width="800" height="450"/>}</div>
-          <div class="info">
-            <div class="rowtop">
-              <h2>{c.data.title}</h2>
-              <span class="pricing token">{c.data.pricing}</span>
-            </div>
-            <p class="tag">{c.data.tagline}</p>
-            {c.data.bestFor && <p class="bestfor mono">Best for: {c.data.bestFor}</p>}
-            {c.data.rating && <span class="rating mono"><Stars rating={c.data.rating}/> {c.data.rating}/5</span>}
-          </div>
-        </a>
-      ))}
+
+    <div class="filter-group">
+      <span class="filter-label mono">Show:</span>
+      <button class="filter-btn active" data-filter="all">All ({all.length})</button>
+      <button class="filter-btn" data-filter="launched">Available now ({launched.length})</button>
+      <button class="filter-btn" data-filter="upcoming">Coming soon ({upcoming.length})</button>
     </div>
+
+    <section id="available" data-section="launched">
+      <div class="list">
+        {launched.map(c=>(
+          <a class="row" href={`/clients/${c.id}`} data-status="launched">
+            <div class="thumb">{c.data.cover && <img src={c.data.cover} alt={c.data.title} loading="lazy" width="800" height="450"/>}</div>
+            <div class="info">
+              <div class="rowtop">
+                <h2>{c.data.title}</h2>
+                <span class="pricing token">{c.data.pricing}</span>
+              </div>
+              <p class="tag">{c.data.tagline}</p>
+              {c.data.bestFor && <p class="bestfor mono">Best for: {c.data.bestFor}</p>}
+              {c.data.rating && <span class="rating mono"><Stars rating={c.data.rating}/> {c.data.rating}/5</span>}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    {upcoming.length>0 && (
+      <section id="upcoming" data-section="upcoming">
+        <div class="upcoming-head">
+          <h2>Coming Soon</h2>
+          <p class="upcoming-sub">Platforms we're watching that aren't open to the public yet — closed alpha, closed beta, or application-gated early access. Some are already played and rated by <a href="/about">Rukka</a> through early access; unrated ones are covered as an architecture preview instead of a verdict, per our <a href="/blog/best-ai-roleplay-platforms">policy of not scoring pre-release software</a>. Every entry links through to what we actually know.</p>
+        </div>
+        <div class="list">
+          {upcoming.map(c=>(
+            <a class="row upcoming-row" href={`/clients/${c.id}`} data-status="upcoming">
+              <div class="thumb">{c.data.cover && <img src={c.data.cover} alt={c.data.title} loading="lazy" width="800" height="450"/>}</div>
+              <div class="info">
+                <div class="rowtop">
+                  <h2>{c.data.title}</h2>
+                  <span class="pricing token">{c.data.pricing}</span>
+                </div>
+                <p class="tag">{c.data.tagline}</p>
+                <div class="upcoming-meta">
+                  {c.data.accessNote && <span class="access-chip mono">🔒 {c.data.accessNote}</span>}
+                  {c.data.rating
+                    ? <span class="rating mono"><Stars rating={c.data.rating}/> {c.data.rating}/5</span>
+                    : <span class="rating mono unrated">Unrated — preview only</span>}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
     <div class="devs-strip">
       <p>Building or launching an AI RPG platform? See how to get <a href="/developers">reviewed, featured, or listed here</a>.</p>
     </div>
@@ -37,7 +79,12 @@ const clients=(await getCollection('clients')).sort((a,b)=>(b.data.rating??0)-(a
     .devs-strip a{color:var(--rune);}
     h1{font-size:clamp(2rem,5vw,3rem);font-weight:600;}
     .sub{color:var(--parchment-dim);margin:.4rem 0 .8rem;max-width:40rem;}
-    .guide{font-size:.8rem;margin-bottom:2rem;}
+    .guide{font-size:.8rem;margin-bottom:.6rem;}
+    .filter-group{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:1.6rem 0 1.8rem;}
+    .filter-label{color:var(--rune);font-size:.78rem;}
+    .filter-btn{background:var(--ink-2);border:1px solid var(--line);color:var(--parchment-dim);border-radius:999px;padding:.35rem .9rem;font-size:.82rem;cursor:pointer;transition:border-color .15s,color .15s;}
+    .filter-btn:hover{border-color:var(--ember);color:var(--parchment);}
+    .filter-btn.active{border-color:var(--ember);color:var(--ember);}
     .list{display:flex;flex-direction:column;gap:1rem;}
     .row{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--ink-2);color:var(--parchment);transition:border-color .18s;}
     @media(min-width:640px){.row{grid-template-columns:240px 1fr;}}
@@ -52,5 +99,32 @@ const clients=(await getCollection('clients')).sort((a,b)=>(b.data.rating??0)-(a
     .tag{color:var(--parchment-dim);margin:.4rem 0;}
     .bestfor{font-size:.78rem;color:var(--rune);margin:.5rem 0;}
     .rating{color:var(--gild);font-size:.82rem;}
+    #upcoming{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line);}
+    .upcoming-head h2{font-size:1.6rem;font-weight:600;margin-bottom:.5rem;}
+    .upcoming-sub{color:var(--parchment-dim);font-size:.88rem;line-height:1.6;max-width:44rem;margin-bottom:1.6rem;}
+    .upcoming-sub a{color:var(--rune);}
+    .upcoming-row{opacity:.92;}
+    .upcoming-meta{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;margin-top:.3rem;}
+    .access-chip{background:var(--ink);border:1px solid var(--line);color:var(--parchment-dim);border-radius:999px;padding:.15rem .6rem;font-size:.74rem;}
+    .rating.unrated{color:var(--parchment-dim);}
+    section.hidden{display:none;}
   </style>
+  <script is:inline>
+    (function () {
+      // Sections + rows are fully server-rendered; JS only shows/hides them.
+      const btns = Array.from(document.querySelectorAll('.filter-btn'));
+      const available = document.getElementById('available');
+      const upcoming = document.getElementById('upcoming');
+      if (!btns.length) return;
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          btns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          if (available) available.classList.toggle('hidden', filter === 'upcoming');
+          if (upcoming) upcoming.classList.toggle('hidden', filter === 'launched');
+        });
+      });
+    })();
+  </script>
 </Base>

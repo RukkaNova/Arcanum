@@ -10,6 +10,8 @@ models: "Latitude own model"
 memoryApproach: "Structured + dice"
 cover: "/img/voyage.webp"
 featured: true
+status: "upcoming"
+accessNote: "Closed beta — invite code required"
 updated: 2026-06-17
 ---
 

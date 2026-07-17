@@ -36,6 +36,9 @@ const clients = defineCollection({
     memoryApproach: z.string().optional(),
     cover: z.string().optional(),
     featured: z.boolean().default(false),
+    // 'upcoming' = closed alpha/beta/waitlist, not open to the general public yet.
+    status: z.enum(['launched', 'upcoming']).default('launched'),
+    accessNote: z.string().optional(),
     updated: z.coerce.date(),
     // Optional lite-facade YouTube review (no iframe on load — see VideoFacade.astro).
     video: z.object({
