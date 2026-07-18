@@ -39,7 +39,7 @@ The Chronicler enforces player sovereignty as an immutable law. It will never na
 
 ## Who This AI RPG Is For
 
-The Chronicler is for players who care more about people than loot tables — who want an LLM RPG where a companion's trust is the real reward and a betrayal is the real cost. It rewards patience, consistency, and emotional attention. If you want slow-burn character drama with a cast that pursues its own life around you, this is one of the most carefully built relationship RPGs you can load into an AI today.
+The Chronicler is for players who care more about people than loot tables — who want an LLM RPG where a companion's trust is the real reward and a betrayal is the real cost. It rewards patience, consistency, and emotional attention. If you want slow-burn character drama with a cast that pursues its own life around you, this is one of the most carefully built relationship RPGs you can load into an AI today. (And if you want to understand the pacing engineering behind it — why AI normally rushes relationships and how to stop it — our [slow burn AI roleplay guide](/blog/slow-burn-ai-roleplay) breaks down the techniques.)
 
 The files are free to download. Set up the project, follow the install guide below, and begin your legend.
 

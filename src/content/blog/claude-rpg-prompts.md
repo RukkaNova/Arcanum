@@ -45,7 +45,7 @@ You are running as a Claude Project. Use your persistent memory within this Proj
 Begin when the player is ready. Ask for the details you need to open the session — character name, background, starting situation, or whatever the genre calls for — then begin.
 ```
 
-Why this works on Claude specifically: the relationship instructions ask the model to hold distinct NPC voices and track emotional state internally over hundreds of turns — exactly the kind of instruction discipline Claude maintains better than other consumer models. The `/fix_state` command gives you a manual override when anything drifts. And the memory-compression block pairs directly with the [Campaign Memory Tool](/tools/campaign-memory) if you want to manage long-campaign state by hand.
+Why this works on Claude specifically: the relationship instructions ask the model to hold distinct NPC voices and track emotional state internally over hundreds of turns — exactly the kind of instruction discipline Claude maintains better than other consumer models. If you want the theory behind the pacing rules — why models rush relationships and how each line above counters it — our [slow burn AI roleplay guide](/blog/slow-burn-ai-roleplay) goes deep on exactly that. The `/fix_state` command gives you a manual override when anything drifts. And the memory-compression block pairs directly with the [Campaign Memory Tool](/tools/campaign-memory) if you want to manage long-campaign state by hand.
 
 ## Prompt 2 — Survival Horror (Single Session)
 

@@ -51,7 +51,7 @@ Unpredictable, follows a private logic, and delights in being three steps somewh
 
 ### 6. The Confidant
 
-Reads people the way other people read weather, and uses it to draw them out rather than to corner them. The Confidant is the archetype for emotionally-driven, slow-burn roleplay: warm, perceptive, impossible to lie to, and a vault for whatever you hand over. **Make it yours:** give them a reason they're so good at reading people (and so reluctant to be read themselves). Pairs naturally with relationship-focused campaigns.
+Reads people the way other people read weather, and uses it to draw them out rather than to corner them. The Confidant is the archetype for emotionally-driven, [slow-burn roleplay](/blog/slow-burn-ai-roleplay): warm, perceptive, impossible to lie to, and a vault for whatever you hand over. **Make it yours:** give them a reason they're so good at reading people (and so reluctant to be read themselves). Pairs naturally with relationship-focused campaigns.
 
 ### 7. The Antagonist
 
