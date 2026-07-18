@@ -3,6 +3,7 @@ title: "Voyage vs AI Dungeon (2026): Same Studio, Opposite Philosophy"
 description: "Voyage vs AI Dungeon compared — Latitude's structured, permadeath successor against the original freeform AI text adventure. Same lineage, opposite bet on what makes a story worth playing."
 section: "guides"
 pubDate: 2026-07-12
+updatedDate: 2026-07-18
 tags: ["Voyage vs AI Dungeon", "Voyage AI RPG", "AI Dungeon", "Latitude AI RPG", "AI Dungeon permadeath", "best AI roleplay platform 2026"]
 faq:
   - q: "Is Voyage better than AI Dungeon?"
@@ -12,7 +13,9 @@ faq:
   - q: "Does Voyage have permadeath and AI Dungeon doesn't?"
     a: "Correct. Permadeath is Voyage's headline feature — when your character dies, they're gone for good, and a new character begins in the same world inheriting consequences from the prior run. AI Dungeon has no equivalent mechanism; characters can be narratively killed off, but the platform has no game-state concept of death that sticks."
   - q: "Can I play Voyage right now?"
-    a: "Only with an invite code — Voyage is currently in closed beta with a real waitlist. AI Dungeon is fully open today, on web, mobile, and Steam, with a usable free tier since its Unchained update removed the old energy and ad systems."
+    a: "Only with an invite code — Voyage is currently in an invite-gated expanded beta with a real waitlist. AI Dungeon is fully open today, on web, mobile, and Steam, with a usable free tier since its Unchained update removed the old energy and ad systems."
+  - q: "When does Voyage fully release?"
+    a: "There's no full release date yet. Latitude publicly unveiled Voyage on April 21, 2026, when it was already in expanded beta testing, and has said an open beta is scheduled for later in 2026 — no exact date announced. Until the open beta arrives, access requires an invite code, and the beta remains free to play ahead of the planned $15–$50/month subscription tiers."
   - q: "Is Voyage cheaper than AI Dungeon?"
     a: "At their respective ceilings, yes. Voyage's anticipated top tier is $50/month (Ultimate); AI Dungeon's top tier, Ultimate, runs $99.99/month for its largest premium models. Both offer a free tier at the entry level — AI Dungeon's is more mature and immediately accessible today, Voyage's is beta-gated."
   - q: "Should I play Voyage, AI Dungeon, or both?"
@@ -68,7 +71,7 @@ Voyage supports synchronous co-op for up to four players through a smart mechani
 
 AI Dungeon is fully open today — web, mobile, and a dedicated Steam version with offline flexibility and a one-time-purchase option. Its Unchained update also made the free tier genuinely usable, removing the old energy and ad systems that used to interrupt play.
 
-Voyage is mobile-first (iOS and Android) and currently gated behind an invite-code closed beta with a real waitlist. It's optimized for short-burst, pick-up-and-play sessions rather than desk-bound desktop play, which is a deliberate design choice, not an oversight — but it does mean Voyage isn't a drop-in replacement for AI Dungeon today for anyone without an invite.
+Voyage is mobile-first (iOS and Android) and currently gated behind an invite-code expanded beta with a real waitlist — Latitude has said an open beta is scheduled for later in 2026, with no exact date announced. It's optimized for short-burst, pick-up-and-play sessions rather than desk-bound desktop play, which is a deliberate design choice, not an oversight — but it does mean Voyage isn't a drop-in replacement for AI Dungeon today for anyone without an invite.
 
 ## Price
 
@@ -94,7 +97,10 @@ Both are built by Latitude, but on opposite premises. AI Dungeon runs on pure na
 Correct. Permadeath is Voyage's headline feature — when your character dies, they're gone for good, and a new character begins in the same world inheriting consequences from the prior run. AI Dungeon has no equivalent mechanism; characters can be narratively killed off, but the platform has no game-state concept of death that sticks.
 
 **Can I play Voyage right now?**
-Only with an invite code — Voyage is currently in closed beta with a real waitlist. AI Dungeon is fully open today, on web, mobile, and Steam, with a usable free tier since its Unchained update removed the old energy and ad systems.
+Only with an invite code — Voyage is currently in an invite-gated expanded beta with a real waitlist. AI Dungeon is fully open today, on web, mobile, and Steam, with a usable free tier since its Unchained update removed the old energy and ad systems.
+
+**When does Voyage fully release?**
+There's no full release date yet. Latitude publicly unveiled Voyage on April 21, 2026, when it was already in expanded beta testing, and has said an open beta is scheduled for later in 2026 — no exact date announced. Until the open beta arrives, access requires an invite code, and the beta remains free to play ahead of the planned $15–$50/month subscription tiers.
 
 **Is Voyage cheaper than AI Dungeon?**
 At their respective ceilings, yes. Voyage's anticipated top tier is $50/month (Ultimate); AI Dungeon's top tier, Ultimate, runs $99.99/month for its largest premium models. Both offer a free tier at the entry level — AI Dungeon's is more mature and immediately accessible today, Voyage's is beta-gated.

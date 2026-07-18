@@ -11,8 +11,8 @@ memoryApproach: "Structured + dice"
 cover: "/img/voyage.webp"
 featured: true
 status: "upcoming"
-accessNote: "Closed beta — invite code required"
-updated: 2026-06-17
+accessNote: "Expanded beta — invite code required; open beta planned later in 2026"
+updated: 2026-07-18
 ---
 
 Recognizing the limitations of pure text generation, Latitude introduced Voyage in 2026 as a direct evolution of their AI Dungeon technology. Where AI Dungeon gives players total narrative fiat, Voyage integrates structured gameplay mechanics into the same LLM interface — aiming to capture the audience that wanted a real tabletop experience, not just an improv partner.
@@ -37,7 +37,7 @@ Conversely, it is worse for players who prefer bypassing mechanics in favor of p
 
 ## Limitations
 
-The current limitations stem primarily from Voyage's closed beta status. Access is highly restricted via an invite code system, forcing potential users onto waitlists. Because it is heavily optimized for mobile, desktop-centric users may find the interface restrictive. The platform also faces criticism from veteran users who argue it is simply packaging mechanics that other indie AI RPGs have offered for years.
+The current limitations stem primarily from Voyage's gated beta status. Access is restricted via an invite code system, forcing potential users onto waitlists — Latitude publicly unveiled the platform on April 21, 2026, already in expanded beta, and has an open beta scheduled for later in 2026 with no exact date announced. Because it is heavily optimized for mobile, desktop-centric users may find the interface restrictive. The platform also faces criticism from veteran users who argue it is simply packaging mechanics that other indie AI RPGs have offered for years.
 
 ## Pricing
 

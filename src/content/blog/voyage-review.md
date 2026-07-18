@@ -45,7 +45,7 @@ Co-op for up to four players works through a smart mechanic: the host's action p
 
 ## The Beta Gate and Pricing
 
-Voyage is currently in invite-only beta, accessible via a code system. Waitlists are real and not short.
+Voyage is currently in invite-only expanded beta, accessible via a code system. Waitlists are real and not short. Latitude has said an open beta is scheduled for later in 2026, with no exact date announced.
 
 Anticipated pricing runs from $15/month (Standard) to $50/month (Ultimate), with the highest tier covering uncapped player actions and priority multiplayer hosting. Given that the comparison benchmark is AI Dungeon — which can run $50–$100/month for top-tier Ultra access — Voyage's pricing at launch looks more defensible, especially given the structured World Engine that AI Dungeon lacks entirely.
 

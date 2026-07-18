@@ -3,7 +3,17 @@ title: "Gemini RPG: How to Turn Gemini Into a Full Text RPG (2026)"
 description: "Gemini's 2M context window makes it the strongest consumer model for long AI RPG campaigns. Here's how Gems work, what genres Gemini handles best, where it falls short vs Claude and ChatGPT, and how to start playing."
 section: "guides"
 pubDate: 2026-06-24
-tags: ["Gemini RPG", "Gemini Gems RPG", "AI RPG", "LLM RPG", "Google Gemini roleplay", "text RPG", "Gemini Gems"]
+updatedDate: 2026-07-18
+tags: ["Gemini RPG", "Gemini Gems RPG", "AI RPG", "LLM RPG", "Google Gemini roleplay", "text RPG", "Gemini Gems", "Gemini roleplay canon", "Gemini breaking character"]
+faq:
+  - q: "Why does Gemini break canon or retcon events in roleplay?"
+    a: "Three causes stack up: as context grows, Gemini starts approximating older events instead of recalling them; it treats facts established mid-chat as softer than facts in its instructions or knowledge files; and with intense character concepts it sometimes steps outside the fiction to soften or disclaim a scene rather than playing it straight. Each has a fix — a canon-lock instruction, moving load-bearing facts into the knowledge file, and defining the character's intensity in-fiction with clear limits."
+  - q: "How do I stop Gemini treating my roleplay as 'not canon'?"
+    a: "Add an explicit canon-lock block to your Gem's instructions: everything established in play is binding canon, the model may never retcon, soften, or disclaim it, and if it's unsure about a past fact it asks in-fiction instead of inventing or resetting. Gemini follows instructions in the Gem's Instructions field far more durably than requests made mid-chat, so the rule belongs there, not in a message."
+  - q: "Can Gemini play obsessive or intense characters without breaking character?"
+    a: "Yes, if the intensity is defined as an in-fiction trait with explicit boundaries rather than left for the model to improvise. Describe what the character's fixation looks like in behaviour, state the register limits, and instruct the model to express the trait through action and dialogue without out-of-character commentary. Ambiguity is what triggers Gemini to step outside the story; a clearly scoped trait gets played as written."
+  - q: "Does a Gem knowledge file count as canon?"
+    a: "Effectively yes, and it's the most durable canon you can give Gemini — it treats uploaded knowledge files as reference material to consult rather than context that fades. Put permanent world facts in the knowledge file, keep evolving campaign state in periodic memory blocks, and tell the model the knowledge file wins any conflict with its own improvisation."
 ---
 
 Most players who want an AI RPG open ChatGPT or Claude by reflex. That choice is usually habit, not analysis. Gemini has a structural advantage those models can't match — one that matters specifically for the thing that breaks most AI campaigns — and almost nobody is building on it.
@@ -68,6 +78,36 @@ The 2M context window is real, but so are the weaknesses. An honest comparison:
 
 The tradeoff is clear: Gemini gives you structural advantages that directly serve long, lore-heavy, campaign-based play, at the cost of prose ceiling, ecosystem breadth, and community support.
 
+## Keeping Gemini Canon-Consistent (Fixing Canon Drift)
+
+A specific complaint comes up again and again from Gemini roleplayers: the model breaks canon. It retcons an event you both established, quietly softens a character's behaviour, or — most jarringly — steps outside the fiction to treat something that happened in play as somehow *not canon*. This shows up most with intense character concepts: an obsessive rival, a possessive companion, a character defined by fixation. You want the character to stay that character, in canon, and Gemini keeps flinching out of it.
+
+Three separate things cause this, and each has its own fix.
+
+**Cause one: context approximation.** As the conversation grows, older events blur into gist. Gemini isn't *deciding* your third session isn't canon — it genuinely half-remembers it, and a half-remembered fact gets rewritten with confidence. The fix is structural: keep permanent world facts in the Gem's knowledge file (which Gemini consults rather than lets fade) and compress evolving campaign state into periodic memory blocks — the [campaign memory tool](/tools/campaign-memory) exists for exactly this.
+
+**Cause two: instruction-versus-chat hierarchy.** Gemini treats what's written in a Gem's Instructions field as durable and what's said mid-chat as negotiable. If your only canon rule is a message you typed in session two, it will erode. Put a canon-lock block in the Instructions field itself:
+
+```
+CANON RULES
+- Everything established in play is binding canon: events, dialogue,
+  character behaviour, and consequences. Never retcon, soften, or
+  reinterpret an established fact.
+- Never step outside the fiction to comment on, disclaim, or reframe
+  something that happened in the story. There is no "not canon" —
+  if it happened in play, it happened.
+- If you are uncertain about a past fact, do not invent a replacement
+  or reset the scene. Ask about it in-fiction, or check the knowledge
+  file. The knowledge file always wins over improvisation.
+- If the player types /fix_state, summarise your current understanding
+  of the campaign state and invite corrections. Corrections become
+  binding canon.
+```
+
+**Cause three: hedging on intense characters.** When a character concept involves fixation, possessiveness, or menace, an under-specified prompt leaves Gemini to guess how far the trait goes — and when models are unsure, they hedge: the obsessive rival becomes politely persistent, or the narrator adds a disclaiming aside. The fix is to remove the guesswork. Define the trait as an in-fiction behaviour with explicit limits: *what does the fixation look like in action* (watches from doorways, keeps score of every slight, resents anyone else who gets your time), and *what register the story stays in*. A clearly scoped trait with stated boundaries gets played as written, because the model no longer has to decide for itself where the line is. This is the same specificity principle behind [building characters with real interiority](/blog/roleplay-character-ideas) — vague intensity produces hedged intensity.
+
+Do all three — knowledge-file canon, a canon-lock block, scoped character traits — and Gemini's structural strengths start working *for* consistency instead of against it. It's the model with the most room to remember; it just needs to be told that remembering is the rule.
+
 ## Eirathis Strider: What a Gemini-Native RPG Looks Like Done Properly
 
 The most useful way to understand what Gemini can actually do as a game master is to load a system built specifically for it rather than trying to run a generic prompt.
@@ -89,3 +129,17 @@ If you want to run a **Gemini Gems RPG** for the first time, Eirathis Strider is
 If you want to see everything available on Gemini before committing, the [best Gemini RPG games list](/blog/best-gemini-rpg-games) covers the full landscape honestly, including what to do if you want to build your own Gem from scratch.
 
 The 2 million token context window is not a marketing figure. For AI RPG campaigns specifically — where the thing that kills a game is the world forgetting itself — it is the most meaningful structural advantage any consumer model currently offers. The ecosystem is thin. The prose ceiling is lower than Claude's. But if you want a game that still knows what happened in session one when you're in session fifteen, Gemini is where you build it.
+
+## Frequently Asked Questions
+
+**Why does Gemini break canon or retcon events in roleplay?**
+Three causes stack up: as context grows, Gemini starts approximating older events instead of recalling them; it treats facts established mid-chat as softer than facts in its instructions or knowledge files; and with intense character concepts it sometimes steps outside the fiction to soften or disclaim a scene rather than playing it straight. Each has a fix — a canon-lock instruction, moving load-bearing facts into the knowledge file, and defining the character's intensity in-fiction with clear limits. The full breakdown is in the canon-consistency section above.
+
+**How do I stop Gemini treating my roleplay as "not canon"?**
+Add an explicit canon-lock block to your Gem's instructions: everything established in play is binding canon, the model may never retcon, soften, or disclaim it, and if it's unsure about a past fact it asks in-fiction instead of inventing or resetting. Gemini follows instructions in the Gem's Instructions field far more durably than requests made mid-chat, so the rule belongs there, not in a message.
+
+**Can Gemini play obsessive or intense characters without breaking character?**
+Yes, if the intensity is defined as an in-fiction trait with explicit boundaries rather than left for the model to improvise. Describe what the character's fixation looks like in behaviour, state the register limits, and instruct the model to express the trait through action and dialogue without out-of-character commentary. Ambiguity is what triggers Gemini to step outside the story; a clearly scoped trait gets played as written.
+
+**Does a Gem knowledge file count as canon?**
+Effectively yes, and it's the most durable canon you can give Gemini — it treats uploaded knowledge files as reference material to consult rather than context that fades. Put permanent world facts in the knowledge file, keep evolving campaign state in periodic [memory blocks](/tools/campaign-memory), and tell the model the knowledge file wins any conflict with its own improvisation.
