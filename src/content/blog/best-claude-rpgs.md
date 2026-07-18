@@ -32,4 +32,6 @@ Download links, files, and full step-by-step setup guides are on each game's pag
 
 These four cover the full range of what Claude can do as a game master — strategy, romance, mature adventure, and sci-fi survival. Download whichever calls to you, and find out how good a Claude RPG can actually be.
 
+Running your own homebrew system alongside these? [Claude Skills for tabletop RPG](/blog/claude-skills-rpg) covers how to package your dice and combat rules as a reusable module that works across every Project.
+
 Want the wider view across every model, not just Claude? Arcanum's [complete directory of LLM RPG games](/blog/llm-rpg-games) covers ChatGPT and Gemini games too, plus the platform landscape and how each game is evaluated.
