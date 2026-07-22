@@ -20,6 +20,10 @@ Every part of the presentation is pulling in the same direction: the art, the am
 
 Tidefall isn't afraid to narrow what's possible in exchange for making what remains hit harder — the same trade we saw in [Fable Forge's first look](/blog/fable-forge-first-look). Both platforms hand-craft the experience rather than leaving everything to open-ended generation, and both are betting that depth and consistency matter more than total freedom. It's the opposite instinct from a sandbox like [Friends & Fables](/clients/friends-and-fables) or [Deep Realms](/clients/deep-realms), and on the evidence of 24 hours, it's paying off — the world feels more consistent and more deliberately built than most of what we test.
 
+## The Developer's Case for the Trade
+
+Tidefall's developers describe their approach to story as deliberately different from the norm: less free than most AI RPGs, more guided — but, in their framing, nowhere near linear. Player choice, they say, still decides everything, and the world still branches meaningfully underneath the guidance. We're reporting that framing as they gave it to us; whether it holds up is something only more time with the game can answer.
+
 ## Missing Screens, Guessing Games
 
 The flip side is the UX, and right now it's genuinely rough — expected for an open beta, but rough nonetheless. There's no inventory screen, no party screen, and no quest journal. A lot of the game is played by memory and guesswork instead of by checking a screen.

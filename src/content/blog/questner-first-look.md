@@ -20,6 +20,10 @@ There is no downtime in Questner. You drop into a session and within an hour or 
 
 That pacing reads as a deliberate design choice, not a limitation. Questner plays like a casual, low-time-commitment action RPG aimed squarely at players on a phone or tablet who want to have fun without thinking too hard about it — pick it up, make visible progress in a short session, put it down. Compare that to [Voyage](/clients/voyage) or [FableAI](/clients/fableai), our two mobile-first picks so far: both are still built around narrative pacing and consequence, whether that's Voyage's permadeath stakes or FableAI's freewrite storytelling. Questner isn't trying to compete on either axis — it's optimized for low friction and constant momentum instead.
 
+## Why the Developer Built It This Way
+
+We asked Questner's developer what drew them to build the game this way. They said they could never get into other AI RPGs themselves — describing the experience as feeling "forced to beat at the models trying to get the story to go forward." Most of the time, they said, there were no real choices to make: just typing "continue" or "I go" and waiting for the next beat. That frustration is the stated reason behind Questner's opposite bet — a game built around constant, guaranteed forward motion instead of open-ended prompting.
+
 ## What Happens Next
 
 We haven't scored Questner and won't until we've spent real time with it beyond the first session. What's clear already is that it occupies a lane nothing else in our [directory](/clients) currently covers: the fast, casual, mobile-native end of the AI RPG spectrum, built for players who want a powerthrough, not a slow burn. We'll keep playing and publish a full, rated review in time.
