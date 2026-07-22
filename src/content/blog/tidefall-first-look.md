@@ -29,3 +29,13 @@ The currency confusion was the clearest example. We made a purchase without know
 ## What Happens Next
 
 Tidefall is genuinely good, and it needs polish — that's the whole story after 24 hours. The art direction, sound, and handcrafted world design are ahead of most of the category; the missing inventory, party, and quest-journal screens are the kind of gap an open beta exists to close. We'll keep playing and publish a full, rated review once those systems catch up to the world they're supporting. Until then, our [directory of AI RPG platforms](/clients) covers everything else already available to play today.
+
+## Update: The Sarn Valley Update Just Landed
+
+Hours after we wrapped the 24 hours above, Tidefall shipped its first major content update. We haven't played any of it yet, so treat this as a heads-up rather than an extension of our impressions — but it's a big enough patch to flag.
+
+The headline addition is a new region, **Sarn Valley** — a war-torn area with 200+ new NPCs and locations, plus new stories, encounters, art, music, and ambience. Alongside it come **three new playable characters**, each pitched as a distinct playstyle: Maelis Draven (Scoundrel), Enyo Kaeluma (Fighter), and Calas of Wynn (Ranger).
+
+Notably, two of the changes land directly on the rough edges we hit in our own 24 hours: the update claims improved inventory handling (item variants and metadata preserved through crafting and unusual combinations) and improved movement/travel classification, including inter-region travel. We can't yet say how much either closes the gap we described above — that's for the next playthrough. The patch also rebalances encounters across Ebstone and Sarnath for the expanded character roster, adds new loot, expands the save/load menu with more per-save information, adds new save points across all three regions, and fixes several inter-region travel bugs plus a couple of stray trigger/encounter issues.
+
+Players who've already finished the Sarnath City storyline can head straight into Sarn Valley by visiting Darion at the Shining Almshouse in the city.
