@@ -1,7 +1,6 @@
 ---
 title: "AIDungeonMaster.ai"
 tagline: "A Friends & Fables-shaped 5e platform with a creator marketplace — promising architecture, but numbers we can't verify and a name built to be confused with AI Dungeon."
-rating: 3
 pricing: "freemium"
 siteUrl: "https://aidungeonmaster.ai/"
 reviewSlug: "aidungeonmaster-review"
@@ -46,4 +45,4 @@ Everything above carries an early-access asterisk. Persistent memory is claimed,
 
 ## Verdict
 
-The architecture is promising and the creator-payment model is genuinely rare. But closed doors plus big unverifiable numbers is a combination that earns skepticism, not benefit of the doubt. Promising — and fishy for the time being. We'll re-review at open access. 3 out of 5.
+The architecture is promising and the creator-payment model is genuinely rare. But closed doors plus big unverifiable numbers is a combination that earns skepticism, not benefit of the doubt. Promising — and fishy for the time being. We'll re-review at open access.

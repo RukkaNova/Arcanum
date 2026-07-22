@@ -34,13 +34,13 @@ Neither approach is wrong. This breaks down where they actually diverge — onbo
 | **Access** | Closed beta, invite-only | Open to anyone today |
 | **Privacy** | OpenAI confirmed no training on API data | Platform-level, not independently confirmed |
 | **Price** | Free during beta; post-launch TBD | Free tier / $19.95–$39.95/month |
-| **Arcanum rating** | [4/5](/blog/taverna-review) | [4.5/5](/blog/friends-and-fables-review) |
+| **Arcanum rating** | [Closed beta (unrated)](/blog/taverna-review) | [4.5/5](/blog/friends-and-fables-review) |
 
 The one-line summary: **Taverna is the frictionless Discord-native DM; Friends & Fables is the deepest tactical AI tabletop.** The detail behind that is below.
 
 ## What Each One Actually Is
 
-[Taverna](/clients/taverna) is deployed entirely as a Discord bot by Scalar Studio. It uses OpenAI's API to run a full fantasy campaign — combat turn orders, group inventory, character leveling — directly in your server's text channels, adjudicated via natural language and slash commands. No website to visit, no account to create. Our [full Taverna review](/blog/taverna-review) rates it 4/5.
+[Taverna](/clients/taverna) is deployed entirely as a Discord bot by Scalar Studio. It uses OpenAI's API to run a full fantasy campaign — combat turn orders, group inventory, character leveling — directly in your server's text channels, adjudicated via natural language and slash commands. No website to visit, no account to create. Our [full Taverna review](/blog/taverna-review) covers it in depth — it's still closed beta, so per our pre-release policy there's no rating yet.
 
 [Friends & Fables](/clients/friends-and-fables) is the current high-water mark for feature density in AI tabletop gaming. Its Game Master, Franz, routes each player turn through up to a dozen specialized models before assembling a response, powering a genuine V3 hex-battlemap combat system. Our [full Friends & Fables review](/blog/friends-and-fables-review) rates it 4.5/5, the highest-rated platform in our directory.
 
@@ -72,7 +72,7 @@ Taverna is currently free during its invite-only beta, with post-launch pricing 
 
 ## Which Should You Choose?
 
-**Choose Taverna if** your group already coordinates on Discord, you want zero setup friction, and tactical grid precision matters less than getting a session running tonight. **[Full Taverna review](/blog/taverna-review)** (rated 4/5) — if you can get off the waitlist.
+**Choose Taverna if** your group already coordinates on Discord, you want zero setup friction, and tactical grid precision matters less than getting a session running tonight. **[Full Taverna review](/blog/taverna-review)** (closed beta, unrated) — if you can get off the waitlist.
 
 **Choose Friends & Fables if** you want the deepest tactical AI tabletop available today, you're willing to create a new account and invest in learning the system, and your group can split the per-seat cost. **[Full Friends & Fables review](/blog/friends-and-fables-review)** (rated 4.5/5).
 

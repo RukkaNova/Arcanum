@@ -207,8 +207,8 @@ LLM-native games are one half of the AI RPG ecosystem. For players who want a de
 | Deep Realms | ★★★★ | Freemium | Fantasy world-building, rich NPC systems |
 | Janitor AI | ★★★★ | Freemium | Largest character library, BYOM flexibility |
 | MacerAI | ★★★★ | Freemium | Character-driven roleplay, strong persona consistency |
-| Taverna | ★★★★ | Freemium | Collaborative play, community-built worlds |
-| Voyage | ★★★★ | Freemium | Creator-focused, build-your-own-world tools |
+| Taverna | Closed beta (unrated) | Freemium | Collaborative play, community-built worlds |
+| Voyage | Beta (unrated) | Freemium | Creator-focused, build-your-own-world tools |
 | AI Realm | ★★★½ | Freemium | Accessible entry point, broad genre support |
 | Infinity DM | ★★★½ | Freemium | DM assistant tools, tabletop prep |
 | AI Dungeon | ★★★½ | Freemium | Maximum creative freedom, the original AI RPG |

@@ -1,7 +1,6 @@
 ---
 title: "Taverna"
 tagline: "A fully automated D&D 5e Game Master that lives inside your Discord server — no new accounts, no new apps."
-rating: 4.0
 pricing: "free"
 siteUrl: "https://www.tavernadm.com/"
 reviewSlug: "taverna-review"

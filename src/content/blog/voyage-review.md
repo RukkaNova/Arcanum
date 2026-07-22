@@ -2,7 +2,6 @@
 title: "Voyage Review (2026): AI Dungeon Grew Up and Got Consequences"
 description: "Voyage is Latitude's structured successor to AI Dungeon — with real dice, skill checks, and permadeath. Our review covers whether the new structure makes it better or just harder."
 section: "platform-reviews"
-rating: 4
 pubDate: 2026-06-23
 tags: ["Voyage AI review", "Voyage RPG review", "Latitude Voyage review", "AI RPG permadeath", "Voyage mobile RPG", "AI dungeon alternative 2026", "Voyage game review"]
 ---
@@ -65,4 +64,4 @@ Voyage is the most interesting development in AI RPG in 2026, structurally. The 
 
 For players who want AI RPG with earned outcomes and real stakes, Voyage is the destination. Watch the pricing at official launch to determine whether the subscription value holds.
 
-**Voyage Rating: 4/5** — A fundamental rethink of what AI RPG can be, with the structured consequences that AI Dungeon could never provide. Currently restricted by beta access, but the design direction is right.
+Voyage is a fundamental rethink of what AI RPG can be, with the structured consequences that AI Dungeon could never provide. It's currently restricted by beta access, and per our policy of not scoring pre-release software, there's no rating attached yet — we'll publish one once it's open to the public. The design direction, on this evidence, is right.

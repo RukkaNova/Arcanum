@@ -97,7 +97,7 @@ Without a paid plan, paste the same prompt at the top of a normal ChatGPT conver
 A prompt makes ChatGPT itself the Dungeon Master, with no extra subscription. If you'd rather have algorithmic dice resolution, character-creation wizards, or a battlemap built in, three platforms stand out — all first-hand reviewed in [the Codex](/blog):
 
 - **[AI Realm](/clients/ai-realm)** — the easiest solo entry into rules-faithful 5e, with combat resolved algorithmically so it can't be fudged. **[Full review](/blog/ai-realm-review)** (3.5/5).
-- **[Taverna](/clients/taverna)** — a full 5e-style Discord bot for groups, no new app required. **[Full review](/blog/taverna-review)** (4/5).
+- **[Taverna](/clients/taverna)** — a full 5e-style Discord bot for groups, no new app required. **[Full review](/blog/taverna-review)** (closed beta, unrated).
 - **[Friends & Fables](/clients/friends-and-fables)** — the closest thing to a full tabletop, with hex battlemaps for up to six players. **[Full review](/blog/friends-and-fables-review)**.
 
 The complete comparison, including how memory and rules architecture differ across every AI D&D option, lives in [AI D&D: how to play Dungeons & Dragons with an AI Dungeon Master](/blog/ai-dnd).

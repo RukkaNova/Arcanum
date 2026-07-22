@@ -41,7 +41,7 @@ If you're shopping for a mobile AI RPG and landed here first, these are the plat
 |---|---|---|---|---|
 | [AI Dungeon](/blog/ai-dungeon-review) | 3.5/5 | Free – $99.99/mo | Freeform | The mature original — bigger scenario library, more polish, the same freeform lane done properly |
 | [FableAI](/blog/fableai-review) | 3.5/5 | Freemium (gems) | Freeform | Dramatically better production values — generated art and voice narration on every scene |
-| [Voyage](/blog/voyage-review) | 4/5 | Freemium | Structured (dice, permadeath) | Actual consequences instead of narrative fiat — skill checks and permanent death built into the flow |
+| [Voyage](/blog/voyage-review) | Beta (unrated) | Freemium | Structured (dice, permadeath) | Actual consequences instead of narrative fiat — skill checks and permanent death built into the flow |
 | [Old Greg's Tavern](/blog/old-gregs-tavern-review) | 4/5 | Freemium (credits) | Persistent campaign | An edgier voice with real continuity, and invited friends play free on your credits |
 
 None of these cost more at the entry point than AI Game Master, and all four score higher. The only scenario where AI Game Master wins is if a specific feature keeps you there that we haven't found — for freeform mobile storytelling generally, start with AI Dungeon or FableAI instead.

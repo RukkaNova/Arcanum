@@ -2,7 +2,6 @@
 title: "AIDungeonMaster.ai Review (2026): Promising, but Fishy for Now"
 description: "AIDungeonMaster.ai pitches a full D&D 5e rules engine with a paid creator marketplace — but it's closed access, advertising numbers nobody can verify, under a name built to be confused with AI Dungeon. Our hands-on review."
 section: "platform-reviews"
-rating: 3
 pubDate: 2026-07-02
 tags: ["AIDungeonMaster.ai review", "AI Dungeon Master platform", "AI D&D 5e platform", "AI DM review", "Friends and Fables alternative", "AI RPG early access", "AI roleplay platforms"]
 faq:
@@ -36,13 +35,13 @@ Now the other story. AIDungeonMaster.ai is closed access — you apply for early
 
 Think about what that second number means for a product the public cannot try. Rated by whom? Verified how? A big signup figure for a gated product is already unverifiable; a public rating average for a closed platform is the kind of number that exists to be believed, not checked. We can't call it false — that's the point, nobody outside can call it anything — but it made us weary, and it should make you weary too.
 
-And then there's the name. AIDungeonMaster.ai sits one keystroke of confusion away from the best-known brand in this entire space, and the domain reads like it was optimized to collect AI Dungeon's search traffic. Maybe that's coincidence; "AI dungeon master" is also just the generic term (we've written a [whole explainer](/blog/ai-dungeon-master) on it). But combined with the unverifiable numbers, the pattern is a marketing posture that leans on borrowed credibility — and that posture is why this review is scored where it is.
+And then there's the name. AIDungeonMaster.ai sits one keystroke of confusion away from the best-known brand in this entire space, and the domain reads like it was optimized to collect AI Dungeon's search traffic. Maybe that's coincidence; "AI dungeon master" is also just the generic term (we've written a [whole explainer](/blog/ai-dungeon-master) on it). But combined with the unverifiable numbers, the pattern is a marketing posture that leans on borrowed credibility — and that's the trust problem the rest of this verdict has to weigh.
 
-## Verdict: 3/5
+## Verdict
 
-Judge the sessions alone and this platform flirts with a 4: the 5e engine is real, the F&F-shaped architecture is the right architecture, and the creator marketplace is an idea this niche badly needs more of. Judge the trust picture and it loses ground it didn't have to lose: closed doors, unverifiable numbers, and a name that benefits from confusion.
+Judge the sessions alone and this platform is genuinely promising: the 5e engine is real, the F&F-shaped architecture is the right architecture, and the creator marketplace is an idea this niche badly needs more of. Judge the trust picture and it loses ground it didn't have to lose: closed doors, unverifiable numbers, and a name that benefits from confusion.
 
-Promising, but fishy for the time being. If they open access and the numbers become checkable, we'll re-review — and there's a real chance the score goes up. Until then: 3 out of 5, and our [platform comparison](/clients/compare) has the alternatives whose claims you can verify today.
+Promising, but fishy for the time being. The platform is also still in application-gated early access, so per our policy of not scoring pre-release software, there's no rating attached — if they open access and the numbers become checkable, we'll publish one, and there's a real chance it lands well. Until then, our [platform comparison](/clients/compare) has the alternatives whose claims you can verify today.
 
 ## FAQ
 

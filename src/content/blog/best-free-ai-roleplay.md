@@ -68,7 +68,7 @@ The catch is the third kind of free — you supply the hardware (a capable GPU) 
 
 ## 5. Taverna — Best Free AI DM for Discord
 
-**[Taverna](/clients/taverna)** runs a full 5e-style AI Game Master inside a Discord server you already have — free, no new app, no new accounts. It handles initiative, combat, inventory, and leveling through slash commands. The trade-off is that a text channel isn't a battlemap, so spatial combat is abstracted, but for a group that lives in Discord and lost its DM, it's a free, frictionless answer. **[Full review](/blog/taverna-review)** (rated 4/5).
+**[Taverna](/clients/taverna)** runs a full 5e-style AI Game Master inside a Discord server you already have — free, no new app, no new accounts. It handles initiative, combat, inventory, and leveling through slash commands. The trade-off is that a text channel isn't a battlemap, so spatial combat is abstracted, but for a group that lives in Discord and lost its DM, it's a free, frictionless answer. **[Full review](/blog/taverna-review)** (closed beta, unrated).
 
 **Kind of free:** genuinely free
 **Best for:** Discord groups who want an AI DM in their existing server

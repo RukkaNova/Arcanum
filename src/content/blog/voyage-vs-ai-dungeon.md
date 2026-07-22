@@ -39,7 +39,7 @@ Same lineage of technology, rebuilt around an opposite premise. This breaks down
 | **Multiplayer** | Sync co-op, up to 4, shared permadeath stakes | Casual, asynchronous |
 | **Platform** | Mobile-first (iOS/Android), invite-only beta | Web, mobile, Steam — fully open |
 | **Price** | Free beta / $15–$50/month at launch tiers | Free tier / up to $99.99/month (Ultimate) |
-| **Arcanum rating** | [4/5](/blog/voyage-review) | [3.5/5](/blog/ai-dungeon-review) |
+| **Arcanum rating** | [Beta (unrated)](/blog/voyage-review) | [3.5/5](/blog/ai-dungeon-review) |
 
 The one-line summary: **Voyage is AI Dungeon rebuilt around consequences; AI Dungeon is still the freer, more open sandbox.** The detail behind that is below.
 
@@ -47,7 +47,7 @@ The one-line summary: **Voyage is AI Dungeon rebuilt around consequences; AI Dun
 
 [AI Dungeon](/clients/ai-dungeon) is the platform that defined the freeform AI text adventure back in 2019. No character sheets, no dice, no hard-coded rules — you type what you want to do and the AI continues the story, whatever direction that takes. Our [full AI Dungeon review](/blog/ai-dungeon-review) rates it 3.5/5.
 
-[Voyage](/clients/voyage) is Latitude's direct answer to the frustration that builds up over long AI Dungeon sessions: the realization that nothing you do actually matters, because the AI is infinitely persuadable and the story bends around you regardless of how badly you fail. Voyage's proprietary "World Engine" runs skill checks against player stats, tracks hit points numerically, and processes permadeath as an actual game state. Our [full Voyage review](/blog/voyage-review) rates it 4/5.
+[Voyage](/clients/voyage) is Latitude's direct answer to the frustration that builds up over long AI Dungeon sessions: the realization that nothing you do actually matters, because the AI is infinitely persuadable and the story bends around you regardless of how badly you fail. Voyage's proprietary "World Engine" runs skill checks against player stats, tracks hit points numerically, and processes permadeath as an actual game state. Our [full Voyage review](/blog/voyage-review) covers it in depth — it's still in beta, so per our pre-release policy there's no rating yet.
 
 New to the category? Our [AI Dungeon Master guide](/blog/ai-dungeon-master) explains how AI DMs work and where each style fits.
 
@@ -81,7 +81,7 @@ AI Dungeon's free tier is usable and ad-free since Unchained, with paid tiers ru
 
 **Choose AI Dungeon if** you want maximum creative freedom with zero mechanical pushback, you're playing today without a waitlist, and narrative inconsistency doesn't bother you. **[Full AI Dungeon review](/blog/ai-dungeon-review)** (rated 3.5/5).
 
-**Choose Voyage if** you've already spent real time with AI Dungeon and found it hollow once the novelty of total freedom faded, and you want real stakes — dice that can kill you and choices that actually matter. **[Full Voyage review](/blog/voyage-review)** (rated 4/5), if you can get off the waitlist.
+**Choose Voyage if** you've already spent real time with AI Dungeon and found it hollow once the novelty of total freedom faded, and you want real stakes — dice that can kill you and choices that actually matter. **[Full Voyage review](/blog/voyage-review)** (beta, unrated), if you can get off the waitlist.
 
 **Not sure either fits?** For the most mechanically rigorous AI tabletop available, with none of Latitude's narrative-fiat DNA, see [AI Dungeon vs Friends & Fables](/blog/ai-dungeon-vs-friends-and-fables). The full field is ranked in [best AI roleplay platforms](/blog/best-ai-roleplay-platforms).
 
