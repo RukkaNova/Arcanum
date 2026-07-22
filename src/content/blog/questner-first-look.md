@@ -6,6 +6,8 @@ pubDate: 2026-07-22
 tags: ["Questner", "Questner AI RPG", "Questner first look", "casual AI RPG", "mobile AI RPG", "action AI RPG", "AI dungeon master"]
 ---
 
+*Disclosure: Questner purchased a paid Engine & Prompt Audit from Arcanum Forge — a material financial connection beyond typical review access. Per our [editorial firewall](/developers#firewall), Forge work never buys coverage or influences scores; this first look reflects our own independent hands-on impressions.*
+
 *This is a hands-on first look, not a rated review. A full rated verdict comes once we've spent more time with it.*
 
 Most of what we cover here leans deep: tabletop-shaped AI DMs like [Friends & Fables](/clients/friends-and-fables), sandbox and simulation platforms like [Deep Realms](/clients/deep-realms), the kind of game where a session can spend an hour just getting from one town to the next. [Questner](https://questner.ai/) is the opposite bet, and it's worth understanding exactly how far it goes in that direction.
