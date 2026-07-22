@@ -151,6 +151,8 @@ The result is the most coherent AI storyteller we have tested: no memory drift, 
 
 **Full review:** [Hidden Door Review](/blog/hidden-door-review)
 
+If it's the art direction and handcrafted feel you're after rather than the licensed-IP angle, [Tidefall](/clients/tidefall) is worth watching — a D&D-inspired world with some of the most intentional presentation we've tested, currently in open beta with the UX still catching up. Not yet rated; read our [first look](/blog/tidefall-first-look).
+
 ---
 
 ## Best AI Roleplay Platform for Edgy Campaigns: Old Greg's Tavern
