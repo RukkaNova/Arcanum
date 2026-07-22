@@ -6,6 +6,8 @@ pubDate: 2026-07-22
 tags: ["Tidefall", "Tidefall AI RPG", "Tidefall first look", "D&D AI RPG", "AI RPG open beta", "AI dungeon master", "handcrafted AI RPG"]
 ---
 
+*Access disclosure: Tidefall's beta is open to the public, but the developer also gave us a comped account with extra credits beyond what a new player starts with — a material connection beyond what any player can get today. No conditions were attached to our coverage; this first look is independent and unpaid.*
+
 *This is a hands-on first look at an open beta, not a rated review. We don't score pre-release software — a full rated verdict comes once the beta matures.*
 
 [Tidefall](https://infinityfiction.ai/tidefall-living-world-rpg/) announces itself before you've made a single choice. The prologue alone — looping background animations, rich art, a soundscape that actually matches the scene — makes it obvious you're not in one of the more generalistic AI RPGs we usually cover. This is a game somebody designed on purpose, not a template with a new coat of paint. We spent our first 24 hours inside it. Here's what those hours actually looked like.
