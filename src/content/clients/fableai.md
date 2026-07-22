@@ -25,6 +25,8 @@ Everything runs on gems, the platform's energy currency. Free players get a dail
 
 Among the mobile AI RPG clients we have reviewed, this is the best of the bunch. The design and production values beat AI Dungeon clearly — the art, the narration, the multi-chapter adventure library, and a co-op mode all in one coherent, polished app. If the mobile freewrite category is where you live, this is its high end.
 
+If you want mobile play but with none of FableAI's narrative pacing at all, [Questner](/clients/questner) is worth a look — a much faster, more casual action RPG with progress on nearly every turn. We haven't rated it yet; see our [first look](/blog/questner-first-look).
+
 ## What It Does Best (and Worst)
 
 Best for players who want maximal presentation on a phone: solo or co-op freeform stories that look and sound like more than a chat log.

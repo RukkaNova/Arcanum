@@ -125,6 +125,8 @@ Currently in invite-only beta. For players who want AI roleplay that pushes back
 
 If Voyage's invite gate blocks you and you want mobile freeform play instead of structure, [FableAI](/clients/fableai) is the best-produced open-access alternative — voice narration, AI art, and co-op, at gem-economy prices. [Full review](/blog/fableai-review).
 
+If even Voyage's pacing feels too slow, [Questner](/clients/questner) goes further still — no travel, no downtime, progress on nearly every turn. It's not yet rated; read our [first look](/blog/questner-first-look).
+
 **Full review:** [Voyage Review](/blog/voyage-review)
 
 ---
