@@ -30,6 +30,10 @@ The flip side is the UX, and right now it's genuinely rough — expected for an 
 
 The currency confusion was the clearest example. We made a purchase without knowing how much money we actually had, had to dig into a wallet to find out we were holding coppers, and then a different NPC asked for payment in gold with no visible conversion rate anywhere in the UI. The world itself is dense and immersive; the systems layer around it hasn't caught up yet.
 
+## A Second Generation of AI RPGs
+
+There's a case to be made that AI RPGs are entering a second generation, and that it's going to be considerably stronger than the first. First-generation platforms proved AI could run a persistent world at all — freeform prompting, minimal structure, a chat window standing in for a Game Master. What we've been testing since is a different animal. [Craft](/blog/craft-first-look) brought visual-novel-grade presentation and cinematics to the format. [MythEngyn](/blog/mythengyn-first-look) built a memory engine, Maelstrom, that held a world state true across 24 hours without hallucinating. [Voyage](/clients/voyage) brought real dice, real consequence, and permadeath into the same kind of interface AI Dungeon popularized for pure narrative fiat. Tidefall adds handcrafted art direction, sound design, and a deliberately narrower, more authored world to that list. Taken together, these platforms are setting a new baseline for what an AI RPG is expected to deliver.
+
 ## What Happens Next
 
 Tidefall is genuinely good, and it needs polish — that's the whole story after 24 hours. The art direction, sound, and handcrafted world design are ahead of most of the category; the missing inventory, party, and quest-journal screens are the kind of gap an open beta exists to close. We'll keep playing and publish a full, rated review once those systems catch up to the world they're supporting. Until then, our [directory of AI RPG platforms](/clients) covers everything else already available to play today.
